@@ -1,0 +1,170 @@
+[
+    {
+        "name": "Icon",
+        "zh_cn": "图标",
+        "category": ["container", "feedback"]
+    },
+    {
+        "name": "Button",
+        "zh_cn": "按钮",
+        "category": ["container", "feedback"]
+    },
+    {
+        "name": "Link",
+        "components": ["Link", "Button"]
+    },
+    {
+        "name": "Box"
+    },
+    {
+        "name": "Grid",
+        "components": ["Row", "Col"]
+    },
+    {
+        "name": "Combine"
+    },
+    {
+        "name": "Compact"
+    },
+    {
+        "name": "Input",
+        "components": ["Input", "Search"]
+    },
+    {
+        "name": "NumberInput"
+    },
+    {
+        "name": "Textarea"
+    },
+    {
+        "name": "AutoComplete"
+    },
+    {
+        "name": "Select",
+        "components": ["Select", "Option", "Extra", "Group"]
+    },
+    {
+        "name": "Checkbox",
+        "components": ["Checkbox", "Group"]
+    },
+    {
+        "name": "Radio",
+        "components": ["Radio", "Group"]
+    },
+    {
+        "name": "Switch"
+    },
+    {
+        "name": "Slider"
+    },
+    {
+        "name": "Upload"
+    },
+    {
+        "name": "Calendar"
+    },
+    {
+        "name": "DatePicker",
+        "components": ["DatePicker", "Month", "Range"]
+    },
+    {
+        "name": "Menu",
+        "components": ["Menu", "SubMenu", "Item"]
+    },
+    { "name": "Tree" },
+    {
+        "name": "ActionList"
+    },
+    {
+        "name": "ZForm"
+    },
+    {
+        "name": "Transfer"
+    },
+    {
+        "name": "TransferMenu"
+    },
+    {
+        "name": "TransferTable"
+    },
+    {
+        "name": "EditableTable"
+    },
+    {
+        "name": "EditableList"
+    },
+    {
+        "name": "Notice"
+    },
+    {
+        "name": "Badge",
+        "components": ["Badge", "Bubble"]
+    },
+    {
+        "name": "Tag",
+        "components": ["Tag", "Icon", "Group"]
+    },
+    {
+        "name": "Popover"
+    },
+    {
+        "name": "Tooltip"
+    },
+    {
+        "name": "PopConfirm"
+    },
+    {
+        "name": "Modal",
+        "components": ["Modal", "Content"]
+    },
+    {
+        "name": "Drawer"
+    },
+    {
+        "name": "Table",
+        "components": ["Table", "ColumnConfigButton", "SearchInput", "ActionList", "ResizableTH", "HoverDisplayArea"]
+    },
+    {
+        "name": "Tabs",
+        "components": ["Tabs", "Pane"]
+    },
+    {
+        "name": "Collapse",
+        "components": ["Collapse", "Panel"]
+    },
+    {
+        "name": "Form",
+        "components": ["Form", "Item", "Group", "SubArea"]
+    },
+    {
+        "name": "Card"
+    },
+    {
+        "name": "Steps"
+    },
+    {
+        "name": "Message"
+    },
+    {
+        "name": "Breadcrumb",
+        "components": ["Breadcrumb", "Item", "BackButton"]
+    },
+    {
+        "name": "Pagination"
+    },
+    {
+        "name": "Progress"
+    },
+    {
+        "name": "Loading"
+    },
+    {
+        "name": "LocaleProvider"
+    },
+    {
+        "name": "ThemeProvider"
+    },
+    {
+        "name": "ConfigProvider"
+    }
+]

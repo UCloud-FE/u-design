@@ -1,0 +1,43 @@
+@import '/src/vars.scss';
+
+.wrapper {
+    position: relative;
+    ul,
+    li {
+        list-style: none!important;
+        list-style-type: none!important;
+    }
+    ul {
+        margin-left: 0px!important;
+        li {
+            cursor: pointer;
+            float: left;
+            width: 30%;
+            padding-right: 24px;
+            a {
+                text-decoration: none;
+                display: block;
+            }
+            span {
+                display: block;
+                text-decoration: none;
+                font-family: PingFangSC-Light, PingFang SC;
+                font-weight: 300;
+                font-size: 14px;
+                line-height: 22px;
+                margin-bottom: 16px;
+                color: $T_COLOR_TEXT_DEFAULT_DARK;
+            }
+        }
+    }
+    .clear {
+        clear: both;
+    }
+    .thumb {
+        width: auto;
+        min-height: 164px;
+        &:hover {
+            box-shadow: 0 6px 16px -8px #00000014, 0 9px 28px #0000000d, 0 12px 48px 16px #00000008;
+        }
+    }
+}

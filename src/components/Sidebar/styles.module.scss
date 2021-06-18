@@ -1,0 +1,89 @@
+@import 'src/vars.scss';
+
+.wrapper {
+    height: 100%;
+    width: $sidebar-width;
+    background-color: $T_COLOR_BG_DEFAULT_DARK;
+    box-sizing: border-box;
+    flex-shrink: 0;
+    box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.08);
+    border-right: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
+    overflow: auto;
+    .inner {
+        padding-top: 16px;
+        height: 100%;
+
+        a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .h1,
+        .h2 {
+            border-left: 2px solid transparent;
+            display: block;
+            line-height: 48px;
+        }
+
+        .h1 {
+            font-size: 16px;
+            padding-left: 32px;
+            color: $T_COLOR_TEXT_REMARK_DARK;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            margin: 0px;
+        }
+
+        .oh {
+            &:hover,
+            &.current {
+                color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                border-left: 2px solid $T_COLOR_BG_PRIMARY_1;
+                background-color: $T_COLOR_BG_DEFAULT_HOVER;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+            }
+        }
+
+        ul,
+        ul li {
+            margin: 0px;
+        }
+
+        ul:not(:last-child) {
+        }
+
+        hr {
+            background-color: $T_COLOR_LINE_DEFAULT_LIGHT;
+            margin: 16px 32px;
+            height: 1px;
+            border: 0;
+        }
+
+        .h2 {
+            a {
+                width: 100%;
+            }
+            display: block;
+            cursor: pointer;
+            font-size: 14px;
+            margin-bottom: 0px;
+            padding-left: 40px;
+            box-sizing: border-box;
+            color: $T_COLOR_TEXT_DEFAULT_LIGHT;
+            font-family: PingFangSC-Regular, PingFang SC;
+            font-weight: 400;
+            border-left: 2px solid transparent;
+
+            &:hover,
+            &.current {
+                color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                border-left: 2px solid $T_COLOR_BG_PRIMARY_1;
+                background-color: $T_COLOR_BG_DEFAULT_HOVER;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+            }
+        }
+    }
+}

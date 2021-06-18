@@ -1,0 +1,197 @@
+@import '/src/vars.scss';
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    position: relative;
+
+    .content-wrapper {
+        width: 100%;
+        height: 100%;
+        overflow: auto;
+    }
+
+    .content {
+        padding-left: 72px;
+        padding-right: 264px;
+
+        ul,
+        li,
+        ol {
+            list-style: auto;
+            list-style-type: auto;
+        }
+        ul,
+        ol {
+            margin-left: 24px;
+        }
+
+        ul li,
+        ol li {
+            margin-bottom: 16px;
+        }
+
+        a {
+            text-decoration: none;
+            color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+        }
+
+        .top {
+            padding-top: 48px;
+        }
+
+        .top,
+        section {
+            font-size: 16px;
+            font-family: PingFangSC-Light, PingFang SC;
+            font-weight: 300;
+            color: $T_COLOR_TEXT_DEFAULT_DARK;
+            line-height: 28px;
+            // padding-top: 48px;
+
+            strong {
+                font-weight: bold !important;
+            }
+            table {
+                width: 100%;
+                // tr td {
+                // vertical-align: top;
+                // padding-right: 24px;
+                // &:last-child{
+                //     padding-right: 0px!important;
+                // }
+                // }
+            }
+
+            // table:nth-of-type(1) {
+            //     display:table;
+            //     width:100%;
+            // }
+            // table:nth-of-type(1) th:nth-of-type(2) {
+            //     width:50%;
+            // }
+
+            h1,
+            h2,
+            h3,
+            h4 {
+                margin: 0;
+                margin-bottom: 16px;
+                color: $T_COLOR_TEXT_DEFAULT_DARK;
+            }
+            h1 {
+                font-size: 32px;
+                font-family: PingFangSC-Semibold, PingFang SC;
+                font-weight: 600;
+                line-height: 46px;
+            }
+
+            h2 {
+                font-size: 24px;
+                font-family: PingFangSC-Medium, PingFang SC;
+                font-weight: 500;
+                line-height: 32px;
+                padding-top: 48px;
+            }
+
+            h3 {
+                font-size: 20px;
+                font-family: PingFangSC-Regular, PingFang SC;
+                font-weight: 400;
+                line-height: 32px;
+            }
+
+            p {
+                margin-bottom: 16px;
+            }
+        }
+
+        .tabs {
+            margin: 0;
+        }
+    }
+}
+
+/* markdown style*/
+
+:global {
+    blockquote {
+        color: $T_COLOR_TEXT_REMARK_DARK;
+        font-size: 16px;
+        font-weight: 300;
+        font-family: PingFangSC-Light, PingFang SC;
+        line-height: 28px;
+        border-left: 4px solid $T_COLOR_LINE_DEFAULT_LIGHT;
+        padding-left: 16px;
+        margin: 0px;
+        margin-bottom: 16px;
+        p {
+            margin: 0px !important;
+            padding: 0px !important;
+        }
+    }
+
+    i.u-md-suggested,
+    i.u-md-not-suggested {
+        display: inline-block;
+        width: 24px;
+        height: 24px;
+        vertical-align: middle;
+        background-size: contain;
+        position: relative;
+        top: -2px;
+        margin-right: 8px;
+    }
+
+    i.u-md-suggested {
+        background-image: url('./images/suggested.png');
+    }
+
+    i.u-md-not-suggested {
+        background-image: url('./images/not-suggested.png');
+    }
+
+    .u-md-flex,
+    .u-md-flex-align-left {
+        display: flex;
+        > div,
+        > .gatsby-resp-image-figure,
+        > .gatsby-resp-image-wrapper {
+            flex: 1;
+            padding-right: 24px;
+            &:last-child {
+                padding-right: 0px !important;
+            }
+        }
+    }
+    .u-md-pr24 {
+        padding-right: 24px;
+    }
+    .u-md-pl24 {
+        padding-left: 24px;
+    }
+
+    .u-md-flex-align-left {
+        .gatsby-resp-image-wrapper {
+            margin: 0 !important;
+        }
+    }
+
+    .u-md-t2 {
+        td {
+            width: 50%;
+        }
+    }
+
+    .gatsby-resp-image-figure {
+        margin: 0px;
+    }
+
+    .gatsby-resp-image-figcaption {
+        text-align: center;
+        color: $T_COLOR_TEXT_REMARK_LIGHT;
+        opacity: 0.2;
+        font-size: 14px;
+        line-height: 22px;
+    }
+}
