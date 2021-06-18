@@ -1,0 +1,2 @@
+(self.webpackChunkucloud_design_site=self.webpackChunkucloud_design_site||[]).push([[883],{9616:function(e,t,n){"use strict";n.r(t);var u=n(7294),l=n(3751);t.default=function(e){e.data,e.location;return u.createElement("div",null,u.createElement(l.Z,{title:"404: Not Found"}),u.createElement("h1",null,"404: Not Found"),u.createElement("p",null,"You just hit a route that doesn't exist... the sadness."))}}}]);
+//# sourceMappingURL=component---src-pages-404-js-8e8ad7fdbe26ec5ba995.js.map
