@@ -53,6 +53,7 @@ module.exports = {
             resolve: `gatsby-transformer-remark`,
             options: {
                 plugins: [
+                    `gatsby-remark-extract-image-attributes`,
                     {
                         resolve: `gatsby-remark-relative-images`,
                         options: {
@@ -68,7 +69,14 @@ module.exports = {
                     },
                     {
                         resolve: `gatsby-remark-images`,
-                        options: {},
+                        options: {
+                            maxWidth: 1440,
+                            linkImagesToOriginal: false,
+                            showCaptions: true,
+                            // wrapperStyle: fluidResult => {
+                            //     return '';
+                            // },
+                        },
                     },
                     {
                         resolve: `gatsby-remark-responsive-iframe`,
@@ -76,6 +84,46 @@ module.exports = {
                             wrapperStyle: `margin-bottom: 1.0725rem`,
                         },
                     },
+                    {
+                        resolve: 'gatsby-remark-attr',
+                        options: {
+                            allowDangerousDOMEventHandlers: true,
+                        },
+                    },
+                    {
+                        resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
+                    },
+                    // {
+                    //     resolve: `gatsby-remark-image-attributes`,
+                    //     options: {
+                    //         // ?Boolean=true
+                    //         //   If true (the default), all CSS
+                    //         //   property names will be recognized
+                    //         //   as styleAttribute.
+                    //         styleAttributes: true,
+
+                    //         // ?Boolean=false
+                    //         //   If true, all attributes that
+                    //         //   aren't styleAttributes, will be
+                    //         //   added as data-* attributes to the
+                    //         //   image.
+                    //         dataAttributes: false,
+                    //     },
+                    // },
+                    // {
+                    //     resolve: 'gatsby-remark-custom-blocks',
+                    //     options: {
+                    //         blocks: {
+                    //             'image-center': {
+                    //                 classes: 'u-md-image-center',
+                    //                 title: 'optional',
+                    //             },
+                    //             danger: {
+                    //                 classes: "danger",
+                    //             },
+                    //         },
+                    //     },
+                    // },
                     `gatsby-remark-autolink-headers`,
                     `gatsby-remark-prismjs`,
                     `gatsby-remark-copy-linked-files`,

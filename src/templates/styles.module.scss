@@ -15,12 +15,17 @@
         padding-left: 72px;
         padding-right: 264px;
 
-        ul,
-        li,
-        ol {
-            list-style: auto;
-            list-style-type: auto;
+        ul {
+            list-style: disc;
+            list-style-type: disc;
         }
+
+        ol {
+            list-style: decimal;
+            list-style-type: decimal;
+        }
+
+
         ul,
         ol {
             margin-left: 24px;
@@ -91,7 +96,7 @@
                 font-family: PingFangSC-Medium, PingFang SC;
                 font-weight: 500;
                 line-height: 32px;
-                padding-top: 48px;
+                margin-top: 48px;
             }
 
             h3 {
@@ -151,19 +156,48 @@
         background-image: url('./images/not-suggested.png');
     }
 
+    .u-md-flex-without-bg{
+        display: flex;
+        > div{
+            margin-right: 24px;
+            flex: 1;
+            &:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+
     .u-md-flex,
     .u-md-flex-align-left {
         display: flex;
+        background-color: $mk-image-bg;
         > div,
         > .gatsby-resp-image-figure,
         > .gatsby-resp-image-wrapper {
             flex: 1;
-            padding-right: 24px;
             &:last-child {
                 padding-right: 0px !important;
             }
         }
     }
+
+    .u-md-img-center, .u-md-img-left{
+        background-color: $mk-image-bg;
+    }
+
+    .u-md-img-center{
+        > div {
+            margin: 0 auto;
+        }
+    }
+
+    .u-md-mr24 {
+        margin-right: 24px;
+    }
+    .u-md-ml24 {
+        margin-left: 24px;
+    }
+
     .u-md-pr24 {
         padding-right: 24px;
     }
@@ -171,20 +205,16 @@
         padding-left: 24px;
     }
 
+
     .u-md-flex-align-left {
         .gatsby-resp-image-wrapper {
             margin: 0 !important;
         }
     }
 
-    .u-md-t2 {
-        td {
-            width: 50%;
-        }
-    }
-
     .gatsby-resp-image-figure {
-        margin: 0px;
+        flex: 1;
+        margin: 0;
     }
 
     .gatsby-resp-image-figcaption {
@@ -193,5 +223,19 @@
         opacity: 0.2;
         font-size: 14px;
         line-height: 22px;
+    }
+
+    .gatsby-resp-image-figure {
+        background-color: $mk-image-bg;
+        // figcaption{
+            // display: none;
+        // }
+    }
+
+    .gatsby-highlight{
+        code.language-md{
+            white-space: pre-wrap!important;
+            word-break:break-all!important;
+        }
     }
 }

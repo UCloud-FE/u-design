@@ -22,7 +22,10 @@ const Index = ({ data, location }) => {
                             {markdownRemark.frontmatter.title}
                             {allComponents.find(item => item.name === markdownRemark.frontmatter.title)?.zh_cn}
                         </h1>
-                        <p>{markdownRemark.frontmatter.desc}</p>
+                        {
+                            markdownRemark.frontmatter.description &&
+                            <p>{markdownRemark.frontmatter.description}</p>
+                        }
                     </div>
                     {!markdownRemark?.fields?.slug?.includes('/component/category/') && (
                         <div className={styles.tabs}>
@@ -61,7 +64,7 @@ export const pageQuery = graphql`
             }
             frontmatter {
                 title
-                desc
+                description
                 order
             }
         }
