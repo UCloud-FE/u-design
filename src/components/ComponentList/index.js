@@ -2,16 +2,8 @@ import * as React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from 'gatsby-plugin-image';
 import allComponents from '../../../content/components.json';
+import { delLast } from '../../utils';
 import * as styles from './styles.module.scss';
-
-function delLast(str, del) {
-    if (typeof str !== 'string') {
-        return str;
-    } else {
-        let index = str.lastIndexOf(del);
-        return str.substring(0, index) + str.substring(index + 1, str.length);
-    }
-}
 
 const getThumbRelativePath = componentName => {
     return `component/list/${componentName}/thumb.png`;

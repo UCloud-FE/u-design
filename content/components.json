@@ -1,170 +1,395 @@
 [
     {
-        "name": "Icon",
-        "zh_cn": "图标",
-        "category": ["container", "feedback"]
+        "name": "AutoComplete",
+        "zh_cn": "自动填充",
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Badge",
+        "zh_cn": "徽标数",
+        "components": [
+            "Badge",
+            "Bubble"
+        ],
+        "category": [
+            "feedback",
+            "data-presentation"
+        ]
+    },
+    {
+        "name": "Box",
+        "zh_cn": "盒子",
+        "category": [
+            "layout"
+        ]
+    },
+    {
+        "name": "Breadcrumb",
+        "zh_cn": "面包屑",
+        "components": [
+            "Breadcrumb",
+            "Item",
+            "BackButton"
+        ],
+        "category": [
+            "navigation"
+        ]
     },
     {
         "name": "Button",
         "zh_cn": "按钮",
-        "category": ["container", "feedback"]
+        "components": [
+            "ActionList",
+            "Link"
+        ],
+        "category": [
+            "general"
+        ]
     },
     {
-        "name": "Link",
-        "components": ["Link", "Button"]
+        "name": "Calendar",
+        "zh_cn": "日历",
+        "category": [
+            "data-presentation"
+        ]
     },
     {
-        "name": "Box"
-    },
-    {
-        "name": "Grid",
-        "components": ["Row", "Col"]
-    },
-    {
-        "name": "Combine"
-    },
-    {
-        "name": "Compact"
-    },
-    {
-        "name": "Input",
-        "components": ["Input", "Search"]
-    },
-    {
-        "name": "NumberInput"
-    },
-    {
-        "name": "Textarea"
-    },
-    {
-        "name": "AutoComplete"
-    },
-    {
-        "name": "Select",
-        "components": ["Select", "Option", "Extra", "Group"]
+        "name": "Card",
+        "zh_cn": "卡片",
+        "category": [
+            "container"
+        ]
     },
     {
         "name": "Checkbox",
-        "components": ["Checkbox", "Group"]
-    },
-    {
-        "name": "Radio",
-        "components": ["Radio", "Group"]
-    },
-    {
-        "name": "Switch"
-    },
-    {
-        "name": "Slider"
-    },
-    {
-        "name": "Upload"
-    },
-    {
-        "name": "Calendar"
-    },
-    {
-        "name": "DatePicker",
-        "components": ["DatePicker", "Month", "Range"]
-    },
-    {
-        "name": "Menu",
-        "components": ["Menu", "SubMenu", "Item"]
-    },
-    { "name": "Tree" },
-    {
-        "name": "ActionList"
-    },
-    {
-        "name": "ZForm"
-    },
-    {
-        "name": "Transfer"
-    },
-    {
-        "name": "TransferMenu"
-    },
-    {
-        "name": "TransferTable"
-    },
-    {
-        "name": "EditableTable"
-    },
-    {
-        "name": "EditableList"
-    },
-    {
-        "name": "Notice"
-    },
-    {
-        "name": "Badge",
-        "components": ["Badge", "Bubble"]
-    },
-    {
-        "name": "Tag",
-        "components": ["Tag", "Icon", "Group"]
-    },
-    {
-        "name": "Popover"
-    },
-    {
-        "name": "Tooltip"
-    },
-    {
-        "name": "PopConfirm"
-    },
-    {
-        "name": "Modal",
-        "components": ["Modal", "Content"]
-    },
-    {
-        "name": "Drawer"
-    },
-    {
-        "name": "Table",
-        "components": ["Table", "ColumnConfigButton", "SearchInput", "ActionList", "ResizableTH", "HoverDisplayArea"]
-    },
-    {
-        "name": "Tabs",
-        "components": ["Tabs", "Pane"]
+        "zh_cn": "多选",
+        "components": [
+            "Checkbox",
+            "Group"
+        ],
+        "category": [
+            "data-input"
+        ]
     },
     {
         "name": "Collapse",
-        "components": ["Collapse", "Panel"]
+        "zh_cn": "折叠面板",
+        "components": [
+            "Collapse",
+            "Panel"
+        ],
+        "category": [
+            "container"
+        ]
+    },
+    {
+        "name": "Combine",
+        "zh_cn": "间距",
+        "category": [
+            "layout"
+        ]
+    },
+    {
+        "name": "ConfigProvider",
+        "zh_cn": "全局配置",
+        "category": [
+            "general"
+        ]
+    },
+    {
+        "name": "DatePicker",
+        "zh_cn": "日期选择器",
+        "components": [
+            "DatePicker",
+            "Month",
+            "Range"
+        ],
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Drawer",
+        "zh_cn": "抽屉",
+        "category": [
+            "container",
+            "feedback"
+        ]
+    },
+    {
+        "name": "EditableList",
+        "zh_cn": "自增表单",
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "EditableTable",
+        "zh_cn": "自增表格",
+        "category": [
+            "data-input"
+        ]
     },
     {
         "name": "Form",
-        "components": ["Form", "Item", "Group", "SubArea"]
+        "zh_cn": "表单",
+        "components": [
+            "ZForm",
+            "Form",
+            "Item",
+            "Group",
+            "SubArea"
+        ],
+        "category": [
+            "container",
+            "data-input"
+        ]
     },
     {
-        "name": "Card"
+        "name": "Grid",
+        "zh_cn": "栅格",
+        "components": [
+            "Row",
+            "Col"
+        ],
+        "category": [
+            "layout"
+        ]
     },
     {
-        "name": "Steps"
+        "name": "Icon",
+        "zh_cn": "图标",
+        "category": [
+            "data-presentation"
+        ]
     },
     {
-        "name": "Message"
+        "name": "Input",
+        "zh_cn": "输入框",
+        "components": [
+            "Input",
+            "Search"
+        ],
+        "category": [
+            "data-input"
+        ]
     },
     {
-        "name": "Breadcrumb",
-        "components": ["Breadcrumb", "Item", "BackButton"]
+        "name": "Loading",
+        "zh_cn": "加载中",
+        "category": [
+            "feedback"
+        ]
     },
     {
-        "name": "Pagination"
+        "name": "LocaleProvider",
+        "zh_cn": "语言配置",
+        "category": [
+            "general"
+        ]
     },
     {
-        "name": "Progress"
+        "name": "Menu",
+        "zh_cn": "下拉菜单",
+        "components": [
+            "Menu",
+            "SubMenu",
+            "Item"
+        ],
+        "category": [
+            "data-input",
+            "data-presentation"
+        ]
     },
     {
-        "name": "Loading"
+        "name": "Message",
+        "zh_cn": "全局提示",
+        "category": [
+            "feedback"
+        ]
     },
     {
-        "name": "LocaleProvider"
+        "name": "Modal",
+        "zh_cn": "弹窗",
+        "components": [
+            "Modal",
+            "Content"
+        ],
+        "category": [
+            "container",
+            "feedback"
+        ]
     },
     {
-        "name": "ThemeProvider"
+        "name": "Notice",
+        "zh_cn": "提示",
+        "category": [
+            "feedback"
+        ]
     },
     {
-        "name": "ConfigProvider"
+        "name": "NumberInput",
+        "zh_cn": "数字输入框",
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Pagination",
+        "zh_cn": "分页器",
+        "category": [
+            "navigation"
+        ]
+    },
+    {
+        "name": "PopConfirm",
+        "zh_cn": "气泡确认框",
+        "category": [
+            "feedback"
+        ]
+    },
+    {
+        "name": "Progress",
+        "zh_cn": "进度条",
+        "category": [
+            "feedback"
+        ]
+    },
+    {
+        "name": "Radio",
+        "zh_cn": "单选",
+        "components": [
+            "Radio",
+            "Group"
+        ],
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Select",
+        "zh_cn": "选择器",
+        "components": [
+            "Select",
+            "Option",
+            "Extra",
+            "Group"
+        ],
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Slider",
+        "zh_cn": "滑块",
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Steps",
+        "zh_cn": "步骤条",
+        "category": [
+            "navigation"
+        ]
+    },
+    {
+        "name": "Switch",
+        "zh_cn": "开关",
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Table",
+        "zh_cn": "表格",
+        "components": [
+            "Table",
+            "ColumnConfigButton",
+            "SearchInput",
+            "ActionList",
+            "ResizableTH",
+            "HoverDisplayArea"
+        ],
+        "category": [
+            "data-presentation"
+        ]
+    },
+    {
+        "name": "Tabs",
+        "zh_cn": "标签页",
+        "components": [
+            "Tabs",
+            "Pane"
+        ],
+        "category": [
+            "navigation"
+        ]
+    },
+    {
+        "name": "Tag",
+        "zh_cn": "标签",
+        "components": [
+            "Tag",
+            "Icon",
+            "Group"
+        ],
+        "category": [
+            "feedback",
+            "data-presentation"
+        ]
+    },
+    {
+        "name": "Textarea",
+        "zh_cn": "长文本输入框",
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "ThemeProvider",
+        "zh_cn": "主题配置",
+        "category": [
+            "general"
+        ]
+    },
+    {
+        "name": "Tooltip",
+        "zh_cn": "文字提示",
+        "components": [
+            "Popover"
+        ],
+        "category": [
+            "feedback"
+        ]
+    },
+    {
+        "name": "Transfer",
+        "zh_cn": "穿梭机",
+        "components": [
+            "TransferMenu",
+            "TransferTable"
+        ],
+        "category": [
+            "data-input"
+        ]
+    },
+    {
+        "name": "Tree",
+        "zh_cn": "树控件",
+        "category": [
+            "data-input",
+            "data-presentation",
+            "navigation"
+        ]
+    },
+    {
+        "name": "Upload",
+        "zh_cn": "上传",
+        "category": [
+            "data-input"
+        ]
     }
 ]

@@ -5,10 +5,18 @@ import Footer from '../components/Footer';
 import ToC from '../components/ToC';
 import ComponentList from '../components/ComponentList';
 import allComponents from '../../content/components.json';
+import { delLast } from '../utils';
 import * as styles from './styles.module.scss';
 
 const Index = ({ data, location }) => {
     const { markdownRemark, thumbs } = data;
+    const slug = markdownRemark.fields.slug;
+    const  componentName = delLast(slug.split('/component/list/')[1], '/');
+    const currentComponent = allComponents.find(item => item.name === componentName);
+    
+    // if(!currentComponent){
+    //     return '404';
+    // }
 
     return (
         <div className={styles.wrapper}>
@@ -19,8 +27,11 @@ const Index = ({ data, location }) => {
                 <div className={styles.content}>
                     <div className={styles.top}>
                         <h1>
-                            {markdownRemark.frontmatter.title}
-                            {allComponents.find(item => item.name === markdownRemark.frontmatter.title)?.zh_cn}
+                            {
+                                markdownRemark.frontmatter.title ?
+                                markdownRemark.frontmatter.title :
+                                `${currentComponent?.name || ''} ${currentComponent?.zh_cn || ''}`
+                            }
                         </h1>
                         {
                             markdownRemark.frontmatter.description &&

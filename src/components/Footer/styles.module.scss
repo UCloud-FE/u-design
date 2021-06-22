@@ -2,6 +2,26 @@
 
 .footer {
     background-color: #0a1633;
-    padding: 48px 114px;
+    padding: 0px 72px;
+    padding-top: 32px;
     color: $T_COLOR_TEXT_DEFAULT_LIGHT;
+
+    ul{
+        display: flex;
+        li{
+            min-width: 194px;
+            margin-right: 24px;
+            a {
+                color: $T_COLOR_TEXT_DEFAULT_LIGHT;
+                text-decoration: none;
+                &:hover{
+                    color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                }
+            }
+        }
+    }
+    .bottom{
+        text-align: center;
+        padding: 24px 0px;
+    }
 }

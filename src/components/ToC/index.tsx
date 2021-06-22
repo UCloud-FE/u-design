@@ -9,11 +9,15 @@ export type Heading = {
 const ToC = (props: { headings: Heading[]; className?: string; location: any }) => {
     const { headings, className, location, ...rest } = props;
 
+    if(!headings?.length) {
+        return null;
+    }
+
     return (
         <div {...rest} className={`${styles.wrapper} ${className || ''}`}>
             <h2>目录</h2>
             <div className={styles.innerScroll}>
-                {props.headings.map(heading => {
+                {headings.map(heading => {
                     if (heading.depth !== 2) {
                         return null;
                     }
