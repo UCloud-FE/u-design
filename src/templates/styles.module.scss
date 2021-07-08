@@ -14,128 +14,205 @@
     .content {
         padding-left: 72px;
         padding-right: 264px;
-
-        ul {
-            list-style: disc;
-            list-style-type: disc;
-        }
-
-        ol {
-            list-style: decimal;
-            list-style-type: decimal;
-        }
-
-
-        ul,
-        ol {
-            margin-left: 24px;
-        }
-
-        ul li,
-        ol li {
-            margin-bottom: 16px;
-        }
-
-        a {
-            text-decoration: none;
-            color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
-        }
+        padding-bottom: 48px;
 
         .top {
             padding-top: 48px;
-        }
-
-        .top,
-        section {
-            font-size: 16px;
-            font-family: PingFangSC-Light, PingFang SC;
-            font-weight: 300;
-            color: $T_COLOR_TEXT_DEFAULT_DARK;
-            line-height: 28px;
-            padding-bottom: 48px;
-
-            strong {
-                font-weight: bold !important;
-            }
-            table {
-                width: 100%;
-                white-space: pre-wrap!important;
-                word-break:break-all!important;
-                padding: 24px;
-                background-color: $mk-image-bg;
-                border-collapse: separate;
-                border-spacing: 0px;
-                border: 1px solid #EFEFF8;
-                font-family: PingFangSC-Regular, PingFang SC;
-                
-                tr, th, td {
-                    margin: 0px;
-                    padding: 0px;
-                    border: 0px;
-                }
-
-                thead tr th{
-                    border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK;
-                    line-height: 43px;
-                    padding: 0px 12px;
-                    color: $T_COLOR_TEXT_DEFAULT_LIGHT;
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-
-                tbody tr td{
-                    box-sizing: content-box;
-                    border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK;
-                    line-height: 47px;
-                    padding: 0px 12px;
-                    color: $T_COLOR_TEXT_DEFAULT_DARK;
-                    font-size: 12px;
-                    font-weight: 400;
-                }
-                // table tbody tr:nth-child(odd){
-                //     background: #ccc;
-                    
-                // }
-            }
-
-            h1,
-            h2,
-            h3,
-            h4 {
+            h1 {
                 margin: 0;
                 margin-bottom: 16px;
                 margin-top: 16px;
                 color: $T_COLOR_TEXT_DEFAULT_DARK;
-            }
-            h1 {
                 font-size: 32px;
                 font-family: PingFangSC-Semibold, PingFang SC;
                 font-weight: 600;
                 line-height: 32px;
             }
 
-            h2 {
-                font-size: 24px;
-                font-family: PingFangSC-Medium, PingFang SC;
-                font-weight: 500;
-                line-height: 32px;
-                margin-top: 48px;
+            h1 a {
+                display: inline-block;
+                margin-left: 8px;
+                svg {
+                    width: 14px;
+                    height: 14px;
+                }
+                vertical-align: baseline;
+                &:hover{
+                    svg {
+                        fill: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                    }
+                    cursor: pointer;
+                    transition: all .3s;
+                }
+            }
+        }
+
+        .markdown {
+            ul {
+                list-style: disc;
+                list-style-type: disc;
             }
 
-            h3 {
-                font-size: 20px;
-                font-family: PingFangSC-Regular, PingFang SC;
-                font-weight: 400;
-                line-height: 32px;
+            ol {
+                list-style: decimal;
+                list-style-type: decimal;
             }
 
-            p {
+
+            ul,
+            ol {
+                margin-left: 24px;
+            }
+
+            ul li,
+            ol li {
                 margin-bottom: 16px;
+            }
+
+            a {
+                text-decoration: none;
+                color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+            }
+
+            section {
+                font-size: 16px;
+                font-family: PingFangSC-Light, PingFang SC;
+                font-weight: 300;
+                color: $T_COLOR_TEXT_DEFAULT_DARK;
+                line-height: 28px;
+
+                strong {
+                    font-weight: bold !important;
+                }
+                table {
+                    width: 100%;
+                    white-space: pre-wrap!important;
+                    word-break:break-all!important;
+                    padding: 24px;
+                    background-color: $mk-image-bg;
+                    border-collapse: separate;
+                    border-spacing: 0px;
+                    border: 1px solid #EFEFF8;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    
+                    tr, th, td {
+                        margin: 0px;
+                        padding: 0px;
+                        border: 0px;
+                    }
+
+                    thead tr th{
+                        border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK;
+                        line-height: 43px;
+                        padding: 0px 12px;
+                        color: $T_COLOR_TEXT_DEFAULT_LIGHT;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+
+                    tbody tr td{
+                        box-sizing: content-box;
+                        border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK;
+                        line-height: 47px;
+                        padding: 0px 12px;
+                        color: $T_COLOR_TEXT_DEFAULT_DARK;
+                        font-size: 12px;
+                        font-weight: 400;
+                    }
+                    // table tbody tr:nth-child(odd){
+                    //     background: #ccc;
+                        
+                    // }
+                }
+
+                h1,
+                h2,
+                h3,
+                h4 {
+                    margin: 0;
+                    margin-bottom: 16px;
+                    margin-top: 16px;
+                    color: $T_COLOR_TEXT_DEFAULT_DARK;
+                }
+                h1 {
+                    font-size: 32px;
+                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-weight: 600;
+                    line-height: 32px;
+                }
+
+                h2 {
+                    font-size: 24px;
+                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-weight: 500;
+                    line-height: 32px;
+                    margin-top: 48px;
+                }
+
+                h3 {
+                    font-size: 20px;
+                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-weight: 400;
+                    line-height: 32px;
+                }
+
+                p {
+                    margin-bottom: 16px;
+                }
             }
         }
 
         .tabs {
-            margin: 0;
+            margin-top: 48px;
+            margin-bottom: 48px;
+            ul{
+                line-height: 52px;
+                height: 52px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
+                .current, li:hover {
+                    background-color: $T_COLOR_BG_DEFAULT_HOVER;
+                    border-bottom: 2px solid $T_COLOR_BG_PRIMARY_1;
+                    color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                    font-weight: 600;
+                    // font-family: PingFangSC-Semibold, PingFang SC;
+                }
+                li{
+                    margin-right: 24px;
+                    &:last-child {
+                        margin-right: 0px!important;
+
+                    }
+                    i{
+                        background-size: contain;
+                        margin-right: 8px;
+                        width: 46px;
+                        height: 32px;
+                        display: inline-block;
+                    }
+                    .design-icon{
+                        background-image: url('./images/design-tab-icon.png');
+                    }
+                    .devIcon{
+                        background-image: url('./images/dev-tab-icon.png');
+                    }
+                    .dtIcon{
+                        background-image: url('./images/dt-tab-icon.png');
+                    }
+                    cursor: pointer;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    flex: 1;
+                    
+                    font-size: 20px;
+                    font-weight: 400;
+                    color: $T_COLOR_TEXT_DEFAULT_DARK;
+                    // font-family: PingFangSC-Regular, PingFang SC;
+                }
+            }
         }
     }
 }

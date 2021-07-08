@@ -134,6 +134,7 @@ module.exports = {
         `gatsby-plugin-smoothscroll`,
         `gatsby-transformer-sharp`,
         `gatsby-plugin-sharp`,
+        `gatsby-plugin-react-svg`,
         // {
         //   resolve: `gatsby-plugin-google-analytics`,
         //   options: {
