@@ -9,7 +9,6 @@ import { delLast } from '../utils';
 import * as styles from './styles.module.scss';
 import Edit from '../images/edit.svg';
 import { useState } from 'react';
-import './component-doc-render.js';
 
 const getComponentName = (slug: string): string => {
     return delLast(slug.split('/component/list/')[1], '/');
