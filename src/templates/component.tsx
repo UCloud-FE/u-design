@@ -30,8 +30,10 @@ const Index = ({ data, location }) => {
     };
 
     const renderCurrentTabContent = () => {
-        if(document.querySelector("#u-component-doc")){
-            document.querySelector("#u-component-doc").innerHTML = "";
+        if(typeof window !== `undefined`){
+            if(document.querySelector("#u-component-doc")){
+                document.querySelector("#u-component-doc").innerHTML = "";
+            }
         }
 
         if (tabIndex === 0) {
