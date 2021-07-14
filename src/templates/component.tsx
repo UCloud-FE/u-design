@@ -19,6 +19,8 @@ const getTitle = componentName => {
     return `${component?.name || ''} ${component?.zh_cn || ''}`;
 };
 
+let componentDocsDestroy = ()=>{};
+
 const Index = ({ data, location }) => {
     const { markdownRemark, thumbs } = data;
     const slug = markdownRemark.fields.slug;
@@ -30,11 +32,7 @@ const Index = ({ data, location }) => {
     };
 
     const renderCurrentTabContent = () => {
-        if(typeof window !== `undefined`){
-            if(document.querySelector("#u-component-doc")){
-                document.querySelector("#u-component-doc").innerHTML = "";
-            }
-        }
+        componentDocsDestroy();
 
         if (tabIndex === 0) {
             return (
@@ -46,7 +44,7 @@ const Index = ({ data, location }) => {
             );
         } else if(tabIndex === 1){
             try {
-                window["react-components-docs"].renderDoc(componentName, document.querySelector("#u-component-doc"));
+                componentDocsDestroy = window["react-components-docs"].renderDoc(componentName, document.querySelector("#u-component-doc"));
             } catch(e){
                 console.error(e);
             }
