@@ -20,21 +20,24 @@ const getTitle = componentName => {
 };
 
 let componentDocsDestroy = ()=>{};
+let componentDocsIsRendered = false;
 
 const Index = ({ data, location }) => {
     const { markdownRemark, thumbs } = data;
     const slug = markdownRemark.fields.slug;
     const componentName = getComponentName(slug);
     const [tabIndex, setTabIndex] = useState(0);
+    const [componentsDocsToc, setComponentsDocsToc] = useState([]);
 
     const handleClickTab = index => {
         setTabIndex(index);
     };
 
     const renderCurrentTabContent = () => {
-        componentDocsDestroy();
-
         if (tabIndex === 0) {
+            componentDocsDestroy();
+            componentDocsIsRendered = false;
+
             return (
                 <>
                     <div className={styles.markdown}>
@@ -44,13 +47,59 @@ const Index = ({ data, location }) => {
             );
         } else if(tabIndex === 1){
             try {
-                componentDocsDestroy = window["react-components-docs"].renderDoc(componentName, document.querySelector("#u-component-doc"));
+                componentDocsDestroy = window["react-components-docs"].renderDoc(componentName, document.querySelector("#u-component-doc"), {
+                    reportAnchorList: (data)=>{
+                        const tocData = [];
+                        data.children?.forEach((itemA)=>{
+                            tocData.push({
+                                value: itemA.text,
+                                id: itemA.id,
+                                depth: 2
+                            })
+
+                            if(itemA?.children?.length){
+                                itemA.children.forEach((itemB)=>{
+                                    if(itemB.text === '说明'){
+                                        return;
+                                    }
+
+                                    if(itemB.text === '演示' && itemB?.children?.length){
+                                        itemB.children.forEach((itemC)=>{
+                                            tocData.push({
+                                                value: itemC.text,
+                                                id: itemC.id,
+                                                depth: 3
+                                            })
+                                        })
+
+                                        return;
+                                    }
+
+                                    tocData.push({
+                                        value: itemB.text,
+                                        id: itemB.id,
+                                        depth: 3
+                                    })
+                                })
+                            }
+                        })
+
+                        if(!componentDocsIsRendered){
+                            setComponentsDocsToc(tocData)
+                        }
+
+                        componentDocsIsRendered = true;
+                    }
+                });
             } catch(e){
                 console.error(e);
             }
 
             return null;
         } else if(tabIndex === 2){
+            componentDocsDestroy();
+            componentDocsIsRendered = false;
+
             return (
                 <div>
                     Design Token
@@ -68,6 +117,9 @@ const Index = ({ data, location }) => {
             <div className={styles.contentWrapper}>
                 {
                     tabIndex === 0 && <ToC headings={markdownRemark.headings || []} location={location} />
+                }
+                {
+                    tabIndex === 1 && <ToC originalHash headings={componentsDocsToc} location={location} />
                 }
                 <div className={styles.content}>
                     <div className={styles.top}>
