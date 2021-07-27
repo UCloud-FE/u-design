@@ -1,5 +1,5 @@
-import * as React from 'react';
-import { graphql, Link } from 'gatsby';
+import React, { useEffect } from 'react';
+import { graphql } from 'gatsby';
 import Seo from '../components/seo';
 import Footer from '../components/Footer';
 import ToC from '../components/ToC';
@@ -19,25 +19,105 @@ const getTitle = componentName => {
     return `${component?.name || ''} ${component?.zh_cn || ''}`;
 };
 
-let componentDocsDestroy = ()=>{};
-let componentDocsIsRendered = false;
+let componentDocsDestroy = () => {};
+const TAB_KEY = 'component_tab_i';
+const tabs = ['design', 'docs', 'dt'];
 
 const Index = ({ data, location }) => {
     const { markdownRemark, thumbs } = data;
     const slug = markdownRemark.fields.slug;
     const componentName = getComponentName(slug);
-    const [tabIndex, setTabIndex] = useState(0);
+    const [tabIndex, setTabIndex] = useState(localStorage?.getItem(TAB_KEY) || tabs[0]);
     const [componentsDocsToc, setComponentsDocsToc] = useState([]);
+    const [scrollCurrentHash, setScrollCurrentHash] = useState('');
+
+    const handleScroll = () => {
+        const el = document.querySelector('#component_s_w');
+        const top = el.scrollTop;
+        const sections = el.getElementsByClassName('recodo-anchor');
+        let currentHash;
+
+        for (let i = 0; i < sections.length; i++) {
+            var itemTop = sections[i].offsetTop;
+            if (top > itemTop - 120) {
+                currentHash = decodeURIComponent(sections[i].hash);
+            } else {
+                break;
+            }
+        }
+
+        setScrollCurrentHash(currentHash);
+    };
+
+    useEffect(() => {
+        const el = document.querySelector('#component_s_w');
+        el.addEventListener('scroll', handleScroll);
+        return () => el.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    useEffect(() => {
+        componentDocsDestroy();
+        if (!window['react-components-docs']) {
+            return;
+        }
+
+        if (tabIndex !== tabs[1]) {
+            return;
+        }
+
+        componentDocsDestroy = window['react-components-docs'].renderDoc(
+            componentName,
+            document.querySelector('#u-component-doc'),
+            {
+                reportAnchorList: data => {
+                    const tocData = [];
+                    data.children?.forEach(itemA => {
+                        tocData.push({
+                            value: itemA.text,
+                            id: itemA.id,
+                            depth: 2,
+                        });
+
+                        if (itemA?.children?.length) {
+                            itemA.children.forEach(itemB => {
+                                if (itemB.text === '说明') {
+                                    return;
+                                }
+
+                                if (itemB.text === '演示' && itemB?.children?.length) {
+                                    itemB.children.forEach(itemC => {
+                                        tocData.push({
+                                            value: itemC.text,
+                                            id: itemC.id,
+                                            depth: 3,
+                                        });
+                                    });
+
+                                    return;
+                                }
+
+                                tocData.push({
+                                    value: itemB.text,
+                                    id: itemB.id,
+                                    depth: 3,
+                                });
+                            });
+                        }
+                    });
+
+                    setComponentsDocsToc(tocData);
+                },
+            },
+        );
+    }, [tabIndex]);
 
     const handleClickTab = index => {
+        localStorage?.setItem(TAB_KEY, index);
         setTabIndex(index);
     };
 
     const renderCurrentTabContent = () => {
-        if (tabIndex === 0) {
-            componentDocsDestroy();
-            componentDocsIsRendered = false;
-
+        if (tabIndex === tabs[0]) {
             return (
                 <>
                     <div className={styles.markdown}>
@@ -45,66 +125,8 @@ const Index = ({ data, location }) => {
                     </div>
                 </>
             );
-        } else if(tabIndex === 1){
-            try {
-                componentDocsDestroy = window["react-components-docs"].renderDoc(componentName, document.querySelector("#u-component-doc"), {
-                    reportAnchorList: (data)=>{
-                        const tocData = [];
-                        data.children?.forEach((itemA)=>{
-                            tocData.push({
-                                value: itemA.text,
-                                id: itemA.id,
-                                depth: 2
-                            })
-
-                            if(itemA?.children?.length){
-                                itemA.children.forEach((itemB)=>{
-                                    if(itemB.text === '说明'){
-                                        return;
-                                    }
-
-                                    if(itemB.text === '演示' && itemB?.children?.length){
-                                        itemB.children.forEach((itemC)=>{
-                                            tocData.push({
-                                                value: itemC.text,
-                                                id: itemC.id,
-                                                depth: 3
-                                            })
-                                        })
-
-                                        return;
-                                    }
-
-                                    tocData.push({
-                                        value: itemB.text,
-                                        id: itemB.id,
-                                        depth: 3
-                                    })
-                                })
-                            }
-                        })
-
-                        if(!componentDocsIsRendered){
-                            setComponentsDocsToc(tocData)
-                        }
-
-                        componentDocsIsRendered = true;
-                    }
-                });
-            } catch(e){
-                console.error(e);
-            }
-
-            return null;
-        } else if(tabIndex === 2){
-            componentDocsDestroy();
-            componentDocsIsRendered = false;
-
-            return (
-                <div>
-                    Design Token
-                </div>
-            );
+        } else if (tabIndex === tabs[2]) {
+            return <div>Design Token</div>;
         }
 
         return null;
@@ -114,13 +136,18 @@ const Index = ({ data, location }) => {
         <div className={styles.wrapper}>
             <Seo title={markdownRemark.frontmatter.title} />
 
-            <div className={styles.contentWrapper}>
-                {
-                    tabIndex === 0 && <ToC headings={markdownRemark.headings || []} location={location} />
-                }
-                {
-                    tabIndex === 1 && <ToC originalHash headings={componentsDocsToc} location={location} />
-                }
+            <div className={styles.contentWrapper} id="component_s_w">
+                {tabIndex === tabs[0] && (
+                    <ToC currentHash={scrollCurrentHash} headings={markdownRemark.headings || []} location={location} />
+                )}
+                {tabIndex === tabs[1] && (
+                    <ToC
+                        currentHash={scrollCurrentHash}
+                        originalHash
+                        headings={componentsDocsToc}
+                        location={location}
+                    />
+                )}
                 <div className={styles.content}>
                     <div className={styles.top}>
                         <h1>
@@ -142,27 +169,27 @@ const Index = ({ data, location }) => {
                         <div className={styles.tabs}>
                             <ul>
                                 <li
-                                    className={`${tabIndex === 0 && styles.current}`}
+                                    className={`${tabIndex === tabs[0] && styles.current}`}
                                     onClick={() => {
-                                        handleClickTab(0);
+                                        handleClickTab(tabs[0]);
                                     }}
                                 >
                                     <i className={styles.designIcon}></i>
                                     <span>设计</span>
                                 </li>
                                 <li
-                                    className={`${tabIndex === 1 && styles.current}`}
+                                    className={`${tabIndex === tabs[1] && styles.current}`}
                                     onClick={() => {
-                                        handleClickTab(1);
+                                        handleClickTab(tabs[1]);
                                     }}
                                 >
                                     <i className={styles.devIcon}></i>
                                     文档
                                 </li>
                                 <li
-                                    className={`${tabIndex === 2 && styles.current}`}
+                                    className={`${tabIndex === tabs[2] && styles.current}`}
                                     onClick={() => {
-                                        handleClickTab(2);
+                                        handleClickTab(tabs[2]);
                                     }}
                                 >
                                     <i className={styles.dtIcon}></i>
@@ -173,7 +200,7 @@ const Index = ({ data, location }) => {
                     )}
 
                     {renderCurrentTabContent()}
-                    <div id="u-component-doc"></div>
+                    <div id="u-component-doc" style={{ minHeight: 500 }}></div>
                     {markdownRemark?.fields?.slug?.includes('/component/category/') ? (
                         <ComponentList markdownRemark={markdownRemark} thumbs={thumbs} />
                     ) : null}

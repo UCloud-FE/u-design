@@ -7,10 +7,16 @@ export type Heading = {
     id?: string;
 };
 
-const ToC = (props: { originalHash?: boolean, headings: Heading[]; className?: string; location: any }) => {
-    const { headings, originalHash, className, location, ...rest } = props;
+const ToC = (props: {
+    currentHash?: string;
+    originalHash?: boolean;
+    headings: Heading[];
+    className?: string;
+    location: any;
+}) => {
+    const { headings, currentHash, originalHash, className, location, ...rest } = props;
 
-    if(!headings?.length) {
+    if (!headings?.length) {
         return null;
     }
 
@@ -19,15 +25,25 @@ const ToC = (props: { originalHash?: boolean, headings: Heading[]; className?: s
             <h2>目录</h2>
             <div className={styles.innerScroll}>
                 {headings.map((heading, index) => {
-                    const hash = originalHash ? heading.id : encodeURIComponent(heading.value.replace(/\s+/g, '-').toLowerCase());
-                    const isCurrent = decodeURIComponent(location.hash) === '#' + hash;
+                    const hash = originalHash
+                        ? heading.id
+                        : encodeURIComponent(heading.value.replace(/\s+/g, '-').toLowerCase());
+                    const isHighlight = `#${hash}` === currentHash;
 
                     if (heading.depth === 2 || heading.depth === 3) {
                         return (
-                            <div className={`${styles.to} ${isCurrent ? styles.current : ''}`} key={heading.value + index}>
-                                <a style={{
-                                    paddingLeft: heading.depth === 3 ? 16 : 0
-                                }} href={`#${hash}`}>{heading.value}</a>
+                            <div
+                                className={`${styles.to} ${isHighlight ? styles.current : ''}`}
+                                key={heading.value + index}
+                            >
+                                <a
+                                    style={{
+                                        paddingLeft: heading.depth === 3 ? 16 : 0,
+                                    }}
+                                    href={`#${hash}`}
+                                >
+                                    {heading.value}
+                                </a>
                             </div>
                         );
                     }

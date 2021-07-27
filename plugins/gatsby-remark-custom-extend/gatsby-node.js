@@ -11,4 +11,4 @@
  *
  * See: https://www.gatsbyjs.com/docs/creating-a-local-plugin/#developing-a-local-plugin-that-is-outside-your-project
  */
-exports.onPreInit = () => console.log("Loaded gatsby-remark-custom-extend")
+exports.onPreInit = () => console.log('Loaded gatsby-remark-custom-extend');

@@ -29,11 +29,7 @@ const Bio = () => {
     // const author = data.site.siteMetadata?.author;
     // const social = data.site.siteMetadata?.social;
 
-    return (
-        <div className="bio">
-            bio
-        </div>
-    );
+    return <div className="bio">bio</div>;
 };
 
 export default Bio;

@@ -2,394 +2,234 @@
     {
         "name": "AutoComplete",
         "zh_cn": "自动填充",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     },
     {
         "name": "Badge",
         "zh_cn": "徽标数",
-        "components": [
-            "Badge",
-            "Bubble"
-        ],
-        "category": [
-            "feedback",
-            "data-presentation"
-        ]
+        "components": ["Badge", "Bubble"],
+        "category": ["feedback", "data-presentation"]
     },
     {
         "name": "Box",
         "zh_cn": "盒子",
-        "category": [
-            "layout"
-        ]
+        "category": ["layout"]
     },
     {
         "name": "Breadcrumb",
         "zh_cn": "面包屑",
-        "components": [
-            "Breadcrumb",
-            "Item",
-            "BackButton"
-        ],
-        "category": [
-            "navigation"
-        ]
+        "components": ["Breadcrumb", "Item", "BackButton"],
+        "category": ["navigation"]
     },
     {
         "name": "Button",
         "zh_cn": "按钮",
-        "components": [
-            "ActionList",
-            "Link"
-        ],
-        "category": [
-            "general"
-        ]
+        "components": ["ActionList", "Link"],
+        "category": ["general"]
     },
     {
         "name": "Calendar",
         "zh_cn": "日历",
-        "category": [
-            "data-presentation"
-        ]
+        "category": ["data-presentation"]
     },
     {
         "name": "Card",
         "zh_cn": "卡片",
-        "category": [
-            "container"
-        ]
+        "category": ["container"]
     },
     {
         "name": "Checkbox",
         "zh_cn": "多选",
-        "components": [
-            "Checkbox",
-            "Group"
-        ],
-        "category": [
-            "data-input"
-        ]
+        "components": ["Checkbox", "Group"],
+        "category": ["data-input"]
     },
     {
         "name": "Collapse",
         "zh_cn": "折叠面板",
-        "components": [
-            "Collapse",
-            "Panel"
-        ],
-        "category": [
-            "container"
-        ]
+        "components": ["Collapse", "Panel"],
+        "category": ["container"]
     },
     {
         "name": "Combine",
         "zh_cn": "间距",
-        "category": [
-            "layout"
-        ]
+        "category": ["layout"]
     },
     {
         "name": "ConfigProvider",
         "zh_cn": "全局配置",
-        "category": [
-            "general"
-        ]
+        "category": ["general"]
     },
     {
         "name": "DatePicker",
         "zh_cn": "日期选择器",
-        "components": [
-            "DatePicker",
-            "Month",
-            "Range"
-        ],
-        "category": [
-            "data-input"
-        ]
+        "components": ["DatePicker", "Month", "Range"],
+        "category": ["data-input"]
     },
     {
         "name": "Drawer",
         "zh_cn": "抽屉",
-        "category": [
-            "container",
-            "feedback"
-        ]
+        "category": ["container", "feedback"]
     },
     {
         "name": "EditableList",
         "zh_cn": "自增表单",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     },
     {
         "name": "EditableTable",
         "zh_cn": "自增表格",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     },
     {
         "name": "Form",
         "zh_cn": "表单",
-        "components": [
-            "ZForm",
-            "Form",
-            "Item",
-            "Group",
-            "SubArea"
-        ],
-        "category": [
-            "container",
-            "data-input"
-        ]
+        "components": ["ZForm", "Form", "Item", "Group", "SubArea"],
+        "category": ["container", "data-input"]
     },
     {
         "name": "Grid",
         "zh_cn": "栅格",
-        "components": [
-            "Row",
-            "Col"
-        ],
-        "category": [
-            "layout"
-        ]
+        "components": ["Row", "Col"],
+        "category": ["layout"]
     },
     {
         "name": "Icon",
         "zh_cn": "图标",
-        "category": [
-            "data-presentation"
-        ]
+        "category": ["data-presentation"]
     },
     {
         "name": "Input",
         "zh_cn": "输入框",
-        "components": [
-            "Input",
-            "Search"
-        ],
-        "category": [
-            "data-input"
-        ]
+        "components": ["Input", "Search"],
+        "category": ["data-input"]
     },
     {
         "name": "Loading",
         "zh_cn": "加载中",
-        "category": [
-            "feedback"
-        ]
+        "category": ["feedback"]
     },
     {
         "name": "LocaleProvider",
         "zh_cn": "语言配置",
-        "category": [
-            "general"
-        ]
+        "category": ["general"]
     },
     {
         "name": "Menu",
         "zh_cn": "下拉菜单",
-        "components": [
-            "Menu",
-            "SubMenu",
-            "Item"
-        ],
-        "category": [
-            "data-input",
-            "data-presentation"
-        ]
+        "components": ["Menu", "SubMenu", "Item"],
+        "category": ["data-input", "data-presentation"]
     },
     {
         "name": "Message",
         "zh_cn": "全局提示",
-        "category": [
-            "feedback"
-        ]
+        "category": ["feedback"]
     },
     {
         "name": "Modal",
         "zh_cn": "弹窗",
-        "components": [
-            "Modal",
-            "Content"
-        ],
-        "category": [
-            "container",
-            "feedback"
-        ]
+        "components": ["Modal", "Content"],
+        "category": ["container", "feedback"]
     },
     {
         "name": "Notice",
         "zh_cn": "提示",
-        "category": [
-            "feedback"
-        ]
+        "category": ["feedback"]
     },
     {
         "name": "NumberInput",
         "zh_cn": "数字输入框",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     },
     {
         "name": "Pagination",
         "zh_cn": "分页器",
-        "category": [
-            "navigation"
-        ]
+        "category": ["navigation"]
     },
     {
         "name": "PopConfirm",
         "zh_cn": "气泡确认框",
-        "category": [
-            "feedback"
-        ]
+        "category": ["feedback"]
     },
     {
         "name": "Progress",
         "zh_cn": "进度条",
-        "category": [
-            "feedback"
-        ]
+        "category": ["feedback"]
     },
     {
         "name": "Radio",
         "zh_cn": "单选",
-        "components": [
-            "Radio",
-            "Group"
-        ],
-        "category": [
-            "data-input"
-        ]
+        "components": ["Radio", "Group"],
+        "category": ["data-input"]
     },
     {
         "name": "Select",
         "zh_cn": "选择器",
-        "components": [
-            "Select",
-            "Option",
-            "Extra",
-            "Group"
-        ],
-        "category": [
-            "data-input"
-        ]
+        "components": ["Select", "Option", "Extra", "Group"],
+        "category": ["data-input"]
     },
     {
         "name": "Slider",
         "zh_cn": "滑块",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     },
     {
         "name": "Steps",
         "zh_cn": "步骤条",
-        "category": [
-            "navigation"
-        ]
+        "category": ["navigation"]
     },
     {
         "name": "Switch",
         "zh_cn": "开关",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     },
     {
         "name": "Table",
         "zh_cn": "表格",
-        "components": [
-            "Table",
-            "ColumnConfigButton",
-            "SearchInput",
-            "ActionList",
-            "ResizableTH",
-            "HoverDisplayArea"
-        ],
-        "category": [
-            "data-presentation"
-        ]
+        "components": ["Table", "ColumnConfigButton", "SearchInput", "ActionList", "ResizableTH", "HoverDisplayArea"],
+        "category": ["data-presentation"]
     },
     {
         "name": "Tabs",
         "zh_cn": "标签页",
-        "components": [
-            "Tabs",
-            "Pane"
-        ],
-        "category": [
-            "navigation"
-        ]
+        "components": ["Tabs", "Pane"],
+        "category": ["navigation"]
     },
     {
         "name": "Tag",
         "zh_cn": "标签",
-        "components": [
-            "Tag",
-            "Icon",
-            "Group"
-        ],
-        "category": [
-            "feedback",
-            "data-presentation"
-        ]
+        "components": ["Tag", "Icon", "Group"],
+        "category": ["feedback", "data-presentation"]
     },
     {
         "name": "Textarea",
         "zh_cn": "长文本输入框",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     },
     {
         "name": "ThemeProvider",
         "zh_cn": "主题配置",
-        "category": [
-            "general"
-        ]
+        "category": ["general"]
     },
     {
         "name": "Tooltip",
         "zh_cn": "文字提示",
-        "components": [
-            "Popover"
-        ],
-        "category": [
-            "feedback"
-        ]
+        "components": ["Popover"],
+        "category": ["feedback"]
     },
     {
         "name": "Transfer",
         "zh_cn": "穿梭机",
-        "components": [
-            "TransferMenu",
-            "TransferTable"
-        ],
-        "category": [
-            "data-input"
-        ]
+        "components": ["TransferMenu", "TransferTable"],
+        "category": ["data-input"]
     },
     {
         "name": "Tree",
         "zh_cn": "树控件",
-        "category": [
-            "data-input",
-            "data-presentation",
-            "navigation"
-        ]
+        "category": ["data-input", "data-presentation", "navigation"]
     },
     {
         "name": "Upload",
         "zh_cn": "上传",
-        "category": [
-            "data-input"
-        ]
+        "category": ["data-input"]
     }
 ]

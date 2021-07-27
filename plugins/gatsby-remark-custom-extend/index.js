@@ -12,14 +12,14 @@ module.exports = ({ markdownAST }, pluginOptions) => {
         const { width, align = 'left' } = node;
 
         const $ = cheerio.load(node.value);
-        if ($('figure.gatsby-resp-image-figure') && width ) {
+        if ($('figure.gatsby-resp-image-figure') && width) {
             node.value = `
                 <div class="u-md-img-${align}">
                     <div style="max-width: ${width}px; width: ${width}px">
                         ${$(`body`).html()}
                     </div>
                 </div>
-            `
+            `;
         }
     });
 

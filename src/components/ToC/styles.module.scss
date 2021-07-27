@@ -20,14 +20,14 @@
     .innerScroll {
         margin: 0;
         border-left: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
-        padding-left: 10px;
+        padding-left: 8px;
 
         .to {
             height: 22px;
             padding-left: 1px;
             a {
                 display: block;
-                font-size: 14px;
+                font-size: 12px;
                 line-height: 22px;
                 height: 22px;
                 font-weight: 300;
@@ -40,7 +40,7 @@
             }
 
             margin: 0;
-            margin-bottom: 8px;
+            margin-bottom: 4px;
         }
 
         .current {
