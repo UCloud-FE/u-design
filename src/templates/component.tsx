@@ -27,7 +27,7 @@ const Index = ({ data, location }) => {
     const { markdownRemark, thumbs } = data;
     const slug = markdownRemark.fields.slug;
     const componentName = getComponentName(slug);
-    const [tabIndex, setTabIndex] = useState(localStorage?.getItem(TAB_KEY) || tabs[0]);
+    const [tabIndex, setTabIndex] = useState(tabs[0]);
     const [componentsDocsToc, setComponentsDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
 
@@ -52,6 +52,11 @@ const Index = ({ data, location }) => {
     useEffect(() => {
         const el = document.querySelector('#component_s_w');
         el.addEventListener('scroll', handleScroll);
+
+        if(localStorage?.getItem(TAB_KEY)){
+            setTabIndex(localStorage?.getItem(TAB_KEY));
+        }
+
         return () => el.removeEventListener('scroll', handleScroll);
     }, []);
 
