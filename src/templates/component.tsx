@@ -34,11 +34,11 @@ const Index = ({ data, location }) => {
     const handleScroll = () => {
         const el = document.querySelector('#component_s_w');
         const top = el.scrollTop;
-        const sections = el.getElementsByClassName('recodo-anchor');
+        let sections = tabIndex === tabs[0] ? el.querySelectorAll('[aria-label]') : el.getElementsByClassName('recodo-anchor');
         let currentHash;
 
         for (let i = 0; i < sections.length; i++) {
-            var itemTop = sections[i].offsetTop;
+            var itemTop = tabIndex === tabs[0] ? sections[i].parentElement.offsetTop : sections[i].offsetTop;
             if (top > itemTop - 120) {
                 currentHash = decodeURIComponent(sections[i].hash);
             } else {
@@ -58,7 +58,7 @@ const Index = ({ data, location }) => {
         }
 
         return () => el.removeEventListener('scroll', handleScroll);
-    }, []);
+    }, [tabIndex]);
 
     useEffect(() => {
         componentDocsDestroy();

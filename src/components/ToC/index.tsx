@@ -27,7 +27,7 @@ const ToC = (props: {
                 {headings.map((heading, index) => {
                     const hash = originalHash
                         ? heading.id
-                        : encodeURIComponent(heading.value.replace(/\s+/g, '-').toLowerCase());
+                        : heading.value.replace(/\s+/g, '-').toLowerCase();
                     const isHighlight = `#${hash}` === currentHash;
 
                     if (heading.depth === 2 || heading.depth === 3) {
