@@ -179,21 +179,60 @@ description:"按钮，用于触发操作的行动点。"
 > - 切忌将高频使用的行动点默认收起，增加查找难度。
 > - 当操作区域存在多项行动点时，若一些行动点之间存在关联性，建议分组后合理使用按钮组。按钮组相当于是按钮列表的下拉，若毫无逻辑的堆在一起，同样无法提供高效使用的体验。
 
-![](../../../images/Button/按钮_典型范例_操作区包含多个操作，需仅保留一个主要按钮，低频不重要次要按钮可以默认收起.jpg)
 
 
+
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>默认收起低频使用的行动点</p>
+      <img src="../../../images/Button/常见问题1_正确.jpg" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>将所有行动点平铺展示</p>
+      <img src="../../../images/Button/常见问题1_错误.jpg" alt="image alt" title="desc" />
+   </div>
+</div>
 
 ### 保证按钮文案简洁准确
 
 建议文本标签不要过长，避免换行。
 
-![建议文本标签不要过长，避免换行。](../../../images/Button/按钮_典型范例_建议文本标签不要过长，避免换行。.jpg)
+
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>文案准确、简洁</p>
+      <img src="../../../images/Button/常见问题2_正确.jpg" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>文案冗长、啰嗦</p>
+      <img src="../../../images/Button/常见问题2_错误.jpg" alt="image alt" title="desc" />
+   </div>
+</div>
+
+
 
 ### 合理圈定点击区域
 
 如注册流程中的免责声明中常常会展示协议文档的链接。建议仅将协议名称作为点击区域，明确告知用户即将跳转查看的内容。
 
-![](../../../images/Button/按钮_典型范例_如注册流程中的免责声明中常常会展示协议文档的链接。建议仅将协议名称作为点击区域，明确告知用户即将跳转查看的内容。.jpg)
+
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>仅目标文案为点击热区</p>
+      <img src="../../../images/Button/常见问题3_正确.jpg" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>无关内容均被指定为点击热区</p>
+      <img src="../../../images/Button/常见问题3_错误.jpg" alt="image alt" title="desc" />
+   </div>
+</div>
+
+
+
+
 
 
 

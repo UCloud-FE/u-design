@@ -6,11 +6,11 @@
 > 2. 图片 ` ![image alt](../../../images/example.png 'desc') ` 中 `image alt` 代表图片不能显示情况下会展示的文字，`desc` 代表图片的描述展示在图片底部，**请务必认真对待这二个字段，必须为英文**
 > 3. 图片 `<img src="../../../images/example.png"  alt="image alt" title="title" width="550" align="center" />` 中 `image alt` 代表图片不能显示情况下会展示的文字，`title` 代表图片的描述展示在图片底部，`width` 代表图片固定的宽度，不写则自适应展示，`align` 代表对齐方式，默认为左对齐 `left`, `center` 为居中显示。
 
+---
 
+description:"副标题"
 
-# 名称 Name
-
-此处副标题此处副标题此处副标题此处副标题
+---
 
 ## 简介
 
@@ -103,16 +103,32 @@
 
 问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述
 
-![示意图](/images/Name/pic.png)
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>正确用法的说明文本。</p>
+      <img src="../../../images/example.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>错误用法的说明文本。</p>
+      <img src="../../../images/example.png" alt="image alt" title="desc" />
+   </div>
+</div>
 
 
 ### 问题概述
 
 问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述问题描述
 
-![示意图](/images/Name/pic.png)
-
-
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>正确用法的说明文本。</p>
+      <img src="../../../images/example.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>错误用法的说明文本。</p>
+      <img src="../../../images/example.png" alt="image alt" title="desc" />
+   </div>
+</div>
 
 ## 主题
 
