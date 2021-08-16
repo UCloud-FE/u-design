@@ -1,2 +1,0 @@
-(self.webpackChunkucloud_design_site=self.webpackChunkucloud_design_site||[]).push([[678],{7704:function(e,t,n){"use strict";n.r(t);var u=n(7294),l=n(7487);t.default=function(e){e.location;return u.createElement("div",null,u.createElement(l.Z,{title:"Index"}))}}}]);
-//# sourceMappingURL=component---src-pages-index-js-e7f9330ecf80238a3e41.js.map
