@@ -38,6 +38,10 @@ const Index = ({ data, location }) => {
         let currentHash;
 
         for (let i = 0; i < sections.length; i++) {
+            if(sections[i].parentElement.tagName === 'H4') {
+                continue;
+            }
+
             var itemTop = tabIndex === tabs[0] ? sections[i].parentElement.offsetTop : sections[i].offsetTop;
             if (top > itemTop - 120) {
                 currentHash = decodeURIComponent(sections[i].hash);
@@ -205,7 +209,9 @@ const Index = ({ data, location }) => {
                     )}
 
                     {renderCurrentTabContent()}
-                    <div id="u-component-doc" style={{ minHeight: 500 }}></div>
+                    {
+                        tabIndex === tabs[1] && <div id="u-component-doc" style={{ minHeight: 500 }}></div>
+                    }
                     {markdownRemark?.fields?.slug?.includes('/component/category/') ? (
                         <ComponentList markdownRemark={markdownRemark} thumbs={thumbs} />
                     ) : null}
