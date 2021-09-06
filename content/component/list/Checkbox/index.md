@@ -15,7 +15,7 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 ## 基本构成
 
-![构成示意图](../../../images/checkbox/复选框_构成.jpg)
+![构成示意图](../../../images/checkbox/复选框_构成-0915325.jpg)
 
 <!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
