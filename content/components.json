@@ -38,6 +38,11 @@
         "category": ["container"]
     },
     {
+        "name": "Cascader",
+        "zh_cn": "级联选择器",
+        "category": ["data-input"]
+    },
+    {
         "name": "Checkbox",
         "zh_cn": "多选",
         "components": ["Checkbox", "Group"],
