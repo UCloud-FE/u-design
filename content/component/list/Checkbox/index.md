@@ -15,7 +15,7 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 ## 基本构成
 
-![构成示意图]()
+![构成示意图](../../../images/checkbox/复选框_构成.jpg)
 
 <!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
@@ -30,7 +30,7 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 ### 种类
 
-![种类]()
+![种类](../../../images/checkbox/复选框_种类.jpg)
 
 <!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
@@ -57,7 +57,7 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 ## 基本状态
 
-![状态]()
+![状态](../../../images/checkbox/复选框_状态.jpg)
 
 <!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
@@ -81,26 +81,18 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 复选框是比较常见的选择控件并被长时间、广泛应用在各种页面或平台界面上。无论从样式还是操作定义上都已在用户中形成共识，因此在设计和应用上应该优先遵循这些规则，避免用户产生误解或付出额外的学习成本。
 
-![示意图]()
 
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
 #### 2.状态区分直观
 
-确保默认与选中的样式差异明显，便于用户快速
+确保默认与选中的样式差异明显，便于用户快速理解和区分。
 
-![示意图]()
 
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
 #### 3. 选项数量限制建议
 
-- **作为表单选项**：建议选项数目不超过**7**个，若选项过多建议分类或选用支持搜索的选择控件；
+- **作为表单选项**：建议选项数目不超过**5**个，若选项过多建议分类或选用支持搜索的选择控件；
 - **作为须知内容展示**：建议多内容项时进行文案整合，避免出现多项待勾选项。
-
-![示意图]()
-
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
 
 
@@ -108,6 +100,14 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 - **作为表单选项**：建议选项字符不超过**7**个；
 - **作为须知内容展示**：建议长度不超过**2**行，详情可提供查询链接。
+
+![示意图](../../../images/checkbox/选项数量限制建议.jpg)
+
+<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
+
+
+
+
 
 
 
@@ -119,10 +119,6 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 建议将复选框置于项目左侧，方便用户快速区分选中对象与未选中对象。
 
-![示意图]()
-
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
-
 
 
 #### 2. 作为须知内容展示在操作附近
@@ -130,9 +126,9 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 - 建议将复选框置于项目左侧，同时建议整个对象放置在操作左侧，提醒用户操作前完成阅读及确认；
 - 换行时，仅与文本左对齐。
 
-![示意图]()
 
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
+
+![示意图](../../../images/checkbox/布局建议.jpg)
 
 
 
@@ -153,8 +149,6 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 ![示意图]()
 
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
-
 
 
 ## 常见问题
@@ -166,13 +160,14 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>仅文本居左对齐</p>
-      <img src="../../../images/example.png" alt="image alt" title="desc" />
+      <img src="../../../images/checkbox/常见问题1_正确.jpg" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>复选控件被包裹在文案中，不便于用户识别与状态确认</p>
-      <img src="../../../images/example.png" alt="image alt" title="desc" />
+      <img src="../../../images/checkbox/常见问题1_错误.jpg" alt="image alt" title="desc" />
    </div>
 </div>
+
 
 
 
@@ -188,13 +183,14 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>使用缩进来区分父子级选项关系</p>
-      <img src="../../../images/example.png" alt="image alt" title="desc" />
+      <img src="../../../images/checkbox/常见问题2_正确.jpg" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>无缩进展示不便于用户理解信息层级关系</p>
-      <img src="../../../images/example.png" alt="image alt" title="desc" />
+      <img src="../../../images/checkbox/常见问题2_错误.jpg" alt="image alt" title="desc" />
    </div>
 </div>
+
 
 
 
