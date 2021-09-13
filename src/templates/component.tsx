@@ -34,11 +34,12 @@ const Index = ({ data, location }) => {
     const handleScroll = () => {
         const el = document.querySelector('#component_s_w');
         const top = el.scrollTop;
-        let sections = tabIndex === tabs[0] ? el.querySelectorAll('[aria-label]') : el.getElementsByClassName('recodo-anchor');
+        let sections =
+            tabIndex === tabs[0] ? el.querySelectorAll('[aria-label]') : el.getElementsByClassName('recodo-anchor');
         let currentHash;
 
         for (let i = 0; i < sections.length; i++) {
-            if(sections[i].parentElement.tagName === 'H4') {
+            if (sections[i].parentElement.tagName === 'H4') {
                 continue;
             }
 
@@ -57,7 +58,7 @@ const Index = ({ data, location }) => {
         const el = document.querySelector('#component_s_w');
         el.addEventListener('scroll', handleScroll);
 
-        if(localStorage?.getItem(TAB_KEY)){
+        if (localStorage?.getItem(TAB_KEY)) {
             setTabIndex(localStorage?.getItem(TAB_KEY));
         }
 
@@ -209,9 +210,7 @@ const Index = ({ data, location }) => {
                     )}
 
                     {renderCurrentTabContent()}
-                    {
-                        tabIndex === tabs[1] && <div id="u-component-doc" style={{ minHeight: 500 }}></div>
-                    }
+                    {tabIndex === tabs[1] && <div id="u-component-doc" style={{ minHeight: 500 }}></div>}
                     {markdownRemark?.fields?.slug?.includes('/component/category/') ? (
                         <ComponentList markdownRemark={markdownRemark} thumbs={thumbs} />
                     ) : null}

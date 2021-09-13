@@ -23,10 +23,10 @@
                 margin-bottom: 16px;
                 margin-top: 16px;
                 color: $T_COLOR_TEXT_DEFAULT_DARK;
-                font-size: 32px;
-                font-family: PingFangSC-Semibold, PingFang SC;
+                font-size: 40px;
+                font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                 font-weight: 600;
-                line-height: 32px;
+                line-height: 42px;
             }
 
             h1 a {
@@ -76,7 +76,7 @@
 
             section {
                 font-size: 16px;
-                font-family: PingFangSC-Light, PingFang SC;
+                font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                 font-weight: 300;
                 color: $T_COLOR_TEXT_DEFAULT_DARK;
                 line-height: 28px;
@@ -91,7 +91,7 @@
                     padding: 12px 0;
                     border-collapse: separate;
                     border-spacing: 0px;
-                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                     
                     tr, th, td {
                         margin: 0px;
@@ -116,8 +116,8 @@
                         line-height: 47px;
                         padding: 0px 12px;
                         color: $T_COLOR_TEXT_DEFAULT_DARK;
-                        font-size: 12px;
-                        font-weight: 400;
+                        font-size: 14px;
+                        font-weight: 300;
                     }
                     tbody tr:nth-child(2n){
                         background: $T_COLOR_TEXT_WHITE;
@@ -135,25 +135,25 @@
                     color: $T_COLOR_TEXT_DEFAULT_DARK;
                 }
                 h1 {
-                    font-size: 32px;
-                    font-family: PingFangSC-Semibold, PingFang SC;
+                    font-size: 40px;
+                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                     font-weight: 600;
-                    line-height: 32px;
+                    line-height: 42px;
                 }
 
                 h2 {
-                    font-size: 24px;
-                    font-family: PingFangSC-Medium, PingFang SC;
+                    font-size: 30px;
+                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                     font-weight: 500;
-                    line-height: 32px;
+                    line-height: 38px;
                     margin-top: 48px;
                 }
 
                 h3 {
-                    font-size: 20px;
-                    font-family: PingFangSC-Regular, PingFang SC;
+                    font-size: 24px;
+                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                     font-weight: 400;
-                    line-height: 32px;
+                    line-height: 40px;
                 }
 
                 p {
