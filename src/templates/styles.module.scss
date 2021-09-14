@@ -82,7 +82,7 @@
                 line-height: 28px;
 
                 strong {
-                    font-weight: bold !important;
+                    font-weight: 400;
                 }
                 table {
                     width: 100%;
@@ -133,6 +133,8 @@
                     margin-bottom: 16px;
                     margin-top: 16px;
                     color: $T_COLOR_TEXT_DEFAULT_DARK;
+                    font-size: 18px;
+                    font-weight: 500;
                 }
                 h1 {
                     font-size: 40px;
@@ -152,7 +154,7 @@
                 h3 {
                     font-size: 24px;
                     font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
-                    font-weight: 400;
+                    font-weight: 500;
                     line-height: 40px;
                 }
 
