@@ -25,9 +25,7 @@ const ToC = (props: {
             <h2>目录</h2>
             <div className={styles.innerScroll}>
                 {headings.map((heading, index) => {
-                    const hash = originalHash
-                        ? heading.id
-                        : heading.value.replace(/\s+/g, '-').toLowerCase();
+                    const hash = originalHash ? heading.id : heading.value.replace(/\s+/g, '-').toLowerCase();
                     const isHighlight = `#${hash}` === currentHash;
 
                     if (heading.depth === 2 || heading.depth === 3) {
