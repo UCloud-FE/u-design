@@ -184,7 +184,8 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
    <div>
       <p><i class="u-md-not-suggested"></i>复选控件被包裹在文案中，不便于用户识别与状态确认</p>
       <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
-
+   </div>
+</div>
 
 ### 父子层级选项从操作逻辑到展示上需区分
 
@@ -213,7 +214,6 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
    </div>
 </div>
 
-     
 
 ### 须知内容建议不超过2行
 
