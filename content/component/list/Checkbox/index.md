@@ -220,11 +220,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>陈述简洁，必要时给予详情跳转</p>
-      <img src="../../../images/checkbox/字符长度建议.png" alt="image alt" title="desc" />
+      <img src="../../../images/checkbox/文字长度建议.png" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>过长本文会让用户放弃阅读甚至降低好感</p>
-      <img src="../../../images/checkbox/字符长度建议.png" alt="image alt" title="desc" />
+      <img src="../../../images/checkbox/文字长度建议.png" alt="image alt" title="desc" />
    </div>
 </div>
      
