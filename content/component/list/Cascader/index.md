@@ -26,7 +26,7 @@ D.结果菜单
 
 ## 基本样式
 
-![状态集合](../../../images/状态集合-1694956.png)
+![状态集合](../../../images/状态集合-1762802.png)![状态]()
 
 
 
@@ -39,6 +39,7 @@ D.结果菜单
 | 加载状态           | 下拉框数据加载较慢时需给出loading提示，以缓解用户的焦虑感    |
 | 空数据状态         | 当数据为空时，需给出明确提示告诉用户当前没有可选的数据。     |
 | 禁用状态           | 当前行动点不可用，建议配合提示说明                           |
+| 数据异常状态       | 当数据由于网络问题、接口问题等情况无法正常加载时，给予用户明确提示 |
 
 
 
@@ -89,8 +90,20 @@ D.结果菜单
 
 ## 常见问题
 
-#### 清除按钮出现时机
+### 清除按钮出现时机
 
-当选择器无选中项时，鼠标hover，icon不作变化，见下图示例：
+清除按钮仅在选择器有选中项时hover出现，无选中项时hover选择器不出现清除icon。
 
-![004](../../../images/004.png)
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>无选中项时，鼠标hover选择器，不出现清除icon。</p>
+      <img src="../../../images/级联选择器/004.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>无选中项时，鼠标hover选择器，出现清除icon。</p>
+      <img src="../../../images/级联选择器/005.png" alt="image alt" title="desc" />
+   </div>
+</div>
+
+
+## 
