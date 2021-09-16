@@ -18,9 +18,17 @@ description: "卡片，聚合同类信息的容器。"
 
 ## 基本构成
 
-![卡片构成](../../../images/Card/卡片构成.png)
+
 
 卡片布局可以因支持其包含的内容类型而异。以下元素在该品种中常见。
+
+![](../../../images/Card/构成.png)
+
+| 类型 | 容器（A） | 标题（B） | 操作区（C） | 副标题（D） | 操作按钮（E） | 内容区域（F） | 分割线（G） | 底部按钮（H） |
+| :--: | :-------: | :-------: | :---------: | :---------: | :-----------: | :-----------: | :---------: | :-----------: |
+| 常规 |     √     |   可选    |    可选     |    可选     |     可选      |       √       |    可选     |     可选      |
+
+
 
 ##### A. 容器 
 
@@ -71,15 +79,15 @@ description: "卡片，聚合同类信息的容器。"
 
 卡片中元素的展示顺序可根据需求进行调整
 
-![自定义布局](../../../images/Card/自定义布局.png)
+![](../../../images/Card/自定义元素顺序.png)
 
 
 
 ## 基本状态
 
-当卡片只作为纯展示容器时，整个卡片只有默认状态，不具备其他状态；当作为可选项时，可存在不同状态；
+当卡片只作为纯展示容器时，整个卡片只有默认状态，不具备其他状态；当作为可选项时，可存在不同状态。
 
-<!--需要UI支持-->
+![](../../../images/Card/基本状态.png)
 
 | 状态 | 说明                                               |
 | :--- | :------------------------------------------------- |
@@ -102,21 +110,21 @@ description: "卡片，聚合同类信息的容器。"
 
 **多个卡片不可进行嵌套**
 
-卡片作为一个容器，承载各类对象，在使用时为防止其过于复杂，建议卡片不进行嵌套
+卡片作为一个容器，承载各类对象，在使用时为防止其过于复杂，建议卡片不进行嵌套。[常见问题>](### 卡片作为独立个体)
 
 #### 2.反馈
 
-当整个卡片为可点击时，需给出明确的指示引导用户
+当整个卡片为可点击时，需给出明确的指示引导用户。
 
 #### 3. 一致性
 
-同类卡片组合使用时，样式及交互应保持一致
+同类卡片组合使用时，样式及交互应保持一致。
 
 
 
 ### 行为
 
-- 卡片的主要作用区域通常是卡片本身
+- 卡片的主要作用区域通常是卡片本身；
 - 卡片可以支持多个操作，由于卡片展示内容较为冗杂，因此它们应该包含数量有限的操作。
 
 
@@ -125,35 +133,35 @@ description: "卡片，聚合同类信息的容器。"
 
 ### 卡片作为独立个体
 
-若展示内容有层级区分，需进行合理布局，不能将卡片嵌套
+若展示内容有层级区分，需进行合理布局，不能将卡片嵌套。
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>多个卡片嵌套</p>
-      <img src="../../../images/Card/卡片嵌套.png" alt="image alt" title="desc" />
+      <p><i class="u-md-suggested"></i>卡片平铺展示，层级明确</p>
+      <img src="../../../images/Card/⭕️平铺布局.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>卡片平铺展示，层级明确</p>
-      <img src="../../../images/Card/层级明确.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>多个卡片嵌套</p>
+      <img src="../../../images/Card/❌嵌套.png" alt="image alt" title="desc" />
    </div>
 </div>
+
 
 
 
 ### 保证相同类型卡片样式一致
 
-
-
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>同类型卡片样式一致</p>
-      <img src="../../../images/Card/样式一致.png" alt="image alt" title="desc" />
+      <img src="../../../images/Card/⭕️样式一致.png" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>同类型卡片样式不同</p>
-      <img src="../../../images/Card/样式不一致.png" alt="image alt" title="desc" />
+      <img src="../../../images/Card/❌样式不同.png" alt="image alt" title="desc" />
    </div>
 </div>
+
 
 
 
