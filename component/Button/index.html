@@ -128,50 +128,9 @@
 </tbody>
 </table>
 <hr>
-<table>
-<thead>
-<tr>
-<th align="left">种类</th>
-<th align="center">容器(A)</th>
-<th align="center">文本标签(B)</th>
-<th align="center">图标(C)</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="left">主要按钮</td>
-<td align="center">✓</td>
-<td align="center">✓</td>
-<td align="center">可选</td>
-</tr>
-<tr>
-<td align="left">次要按钮</td>
-<td align="center">✓</td>
-<td align="center">✓</td>
-<td align="center">可选</td>
-</tr>
-<tr>
-<td align="left">文字按钮（文字链）</td>
-<td align="center">×</td>
-<td align="center">✓</td>
-<td align="center">可选</td>
-</tr>
-<tr>
-<td align="left">图标按钮</td>
-<td align="center">可选</td>
-<td align="center">×</td>
-<td align="center">✓</td>
-</tr>
-<tr>
-<td align="left">按钮组</td>
-<td align="center">✓</td>
-<td align="center">✓</td>
-<td align="center">✓</td>
-</tr>
-</tbody>
-</table>
 <h2 id="基本样式" style="position:relative;"><a href="#%E5%9F%BA%E6%9C%AC%E6%A0%B7%E5%BC%8F" aria-label="基本样式 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>基本样式</h2>
 <h3 id="类型" style="position:relative;"><a href="#%E7%B1%BB%E5%9E%8B" aria-label="类型 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>类型</h3>
+<p>按钮类型根据强调程度分为主要按钮、次要按钮、线框按钮。每个类型下又包含纯文本、纯icon和文本+icon三种样式。</p>
 <table>
 <thead>
 <tr>
@@ -189,16 +148,30 @@
 <td align="left">强调程度仅次于主要按钮的行动点，一个操作区域可能包含多个次要按钮，建议默认暴露数量不超过三个</td>
 </tr>
 <tr>
-<td align="left">文字按钮（文字链）</td>
-<td align="left">强调程度次于上述两类，一般用于外链跳转</td>
+<td align="left">线框按钮</td>
+<td align="left">强调程度次于上述两类</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th align="left">样式</th>
+<th align="left">说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left">纯文本</td>
+<td align="left">建议用于描述简短直白易理解的行动点</td>
 </tr>
 <tr>
-<td align="left">图标按钮</td>
-<td align="left">强调程度次于主要按钮、次要按钮，一般用于图形语义明确且操作区域有限的情况</td>
+<td align="left">纯icon</td>
+<td align="left">用于图形化表示符合用户通识或为行业内专用表达</td>
 </tr>
 <tr>
-<td align="left">按钮组</td>
-<td align="left">当操作区域存在多个强调程度相当的行动点时，建议将低频使用的行动点组合放置</td>
+<td align="left">文本+icon</td>
+<td align="left">强调程度高于以上两种，建议在界面空间充足且需要较高强调程度的情况下使用</td>
 </tr>
 </tbody>
 </table>
