@@ -1,6 +1,7 @@
-```
+---
 description: "告诉用户当前所在位置及页面层级关系，并能够快速去往其他层级。"
-```
+
+---
 
 <!--副标题具体写法见源代码模式-->
 
@@ -14,7 +15,7 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 
 ## 基本构成
 
-![基本构成](file:///Users/user/Documents/GitHub/u-design/content/images/%E5%9F%BA%E6%9C%AC%E6%9E%84%E6%88%90-1689173.png?lastModify=1631776571)A.选择器
+![基本构成](../../../images/基本构成-1689173.png)A.选择器
 
 B.级联菜单
 
@@ -22,9 +23,10 @@ C.带检索的选择器
 
 D.结果菜单
 
+
 ## 基本样式
 
-![状态集合](file:///Users/user/Documents/GitHub/u-design/content/images/%E7%8A%B6%E6%80%81%E9%9B%86%E5%90%88-1762802.png?lastModify=1631776571)
+![状态集合](../../../images/状态集合-1762802.png)![状态]()
 
 
 
@@ -47,11 +49,11 @@ D.结果菜单
 
 部分场景需要级联选择器支持搜索功能，则在点击激活选择器时附带输入框功能，见下图：
 
-![001](file:///Users/user/Documents/GitHub/u-design/content/images/001.png?lastModify=1631776571)
+![001](../../../images/001.png)
 
 若用户在激活选择器后，输入内容进行搜索，则收起下拉框，显示带有关键词路径的选项卡，关键词高亮显示，见下图：
 
-![002](file:///Users/user/Documents/GitHub/u-design/content/images/002.png?lastModify=1631776571)
+![002](../../../images/002.png)
 
 点击选项后选项卡收起，选择器显示选择内容。
 
@@ -61,7 +63,7 @@ D.结果菜单
 
 选择器有选项时，鼠标hover，选择器右侧下拉icon变为清楚icon，点击清除选中项，见下图：
 
-![003](file:///Users/user/Documents/GitHub/u-design/content/images/003.png?lastModify=1631776571)
+![003](../../../images/003.png)
 
 
 
@@ -92,12 +94,17 @@ D.结果菜单
 
 清除按钮仅在选择器有选中项时hover出现，无选中项时hover选择器不出现清除icon。
 
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>无选中项时，鼠标hover选择器，不出现清除icon。</p>
+      <img src="../../../images/级联选择器/004.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>无选中项时，鼠标hover选择器，出现清除icon。</p>
+      <img src="../../../images/级联选择器/005.png" alt="image alt" title="desc" />
+   </div>
+</div>
 
 
-无选中项时，鼠标hover选择器，不出现清除icon。
+## 
 
-![image alt](../../../images/004-1776586.png)  
-
-无选中项时，鼠标hover选择器，出现清除icon。
-
-![image alt](../../../images/005.png)  
