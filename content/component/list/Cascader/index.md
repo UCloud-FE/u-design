@@ -94,3 +94,23 @@ D.结果菜单
 当选择器无选中项时，鼠标hover，icon不作变化，见下图示例：
 
 ![004](../../../images/004.png)
+
+
+
+### 清除按钮出现时机
+
+清除按钮仅在选择器有选中项时hover出现，无选中项时hover选择器不出现清除icon。
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>无选中项时，鼠标hover选择器，不出现清除icon。</p>
+      <img src="../../../images/级联选择器/004.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>无选中项时，鼠标hover选择器，出现清除icon。</p>
+      <img src="../../../images/级联选择器/005.png" alt="image alt" title="desc" />
+   </div>
+</div>
+
+
+## 
