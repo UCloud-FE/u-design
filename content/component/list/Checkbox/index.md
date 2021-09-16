@@ -99,20 +99,21 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 
 #### 3. 选项数量限制建议
 
-- **作为表单选项**：建议选项数目不超过**5**个，若选项过多建议分类或选用支持搜索的选择控件；
-
-  ![](../../../images/checkbox/选项数目建议.png)
-
+- **作为表单选项**：建议选项数目不超过**5**个，若选项过多建议分类或选用支持搜索的选择控件；[常见问题>>](#选项数量建议不超过5个)=
 - **作为须知内容展示**：建议多内容项时进行文案整合，避免出现多项待勾选项。
 
 
 
 #### 4. 内容长度限制建议
 
-- **作为表单选项**：建议选项字符不超过**7**个；![、](../../../images/checkbox/字符长度建议.png)
-- **作为须知内容展示**：建议长度不超过**2**行，详情可提供查询链接。![](../../../images/checkbox/文字长度建议.png)
+- **作为表单选项**：建议选项字符不超过**7**个；
+- **作为须知内容展示**：建议长度不超过**2**行，详情可提供查询链接。[常见问题>>](#须知内容建议不超过2行)
 
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
+#### 5. 父子层级选项展示建议
+若选项中存在父子级关系：
+- 子项相对于父级选项应向右缩进排列；[常见问题>>](#父子层级选项从操作逻辑到展示上需区分)
+- 若父项被选中，则其相关子项自动全选；相反，则其相关子项全部未选；
+- 若部分子项被选中，则且相关父项目为半选中状态。
 
 
 
@@ -150,8 +151,8 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 
 #### 2. 作为须知内容展示在操作附近
 
-- 建议将复选框置于项目左侧，同时建议整个对象放置在操作左侧，提醒用户操作前完成阅读及确认；![](../../../images/checkbox/布局建议-放置在操作左侧.png)
-- 换行时，仅与文本左对齐。![](../../../images/checkbox/布局建议-换行左对齐.png)
+- 建议将复选框置于项目左侧，同时建议整个对象放置在操作左侧，提醒用户操作前完成阅读及确认；[常见问题>>](#操作前须知内容应靠近操作按钮)
+- 换行时，仅与文本左对齐。[常见问题>>](#勾选框不要被文案包裹)
 
 
 
@@ -175,7 +176,6 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 ## 常见问题
 
 ### 须知内容换行对齐建议
-
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>仅文本居左对齐</p>
@@ -186,15 +186,7 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
       <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
 
 
-
-
-### 父子层级选项展示建议
-
-若选项中存在父子级关系：
-
-- 子项相对于父级选项应向右缩进排列；
-- 若父项被选中，则其相关子项自动全选；相反，则其相关子项全部未选；
-- 若部分子项被选中，则且相关父项目为半选中状态。
+### 父子层级选项从操作逻辑到展示上需区分
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
@@ -208,7 +200,80 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 </div>
 
 
+### 选项数量建议不超过5个
 
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>数量合理的选项便于用户快速阅读</p>
+      <img src="../../../images/checkbox/选项数目建议.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>过多的选项建议选择其他选择控件并配合搜索</p>
+      <img src="../../../images/checkbox/父子级展示建议-2.png" alt="image alt" title="desc" />
+   </div>
+</div>
+
+     
+
+### 须知内容建议不超过2行
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>陈述简洁，必要时给予详情跳转</p>
+      <img src="../../../images/checkbox/字符长度建议.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>过长本文会让用户放弃阅读甚至降低好感</p>
+      <img src="../../../images/checkbox/字符长度建议.png" alt="image alt" title="desc" />
+   </div>
+</div>
+     
+   
+     
+### 选项字符建议不超过7个
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>简洁且突出差异的描述更利于用户快速阅读</p>
+      <img src="../../../images/checkbox/字符长度建议.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>描述切忌啰嗦、反复过分冗长</p>
+      <img src="../../../images/checkbox/字符长度建议.png" alt="image alt" title="desc" />
+   </div>
+</div>
+     
+     
+### 操作前须知内容应靠近操作按钮
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>简洁且突出差异的描述更利于用户快速阅读</p>
+      <img src="../../../images/checkbox/布局建议-放置在操作左侧.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>描述切忌啰嗦、反复过分冗长</p>
+      <img src="../../../images/checkbox/布局建议-放置在操作左侧.png" alt="image alt" title="desc" />
+   </div>
+</div>
+     
+     
+### 勾选框不要被文案包裹
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>文本换行时，仅与文本左对齐。</p>
+      <img src="../../../images/checkbox/布局建议-换行左对齐.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>勾选框与文案混排，难于被察觉</p>
+      <img src="../../../images/checkbox/布局建议-换行左对齐.png" alt="image alt" title="desc" />
+   </div>
+</div>
+     
+     
+
+     
 
 
 ## 主题
