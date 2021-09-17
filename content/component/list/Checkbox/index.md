@@ -248,11 +248,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>简洁且突出差异的描述更利于用户快速阅读</p>
+      <p><i class="u-md-suggested"></i>距离越近越能引起用户关注也更便于用户操作前确认</p>
       <img src="../../../images/checkbox/布局建议-放置在操作左侧.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>描述切忌啰嗦、反复过分冗长</p>
+      <p><i class="u-md-not-suggested"></i>若注意力被重要按钮吸引，距离较远的须知内容很容易被忽略</p>
       <img src="../../../images/checkbox/布局建议-放置在操作左侧.png" alt="image alt" title="desc" />
    </div>
 </div>
