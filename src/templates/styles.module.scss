@@ -15,6 +15,8 @@
         padding-left: 72px;
         padding-right: 264px;
         padding-bottom: 48px;
+        margin: 0 auto;
+        max-width: 880px;
 
         .top {
             padding-top: 48px;
@@ -25,16 +27,18 @@
                 color: $T_COLOR_TEXT_DEFAULT_DARK;
                 font-size: 40px;
                 font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
-                font-weight: 600;
+                font-weight: 400;
                 line-height: 42px;
+                letter-spacing: 2px;
             }
 
             h1 a {
+                fill:#7a8baa;
                 display: inline-block;
-                margin-left: 8px;
+                margin-left: 12px;
                 svg {
-                    width: 14px;
-                    height: 14px;
+                    width: 16px;
+                    height: 16px;
                 }
                 vertical-align: baseline;
                 &:hover{
@@ -66,7 +70,7 @@
 
             ul li,
             ol li {
-                margin-bottom: 16px;
+                margin-bottom: 8px;
             }
 
             a {
@@ -75,11 +79,11 @@
             }
 
             section {
-                font-size: 16px;
+                font-size: 15px;
                 font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                 font-weight: 300;
                 color: $T_COLOR_TEXT_DEFAULT_DARK;
-                line-height: 28px;
+                line-height: 27px;
 
                 strong {
                     font-weight: 400;
@@ -131,16 +135,18 @@
                 h4 {
                     margin: 0;
                     margin-bottom: 16px;
-                    margin-top: 16px;
-                    color: $T_COLOR_TEXT_DEFAULT_DARK;
-                    font-size: 18px;
-                    font-weight: 500;
+                    margin-top: 24px;
+                    color: #0a1633;
+                    font-size: 16px;
+                    font-weight: 400;
+                    
                 }
                 h1 {
                     font-size: 40px;
                     font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                     font-weight: 600;
                     line-height: 42px;
+                    letter-spacing: 1px;
                 }
 
                 h2 {
@@ -148,14 +154,20 @@
                     font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
                     font-weight: 500;
                     line-height: 38px;
-                    margin-top: 48px;
+                    margin-top: 80px;
+                    margin-bottom: 32px;
+                    padding-bottom: 16px;
+                    border-bottom: 1px solid #d2d6ea;
+                    letter-spacing: 1px;
                 }
 
                 h3 {
                     font-size: 24px;
-                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
-                    font-weight: 500;
-                    line-height: 40px;
+                    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
+                    font-weight: 400;
+                    margin-bottom: 24px;
+                    margin-top: 32px;
+                    letter-spacing: 1px;
                 }
 
                 p {
@@ -166,7 +178,7 @@
 
         .tabs {
             margin-top: 48px;
-            margin-bottom: 48px;
+            margin-bottom: 96px;
             ul{
                 line-height: 52px;
                 height: 52px;
