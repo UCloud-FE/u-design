@@ -168,6 +168,7 @@ module.exports = {
         {
             resolve: 'gatsby-plugin-load-script',
             options: {
+                async: false,
                 src: 'https://ucloud-fe.github.io/react-components/recodo/dist/main.min.js',
                 crossorigin: 'anonymous',
             },
