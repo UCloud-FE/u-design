@@ -39,7 +39,7 @@ const Index = ({ data, location }) => {
         let currentHash;
 
         for (let i = 0; i < sections.length; i++) {
-            if (sections[i].parentElement.tagName === 'H4') {
+            if (sections[i].parentElement.tagName === 'H4' && tabIndex === tabs[0]) {
                 continue;
             }
 
@@ -115,6 +115,7 @@ const Index = ({ data, location }) => {
                         }
                     });
 
+                    console.log('tocData', tocData);
                     setComponentsDocsToc(tocData);
                 },
             },
@@ -130,8 +131,7 @@ const Index = ({ data, location }) => {
         if (tabIndex === tabs[0]) {
             return (
                 <>
-                    <div className={styles.markdown}>
-                        <section dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+                    <div className="u-markdown-design-styles" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} >
                     </div>
                 </>
             );
@@ -210,7 +210,7 @@ const Index = ({ data, location }) => {
                     )}
 
                     {renderCurrentTabContent()}
-                    {tabIndex === tabs[1] && <div id="u-component-doc" style={{ minHeight: 500 }}></div>}
+                    {tabIndex === tabs[1] && <div id="u-component-doc" className="u-markdown-dev-styles" style={{ minHeight: 500 }}></div>}
                     {markdownRemark?.fields?.slug?.includes('/component/category/') ? (
                         <ComponentList markdownRemark={markdownRemark} thumbs={thumbs} />
                     ) : null}

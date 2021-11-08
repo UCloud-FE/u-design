@@ -157,7 +157,15 @@ const Layout = ({ location, children }) => {
                             </Link>
                         );
                     })}
-                </nav>
+                    <Link
+                        key="custom-components"
+                        to="/custom"
+                        itemProp="url"
+                        className={`${location.pathname.includes('/custom') ? layoutStyles.current : ''}`}
+                    >
+                        定制
+                    </Link>
+        </nav>
             </header>
             <main className={layoutStyles.main}>
                 {items.length ? <Sidebar items={items} location={location} /> : null}

@@ -51,131 +51,6 @@
             }
         }
 
-        .markdown {
-            ul {
-                list-style: disc;
-                list-style-type: disc;
-            }
-
-            ol {
-                list-style: decimal;
-                list-style-type: decimal;
-            }
-
-
-            ul,
-            ol {
-                margin-left: 24px;
-            }
-
-            ul li,
-            ol li {
-                margin-bottom: 8px;
-            }
-
-            a {
-                text-decoration: none;
-                color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
-            }
-
-            section {
-                font-size: 15px;
-                font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
-                font-weight: 300;
-                color: $T_COLOR_TEXT_DEFAULT_DARK;
-                line-height: 27px;
-
-                strong {
-                    font-weight: 400;
-                }
-                table {
-                    width: 100%;
-                    white-space: pre-wrap!important;
-                    word-break:break-all!important;
-                    padding: 12px 0;
-                    border-collapse: separate;
-                    border-spacing: 0px;
-                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
-                    
-                    tr, th, td {
-                        margin: 0px;
-                        padding: 0px;
-                        border: 0px;
-                    }
-
-                    thead tr th{
-                        border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK;
-                        line-height: 43px;
-                        padding: 0px 12px;
-                        color: $T_COLOR_TEXT_DEFAULT_DARK;
-                        font-size: 14px;
-                        font-weight: 400;
-                        background: #eaebf1;
-                        
-                    }
-
-                    tbody tr td{
-                        box-sizing: content-box;
-                        border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK;
-                        line-height: 47px;
-                        padding: 0px 12px;
-                        color: $T_COLOR_TEXT_DEFAULT_DARK;
-                        font-size: 14px;
-                        font-weight: 300;
-                    }
-                    tbody tr:nth-child(2n){
-                        background: $T_COLOR_TEXT_WHITE;
-                        
-                    }
-                }
-
-                h1,
-                h2,
-                h3,
-                h4 {
-                    margin: 0;
-                    margin-bottom: 16px;
-                    margin-top: 24px;
-                    color: #0a1633;
-                    font-size: 16px;
-                    font-weight: 400;
-                    
-                }
-                h1 {
-                    font-size: 40px;
-                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
-                    font-weight: 600;
-                    line-height: 42px;
-                    letter-spacing: 1px;
-                }
-
-                h2 {
-                    font-size: 30px;
-                    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
-                    font-weight: 500;
-                    line-height: 38px;
-                    margin-top: 80px;
-                    margin-bottom: 32px;
-                    padding-bottom: 16px;
-                    border-bottom: 1px solid #d2d6ea;
-                    letter-spacing: 1px;
-                }
-
-                h3 {
-                    font-size: 24px;
-                    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-                    font-weight: 400;
-                    margin-bottom: 24px;
-                    margin-top: 32px;
-                    letter-spacing: 1px;
-                }
-
-                p {
-                    margin-bottom: 16px;
-                }
-            }
-        }
-
         .tabs {
             margin-top: 48px;
             margin-bottom: 96px;
@@ -234,6 +109,177 @@
 /* markdown style*/
 
 :global {
+    .recodo-code-theme-switcher{
+        display: none!important;
+    }
+
+    .recodo-code-editor{
+        font-family: Consolas, "Liberation Mono", Menlo, monospace;
+        font-size: 13px;
+        line-height: 1.5;
+        color: rgb(51, 51, 51);
+        white-space: pre-wrap;
+        overflow-wrap: normal;
+        tab-size: 2;
+        hyphens: none;
+        background-color: rgb(245, 245, 245);
+        padding: 8px 16px;
+        border: 1px solid rgb(245, 245, 245);
+        border-radius: 3px;
+        margin-top: 0px;
+        margin-bottom: 16px;
+        overflow: auto;
+        > div {
+            background: none!important;
+        }
+    }
+
+    @mixin h1(){
+        font-size: 40px!important;
+        font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji!important;
+        font-weight: 600!important;
+        line-height: 42px!important;
+        letter-spacing: 1px!important;
+    }
+
+    @mixin h2(){
+        font-size: 30px!important;
+        font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji!important;
+        font-weight: 500!important;
+        line-height: 38px!important;
+        margin-top: 80px!important;
+        margin-bottom: 32px!important;
+        padding-bottom: 16px!important;
+        border-bottom: 1px solid #d2d6ea!important;
+        letter-spacing: 1px!important;
+    }
+
+    @mixin h3(){
+        font-size: 24px!important;
+        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji!important;
+        font-weight: 400!important;
+        margin-bottom: 24px!important;
+        margin-top: 32px!important;
+        letter-spacing: 1px!important;
+    }
+
+    @mixin h-common(){
+        margin: 0!important;
+        margin-bottom: 16px!important;
+        margin-top: 24px!important;
+        color: #0a1633!important;
+        font-size: 16px!important;
+        font-weight: 400!important;
+    }
+
+    @mixin ul(){
+        list-style: disc!important;
+        list-style-type: disc!important;
+        margin-left: 24px!important;
+        li {
+            margin-bottom: 8px!important;
+        }
+    }
+    @mixin ol(){
+        list-style: decimal!important;
+        list-style-type: decimal!important;
+        margin-left: 24px!important;
+        li {
+            margin-bottom: 8px!important;
+        }
+    }
+
+    @mixin a(){
+        text-decoration: none!important;
+        color: $T_COLOR_TEXT_PRIMARY_DEFAULT!important;
+    }
+
+    @mixin strong(){
+        font-weight: 400!important;
+    }
+
+    @mixin p(){
+        margin-bottom: 16px!important;
+    }
+
+    .u-markdown-dev-styles{
+        .recodo-component-wrap > h2{
+            @include h-common();
+            @include h2();
+        }
+
+        .recodo-props{
+            > h3{
+                @include h-common();
+                @include h3();
+            }
+        }
+
+        .recodo-doc{
+            > h1, > h2, > h3, > h4{ @include h-common(); }
+            > h1 { @include h1(); }
+            > h2 { @include h2(); }
+            > h3 { @include h3(); }
+            > ul { @include ul(); }
+            > ol { @include ol(); }
+        }
+    }
+
+    .u-markdown-design-styles {
+        h1, h2, h3, h4{ @include h-common(); }
+        h1 { @include h1(); }
+        h2 { @include h2(); }
+        h3 {  @include h3(); }
+        ul { @include ul(); }
+        ol { @include ol(); }
+        a { @include a(); }
+
+        strong {
+            @include strong();
+        }
+        table {
+            width: 100%!important;
+            white-space: pre-wrap!important;
+            word-break:break-all!important;
+            padding: 12px 0!important;
+            border-collapse: separate!important;
+            border-spacing: 0px!important;
+            font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji!important;
+            tr, th, td {
+                margin: 0px!important;
+                padding: 0px!important;
+                border: 0px!important;
+            }
+
+            thead tr th{
+                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK!important;
+                line-height: 43px!important;
+                padding: 0px 12px!important;
+                color: $T_COLOR_TEXT_DEFAULT_DARK!important;
+                font-size: 14px!important;
+                font-weight: 400!important;
+                background: #eaebf1!important;
+            }
+
+            tbody tr td{
+                box-sizing: content-box!important;
+                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK!important;
+                line-height: 47px!important;
+                padding: 0px 12px!important;
+                color: $T_COLOR_TEXT_DEFAULT_DARK!important;
+                font-size: 14px!important;
+                font-weight: 300!important;
+            }
+            tbody tr:nth-child(2n){
+                background: $T_COLOR_TEXT_WHITE!important;
+            }
+        }
+
+        p {
+            @include p();
+        }
+    }
+
     blockquote {
         color: $T_COLOR_TEXT_REMARK_DARK;
         font-size: 16px;
