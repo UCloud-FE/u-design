@@ -1,6 +1,6 @@
 ---
 title: '设计'
-url: '/spec/color/'
+url: '/spec/overview_introduce/'
 match: '/spec/'
 order: 0
 ---
