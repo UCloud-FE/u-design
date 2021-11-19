@@ -4,12 +4,11 @@ import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
 import Sidebar from '/src/components/Sidebar';
 
-const categoryOrders = ['概述', '模版', '全局样式', '设计自检表', '反馈与文案'];
 const Layout = ({ location, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
     const isRootPath = location.pathname === rootPath;
 
-    const { navs, category, all, categories, specs } = useStaticQuery(graphql`
+    const { navs, category, all, categories, specs, specsCategoryOrder } = useStaticQuery(graphql`
         query {
             navs: allMarkdownRemark(
                 sort: { fields: [frontmatter___order], order: ASC }
@@ -66,9 +65,16 @@ const Layout = ({ location, children }) => {
                     }
                 }
             }
+            specsCategoryOrder: markdownRemark(fileAbsolutePath: { glob: "**/content/spec/index.md" }) {
+                frontmatter {
+                    categoryOrder
+                }
+            }
         }
     `);
 
+    let { categoryOrder } = specsCategoryOrder.frontmatter;
+    categoryOrder = categoryOrder.split("|");
     const _categories = categories.nodes.filter(item => item.excerpt);
     let items = [];
 
@@ -81,7 +87,7 @@ const Layout = ({ location, children }) => {
         });
 
         items = Object.keys(categories)
-            .sort((a, b) => categoryOrders.findIndex(item => item === a) - categoryOrders.findIndex(item => item === b))
+            .sort((a, b) => categoryOrder.findIndex(item => item === a) - categoryOrder.findIndex(item => item === b))
             .map(categoryName => {
                 const items = categories[categoryName];
                 if (items.length === 1) {

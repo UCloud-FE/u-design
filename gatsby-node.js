@@ -113,6 +113,7 @@ exports.createSchemaCustomization = ({ actions }) => {
       components: String
       url: String
       match: String
+      categoryOrder: String
     }
 
     type Fields {
