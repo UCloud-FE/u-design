@@ -4,7 +4,7 @@ import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
 import Sidebar from '/src/components/Sidebar';
 
-const categoryOrders = ['全局样式', '设计模式'];
+const categoryOrders = ['概述', '模版', '全局样式', '设计自检表', '反馈与文案'];
 const Layout = ({ location, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
     const isRootPath = location.pathname === rootPath;
