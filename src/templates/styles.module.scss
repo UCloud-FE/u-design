@@ -53,7 +53,7 @@
 
         .tabs {
             margin-top: 48px;
-            margin-bottom: 96px;
+            margin-bottom: 48px;
             ul{
                 line-height: 52px;
                 height: 52px;
@@ -112,6 +112,30 @@
     .recodo-code-theme-switcher{
         display: none!important;
     }
+    .recodo-code {
+        background-color: $T_COLOR_BG_DEFAULT_BRIGHT!important;
+        padding: 24px 24px 24px 24px!important;
+
+        .recodo-code-preview{
+            background: none!important;
+            border: none!important;
+            padding: 0px!important;
+        }
+
+        .recodo-code-editor{
+            margin: 0px!important;
+        }
+
+        .recodo-code-collapse-button{
+            color: $T_COLOR_TEXT_PRIMARY_DEFAULT!important;
+        }
+
+        .recodo-code-toolbar{
+            display: flex!important;
+            justify-content: end!important;
+            align-items: center!important;
+        }
+    }
 
     .recodo-code-editor{
         font-family: Consolas, "Liberation Mono", Menlo, monospace;
@@ -160,6 +184,15 @@
         font-weight: 400!important;
         margin-bottom: 24px!important;
         margin-top: 32px!important;
+        letter-spacing: 1px!important;
+    }
+
+    @mixin h4(){
+        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji!important;
+        font-size: 16px!important;
+        // font-weight: 400!important;
+        // margin-bottom: 24px!important;
+        // margin-top: 32px!important;
         letter-spacing: 1px!important;
     }
 
@@ -220,6 +253,7 @@
             > h1 { @include h1(); }
             > h2 { @include h2(); }
             > h3 { @include h3(); }
+            > h4 { @include h4(); }
             > ul { @include ul(); }
             > ol { @include ol(); }
         }

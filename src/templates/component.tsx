@@ -115,7 +115,6 @@ const Index = ({ data, location }) => {
                         }
                     });
 
-                    console.log('tocData', tocData);
                     setComponentsDocsToc(tocData);
                 },
             },
@@ -210,7 +209,11 @@ const Index = ({ data, location }) => {
                     )}
 
                     {renderCurrentTabContent()}
-                    {tabIndex === tabs[1] && <div id="u-component-doc" className="u-markdown-dev-styles" style={{ minHeight: 500 }}></div>}
+                    {tabIndex === tabs[1] && 
+                        <div id="u-component-doc" className="u-markdown-dev-styles" style={{ minHeight: 500 }}>
+                            <div style={{textAlign: 'center'}}>loading</div>
+                        </div>
+                    }
                     {markdownRemark?.fields?.slug?.includes('/component/category/') ? (
                         <ComponentList markdownRemark={markdownRemark} thumbs={thumbs} />
                     ) : null}
