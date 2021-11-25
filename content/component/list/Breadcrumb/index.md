@@ -77,11 +77,11 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>鼠标移至面包屑当前页面上，无交互反馈，不可点击。</p>
-      <img src="../../../images/Breadcrumb/problems_01.png" alt="image alt" title="desc" />
+      <img src="../../../images/Breadcrumb/problems_01.png" alt="image alt" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>面包屑中当前页面只起到定位作用，点击没有任何意义。</p>
-      <img src="../../../images/Breadcrumb/problems_02.png" alt="image alt" title="desc" />
+      <img src="../../../images/Breadcrumb/problems_02.png" alt="image alt"  />
    </div>
 </div>
 
