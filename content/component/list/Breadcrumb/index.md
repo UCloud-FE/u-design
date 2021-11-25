@@ -71,8 +71,6 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 
 ![](../../../images/Breadcrumb/descriptions_01.png)
 
-![](../../../images/Breadcrumb/descriptions_02.png)
-
 - 不要使用面包屑来替代网页主要的导航系统。
 
 - 不要将当前页链接加到面包屑中：
