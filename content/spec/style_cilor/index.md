@@ -1,7 +1,7 @@
 ---
 category: 全局样式
-title: 色彩
+title: 颜色
 order: 0
 ---
 
-色彩介绍
+介绍

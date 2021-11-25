@@ -30,14 +30,16 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 ### 类型
 
+
 | 类型     | 说明                |
 | :------- | :------------------ |
 | 多选框   | 最常见的多选框，纯本文展示，建议选项文本字符不超过7个、选项个数不超过5个 |
 | 多选卡片 | 相比于普通多选框，展示样式更丰富，可同时添加不同样式文本与图像素材。建议每张卡片内容量保持一致，避免卡片大小不一或过多留白 |
 
+
 #### 多选框
 
-![](../../../images/基本状态-1675335.png)
+![](../../../images/1675335.png)
 
 #### 多选卡片
 
@@ -182,10 +184,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
       <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>复选控件被包裹在文案中，不便于用户识别与状态确认</p>
+      <p><i class="u-md-not-suggested"></i>复选控件包裹在文案中，不便于用户识别与状态确认</p>
       <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
    </div>
 </div>
+
 
 ### 父子层级选项从操作逻辑到展示上需区分
 
@@ -213,7 +216,6 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
       <img src="../../../images/Card/选项数目建议-2-1789549.png" alt="image alt" title="desc" />
    </div>
 </div>
-
 
 
 ### 须知内容建议不超过2行
@@ -246,6 +248,7 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 
 
 ​     
+
 ### 操作前须知内容应靠近操作按钮
 
 <div class="u-md-flex-without-bg">
@@ -254,14 +257,14 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
       <img src="../../../images/checkbox/布局建议-放置在操作左侧.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>若注意力被重要按钮吸引，距离较远的须知内容很容易被忽略</p>
+      <p><i class="u-md-not-suggested"></i>注意力被重要按钮吸引，距离较远的内容容易被忽略</p>
       <img src="../../../images/checkbox/布局建议-放置在操作左侧-2.png" alt="image alt" title="desc" />
 
 
 
 
-
 ​     
+
 ### 勾选框不要被文案包裹
 
 <div class="u-md-flex-without-bg">

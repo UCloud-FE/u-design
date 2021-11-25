@@ -32,7 +32,7 @@ const Index = ({ data, location }) => {
                         {markdownRemark.frontmatter.description && <p>{markdownRemark.frontmatter.description}</p>}
                     </div>
 
-                    <section dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+                    <section className="u-markdown-design-styles" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
                 </div>
                 <Footer />
             </div>
