@@ -80,7 +80,7 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
       <img src="../../../images/Breadcrumb/problems_01.png" alt="image alt" title="desc" />
    </div>
    <div>
-</i>面包屑中当前页面只起到定位作用，点击没有任何意义。</p>
+      <p><i class="u-md-not-suggested"></i>面包屑中当前页面只起到定位作用，点击没有任何意义。</p>
       <img src="../../../images/Breadcrumb/problems_02.png" alt="image alt" title="desc" />
    </div>
 </div>
