@@ -62,19 +62,10 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 
 #### 3.使用时的注意事项      
 
-<<<<<<< HEAD
 - 不要在移动端页面上使用面包屑。
-=======
-<!--麻烦交互说明一下两种不同使用场景的状态-->
-
-![](../../../images/Breadcrumb/descriptions_01.png)
-
-- 不要使用面包屑来替代网页主要的导航系统。
->>>>>>> 97cd0c0b180bc5751bc7e01086f0a31a26b00b67
-
 - 层级要精简，最多五层。
 
-  
+
 
 ## 常见问题
 
@@ -85,13 +76,14 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>鼠标移至面包屑当前页面上，无交互反馈，不可点击。</p>
-      <img src="../../../images/级联选择器/004.png" alt="image alt" title="desc" />
+      <img src="../../../images/Breadcrumb/problems_01.png" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>鼠标移至面包屑当前页面上，有交互反馈，可以点击。</p>
-      <img src="../../../images/级联选择器/005.png" alt="image alt" title="desc" />
+      <img src="../../../images/Breadcrumb/problems_02.png" alt="image alt" title="desc" />
    </div>
 </div>
+
 
 
 
