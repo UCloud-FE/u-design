@@ -10,7 +10,7 @@ description: "我是副标题"
 
 
 ## 基本构成
-![12](/Users/kongzhanghao/Desktop/12.png)
+![12](../../../images/tag/12.png)
 
 1、前置图标（图标和文案至少二选一）
 
@@ -41,14 +41,7 @@ description: "我是副标题"
 
 5、禁用标签
 
-![16](../../../images/zcx/16.png)![17](../../../images/zcx/17.png)![15](../../../images/zcx/15.png)![19](../../../../../../../Desktop/19.png)![18](../../../images/zcx/18.png)
-
-
-
-
-
-
-
+![16](../../../images/tag/16.png)
 
 
 
@@ -57,7 +50,7 @@ description: "我是副标题"
 
 系统预设以下四种状态：正常、成功、警告、报错。如果不能满足场景需求，提供更多的预设颜色选择，并支持完全自定义。
 
-![20](/Users/kongzhanghao/Desktop/20.png)
+![20](../../../images/tag/20.png)
 
 
 
@@ -65,7 +58,7 @@ description: "我是副标题"
 
 用于展示一组标签。
 
-![30](../../../images/zcx/30.png)
+![30](../../../images/tag/30.png)
 
 
 
