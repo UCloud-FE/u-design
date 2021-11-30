@@ -63,12 +63,7 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 #### 3.使用时的注意事项      
 
 - 不要在移动端页面上使用面包屑。
-<<<<<<< HEAD
-=======
 
-
-=======
->>>>>>> e6e84208aa5fccf72d28e39b7e36a0238cbc984e
 - 层级要精简，最多五层。
 
 
@@ -82,20 +77,12 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>鼠标移至面包屑当前页面上，无交互反馈，不可点击。</p>
-      <img src="../../../images/Breadcrumb/problems_01.png" alt="image alt" title="desc" />
+      <img src="../../../images/Breadcrumb/problems_01.png" alt="image alt" />
    </div>
    <div>
-<<<<<<< HEAD
       <p><i class="u-md-not-suggested"></i>面包屑中当前页面只起到定位作用，点击没有任何意义。</p>
-      <img src="../../../images/级联选择器/005.png" alt="image alt" title="desc" />
-=======
-      <p><i class="u-md-not-suggested"></i>鼠标移至面包屑当前页面上，有交互反馈，可以点击。</p>
-      <img src="../../../images/Breadcrumb/problems_02.png" alt="image alt" title="desc" />
->>>>>>> e6e84208aa5fccf72d28e39b7e36a0238cbc984e
+      <img src="../../../images/Breadcrumb/problems_02.png" alt="image alt"  />
    </div>
 </div>
 
 
-
-
-## 
