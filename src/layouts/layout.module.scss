@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     height: 100%;
-    background-color: #f8f8fa;
+    background-color: #F6F6FB;
     min-width: $min-width;
     position: absolute;
     top: 0px;
@@ -18,7 +18,9 @@
     background: #ffffff;
     display: flex;
     align-items: center;
-    box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.03);
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.03);
+    position: relative;
+    z-index: 1;
     .logo {
         width: $header-logo;
         padding-left: 35px;
@@ -27,6 +29,13 @@
             display: inline-block;
             text-decoration: none;
             width: 180px;
+
+            font-style: normal;
+            font-weight: 600;
+            font-size: 28px;
+            line-height: 97.83%;
+            letter-spacing: -0.03em;
+            color: #292930;
         }
     }
     nav {
@@ -38,10 +47,15 @@
             height: 100%;
             text-align: center;
             box-sizing: border-box;
+
+            font-family: PingFang SC;
+            font-style: normal;
+            font-weight: normal;
             font-size: 16px;
-            font-family: PingFangSC-Semibold, PingFang SC;
-            font-weight: 600;
-            color: $T_COLOR_TEXT_DEFAULT_LIGHT;
+            letter-spacing: -0.04em;
+            color: #292930;
+            
+            // color: $T_COLOR_TEXT_DEFAULT_LIGHT;
             text-decoration: none;
             line-height: $header-height;
             border-bottom: 4px solid transparent;
@@ -60,11 +74,13 @@
 
 .main {
     position: absolute;
-    overflow: hidden;
+    // overflow: hidden;
+    overflow: auto;
     top: $header-height;
     bottom: 0px;
     left: 0px;
     right: 0px;
     display: flex;
     flex-flow: row nowrap;
+    background-color: #fff;
 }

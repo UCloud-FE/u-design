@@ -3,6 +3,7 @@ import { useStaticQuery, Link, graphql } from 'gatsby';
 import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
 import Sidebar from '/src/components/Sidebar';
+import Footer from '../components/Footer';
 
 const Layout = ({ location, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
@@ -145,7 +146,7 @@ const Layout = ({ location, children }) => {
             <header className={layoutStyles.header}>
                 <div className={layoutStyles.logo}>
                     <Link to="/" itemProp="url">
-                        UCloud Design
+                        U Design
                     </Link>
                 </div>
                 <nav>
@@ -171,7 +172,7 @@ const Layout = ({ location, children }) => {
                     >
                         定制
                     </Link>
-        </nav>
+                </nav>
             </header>
             <main className={layoutStyles.main}>
                 {items.length ? <Sidebar items={items} location={location} /> : null}

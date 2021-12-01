@@ -1,0 +1,71 @@
+.w{
+    width: 100%;
+}
+
+.c{
+    // margin: 0px 80px 110px 80px;
+    position: relative;
+    width: 1120px;
+    margin: 0 auto;
+    font-family: PingFang SC;
+    font-style: normal;
+    font-weight: normal;
+    padding-bottom: 224px;
+
+    .banner{
+        position: absolute;
+        top: 66px;
+        right: 0px;
+        width: 766px;
+        height: 550px;
+    }
+
+    h2{
+        margin: 0px;
+        padding: 0px;
+        width: 500px;
+        text-align: left;
+        padding-top: 165px;
+        font-weight: 500;
+        font-size: 48px;
+        line-height: 67px;
+        letter-spacing: -0.025em;        
+        color: #292930;
+    }
+
+    p{
+        width: 408px;
+        font-size: 18px;
+        line-height: 32px;
+        text-align: justify;        
+        color: #999FAE;
+        margin-bottom: 58px;
+        font-weight: 300;
+    }
+    .actions{
+        a{
+            text-decoration: none;
+        }
+        .start{
+            padding: 16px 32px;
+            line-height: 54px;
+            font-size: 16px;
+            text-align: center;
+            background: linear-gradient(90deg, #5F87F8 0%, #3860F4 100%);
+            border-radius: 8px;
+            color: #FFFFFF;
+            font-weight: 300;
+        }
+        .github{
+            background-image: url("../images/github-favicon.png");
+            background-size: 16px;
+            background-repeat: no-repeat;
+            background-position: left;
+            font-size: 16px;
+            line-height: 22px;
+            color: #999FAE;
+            padding-left: 24px;
+            margin-left: 32px;
+        }
+    }
+}
