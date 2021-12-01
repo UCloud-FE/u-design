@@ -3,11 +3,11 @@
 .wrapper {
     height: 100%;
     width: $sidebar-width;
-    background-color: $T_COLOR_BG_DEFAULT_DARK;
     box-sizing: border-box;
     flex-shrink: 0;
-    box-shadow: -1px 0px 0px 0px rgba(0, 0, 0, 0.08);
-    border-right: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
+    background: #F8F8FA;
+    box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.08);
+    // border-right: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
     overflow: auto;
     .inner {
         padding-top: 16px;
