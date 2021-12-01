@@ -67,26 +67,32 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 #### 使用场景    
 
-- 当输入内容为数值，且数据需要做正确性检查、自动订正时使用。
+- 当选项过多且选项没有层级关系时，使用下拉菜单展示并选择内容。
 
+  
 
+#### 特殊用法    
+
+- 当选择器支持空值时，选项中应给予空值选项。
+
+![001](../../../images/Select/001.png)
 
 
 
 ## 常见问题
 
-### 输入数值有限定条件时应给予前置提示
+### Select与Radio使用时的区别
 
 
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>输入框激活时，应冒泡给予数值限定条件提示。</p>
-      <img src="../../../images/Numberinput/15211701.png" alt="image alt" title="desc" />
+      <p><i class="u-md-suggested"></i>选项小于5项时建议使用radio，选项大于等于5项时建议使用select。</p>
+      <img src="../../../images/Select/002.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>输入前不给予提示容易引起用户的无效操作。</p>
-      <img src="../../../images/Numberinput/15211702.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>选项过多时使用radio容易使表单整体看起来臃肿，当选项太少时若使用select不利于用户快速选择。</p>
+      <img src="../../../images/Select/003.png" alt="image alt" title="desc" />
    </div>
 </div>
 
