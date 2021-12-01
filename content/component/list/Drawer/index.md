@@ -49,31 +49,20 @@ description: "从父级窗口边缘滑出的浮层面板。"
 
 #### 使用场景    
 
-- 当输入内容为数值，且数据需要做正确性检查、自动订正时使用。
+- 在当前任务流中插入临时任务，创建或预览附加内容，例如协议条款。
 
+- 当父级页面需要一个子窗体承载信息，但居中弹窗容纳不下内容且替换页或新开页面过于脱离父体时，可使用抽屉组件。
 
+  
 
+#### 使用注意
 
+- 原路返回，由哪个页面弹出弹窗，关闭弹窗后显示哪个页面。
 
-## 常见问题
+- 弹出弹窗时锁定背景页面禁止跟随弹窗滚动。
 
-### 输入数值有限定条件时应给予前置提示
+- 抽屉页面上可以更深一步操作弹出弹窗或再叠加一个抽屉。
 
-
-
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>输入框激活时，应冒泡给予数值限定条件提示。</p>
-      <img src="../../../images/Numberinput/15211701.png" alt="image alt" title="desc" />
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>输入前不给予提示容易引起用户的无效操作。</p>
-      <img src="../../../images/Numberinput/15211702.png" alt="image alt" title="desc" />
-   </div>
-</div>
-
-
-
-
+  ![001](../../../images/Drawer/001.png)
 
 ## 
