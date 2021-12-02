@@ -141,6 +141,7 @@ const Index = ({ data, location }) => {
         return null;
     };
 
+    const isComponentsCategory = markdownRemark?.fields?.slug?.includes('/component/category/');
     return (
         <div className={styles.wrapper}>
             <Seo title={markdownRemark.frontmatter.title} />
@@ -174,7 +175,7 @@ const Index = ({ data, location }) => {
                         </h1>
                         {markdownRemark.frontmatter.description && <p>{markdownRemark.frontmatter.description}</p>}
                     </div>
-                    {!markdownRemark?.fields?.slug?.includes('/component/category/') && (
+                    {!isComponentsCategory && (
                         <div className={styles.tabs}>
                             <ul>
                                 <li
@@ -209,8 +210,8 @@ const Index = ({ data, location }) => {
                     )}
 
                     {renderCurrentTabContent()}
-                    {tabIndex === tabs[1] && 
-                        <div id="u-component-doc" className="u-markdown-dev-styles" style={{ minHeight: 500 }}>
+                    {tabIndex === tabs[1] && !isComponentsCategory && 
+                        <div id="u-component-doc" className="u-markdown-dev-styles">
                             <div style={{textAlign: 'center'}}>loading</div>
                         </div>
                     }
