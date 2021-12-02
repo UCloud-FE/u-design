@@ -98,6 +98,21 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 
 
+### 必填字段的默认项与空值使用
+
+
+
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>若字段为必填项时，建议给出默认选项，且选项中不设空值。</p>
+      <img src="../../../images/Select/005.png" alt="image alt" title="desc" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>必填字段若默认为空，容易导致用户忘记选择而校验报错。</p>
+      <img src="../../../images/Select/006.png" alt="image alt" title="desc" />
+   </div>
+</div>
+
 
 
 ## 
