@@ -33,7 +33,7 @@ npm start
 │       └───color                 //   色彩（category：分类名称、title：标题、order：显示顺序）
 │       └───layout                //   布局
 │   └───images                    // 所有文档中的图片
-│   └───components.json           // 所有组件中英文名称定义（ name 字段不能改变、zh_cn 为中文、category为组件分类）
+  └───components.json           // 所有组件中英文名称定义（ name 字段不能改变、zh_cn 为中文、category为组件分类）
 ...
 
 ```
