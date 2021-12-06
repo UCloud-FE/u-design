@@ -35,6 +35,7 @@ U-Design 的表单 `Form` 只负责布局和展示，不提供任何逻辑功能
 
 
 ### 布局
+表单中的标签放置理论具体可以参考 [这篇文章](https://www.uxmatters.com/mt/archives/2006/07/label-placement-in-forms.php) ，U-Design 目前提供了以下两种布局形式：
 
 #### 左对齐
 优点：文字开头按阅读视线对齐，符合人们的阅读习惯，节约纵向空间。
