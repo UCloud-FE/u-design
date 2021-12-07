@@ -94,5 +94,4 @@ U-Design 的 下拉菜单 `Menu` 通常和 选择器 `Select` 结合使用，帮
 
 ## 相关文档
 
-1. [相关文档1](https://www.ucloud.cn)
-2. [相关文档2](https://www.ucloud.cn)
+1. [Select 选择器](https://www.ucloud.cn)
