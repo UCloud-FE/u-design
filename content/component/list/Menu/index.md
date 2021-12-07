@@ -43,18 +43,13 @@ B端中后台通常会对应不同的角色及场景需求，根据目的及信�
 
 ## 常见问题
 
-当选项很少（5个或更少）时，单选按钮可用于替换下拉菜单。与下拉菜单相比，使用单选按钮的好处是可以轻松地扫描选项，而无需强制用户交互来查看可用选项。
-![1](../../../images/Menu/2.png)
-
-
-
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>同层级按钮仅从类型上区分</p>
+      <p><i class="u-md-suggested"></i>当选项很少（5个或更少）时，单选优于下拉菜单</p>
       <img src="../../../images/Menu/2.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>建议不要多个维度来区分层级，避免用户认知上出现胡</p>
+      <p><i class="u-md-not-suggested"></i>选项较少时，使用Menu交互形式过重。</p>
       <img src="../../../images/Menu/3.png" alt="image alt" title="desc" />
    </div>
 </div>
