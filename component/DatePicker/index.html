@@ -142,7 +142,7 @@
 </tr>
 <tr>
 <td align="left">日期范围选择器</td>
-<td align="left">用来设定具体日期节点，如年份范围、月份范围、日期范围</td>
+<td align="left">用来设定具体日期范围，如年份范围、月份范围、日期范围</td>
 </tr>
 </tbody>
 </table>
@@ -257,13 +257,11 @@
 <h2 id="设计说明" style="position:relative;"><a href="#%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" aria-label="设计说明 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计说明</h2>
 <h3 id="通用原则" style="position:relative;"><a href="#%E9%80%9A%E7%94%A8%E5%8E%9F%E5%88%99" aria-label="通用原则 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>通用原则</h3>
 <ul>
-<li>计时方式：24h计时法</li>
 <li>
 <p>默认初始值设定：</p>
 <ul>
 <li>支持空值：需提供占位提示</li>
 <li>当前日期：日期选择器若设定默认值，应设定为当前日期</li>
-<li>00:00 ：时间选择器若设定默认值，应设定为00:00</li>
 </ul>
 </li>
 </ul>
@@ -330,7 +328,7 @@
 <h4 id="3输入结果自动校验、自动修正、错误说明" style="position:relative;"><a href="#3%E8%BE%93%E5%85%A5%E7%BB%93%E6%9E%9C%E8%87%AA%E5%8A%A8%E6%A0%A1%E9%AA%8C%E3%80%81%E8%87%AA%E5%8A%A8%E4%BF%AE%E6%AD%A3%E3%80%81%E9%94%99%E8%AF%AF%E8%AF%B4%E6%98%8E" aria-label="3输入结果自动校验、自动修正、错误说明 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3.输入结果自动校验、自动修正、错误说明</h4>
 <h5 id="自动校验" style="position:relative;"><a href="#%E8%87%AA%E5%8A%A8%E6%A0%A1%E9%AA%8C" aria-label="自动校验 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>自动校验</h5>
 <ul>
-<li>连接符号（仅支持“-”、“:”）</li>
+<li>连接符号（仅支持“-”）</li>
 <li>字符类型（仅支持“数字“）</li>
 <li>格式（模糊支持XXXXYYZZ/XXXXYZ/XXYYZZ/XXYZ）</li>
 <li>字符长度（根据格式规则分开定义长度上限）</li>
