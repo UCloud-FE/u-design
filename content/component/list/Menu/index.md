@@ -13,7 +13,7 @@ Select 用于选择，而 Dropdown 是命令集合。
 
 
 ## 基本构成
-![1](../../../images/table/1.png)
+![1](../../../images/Menu/1.png)
 
 1、表头
 
