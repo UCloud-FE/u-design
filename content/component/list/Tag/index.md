@@ -31,9 +31,22 @@ description: "进行标记和分类的小标签。"
 
 
 ## 基本样式
+#### 类型
+
 ![](../../../images/tag/styles_01.png)
 
+#### 颜色
 
+![](../../../images/tag/styles_02.png)
+
+| 描述                       | 背景色                     | 文本色                      |
+| :------------------------- | :------------------------- | :-------------------------- |
+| 消息通知的提示、默认⾊色值 | `T_COLOR_BG_NOTICE_LIGHT`  | `T_COLOR_TEXT_DEFAULT_DARK` |
+| 成功性质的提示             | `T_COLOR_BG_SUCCESS_LIGHT` | `T_COLOR_TEXT_SUCCESS`      |
+| 警告性质的提示             | `T_COLOR_BG_WARNING_LIGHT` | `T_COLOR_TEXT_WARNING`      |
+| 错误性质的提示             | `T_COLOR_BG_ERROR_LIGHT`   | `T_COLOR_TEXT_ERROR`        |
+
+#### 
 
 ## 基本状态
 
@@ -45,7 +58,9 @@ description: "进行标记和分类的小标签。"
 
 ### 自定义状态
 
-系统预设以下五种状态：正常、成功、警告、错误、禁用。如果不能满足场景需求，提供更多的预设颜色选择，并支持完全自定义。
+系统预设以下五种状态：正常、成功、警告、错误、禁用。
+
+如果不能满足场景需求，提供更多的预设颜色选择，并支持完全自定义。
 
 ![](../../../images/tag/descriptions_01.png)
 
@@ -53,7 +68,13 @@ description: "进行标记和分类的小标签。"
 
 用于展示一组标签，并提供紧凑型布局。
 
+默认布局
+
 ![](../../../images/tag/descriptions_02.png)
+
+紧凑型布局
+
+![](../../../images/tag/descriptions_03.png)
 
 
 
