@@ -133,46 +133,24 @@
       />
     </span></p>
 <h2 id="设计说明" style="position:relative;"><a href="#%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" aria-label="设计说明 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计说明</h2>
-<p>信息类组件的触发场景存在于用户之间以及系统和用户之间。通知组件的设计选择需要根据具体的场景来定，一些重要性极低的信息，可以采取 <a href="http://10.179.234.214:8000/component/Badge/">徽标数</a> <code class="language-text">Badge</code>的形式进行弱提示，对用户当前的操作，几乎无干扰；</p>
+<p>信息类组件的触发场景存在于用户之间以及系统和用户之间。通知组件的设计选择需要根据具体的场景来定，一些重要性极低的信息，可以采取 <a href="http://10.179.234.214:8000/component/Badge/">徽标数</a> <code class="language-text">Badge</code>的形式进行弱提示，对用户当前的操作，几乎无干扰；但是一些重要性极高的信息，需要用户立即关注并采取措施的信息，可以采取 <a href="http://10.179.234.214:8000/component/Modal/">弹窗</a> <code class="language-text">Modal</code>进行页面级独占式的通知。</p>
 <p><span
       class="gatsby-resp-image-wrapper"
       style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1440px; "
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 33.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyUlEQVQoz5VRWw6CMBDk/rfSAxj/jMY3kKAF7G5FQIlj+rQ+YuLHMEOTnc5sE6ILWINbaP0O/sFGcxu09kj0x5t5HaA6kOosn3ujqblZbgdz5k3JzSRfE1YMrhl8qMFHh6IEHyrwZm95Ngfnhb0wThgbilKhrs8QmYAsKohVCtrlEOsMtNqiXKegyRSnTYbTaAy1WIaUL4Z+D9IllKZCB6l6MyBZV77a/3YwLLs7WNd/r8zOjMLungv/CtkEDnv/qBw9zD+IZ7zHAwFaF6y7bJlJAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 33.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA+0lEQVQoz3WSTY7DIAyFc/9zzB1mMTfppqqUTpOmAQwGwk/yKkgy1Sjt4skIPz6DTaO1h9EeRO6gkhPCom1VXesPPiK/5R0apRhCGLANYJ4O2g8QWRTvDv6vF7xRSqPr71jmhGVZDjLG1Rd0/Yjz5YqcM+Z5/lPxxBhBxCvQugQaTlCXH6SU4HxAjAkxloMF6KHJ4nb3uN4Euv4BtlPNh5AQQgbbBKk2IGkGs8GSpwpyLmzGhJznClTK1kIp5eopseTKzR6C8fU94XS2sLz1sNClZAhpIKWpcVfZL5VLn8dRQwhd4yrCMCi0v4RxXPvbvJ/a+4l/EvPrBzwBWtMa1GGrr2YAAAAASUVORK5CYII='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
         alt="descriptions 01"
         title="descriptions 01"
-        src="/u-design/static/b9ced2d408c248eeb7d09c174f2fb232/07a9c/descriptions_01.png"
-        srcset="/u-design/static/b9ced2d408c248eeb7d09c174f2fb232/f21e7/descriptions_01.png 360w,
-/u-design/static/b9ced2d408c248eeb7d09c174f2fb232/37523/descriptions_01.png 720w,
-/u-design/static/b9ced2d408c248eeb7d09c174f2fb232/07a9c/descriptions_01.png 1440w,
-/u-design/static/b9ced2d408c248eeb7d09c174f2fb232/e8950/descriptions_01.png 2000w"
-        sizes="(max-width: 1440px) 100vw, 1440px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-      />
-    </span></p>
-<p>但是一些重要性极高的信息，需要用户立即关注并采取措施的信息，可以采取 <a href="http://10.179.234.214:8000/component/Modal/">弹窗</a> <code class="language-text">Modal</code>进行页面级独占式的通知。<span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1440px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 33.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA70lEQVQoz42RTYrCQBCFPVjS5qfz51xhcKEw6CauREjMGMwBZuUVRFCPIAPqJluvoQsXCmKbPKkWhzBGtOCjq5p+r6FexXU9EI7jSqg3DBOapoOxaimmyR80dyrF4f6o1Wqj2+0hCEKEYf8PmqPoG41GE5xb+K8tNbQsG4vFL7a7PbIsQ7HyPJfneDyBqjLUah+vDenn1WothUIIXC6ZhMyFOMv7+XwKRVHfM6T9pGmKsjocT1hugJ/RDLqmwvPeMLRtB77fQZIkGAxixPEN6oOgj7Y/xGf9C7b1YofFxChhRWFyT0UoYUNn4Nx8mvIVNJs9C0T3YosAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="descriptions 02"
-        title="descriptions 02"
-        src="/u-design/static/9892872c8512b9891c5dbfd37232217f/07a9c/descriptions_02.png"
-        srcset="/u-design/static/9892872c8512b9891c5dbfd37232217f/f21e7/descriptions_02.png 360w,
-/u-design/static/9892872c8512b9891c5dbfd37232217f/37523/descriptions_02.png 720w,
-/u-design/static/9892872c8512b9891c5dbfd37232217f/07a9c/descriptions_02.png 1440w,
-/u-design/static/9892872c8512b9891c5dbfd37232217f/e8950/descriptions_02.png 2000w"
+        src="/u-design/static/d47d2b810b10143bba9672b6d3a7e8a8/07a9c/descriptions_01.png"
+        srcset="/u-design/static/d47d2b810b10143bba9672b6d3a7e8a8/f21e7/descriptions_01.png 360w,
+/u-design/static/d47d2b810b10143bba9672b6d3a7e8a8/37523/descriptions_01.png 720w,
+/u-design/static/d47d2b810b10143bba9672b6d3a7e8a8/07a9c/descriptions_01.png 1440w,
+/u-design/static/d47d2b810b10143bba9672b6d3a7e8a8/e8950/descriptions_01.png 2000w"
         sizes="(max-width: 1440px) 100vw, 1440px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
