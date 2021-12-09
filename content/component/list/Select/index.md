@@ -79,7 +79,7 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 #### 使用场景    
 
-- 当选项过多且选项没有层级关系时，使用级联选择器展示并选择内容。
+- 当选项过多且选项没有层级关系时，使用 [级联选择器](http://10.179.234.214:8000/component/Cascader/) `Cascader`展示并选择内容。
 
   ![](../../../images/Select/descriptions_01.png)
 
@@ -97,7 +97,7 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>选项小于5项时建议使用radio，选项大于等于5项时建议使用select。</p>
+      <p><i class="u-md-suggested"></i>选项小于5项时建议使用单选Radio，选项大于等于5项时建议使用select。</p>
       <img src="../../../images/Select/problems_01.png" alt="image alt"/>
    </div>
    <div>
@@ -109,9 +109,9 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 
 
+
+
 ### 必填字段的默认项与空值使用
-
-
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
