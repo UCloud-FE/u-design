@@ -23,17 +23,20 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 **A.选择器**
 
-展示操作后的选项
+- 展示操作后的选项
+
 
 **B.下拉容器**
 
-收纳操作元素、可选项
+- 收纳操作元素、可选项
+
 
 **C.搜索框（可选）**
 
 **D.复选框**
 
-复选框可配置全选项
+- 复选框可配置全选项
+
 
 
 
@@ -77,13 +80,13 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 在界面中如何使用该组件？
 
-#### 使用场景    
+#### 1.使用场景    
 
 - 当选项过多且选项没有层级关系时，使用 [级联选择器](http://10.179.234.214:8000/component/Cascader/) `Cascader`展示并选择内容。
 
   ![](../../../images/Select/descriptions_01.png)
 
-#### 特殊用法    
+#### 2.特殊用法    
 
 - 当选择器支持空值时，选项中应给予空值选项。
 
@@ -98,13 +101,14 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>选项小于5项时建议使用单选Radio，选项大于等于5项时建议使用select。</p>
-      <img src="../../../images/Select/problems_01.png" alt="image alt"/>
+      <img src="../../../images/Select/problems_01.png"/>
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>选项过多时使用radio容易使表单整体看起来臃肿，当选项太少时若使用select不利于用户快速选择。</p>
-      <img src="../../../images/Select/problems_02.png" alt="image alt"/>
+      <img src="../../../images/Select/problems_02.png"/>
    </div>
 </div>
+
 
 
 
@@ -116,13 +120,14 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>若字段为必填项时，建议给出默认选项，且选项中不设空值。</p>
-      <img src="../../../images/Select/problems_03.png" alt="image alt" />
+      <img src="../../../images/Select/problems_03.png"/>
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>必填字段若默认为空，容易导致用户忘记选择而校验报错。</p>
-      <img src="../../../images/Select/problems_04.png" alt="image alt" />
+      <img src="../../../images/Select/problems_04.png"/>
    </div>
 </div>
+
 
 
 
