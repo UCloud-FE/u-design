@@ -15,11 +15,25 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 ## 基本构成
 
-![Basic composition](../../../images/Select/Basic composition.png)
+![](../../../images/Select/forms_01.png)
 
-| 选择器（A） | 下拉菜单（B） | 搜索框（C） | 分组标签（D） | 复选框（E） | 全选项（F） |
-| :---------: | :-----------: | :---------: | :-----------: | :---------: | :---------: |
-|      √      |       √       |      √      |       √       |      √      |      √      |
+| 选择器（A） | 下拉容器（B） | 搜索框（C） | 复选框（D） |
+| :---------: | :-----------: | :---------: | :---------: |
+|      √      |       √       |    可选     |      √      |
+
+**A.选择器**
+
+展示操作后的选项
+
+**B.下拉容器**
+
+收纳操作元素、可选项
+
+**C.搜索框（可选）**
+
+**D.复选框**
+
+复选框可配置全选项
 
 
 
@@ -28,27 +42,25 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 | 类型       | 说明                                                         |
 | :--------- | :----------------------------------------------------------- |
-| 基础用法   | 下拉选择器的基础用法，分为单选与多选。                       |
+| 基础用法   | 下拉选择器的基础用法，分为单选与多选，可配置全选项。         |
 | 带搜索功能 | 搜索框可同时用于单选或多选选择器中，通常在选项数量较大，用户需要通过搜索才能方便找到选项时使用。 |
 | 带分组标签 | 分组标签可同时用于单选或多选选择器中，当选项需要进行分类辅助用户查找选项时使用，标签不支持点选。 |
 
 #### 基础用法
 
-
+![](../../../images/Select/styles_01.png)
 
 #### 带搜索功能
 
-
+![](../../../images/Select/styles_02.png)
 
 #### 带分组标签
 
-
+![](../../../images/Select/styles_03.png)
 
 ## 基本状态
 
-![基本状态](../../../images/Select/基本状态.png)
-
-
+![](../../../images/Select/states_01.png)
 
 | 状态           | 说明                               | 作用                   |
 | :------------- | :--------------------------------- | ---------------------- |
@@ -67,15 +79,15 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 #### 使用场景    
 
-- 当选项过多且选项没有层级关系时，使用下拉菜单展示并选择内容。
+- 当选项过多且选项没有层级关系时，使用级联选择器展示并选择内容。
 
-  
+  ![](../../../images/Select/descriptions_01.png)
 
 #### 特殊用法    
 
 - 当选择器支持空值时，选项中应给予空值选项。
 
-![001](../../../images/Select/001.png)
+![](../../../images/Select/descriptions_02.png)
 
 
 
@@ -83,18 +95,17 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 ### Select与Radio使用时的区别
 
-
-
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>选项小于5项时建议使用radio，选项大于等于5项时建议使用select。</p>
-      <img src="../../../images/Select/002.png" alt="image alt" title="desc" />
+      <img src="../../../images/Select/problems_01.png" alt="image alt"/>
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>选项过多时使用radio容易使表单整体看起来臃肿，当选项太少时若使用select不利于用户快速选择。</p>
-      <img src="../../../images/Select/003.png" alt="image alt" title="desc" />
+      <img src="../../../images/Select/problems_02.png" alt="image alt"/>
    </div>
 </div>
+
 
 
 
@@ -105,13 +116,14 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>若字段为必填项时，建议给出默认选项，且选项中不设空值。</p>
-      <img src="../../../images/Select/005.png" alt="image alt" title="desc" />
+      <img src="../../../images/Select/problems_03.png" alt="image alt" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>必填字段若默认为空，容易导致用户忘记选择而校验报错。</p>
-      <img src="../../../images/Select/006.png" alt="image alt" title="desc" />
+      <img src="../../../images/Select/problems_04.png" alt="image alt" />
    </div>
 </div>
+
 
 
 
