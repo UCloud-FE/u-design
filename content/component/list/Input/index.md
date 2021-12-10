@@ -84,19 +84,11 @@ U-Design 的输入框 `Input` 具有5种状态：默认、悬停、激活、禁�
 
 ## 设计说明
 
-
 ### 避免使用占位符作为标题
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>当占位符不再可见时，必须使用标签来指示表单字段的含义。</p>
-      <img src="../../../images/Input/descriptions_01.png"/>
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>避免使用占位符作为标题，因为一旦填写表单，占位符文本就会被覆盖。</p>
-      <img src="../../../images/Input/descriptions_02.png"/>
-   </div>
-</div>
 
+- 避免使用占位符作为标题，因为一旦填写表单，占位符文本就会被覆盖；当占位符不再可见时，必须使用标签来指示表单字段的含义。
+
+![](../../../images/form/descriptions_01.png)
 
 ### 提供格式范例
 
