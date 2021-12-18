@@ -151,7 +151,16 @@ description: "信息添加、录入的通用形式"
 
 
 
+<!--
 
+## 主题
+
+| 内容 | 值           | 默认值  |
+| :--- | :----------- | :------ |
+| icon | icon/nothing | nothing |
+| icon | icon/nothing | nothing |
+
+-->
 
 ## 相关文档
 
