@@ -50,6 +50,17 @@ U-Design 的 长文本输入框 `textarea` 具有5种状态：
 ![3](../../../images/textarea/3.png)
 
 
+<!--
+
+## 主题
+
+| 内容 | 值           | 默认值  |
+| :--- | :----------- | :------ |
+| icon | icon/nothing | nothing |
+| icon | icon/nothing | nothing |
+
+
+-->
 
 
 ## 相关文档
