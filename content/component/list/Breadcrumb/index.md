@@ -83,3 +83,18 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 </div>
 
 
+<!--
+
+## 主题
+
+| 内容 | 值           | 默认值  |
+| :--- | :----------- | :------ |
+| icon | icon/nothing | nothing |
+| icon | icon/nothing | nothing |
+
+-->
+
+## 相关文档
+
+1. [Tabs 标签页](https://www.ucloud.cn)
+
