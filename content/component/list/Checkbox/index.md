@@ -279,10 +279,7 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 </div>
 
 
-​     
-
-​     
-
+<!--
 
 ## 主题
 
@@ -294,5 +291,7 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 
 ## 相关文档
 
-1. [相关文档1](https://www.ucloud.cn)
-2. [相关文档2](
+1. [Tag 标签](https://www.ucloud.cn)
+2. [Notice 提示](https://www.ucloud.cn)
+
+-->
