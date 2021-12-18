@@ -79,6 +79,16 @@ U-Design的 开关 `Switch` 有以下几种状态：、
 ![](../../../images/switch/styles_01.png)
 
 
+<!--
+
+## 主题
+
+| 内容 | 值           | 默认值  |
+| :--- | :----------- | :------ |
+| icon | icon/nothing | nothing |
+| icon | icon/nothing | nothing |
+
+-->
 
 
 ## 相关文档
