@@ -52,6 +52,15 @@ U-Design预设了五种语义类型：默认、成功、警告、报错、不可
 
 
 
+<!--
+
+## 主题
+
+| 内容 | 值           | 默认值  |
+| :--- | :----------- | :------ |
+| icon | icon/nothing | nothing |
+| icon | icon/nothing | nothing |、
+-->
 
 
 ## 相关文档
