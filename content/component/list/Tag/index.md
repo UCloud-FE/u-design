@@ -82,4 +82,4 @@ description: "进行标记和分类的小标签。"
 
 ## 相关文档
 
-1. [Badge 徽标](/component/Badge/)
+1. [Badge 徽标](u-design/content/component/list/Badge/index.md)
