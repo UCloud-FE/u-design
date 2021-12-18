@@ -263,9 +263,16 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
    </div>
 </div>
 
+<!--以下暂不显示
+
 ## 主题
 
 | 内容 | 值           | 默认值  |
 | :--- | :----------- | :------ |
 | icon | icon/nothing | nothing |
 | icon | icon/nothing | nothing |
+
+## 相关文档
+1. [text]()
+
+-->
