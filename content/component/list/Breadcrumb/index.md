@@ -69,10 +69,7 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 
 
 ## 常见问题
-
-### 当前页面在面包屑中不可点击
-
-​     
+ 当前页面在面包屑中不可点击    
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
