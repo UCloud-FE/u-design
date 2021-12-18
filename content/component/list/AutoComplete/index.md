@@ -75,3 +75,8 @@ description: "输入框自动完成功能。"
 
 - AutoComplete是一个带提示的文本输入框，用户可以自由输入，关键词是辅助输入。
 - Select是在限定的可选项中进行选择，关键词是选择。
+
+## 相关文档
+1. [Input 输入框](https://www.ucloud.cn)
+2. [Select 选择器](https://www.ucloud.cn)
+
