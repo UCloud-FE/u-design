@@ -93,5 +93,5 @@ U-Design的 开关 `Switch` 有以下几种状态：、
 
 ## 相关文档
 
-1. [AutoComplete 自动填充]()
-2. [Form 表单](http://10.179.234.214:8000/component/Form/)
+1. [Checkbox 多选](/component/Checkbox/)
+2. [Button 按钮](/component/Button/)
