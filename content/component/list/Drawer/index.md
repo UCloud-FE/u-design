@@ -78,11 +78,11 @@ description: "从父级窗口边缘滑出的浮层面板。"
 | icon | icon/nothing | nothing |
 | icon | icon/nothing | nothing |
 
+-->
 
 ## 相关文档
 
-1. [Tag 标签](https://www.ucloud.cn)
-2. [Notice 提示](https://www.ucloud.cn)
+1. [Form 表单](/component/From/)
+3. [Modal 弹窗](/component/Modal/)
 
--->
 
