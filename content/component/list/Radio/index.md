@@ -106,4 +106,4 @@ Radio单选 的选项应该按某种逻辑顺序排列，例如从最简单的�
 
 ## 相关文档
 
-1. [Checkbox 多选](https://www.ucloud.cn)
+1. [Checkbox 多选](/component/Checkbox/)
