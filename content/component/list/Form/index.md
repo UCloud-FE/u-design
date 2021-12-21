@@ -164,5 +164,5 @@ description: "信息添加、录入的通用形式"
 
 ## 相关文档
 
-1. [AutoComplete 自动填充]()
-2. [Form 表单](http://10.179.234.214:8000/component/Form/)
+1. [Modal 弹窗](/component/Modal/)
+2. [Drawer 抽屉](/component/Drawer/)
