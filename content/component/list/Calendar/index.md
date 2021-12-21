@@ -117,5 +117,5 @@ description: "用于展示日期数据的容器"
 -->
 
 ## 相关文档
-1. [Datepicker 日期选择器](https://www.ucloud.cn)
-2. [Timepicker 时间选择器](https://www.ucloud.cn)
+1. [Datepicker 日期选择器](/component/Datepicker/)
+2. [Timepicker 时间选择器](/component/Timepicker/)
