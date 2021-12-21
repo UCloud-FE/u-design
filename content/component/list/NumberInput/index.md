@@ -99,11 +99,11 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 | icon | icon/nothing | nothing |
 | icon | icon/nothing | nothing |
 
+-->
 
 ## 相关文档
 
-1. [Tag 标签](https://www.ucloud.cn)
-2. [Notice 提示](https://www.ucloud.cn)
+1. [Input 输入框](/component/Input/)
+2. [Autocomplete 自动填充](/component/Autocomplete/)
 
--->
 
