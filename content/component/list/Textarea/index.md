@@ -65,5 +65,5 @@ U-Design 的 长文本输入框 `textarea` 具有5种状态：
 
 ## 相关文档
 
-1. [Input 输入框]()
-2. [Form 表单]()
+1. [Input 输入框](/component/Input/)
+2. [Form 表单](/component/Form/)
