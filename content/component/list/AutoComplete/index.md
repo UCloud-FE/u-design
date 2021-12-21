@@ -77,6 +77,6 @@ description: "输入框自动完成功能。"
 - Select是在限定的可选项中进行选择，关键词是选择。
 
 ## 相关文档
-1. [Input 输入框](https://www.ucloud.cn)
-2. [Select 选择器](https://www.ucloud.cn)
+1. [Input 输入框](/component/Input/)
+2. [Select 选择器](/component/Select/)
 
