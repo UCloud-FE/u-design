@@ -65,6 +65,6 @@ U-Design预设了五种语义类型：默认、成功、警告、报错、不可
 
 ## 相关文档
 
-1. [Badge 徽标数](http://10.179.234.214:8000/component/Badge/)
-2. [PopConfirm 气泡确认框](http://10.179.234.214:8000/component/PopConfirm/)
-3. [弹窗](http://10.179.234.214:8000/component/Modal/)
+1. [Badge 徽标数](/component/Badge/)
+2. [PopConfirm 气泡确认框](/component/PopConfirm/)
+3. [Modal 弹窗](/component/Modal/)
