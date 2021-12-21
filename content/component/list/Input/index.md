@@ -117,5 +117,5 @@ U-Design 的输入框 `Input` 具有5种状态：默认、悬停、激活、禁�
 
 ## 相关文档
 
-1. [AutoComplete 自动填充](http://10.179.234.214:8000/component/AutoComplete/)
-2. [Form 表单](http://10.179.234.214:8000/component/Form/)
+1. [AutoComplete 自动填充](/component/AutoComplete/)
+2. [Form 表单](/component/Form/)
