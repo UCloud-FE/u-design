@@ -190,5 +190,5 @@ Badge是指通常出现在图标或⽂字右上⻆的红⾊圆点、数字或者
 
 ## 相关文档
 
-1. [Tag 标签](https://www.ucloud.cn)
-2. [Notice 提示](https://www.ucloud.cn)
+1. [Tag 标签](/component/Tag/)
+2. [Notice 提示]/component/Notice/)
