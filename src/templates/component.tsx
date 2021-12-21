@@ -128,6 +128,13 @@ const Index = ({ data, location }) => {
 
     const renderCurrentTabContent = () => {
         if (tabIndex === tabs[0]) {
+            if(!markdownRemark?.frontmatter?.description){
+                return (
+                    <>
+                        敬请期待
+                    </>
+                );
+            }
             return (
                 <>
                     <div className="u-markdown-design-styles" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} >
@@ -135,7 +142,7 @@ const Index = ({ data, location }) => {
                 </>
             );
         } else if (tabIndex === tabs[2]) {
-            return <div>Design Token</div>;
+            return <div>敬请期待</div>;
         }
 
         return null;

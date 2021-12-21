@@ -2,6 +2,7 @@ import * as React from 'react';
 import { useStaticQuery, Link, graphql } from 'gatsby';
 import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
+import UDesign from "../images/u-design.png"
 import Sidebar from '/src/components/Sidebar';
 import Footer from '../components/Footer';
 
@@ -146,7 +147,7 @@ const Layout = ({ location, children }) => {
             <header className={layoutStyles.header}>
                 <div className={layoutStyles.logo}>
                     <Link to="/" itemProp="url">
-                        U Design
+                        <img src={UDesign} alt="logo" />
                     </Link>
                 </div>
                 <nav>
@@ -164,14 +165,14 @@ const Layout = ({ location, children }) => {
                             </Link>
                         );
                     })}
-                    <Link
+                    {/* <Link
                         key="custom-components"
                         to="/custom"
                         itemProp="url"
                         className={`${location.pathname.includes('/custom') ? layoutStyles.current : ''}`}
                     >
                         定制
-                    </Link>
+                    </Link> */}
                 </nav>
             </header>
             <main className={layoutStyles.main}>
