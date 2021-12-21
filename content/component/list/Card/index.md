@@ -179,8 +179,8 @@ description: "卡片，聚合同类信息的容器。"
 
 ## 相关文档
 
-1. [Tag 标签](https://www.ucloud.cn)
-2. [Notice 提示](https://www.ucloud.cn)
+1. [Tag 标签](/component/Tag/)
+2. [Notice 提示](/component/Notice/)
 
 -->
 
