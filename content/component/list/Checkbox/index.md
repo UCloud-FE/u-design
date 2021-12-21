@@ -288,10 +288,8 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 | icon | icon/nothing | nothing |
 | icon | icon/nothing | nothing |
 
+-->
 
 ## 相关文档
-
-1. [Tag 标签](https://www.ucloud.cn)
-2. [Notice 提示](https://www.ucloud.cn)
-
--->
+1. [Radio 单选](/component/Radio/)
+2. [Select 选择器](/component/Select/)
