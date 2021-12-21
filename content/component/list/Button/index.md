@@ -277,4 +277,4 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 
 ## 相关文档
 
-1. [Modal 弹窗](https://www.ucloud.cn)
+1. [Modal 弹窗](/component/Modal/)
