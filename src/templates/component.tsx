@@ -24,7 +24,7 @@ const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
 
 const Index = ({ data, location }) => {
-    const { markdownRemark, thumbs } = data;
+    const { markdownRemark } = data;
     const slug = markdownRemark.fields.slug;
     const componentName = getComponentName(slug);
     const [tabIndex, setTabIndex] = useState(tabs[0]);
@@ -148,7 +148,6 @@ const Index = ({ data, location }) => {
         return null;
     };
 
-    const isComponentsCategory = markdownRemark?.fields?.slug?.includes('/component/category/');
     return (
         <div className={styles.wrapper}>
             <Seo title={markdownRemark.frontmatter.title} />
@@ -168,63 +167,56 @@ const Index = ({ data, location }) => {
                 <div className={styles.content}>
                     <div className={styles.top}>
                         <h1>
-                            {markdownRemark.frontmatter.title
-                                ? markdownRemark.frontmatter.title
-                                : getTitle(componentName)}
-                            {componentName && (
-                                <a
-                                    href={`https://github.com/UCloud-FE/u-design/blob/main/content/component/list/${componentName}/index.md`}
-                                    target="_blank"
-                                >
-                                    <Edit />
-                                </a>
-                            )}
+                            {getTitle(componentName)}
+                            <a
+                                href={`https://github.com/UCloud-FE/u-design/blob/main/content/component/list/${componentName}/index.md`}
+                                target="_blank"
+                            >
+                                <Edit />
+                            </a>
                         </h1>
                         {markdownRemark.frontmatter.description && <p>{markdownRemark.frontmatter.description}</p>}
                     </div>
-                    {!isComponentsCategory && (
-                        <div className={styles.tabs}>
-                            <ul>
-                                <li
-                                    className={`${tabIndex === tabs[0] && styles.current}`}
-                                    onClick={() => {
-                                        handleClickTab(tabs[0]);
-                                    }}
-                                >
-                                    <i className={styles.designIcon}></i>
-                                    <span>设计</span>
-                                </li>
-                                <li
-                                    className={`${tabIndex === tabs[1] && styles.current}`}
-                                    onClick={() => {
-                                        handleClickTab(tabs[1]);
-                                    }}
-                                >
-                                    <i className={styles.devIcon}></i>
-                                    文档
-                                </li>
-                                <li
-                                    className={`${tabIndex === tabs[2] && styles.current}`}
-                                    onClick={() => {
-                                        handleClickTab(tabs[2]);
-                                    }}
-                                >
-                                    <i className={styles.dtIcon}></i>
-                                    <span>Design Token</span>
-                                </li>
-                            </ul>
-                        </div>
-                    )}
+
+                    <div className={styles.tabs}>
+                        <ul>
+                            <li
+                                className={`${tabIndex === tabs[0] && styles.current}`}
+                                onClick={() => {
+                                    handleClickTab(tabs[0]);
+                                }}
+                            >
+                                <i className={styles.designIcon}></i>
+                                <span>设计</span>
+                            </li>
+                            <li
+                                className={`${tabIndex === tabs[1] && styles.current}`}
+                                onClick={() => {
+                                    handleClickTab(tabs[1]);
+                                }}
+                            >
+                                <i className={styles.devIcon}></i>
+                                文档
+                            </li>
+                            <li
+                                className={`${tabIndex === tabs[2] && styles.current}`}
+                                onClick={() => {
+                                    handleClickTab(tabs[2]);
+                                }}
+                            >
+                                <i className={styles.dtIcon}></i>
+                                <span>Design Token</span>
+                            </li>
+                        </ul>
+                    </div>
 
                     {renderCurrentTabContent()}
-                    {tabIndex === tabs[1] && !isComponentsCategory && 
+                    {tabIndex === tabs[1] &&
                         <div id="u-component-doc" className="u-markdown-dev-styles">
                             <div style={{textAlign: 'center'}}>loading</div>
                         </div>
                     }
-                    {markdownRemark?.fields?.slug?.includes('/component/category/') ? (
-                        <ComponentList markdownRemark={markdownRemark} thumbs={thumbs} />
-                    ) : null}
+
                     {/* {previousComponentName && (
                         <Link to={`/component/${previousComponentName}/`} rel="prev">
                             ← {getTitle(previousComponentName)}
@@ -261,14 +253,6 @@ export const pageQuery = graphql`
                 title
                 description
                 order
-            }
-        }
-        thumbs: allFile(filter: { relativePath: { glob: "component/list/*/thumb.png" } }) {
-            nodes {
-                relativePath
-                childImageSharp {
-                    gatsbyImageData
-                }
             }
         }
         previous: markdownRemark(id: { eq: $previousPostId }) {

@@ -4,7 +4,6 @@ import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
 import UDesign from "../images/u-design.png"
 import Sidebar from '/src/components/Sidebar';
-import Footer from '../components/Footer';
 
 const Layout = ({ location, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
@@ -83,6 +82,10 @@ const Layout = ({ location, children }) => {
     if (location.pathname.includes('/spec/')) {
         const categories = {};
         specs.nodes.forEach(item => {
+            if(item.fields.slug.split('/spec/')[1][0] === '_'){
+                return;
+            }
+
             const categoryName = item.frontmatter.category;
             categories[categoryName] = categories[categoryName] || [];
             categories[categoryName].push(item);
