@@ -255,21 +255,22 @@ export const pageQuery = graphql`
                 order
             }
         }
-        previous: markdownRemark(id: { eq: $previousPostId }) {
-            fields {
-                slug
-            }
-            frontmatter {
-                title
-            }
-        }
-        next: markdownRemark(id: { eq: $nextPostId }) {
-            fields {
-                slug
-            }
-            frontmatter {
-                title
-            }
-        }
     }
 `;
+
+// previous: markdownRemark(id: { eq: $previousPostId }) {
+//     fields {
+//         slug
+//     }
+//     frontmatter {
+//         title
+//     }
+// }
+// next: markdownRemark(id: { eq: $nextPostId }) {
+//     fields {
+//         slug
+//     }
+//     frontmatter {
+//         title
+//     }
+// }
