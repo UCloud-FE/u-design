@@ -237,7 +237,7 @@ const Index = ({ data, location }) => {
 export default Index;
 
 export const pageQuery = graphql`
-    query ComponentBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
+    query ComponentBySlug($id: String!) {
         markdownRemark(id: { eq: $id }) {
             id
             excerpt(pruneLength: 160)

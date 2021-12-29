@@ -37,7 +37,7 @@ const Index = ({ data }) => {
 export default Index;
 
 export const pageQuery = graphql`
-    query CategoryBySlug($id: String!, $previousPostId: String, $nextPostId: String) {
+    query CategoryBySlug($id: String!) {
         markdownRemark(id: { eq: $id }) {
             id
             excerpt(pruneLength: 160)
