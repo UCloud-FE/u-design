@@ -7,6 +7,8 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
     flex: 1;
     overflow: hidden;
     background-color: #f8f8fa;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    -webkit-font-smoothing: antialiased;
 
     .content-wrapper {
         height: 100%;
@@ -234,6 +236,7 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         margin-left: 24px!important;
         li {
             margin-bottom: 8px!important;
+            line-height: 24px;
         }
     }
 
@@ -248,6 +251,7 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
 
     @mixin p(){
         margin-bottom: 16px!important;
+        line-height: 24px;
     }
 
     .u-markdown-dev-styles{
@@ -315,9 +319,9 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
                 border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK!important;
                 line-height: 47px!important;
                 padding: 0px 12px!important;
-                color: $T_COLOR_TEXT_DEFAULT_DARK!important;
+                color: #526075;
                 font-size: 14px!important;
-                font-weight: 300!important;
+                font-weight: 400!important;
             }
             tbody tr:nth-child(2n){
                 background: $T_COLOR_TEXT_WHITE!important;
@@ -330,8 +334,8 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
     }
 
     blockquote {
-        color: $T_COLOR_TEXT_REMARK_DARK;
-        font-size: 16px;
+        color: #526075;
+        font-size: 18px;
         font-weight: 300;
         font-family: PingFangSC-Light, PingFang SC;
         line-height: 28px;
