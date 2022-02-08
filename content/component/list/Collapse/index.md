@@ -166,12 +166,7 @@ description: "折叠面板，可以折叠/展开的内容区域。"
    </div>
 </div>
 
-
-
-
-
-
-
+<!--
 
 ## 主题
 
@@ -181,9 +176,9 @@ description: "折叠面板，可以折叠/展开的内容区域。"
 | icon | icon/nothing | nothing |
 
 
-
 ## 相关文档
 
-1. [相关文档1](https://www.ucloud.cn)
-2. [相关文档2](https://www.ucloud.cn)
+1. [Tag 标签](/component/Tag/)
+2. [Notice 提示](/component/Notice/)
 
+-->

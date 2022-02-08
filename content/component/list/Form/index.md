@@ -98,11 +98,9 @@ description: "信息添加、录入的通用形式"
 
 ## 基本状态
 
-提示信息搭配有预设颜色的icon时，——————<!--提示信息的基本状态，交互来说明一下-->
+提示信息搭配有预设颜色的icon时，规则如下：
 
 ![](../../../images/form/states_01.png)
-
-
 
 
 
@@ -151,9 +149,18 @@ description: "信息添加、录入的通用形式"
 
 
 
+<!--
 
+## 主题
+
+| 内容 | 值           | 默认值  |
+| :--- | :----------- | :------ |
+| icon | icon/nothing | nothing |
+| icon | icon/nothing | nothing |
+
+-->
 
 ## 相关文档
 
-1. [AutoComplete 自动填充]()
-2. [Form 表单](http://10.179.234.214:8000/component/Form/)
+1. [Modal 弹窗](/component/Modal/)
+2. [Drawer 抽屉](/component/Drawer/)

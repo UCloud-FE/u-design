@@ -59,7 +59,6 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 
 
 
-## 
 
 ## 设计说明
 
@@ -90,7 +89,20 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 
 
 
+<!--
+
+## 主题
+
+| 内容 | 值           | 默认值  |
+| :--- | :----------- | :------ |
+| icon | icon/nothing | nothing |
+| icon | icon/nothing | nothing |
+
+-->
+
+## 相关文档
+
+1. [Input 输入框](/component/Input/)
+2. [Autocomplete 自动填充](/component/Autocomplete/)
 
 
-
-## 

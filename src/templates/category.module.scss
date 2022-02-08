@@ -1,0 +1,29 @@
+@import '/src/vars.scss';
+
+.top {
+    padding-top: 48px;
+    font-family: PingFang SC;
+
+    h1 {
+        margin: 0;
+        margin-top: 16px;
+        color: $T_COLOR_TEXT_DEFAULT_DARK;
+
+        font-size: 32px;
+        font-weight: 400;
+        line-height: 46px;
+        letter-spacing: 0.177778px;
+    }
+
+    p{
+        font-style: normal;
+        font-weight: 300;
+        font-size: 16px;
+        line-height: 28px;
+        letter-spacing: 0.0888889px;
+    }
+}
+
+.list{
+    margin-top: 48px;
+}

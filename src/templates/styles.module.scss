@@ -1,4 +1,5 @@
 @import '/src/vars.scss';
+$MARKDOWN_CONTENT_WIDTH: 880px;
 
 .wrapper {
     height: 100%;
@@ -6,10 +7,19 @@
     flex: 1;
     overflow: hidden;
     background-color: #f8f8fa;
+    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    -webkit-font-smoothing: antialiased;
 
     .content-wrapper {
         height: 100%;
         overflow: auto;
+        footer {
+            > div {
+                max-width: $MARKDOWN_CONTENT_WIDTH;
+                padding-left: 72px;
+                padding-right: 264px;
+            }
+        }
     }
 
     .content {
@@ -17,7 +27,7 @@
         padding-right: 264px;
         padding-bottom: 48px;
         margin: 0 auto;
-        max-width: 880px;
+        max-width: $MARKDOWN_CONTENT_WIDTH;
 
         .top {
             padding-top: 48px;
@@ -226,6 +236,7 @@
         margin-left: 24px!important;
         li {
             margin-bottom: 8px!important;
+            line-height: 24px;
         }
     }
 
@@ -240,6 +251,7 @@
 
     @mixin p(){
         margin-bottom: 16px!important;
+        line-height: 24px;
     }
 
     .u-markdown-dev-styles{
@@ -307,9 +319,9 @@
                 border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK!important;
                 line-height: 47px!important;
                 padding: 0px 12px!important;
-                color: $T_COLOR_TEXT_DEFAULT_DARK!important;
+                color: #526075;
                 font-size: 14px!important;
-                font-weight: 300!important;
+                font-weight: 400!important;
             }
             tbody tr:nth-child(2n){
                 background: $T_COLOR_TEXT_WHITE!important;
@@ -322,8 +334,8 @@
     }
 
     blockquote {
-        color: $T_COLOR_TEXT_REMARK_DARK;
-        font-size: 16px;
+        color: #526075;
+        font-size: 18px;
         font-weight: 300;
         font-family: PingFangSC-Light, PingFang SC;
         line-height: 28px;
@@ -423,7 +435,7 @@
         border: 1px solid #EFEFF8;
         flex: 1;
         margin: 0;
-        margin-bottom: 38px;
+        // margin-bottom: 38px;
     }
 
     .gatsby-resp-image-figcaption {
@@ -435,6 +447,7 @@
         left: 0px;
         right: 0px;
         bottom: -38px;
+        display: none;
     }
 
     .gatsby-resp-image-figure {

@@ -1,12 +1,9 @@
-
 ---
 description: "徽标，用于承载数字/符号信息。"
 
 ---
 
 <!--副标题具体写法见源代码模式-->
-
-
 
 ## 简介
 
@@ -180,8 +177,7 @@ Badge是指通常出现在图标或⽂字右上⻆的红⾊圆点、数字或者
 </div>
 
 
-
-
+<!--
 
 ## 主题
 
@@ -190,10 +186,9 @@ Badge是指通常出现在图标或⽂字右上⻆的红⾊圆点、数字或者
 | icon | icon/nothing | nothing |
 | icon | icon/nothing | nothing |
 
-
+-->
 
 ## 相关文档
 
-1. [相关文档1](https://www.ucloud.cn)
-2. [相关文档2](https://www.ucloud.cn)
-
+1. [Tag 标签](/component/Tag/)
+2. [Notice 提示]/component/Notice/)

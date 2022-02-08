@@ -7,6 +7,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     // Define a template
     const specTemplate = path.resolve(`./src/templates/spec.tsx`);
     const componentTemplate = path.resolve(`./src/templates/component.tsx`);
+    const categoryTemplate = path.resolve(`./src/templates/category.tsx`);
 
     // Get all markdown sorted by date
     const result = await graphql(
@@ -41,6 +42,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
             if (post.fields.slug.indexOf('/spec/') === 0) {
                 template = specTemplate;
+            } else if (post.fields.slug.indexOf('/component/category/') === 0) {
+                template = categoryTemplate;
             } else if (post.fields.slug.indexOf('/component/') === 0) {
                 template = componentTemplate;
                 slug = slug.split('list/').join('');

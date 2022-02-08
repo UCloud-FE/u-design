@@ -82,5 +82,4 @@ description: "进行标记和分类的小标签。"
 
 ## 相关文档
 
-1. [相关文档1](https://www.ucloud.cn)
-2. [相关文档2](https://www.ucloud.cn)
+1. [Badge 徽标](/component/Badge/)

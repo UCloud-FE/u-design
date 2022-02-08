@@ -123,6 +123,7 @@ description: "输入或选择时间的输入控件"
 #### 4.配合**快捷选项**进行使用
 
 可基于用户常关注的时间区间提供快捷选项，并提供**自定义**以触发时间滚轮。基本用法与[Datepicker 时间选择器]()一致。
+<!--
 
 ## 主题
 
@@ -131,8 +132,11 @@ description: "输入或选择时间的输入控件"
 | icon | icon/nothing | nothing |
 | icon | icon/nothing | nothing |
 
+-->
 
 ## 相关文档
 
-1. [相关文档1](https://www.ucloud.cn)
-2. [相关文档2](
+1. [Datepicker 日期选择器](/component/Datepicker/)
+3. [Calendar 日历](/component/Calendar/)
+
+

@@ -142,6 +142,8 @@ description: "输入或选择日期的输入控件"
 
 ![5](../../../images/Datepicker/5.png)
 
+<!--
+
 ## 主题
 
 | 内容 | 值           | 默认值  |
@@ -149,8 +151,10 @@ description: "输入或选择日期的输入控件"
 | icon | icon/nothing | nothing |
 | icon | icon/nothing | nothing |
 
+-->
 
 ## 相关文档
 
-1. [相关文档1](https://www.ucloud.cn)
-2. [相关文档2](
+1. [Datepicker 日期选择器](/component/Datepicker/)
+2. [Calendar 日历](/component/Calendar/)
+
