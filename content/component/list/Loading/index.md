@@ -49,10 +49,10 @@ U-Design默认文案为「Loading」。
 全屏展示加载状态，阻止用户操作。
 
 ### 容器加载
-![1](../../../images/Loading/8.png)
+![1](../../../images/Loading/9.png)
 
 ### 元素加载
-![1](../../../images/Loading/9.png)
+![1](../../../images/Loading/8.png)
 只对指定的元素进行加载，不影响页面其他内容。
 
 ## 设计说明
