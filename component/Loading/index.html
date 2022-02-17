@@ -141,7 +141,7 @@
   </figure></p>
 <p>产品都应该有品牌传达的诉求，加载页可以帮助进行品牌透出，提高用户对品牌的感知。</p>
 <p>具体可以通过加载图标展现品牌元素、品牌色等，进行整体品牌气质的传递，形成品牌感知。</p>
-<p><strong>图标加载</strong> 时，应当使图标保持动态，减少停顿，避免用户产生「卡」的主观感受。</p>
+<p>此外，<strong>图标加载</strong> 时，需要注意使图标保持动态，减少停顿，避免用户产生「卡」的主观感受。</p>
 <h3 id="文字和图片共同显示的加载" style="position:relative;"><a href="#%E6%96%87%E5%AD%97%E5%92%8C%E5%9B%BE%E7%89%87%E5%85%B1%E5%90%8C%E6%98%BE%E7%A4%BA%E7%9A%84%E5%8A%A0%E8%BD%BD" aria-label="文字和图片共同显示的加载 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>文字和图片共同显示的加载</h3>
 <p><figure class="gatsby-resp-image-figure" style="">
     <span
@@ -166,7 +166,7 @@
     <figcaption class="gatsby-resp-image-figcaption">1</figcaption>
   </figure></p>
 <p>当加载等待时间达到了一个临界值，还是可能造成大部分用户误认为是网络或程序bug而选择跳出。所以在长时间加载等待的场景下，我们应该通过添加文字，明确地告诉用户当前加载的进度百分比或预计等待时间，以便用户知道自己的等待是有结果的。
-我结合了 <strong>用户等待4秒原则</strong> 和 UX 研究咨询公司 Nielsen Norman Group（NN/g 尼尔森诺曼集团）的一篇文献中提出的 <strong>用户等待心理模型</strong> ，得出了以下参考结论：
+U-Design结合了 <strong>用户等待4秒原则</strong> 和 UX 研究咨询公司 Nielsen Norman Group（NN/g 尼尔森诺曼集团）的一篇文献中提出的 <strong>用户等待心理模型</strong> ，得出了以下参考结论：
 <figure class="gatsby-resp-image-figure" style="">
     <span
       class="gatsby-resp-image-wrapper"
@@ -249,7 +249,6 @@
 只对指定的元素进行加载，不影响页面其他内容。</p>
 <h2 id="设计说明" style="position:relative;"><a href="#%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" aria-label="设计说明 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计说明</h2>
 <ul>
-<li>操作耗时小于一秒钟时，不需要使用 <strong>加载中Loading</strong> 。</li>
 <li>大多数产品的页面加载速度都在这个区间，用户几乎不会注意到这种加载延迟。所以我们不需要增加额外的加载动效来填充这段加载时间，不然可能会起到画蛇添足的反面效果。试想一下，如果在每个页面加载的过程中都加上加载动效，不仅会分散用户的注意力，并且屏幕上总出现不断跳动的内容，会让人感到很焦躁。</li>
 <li>避免在一个页面上，同时显示多个加载中的图标，如果无法避免这种情况，可以考虑将加载态放置到更高级别的页面容器上。</li>
 </ul>
