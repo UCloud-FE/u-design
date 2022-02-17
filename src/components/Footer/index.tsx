@@ -1,43 +1,26 @@
 import * as React from 'react';
+import UDesign from "../../images/u-design.png";
 import * as styles from './styles.module.scss';
 
 const Index = () => {
     return (
-        <footer className={styles.footer}>
-            <div className={styles.links}>
-                <div>
-                    <h2>UCloud</h2>
-                    <ul>
-                        <li>
-                            <a href="https://www.ucloud.cn" target="_blank">
-                                UCloud 官网
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://docs.ucloud.cn" target="_blank">
-                                UCloud 文档中心
-                            </a>
-                        </li>
-                        <li>
-                            <a href="https://console.ucloud.cn" target="_blank">
-                                UCloud 控制台
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div>
-                    <h2>社区</h2>
-                    <ul>
+        <footer className={styles.w}>
+            <div className={styles.c}>
+                <div className={styles.top}>
+                    <div className={styles.logo}>
+                        <img src={UDesign} alt="logo" />
+                    </div>
+                    <ul className={styles.links}>
                         <li>
                             <a href="https://github.com/UCloud-FE/react-components" target="_blank">
-                                GitHub
+                                Github
                             </a>
                         </li>
                     </ul>
                 </div>
+                <div className={styles.bottom}>Copyright © 2021-{new Date().getFullYear()} UCloud 优刻得科技股份有限公司</div>
             </div>
 
-            <div className={styles.bottom}>© {new Date().getFullYear()}, UCloud</div>
         </footer>
     );
 };

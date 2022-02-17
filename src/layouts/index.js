@@ -2,14 +2,14 @@ import * as React from 'react';
 import { useStaticQuery, Link, graphql } from 'gatsby';
 import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
+import UDesign from "../images/u-design.png"
 import Sidebar from '/src/components/Sidebar';
 
-const categoryOrders = ['全局样式', '设计模式'];
 const Layout = ({ location, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
     const isRootPath = location.pathname === rootPath;
 
-    const { navs, category, all, categories, specs } = useStaticQuery(graphql`
+    const { navs, category, all, categories, specs, specsCategoryOrder } = useStaticQuery(graphql`
         query {
             navs: allMarkdownRemark(
                 sort: { fields: [frontmatter___order], order: ASC }
@@ -66,22 +66,33 @@ const Layout = ({ location, children }) => {
                     }
                 }
             }
+            specsCategoryOrder: markdownRemark(fileAbsolutePath: { glob: "**/content/spec/index.md" }) {
+                frontmatter {
+                    categoryOrder
+                }
+            }
         }
     `);
 
+    let { categoryOrder } = specsCategoryOrder.frontmatter;
+    categoryOrder = categoryOrder.split("|");
     const _categories = categories.nodes.filter(item => item.excerpt);
     let items = [];
 
     if (location.pathname.includes('/spec/')) {
         const categories = {};
         specs.nodes.forEach(item => {
+            if(item.fields.slug.split('/spec/')[1][0] === '_'){
+                return;
+            }
+
             const categoryName = item.frontmatter.category;
             categories[categoryName] = categories[categoryName] || [];
             categories[categoryName].push(item);
         });
 
         items = Object.keys(categories)
-            .sort((a, b) => categoryOrders.findIndex(item => item === a) - categoryOrders.findIndex(item => item === b))
+            .sort((a, b) => categoryOrder.findIndex(item => item === a) - categoryOrder.findIndex(item => item === b))
             .map(categoryName => {
                 const items = categories[categoryName];
                 if (items.length === 1) {
@@ -139,7 +150,7 @@ const Layout = ({ location, children }) => {
             <header className={layoutStyles.header}>
                 <div className={layoutStyles.logo}>
                     <Link to="/" itemProp="url">
-                        UCloud Design
+                        <img src={UDesign} alt="logo" />
                     </Link>
                 </div>
                 <nav>
@@ -157,6 +168,14 @@ const Layout = ({ location, children }) => {
                             </Link>
                         );
                     })}
+                    {/* <Link
+                        key="custom-components"
+                        to="/custom"
+                        itemProp="url"
+                        className={`${location.pathname.includes('/custom') ? layoutStyles.current : ''}`}
+                    >
+                        定制
+                    </Link> */}
                 </nav>
             </header>
             <main className={layoutStyles.main}>
