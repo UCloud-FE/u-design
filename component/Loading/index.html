@@ -67,6 +67,8 @@
 		s-1.791-4-4-4H15C8.373,1,3,6.373,3,13v64c0,6.627,5.373,12,12,12h64c6.627,0,12-5.373,12-12V33C91,30.791,89.209,29,87,29z"></path><path d="M52.172,39.829C52.952,40.609,53.977,41,55,41s2.048-0.391,2.828-1.171l32-32c1.562-1.562,1.562-4.095,0-5.657
 		c-1.561-1.562-4.096-1.562-5.656,0l-32,32C50.609,35.734,50.609,38.266,52.172,39.829z"></path></g></svg></a></h1><p>引导用户按照流程完成任务的导航条</p></div><div class="styles-module--tabs--2351a"><ul><li class="styles-module--current--2oNGU"><i class="styles-module--design-icon--1yNrb"></i><span>设计</span></li><li class="false"><i class="styles-module--devIcon--2YMwg"></i>文档</li><li class="false"><i class="styles-module--dtIcon--1Lz32"></i><span>Design Token</span></li></ul></div><div class="u-markdown-design-styles"><!--副标题具体写法见源代码模式-->
 <h2 id="简介" style="position:relative;"><a href="#%E7%AE%80%E4%BB%8B" aria-label="简介 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>简介</h2>
+<p>因操作导致的页面跳转、刷新或弹窗等从而使页面元素或信息发生变化行为，页面都需要向服务器发送请求信息，服务器接收到后在发送反馈信息，而由于网络及页面自身处理信息的原因导致这个信息对换的过程可能发生延长从而需要一个“反馈”即加载来缓和用户的等待。</p>
+<p>加载对用户来说是一种反馈，是用户触发、系统反应的过程。</p>
 <p>当页面或局部处于等待异步数据加载或正在渲染时，可以使用 <strong>加载中Loading</strong> 展示加载的状态。</p>
 <p>用户感知的等待时间，是 <strong>加载中Loading</strong> 设计的发力点。合适的加载动效可以告知用户他们的请求正在处理中，从而有效地缓解用户的焦虑。在处理时间不变前提下，填补用户等待的时间，减少用户因等待而产生的焦虑情绪。</p>
 <h2 id="基本构成" style="position:relative;"><a href="#%E5%9F%BA%E6%9C%AC%E6%9E%84%E6%88%90" aria-label="基本构成 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>基本构成</h2>
@@ -138,7 +140,7 @@
     <figcaption class="gatsby-resp-image-figcaption">1</figcaption>
   </figure>
 产品都应该有品牌传达的诉求，加载页可以帮助进行品牌透出，提高用户对品牌的感知。</p>
-<p>具体可以通过加载图标展现品牌元素、品牌色等，进行整体品牌气质的传递。</p>
+<p>具体可以通过加载图标展现品牌元素、品牌色等，进行整体品牌气质的传递，形成品牌感知。</p>
 <p> <strong>图标加载</strong> 时，应当使图标保持动态，减少停顿，避免用户产生「卡」的主观感受。</p>
 <h3 id="文字和图片共同显示的加载" style="position:relative;"><a href="#%E6%96%87%E5%AD%97%E5%92%8C%E5%9B%BE%E7%89%87%E5%85%B1%E5%90%8C%E6%98%BE%E7%A4%BA%E7%9A%84%E5%8A%A0%E8%BD%BD" aria-label="文字和图片共同显示的加载 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>文字和图片共同显示的加载</h3>
 <p><figure class="gatsby-resp-image-figure" style="">
@@ -222,6 +224,7 @@
 <h2 id="设计说明" style="position:relative;"><a href="#%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" aria-label="设计说明 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计说明</h2>
 <ul>
 <li>操作耗时小于一秒钟时，不需要使用 <strong>加载中Loading</strong> 。</li>
+<li>大多数产品的页面加载速度都在这个区间，用户几乎不会注意到这种加载延迟。所以我们不需要增加额外的加载动效来填充这段加载时间，不然可能会起到画蛇添足的反面效果。试想一下，如果在每个页面加载的过程中都加上加载动效，不仅会分散用户的注意力，并且屏幕上总出现不断跳动的内容，会让人感到很焦躁。</li>
 <li>避免在一个页面上，同时显示多个加载中的图标，如果无法避免这种情况，可以考虑将加载态放置到更高级别的页面容器上。</li>
 </ul>
 <h2 id="相关文档" style="position:relative;"><a href="#%E7%9B%B8%E5%85%B3%E6%96%87%E6%A1%A3" aria-label="相关文档 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>相关文档</h2>
