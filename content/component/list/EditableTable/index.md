@@ -99,7 +99,7 @@ D、自增按钮
 
 ## 相关文档
 
-1. [Table表格]https://udesign.ucloud.cn/component/Table/)
-2. [Form表单](https://udesign.ucloud.cn/component/Form/）
-3. [EditableList 自增表单](https://udesign.ucloud.cn/component/EditableList/）
+1. [Table表格](https://udesign.ucloud.cn/component/Table/)
+2. [Form表单](https://udesign.ucloud.cn/component/Form/)
+3. [EditableList 自增表单](https://udesign.ucloud.cn/component/EditableList/)
 
