@@ -1,6 +1,6 @@
-```
+---
 description: "自增表格，用于列表项的编辑删除。"
-```
+---
 
 <!--副标题具体写法见源代码模式-->
 
@@ -99,7 +99,7 @@ D、自增按钮
 
 ## 相关文档
 
-1. [Table表格]https://udesign.ucloud.cn/component/Table/)
-2. [Form表单](https://udesign.ucloud.cn/component/Form/）
-3. [EditableList 自增表单](https://udesign.ucloud.cn/component/EditableList/）
+1. [Table表格](https://udesign.ucloud.cn/component/Table/)
+2. [Form表单](https://udesign.ucloud.cn/component/Form/)
+3. [EditableList 自增表单](https://udesign.ucloud.cn/component/EditableList/)
 
