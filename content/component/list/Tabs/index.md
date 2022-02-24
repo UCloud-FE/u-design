@@ -96,11 +96,11 @@ U-Design 目前对 Tabs 区分了 3 种尺寸：大（lg）、中（md）、小�
       <p><i class="u-md-suggested"></i>**Tabs** 中，同一时刻，只能显示一个标签的内容。
 
 当用户需要对位于不同标签上的信息进行对比，或者多个内容同时显示会更便于用户阅读时，就不应该使用 **Tabs** ，否则会导致用户为了对比所需的信息，而不停在标签之间进行切换。</p>
-      <img src="../../../images/Select/problems_01.png"/>
+      <img src="![](../../../images/TAB/90.png)"/>
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>选项过多时使用radio容易使表单整体看起来臃肿，当选项太少时若使用select不利于用户快速选择。</p>
-      <img src="../../../images/Select/problems_02.png"/>
+      <img src="![](../../../images/TAB/91.png)"/>
    </div>
 </div>
 
