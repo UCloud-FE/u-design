@@ -85,7 +85,8 @@ U-Design 目前对 Tabs 区分了 3 种尺寸：大（lg）、中（md）、小�
 标签的先后应当按照其重要程度进行排序，可以将产品需要推广或需要优先展示的内容放在默认标签上，将用户感兴趣的、无法忽略的，或者更要级更低的标签靠后。
 
 
-
+### 标签上使用简短和有逻辑的文字
+U-Design 参考Nielsen Norman Group（NN/g 尼尔森诺曼集团）的 [Tabs, Used Right](https://www.nngroup.com/articles/tabs-used-right/)，建议标签的内容控制在6个中文字符内，以便于用户操作理解。
 
 ## 常见问题
 
