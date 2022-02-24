@@ -1,8 +1,7 @@
+
 ---
 description: "对象内的导航或过滤器"
-
 ---
-
 
 <!--副标题具体写法见源代码模式-->
 
@@ -88,6 +87,8 @@ U-Design 目前对 Tabs 区分了 3 种尺寸：大（lg）、中（md）、小�
 
 ### 标签上使用简短和有逻辑的文字
 U-Design 参考Nielsen Norman Group（NN/g 尼尔森诺曼集团）的 [Tabs, Used Right](https://www.nngroup.com/articles/tabs-used-right/)，建议标签的内容控制在6个中文字符内，以便于用户操作理解。
+<!--UI补充示意图-->
+
 
 ## 常见问题
 
