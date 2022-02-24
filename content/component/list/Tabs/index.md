@@ -93,34 +93,17 @@ U-Design 目前对 Tabs 区分了 3 种尺寸：大（lg）、中（md）、小�
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>**Tabs** 中，同一时刻，只能显示一个标签的内容。
-
-当用户需要对位于不同标签上的信息进行对比，或者多个内容同时显示会更便于用户阅读时，就不应该使用 **Tabs** ，否则会导致用户为了对比所需的信息，而不停在标签之间进行切换。</p>
-      <img src="![](../../../images/TAB/90.png)"/>
+      <p><i class="u-md-suggested"></i>**Tabs** 中，标签之间具有某种关联特征，且是并列关系，内容不交叉，同时只展示一个。
+</p>
+      <img src="../../../images/TAB/90.png"/>
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>选项过多时使用radio容易使表单整体看起来臃肿，当选项太少时若使用select不利于用户快速选择。</p>
-      <img src="![](../../../images/TAB/91.png)"/>
+      <p><i class="u-md-not-suggested"></i>当用户需要同时查看多个标签时，就不应该使用 **Tabs** ，否则会导致用户为了对比所需的信息，而不停在标签之间进行切换。。</p>
+      <img src="../../../images/TAB/91.png"/>
    </div>
 </div>
 
 
-
-
-
-
-
-### 标签之间具有某种关联特征，且是并列关系，内容不交叉
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>构成 **Tabs** 的每个标签之间都应该具有逻辑上的关联性，但是，内容又不相重叠，这样用户才能将整个Tab区域视为一个整体。</p>
-      <img src="../../../images/Select/problems_03.png"/>
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>必填字段若默认为空，容易导致用户忘记选择而校验报错。</p>
-      <img src="../../../images/Select/problems_04.png"/>
-   </div>
-</div>
 
 ## 相关文档
 
