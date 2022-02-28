@@ -218,7 +218,11 @@
     {
         "name": "Tooltip",
         "zh_cn": "文字提示",
-        "components": ["Popover"],
+        "category": ["feedback"]
+    },
+    {
+        "name": "Popover",
+        "zh_cn": "气泡卡片",
         "category": ["feedback"]
     },
     {
