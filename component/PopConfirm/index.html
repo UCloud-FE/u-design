@@ -68,8 +68,7 @@
 		c-1.561-1.562-4.096-1.562-5.656,0l-32,32C50.609,35.734,50.609,38.266,52.172,39.829z"></path></g></svg></a></h1><p>系统主动推送给用户的消息。</p></div><div class="styles-module--tabs--2351a"><ul><li class="styles-module--current--2oNGU"><i class="styles-module--design-icon--1yNrb"></i><span>设计</span></li><li class="false"><i class="styles-module--devIcon--2YMwg"></i>文档</li><li class="false"><i class="styles-module--dtIcon--1Lz32"></i><span>Design Token</span></li></ul></div><div class="u-markdown-design-styles"><!--副标题具体写法见源代码模式-->
 <h2 id="简介" style="position:relative;"><a href="#%E7%AE%80%E4%BB%8B" aria-label="简介 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>简介</h2>
 <p>用户在使用产品时需要做各种决策，为了减少甚至避免对重要数据的误操作，或对重要操作的误触，我们需要在必要且合适的时候，让用户对操作进行二次确认。</p>
-<p>气泡确认框 <code class="language-text">PopConfirm</code> 通常用于中成本的操作的二次确认，其会在点击元素上弹出浮层进行提示确认。气泡确认框没有蒙层，点击确认框以外的区域即可关闭。</p>
-<p>通过气泡确认框 <code class="language-text">PopConfirm</code> 可以对用户的操作进行二次确认，防止误操作。</p>
+<p>气泡确认框 <code class="language-text">PopConfirm</code> 通常用于中成本的操作的二次确认，其会在点击元素上弹出浮层进行提示确认。防止误操作。</p>
 <h2 id="基本构成" style="position:relative;"><a href="#%E5%9F%BA%E6%9C%AC%E6%9E%84%E6%88%90" aria-label="基本构成 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>基本构成</h2>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -95,49 +94,30 @@
 <thead>
 <tr>
 <th align="center">图标（A）</th>
-<th align="center">通知文案（B）</th>
+<th align="center">文案（B）</th>
 <th align="center">操作按钮（C）</th>
 <th align="center">容器（D）</th>
-<th align="center">关闭按钮（E）</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="center">可选</td>
 <td align="center">√</td>
-<td align="center">可选</td>
 <td align="center">√</td>
-<td align="center">可选</td>
+<td align="center">√</td>
+<td align="center">√</td>
 </tr>
 </tbody>
 </table>
-<p><strong>A.图标（可选）</strong></p>
-<p>主要用来表示提示的重要程度，其色值与背景颜色配套使用，U-Design预设部分图标，用户也可以根据自己的需求自定义。</p>
+<p><strong>A.图标（必选）</strong></p>
+<p>主要用来表示提示的重要程度，U-Design预设部分图标，用户也可以根据自己的需求自定义。</p>
+<p><strong>B.文案（必选）</strong></p>
+<p><strong>B.操作按钮（必选）</strong></p>
+<p><strong>B.容器（必选）</strong></p>
 <h2 id="基本状态" style="position:relative;"><a href="#%E5%9F%BA%E6%9C%AC%E7%8A%B6%E6%80%81" aria-label="基本状态 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>基本状态</h2>
-<p>U-Design预设了五种语义类型：默认、成功、警告、报错、不可用。</p>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1440px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 33.888888888888886%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAHCAYAAAAIy204AAAACXBIWXMAAAsTAAALEwEAmpwYAAAA1ElEQVQoz5WQ3U7DMAxG9/6vh4S4AQHbtKL+JHZaJxmdDkqzQpGAiYtPJ4mcI9s71cgakUJbOPhyNzQkwia1zio3f9fsvgttEXof2b842lYYNZMsEadEskyQ6Ut45a9CFUM0YYOQnh+RpiP3jot3zK7Qk/se9WPt7qZwGTdhYeCs9wR95RyPzLnmko9k26Oqn+v5e2Q1giTa0XHnH3iShkPuaOaO03vlIb0xaECl1t8UFjodOfmWXj1uCkgMiBWOy5uX6T87rAwaCaVj3Z6vNavoB+EHSoQZb3zYCiwAAAAASUVORK5CYII='); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="states 01"
-        title="states 01"
-        src="/u-design/static/e5017b6b38d96ffaf7d89f71d95a76a3/07a9c/states_01.png"
-        srcset="/u-design/static/e5017b6b38d96ffaf7d89f71d95a76a3/f21e7/states_01.png 360w,
-/u-design/static/e5017b6b38d96ffaf7d89f71d95a76a3/37523/states_01.png 720w,
-/u-design/static/e5017b6b38d96ffaf7d89f71d95a76a3/07a9c/states_01.png 1440w,
-/u-design/static/e5017b6b38d96ffaf7d89f71d95a76a3/e8950/states_01.png 2000w"
-        sizes="(max-width: 1440px) 100vw, 1440px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-      />
-    </span></p>
+<p>3行内文本，高度自适应</p>
+<p>文本超过3行，出滚动条，滚动展示</p>
 <h2 id="设计说明" style="position:relative;"><a href="#%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" aria-label="设计说明 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计说明</h2>
+<p>气泡确认框没有蒙层，点击确认框以外的区域即可关闭。</p>
 <h2 id="常见问题" style="position:relative;"><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" aria-label="常见问题 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>常见问题</h2>
 <h3 id="避免滥用" style="position:relative;"><a href="#%E9%81%BF%E5%85%8D%E6%BB%A5%E7%94%A8" aria-label="避免滥用 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>避免滥用</h3>
 <p>气泡确认框 <code class="language-text">PopConfirm</code> 是会打断用户操作流的设计，是迫不得已的折中方案：</p>
