@@ -140,35 +140,57 @@
 <h2 id="设计说明" style="position:relative;"><a href="#%E8%AE%BE%E8%AE%A1%E8%AF%B4%E6%98%8E" aria-label="设计说明 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>设计说明</h2>
 <h2 id="常见问题" style="position:relative;"><a href="#%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98" aria-label="常见问题 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>常见问题</h2>
 <h3 id="避免滥用" style="position:relative;"><a href="#%E9%81%BF%E5%85%8D%E6%BB%A5%E7%94%A8" aria-label="避免滥用 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>避免滥用</h3>
-<p>气泡确认框 <code class="language-text">PopConfirm</code> 其实是打断用户操作流的设计，只是迫不得已的折中方案：</p>
+<p>气泡确认框 <code class="language-text">PopConfirm</code> 是会打断用户操作流的设计，是迫不得已的折中方案：</p>
 <ul>
 <li>其会增加用户操作步骤，降低操作效率；</li>
 <li>打断用户流程，降低转化率；</li>
 <li>影响产品品质，损害用户体验印象。
-所以要不要选择使用气泡确认框 <code class="language-text">PopConfirm</code>的方式，需要从多个因素去权衡利弊。</li>
+所以要不要选择使用 气泡确认框 <code class="language-text">PopConfirm</code> 的方式，需要从多个因素去权衡利弊。</li>
 </ul>
-<p>对于什么时候需要气泡确认框 <code class="language-text">PopConfirm</code>的情况，其实可以从当前操作的带来的不可逆的维度+错误结果导致的严重程度，以及出现的频次。</p>
-<p><strong>低成本操作</strong></p>
+<p><strong>低成本的操作</strong></p>
 <blockquote>
 <p>对于低成本的操作可以不设置二次确认。</p>
 </blockquote>
 <blockquote>
 <p>举个例子：从操作频率上讲：录入表单，或者新建一个表单，查看详情都是最最最最基本操作，所以无需设置二次确认。</p>
 </blockquote>
-<p><strong>中成本操作</strong></p>
+<p><strong>中成本的操作</strong></p>
 <blockquote>
-<p>比如是日常的一些操作，但是没有明确后果也会使其产生较严重的后果，但并不至于造成不可挽回的后果。所以我们可以在产生严重后果之前设置二次确认，确认并提醒即将产生的结果并二次询问。</p>
+<p>操作之后，会使其产生较严重的后果，但并不至于造成不可挽回的后果。所以我们可以在产生严重后果之前设置 气泡确认框 <code class="language-text">PopConfirm</code> ，确认操作，并提醒即将产生的结果。</p>
 </blockquote>
 <p><strong>高成本操作</strong></p>
 <blockquote>
 <p>在操作后会产生很严重或者不可挽回的后果，需要让用户仔细想清楚的时候，提前预知操作风险，阻断流程并且再次确认。</p>
 </blockquote>
 <blockquote>
-<p>比如删除账号、修改数据、提交/发送重要内容，通常用户会填比较多信息，如果不做二次确认，容易导致用户误操作提交错误内容。比如出行填写预订信息的证件实时核对，提交保存时候的再次确认。</p>
+<p>比如删除账号、修改数据、提交/发送重要内容时，可以使用弹窗 <code class="language-text">PopConfirm</code>直接打断用户。</p>
 </blockquote>
-<blockquote>
-<p>在C端用户的操作会带来损失的情况下的二次确认，比如拼夕夕的活动提醒；用损失厌恶引导评论。这都是从心理学去挽留用户。</p>
-</blockquote>
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
+      <figure class="gatsby-resp-image-figure" style="">
+    <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 19.72222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAmUlEQVQY04WPzQ6CMBCEef/H04gQaAUMRmKgpdRpOI3ZgtbEg4dvZ38mzTSbZ9C5QGufEbNr2iMis/Duv/d2v4k/k8b7lWXV8XCseMoVi7Jh14NtD9YtqFqwv4OPEcxrsNSJQm16G8BliQ8GOgfqZuDl6qk7z7rx0XRWYKHBcUoJjdmQdMam+ZNQSjTKV+fAyQQaK/pr/of4Xl3sLyA/4wQFAAAAAElFTkSuQmCC'); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image alt" title="desc" src="/u-design/static/5f4ecfd360bc42c9f0db2626a89d5bbd/00d43/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-1.png" srcset="/u-design/static/5f4ecfd360bc42c9f0db2626a89d5bbd/f21e7/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-1.png 360w,
+/u-design/static/5f4ecfd360bc42c9f0db2626a89d5bbd/37523/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-1.png 720w,
+/u-design/static/5f4ecfd360bc42c9f0db2626a89d5bbd/00d43/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-1.png 1000w" sizes="(max-width: 1000px) 100vw, 1000px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">desc</figcaption>
+  </figure>
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>操作很频繁且误操作带来的影响小于操作成本，就可以考虑不使用二次确认。</p>
+      <figure class="gatsby-resp-image-figure" style="">
+    <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1000px; ">
+      <span class="gatsby-resp-image-background-image" style="padding-bottom: 19.72222222222222%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAECAYAAACOXx+WAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAlUlEQVQY042OUQ+CMAyE+f9/TzRbYNOhEg2BDthKfDpTBpm8+fClvfbaXDGOjGla4H08kOe8IlrY+9+533biL6QJ8QNdNTiVFcqzgdI3NE+GezBqxzCO0b4YXc+41AxtM8qk2r4Z87w9dPcO1ybCugDjArQN66GyjH5ICfY0RAnR5LM+JCSKIL+AaFnrQEI62I3/IN4vWjQvIKRacrEAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
+  <img class="gatsby-resp-image-image" alt="image alt" title="desc" src="/u-design/static/7409f2f5c8ec37a44400ce369eb7147a/00d43/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-2.png" srcset="/u-design/static/7409f2f5c8ec37a44400ce369eb7147a/f21e7/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-2.png 360w,
+/u-design/static/7409f2f5c8ec37a44400ce369eb7147a/37523/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-2.png 720w,
+/u-design/static/7409f2f5c8ec37a44400ce369eb7147a/00d43/%E5%B8%B8%E8%A7%81%E9%97%AE%E9%A2%98-2.png 1000w" sizes="(max-width: 1000px) 100vw, 1000px" style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;" loading="lazy">
+    </span>
+    <figcaption class="gatsby-resp-image-figcaption">desc</figcaption>
+  </figure>
+   </div>
+</div>
 <h3 id="优化微文案" style="position:relative;"><a href="#%E4%BC%98%E5%8C%96%E5%BE%AE%E6%96%87%E6%A1%88" aria-label="优化微文案 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>优化微文案</h3>
 <p>对于二次确认的功能无论是从信息获取角度还是提升用户体验，都要注意减少用户的挫败感。</p>
 <p>给大家总结好公式：打断原因+需要用户什么操作+操作带来的后果+按钮文案无歧义（注意不宜过长！！！）</p>
