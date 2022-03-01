@@ -25,7 +25,7 @@ description: "用于中成本的操作的二次确认。"
 
 **B.文案（必选）**
 
-U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因+需要用户什么操作+操作带来的后果。需要注意，整条文案不宜过长。
+U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因+操作带来的后果+用户可以做什么操作。需要注意，整条文案不宜过长。
 
 **C.操作按钮（必选）**
 
@@ -62,7 +62,7 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 - 其会增加用户操作步骤，降低操作效率；
 - 打断用户流程，降低转化率；
 - 影响产品品质，损害用户体验印象。
-所以要不要选择使用 气泡确认框 `PopConfirm` 的方式，需要从多个因素去权衡利弊。
+所以要不要选择使用 气泡确认框 `PopConfirm` ，需要从多个因素去权衡利弊。
 
 
 **低成本的操作**
@@ -114,7 +114,7 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
-      <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
+      <img src="../../../images/PopConfirm/33.png" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
