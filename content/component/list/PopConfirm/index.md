@@ -86,11 +86,11 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>对低成本的操作进行确认，会显得多此一举</p>
-      <img src="../../../images/PopConfirm/3.png" alt="image alt" title="desc" />
+      <p><i class="u-md-suggested"></i>对于中成本的操作，提示用户可能会带来的后果，以及用户可以执行什么操作。</p>
+      <img src="../../../images/PopConfirm/6.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>对低成本的操作进行确认，会显得多此一举</p>
+      <p><i class="u-md-not-suggested"></i>对低成本的操作进行确认，会显得多此一举。</p>
       <img src="../../../images/PopConfirm/2.png" alt="image alt" title="desc" />
    </div>
 </div>
@@ -101,19 +101,14 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 对于二次确认的功能无论是从信息获取角度还是提升用户体验，都要注意减少用户的挫败感。
 
 
-
-歧义案例：
-
-有些操作比如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。可将操作带来的后果直接写在按钮上，减少误会。
-
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
+      <p><i class="u-md-suggested"></i>可将操作直接写在按钮上，减少误会。</p>
       <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>操作很频繁且误操作带来的影响小于操作成本，就可以考虑不使用二次确认。</p>
-      <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>有些操作比如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
+      <img src="../../../images/PopConfirm/7.png" alt="image alt" title="desc" />
    </div>
 </div>
 
