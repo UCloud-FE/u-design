@@ -118,7 +118,7 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
-      <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
+      <img src="../../../images/PopConfirm/9.png" alt="image alt" title="desc" />
    </div>
 </div>
 
