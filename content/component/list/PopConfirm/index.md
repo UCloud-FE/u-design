@@ -48,10 +48,8 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 
 
 ## 设计说明
-
+<!--可以做一个gif-->
 气泡确认框没有蒙层，点击确认框以外的区域即可关闭。
-
-
 
 
 
@@ -104,22 +102,22 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>可将操作直接写在按钮上，减少误会。</p>
-      <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
+      <img src="../../../images/PopConfirm/8.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>有些操作比如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
+      <p><i class="u-md-not-suggested"></i>如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
       <img src="../../../images/PopConfirm/7.png" alt="image alt" title="desc" />
    </div>
 </div>
 
-### 须知内容换行对齐建议
+### 用户转化关键节点避免使用二次确认
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
       <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>操作很频繁且误操作带来的影响小于操作成本，就可以考虑不使用二次确认。</p>
+      <p><i class="u-md-not-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
       <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
    </div>
 </div>
