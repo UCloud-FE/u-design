@@ -36,10 +36,12 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 ## 基本状态
 
 ### 正常的文本
+
 ![](../../../images/PopConfirm/4.png)
 3行内文本，高度自适应
 
 ### 超长的文本（不建议）
+
 ![](../../../images/PopConfirm/5.png)
 文本超过3行，出滚动条，滚动展示
 
@@ -84,12 +86,12 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
-      <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
+      <p><i class="u-md-suggested"></i>对低成本的操作进行确认，会显得多此一举</p>
+      <img src="../../../images/PopConfirm/3.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>操作很频繁且误操作带来的影响小于操作成本，就可以考虑不使用二次确认。</p>
-      <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>对低成本的操作进行确认，会显得多此一举</p>
+      <img src="../../../images/PopConfirm/2.png" alt="image alt" title="desc" />
    </div>
 </div>
 
