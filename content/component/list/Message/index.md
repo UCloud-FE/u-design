@@ -41,6 +41,7 @@ description: "用于中成本的操作的二次确认。"
 
 ## 基本状态
 ![](../../../images/Message/States.png)
+
 ### 正常的文本
 
 ![](../../../images/PopConfirm/4.png)
