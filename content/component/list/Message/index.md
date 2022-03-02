@@ -13,28 +13,34 @@ description: "用于中成本的操作的二次确认。"
 
 
 ## 基本构成
-![](../../../images/PopConfirm/1.png)
+![](../../../images/Message/Basic.png)
 
-| 图标（A） | 文案（B） | 操作按钮（C） | 容器（D） |
-| :-------: | :-----------: | :-----------: | :-------: |
-|   √    |       √       |     √     |     √     |
+| 图标（A） | 标题（B） | 信息（C） | 操作按钮（D） |关闭按钮（D） |
+| :-------: | :-----------: | :-----------: | :-------: |:-------: |
+|   √    |       √       |     √     |     √     | √     |
 
 **A.图标（必选）**
 
-主要用来表示提示的重要程度，U-Design预设部分图标，用户也可以根据自己的需求自定义。
+告知用户通知的类型
 
-**B.文案（必选）**
+**B.标题（必选）**
 
-U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因+操作带来的后果+用户可以做什么操作。需要注意，整条文案不宜过长。
+为用户提供通知的快速概述
 
-**C.操作按钮（必选）**
+**C.信息（必选）**
 
+提供通知更详细的信息
 
-**D.容器（必选）**
+**D.操作按钮（必选）**
 
+为用户提供通知相关的查看或处理入口
+
+**D.关闭按钮（必选）**
+
+关闭通知
 
 ## 基本状态
-
+![](../../../images/Message/States.png)
 ### 正常的文本
 
 ![](../../../images/PopConfirm/4.png)
@@ -94,33 +100,6 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 </div>
 
 
-### 优化微文案
-
-对于二次确认的功能无论是从信息获取角度还是提升用户体验，都要注意减少用户的挫败感。
-
-
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>可将操作直接写在按钮上，减少误会。</p>
-      <img src="../../../images/PopConfirm/8.png" alt="image alt" title="desc" />
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
-      <img src="../../../images/PopConfirm/7.png" alt="image alt" title="desc" />
-   </div>
-</div>
-
-### 用户转化关键节点避免使用二次确认
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>在引导用户转化的时候，不需要进行二次确认。</p>
-      <img src="../../../images/PopConfirm/33.png" alt="image alt" title="desc" />
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>二次确认会中断整个用户购买流程。</p>
-      <img src="../../../images/PopConfirm/9.png" alt="image alt" title="desc" />
-   </div>
-</div>
 
 
 
