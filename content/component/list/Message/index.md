@@ -88,11 +88,11 @@ description: "对用户的操作作出轻量的全局反馈"
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
 全局提示是轻量的、无中断的提醒方式</p>
-      <img src="../../../images/PopConfirm/6.png" alt="image alt" title="desc" />
+      <img src="../../../images/Message/pro-1.png" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>希望中断用户的操作时，不适合使用</p>
-      <img src="../../../images/PopConfirm/2.png" alt="image alt" title="desc" />
+      <img src="../../../images/Message/pro-2.png" alt="image alt" title="desc" />
    </div>
 </div>
 
