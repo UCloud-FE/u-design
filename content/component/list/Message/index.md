@@ -91,11 +91,11 @@ description: "对用户的操作作出轻量的全局反馈"
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
-全局提示是轻量的、无中断的提醒方式</p>
+全局提示是轻量的、无中断的提醒方式。</p>
       <img src="../../../images/Message/pro-1.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>希望中断用户的操作时，不适合使用</p>
+      <p><i class="u-md-not-suggested"></i>希望中断用户的操作时，不适合使用。</p>
       <img src="../../../images/Message/pro-2.png" alt="image alt" title="desc" />
    </div>
 </div>
@@ -105,12 +105,12 @@ description: "对用户的操作作出轻量的全局反馈"
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
-文案越精简越好，太复杂的文案会让用户失去耐心</p>
-      <img src="../../../images/Message/pro-1.png" alt="image alt" title="desc" />
+文案越精简越好，提高信息传递的效率。</p>
+      <img src="../../../images/Message/pro-3.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>标题和正文的内容最好</p>
-      <img src="../../../images/Message/pro-2.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>太复杂或者太啰嗦的文案会让用户失去耐心。</p>
+      <img src="../../../images/Message/pro-4.png" alt="image alt" title="desc" />
    </div>
 </div>
 
