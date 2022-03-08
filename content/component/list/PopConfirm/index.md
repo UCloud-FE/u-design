@@ -1,5 +1,5 @@
 ---
-description: "系统主动推送给用户的消息。"
+description: "用于中成本的操作的二次确认。"
 ---
 <!--副标题具体写法见源代码模式-->
 
@@ -25,24 +25,31 @@ description: "系统主动推送给用户的消息。"
 
 **B.文案（必选）**
 
-**B.操作按钮（必选）**
+U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因+操作带来的后果+用户可以做什么操作。需要注意，整条文案不宜过长。
 
-**B.容器（必选）**
+**C.操作按钮（必选）**
+
+
+**D.容器（必选）**
 
 
 ## 基本状态
 
+### 正常的文本
+
+![](../../../images/PopConfirm/4.png)
 3行内文本，高度自适应
 
+### 超长的文本（不建议）
+
+![](../../../images/PopConfirm/5.png)
 文本超过3行，出滚动条，滚动展示
 
 
 
 ## 设计说明
-
+<!--可以做一个gif-->
 气泡确认框没有蒙层，点击确认框以外的区域即可关闭。
-
-
 
 
 
@@ -55,7 +62,7 @@ description: "系统主动推送给用户的消息。"
 - 其会增加用户操作步骤，降低操作效率；
 - 打断用户流程，降低转化率；
 - 影响产品品质，损害用户体验印象。
-所以要不要选择使用 气泡确认框 `PopConfirm` 的方式，需要从多个因素去权衡利弊。
+所以要不要选择使用 气泡确认框 `PopConfirm` ，需要从多个因素去权衡利弊。
 
 
 **低成本的操作**
@@ -77,46 +84,40 @@ description: "系统主动推送给用户的消息。"
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
-      <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
+      <p><i class="u-md-suggested"></i>对于中成本的操作，提示用户可能会带来的后果，以及用户可以执行什么操作。</p>
+      <img src="../../../images/PopConfirm/6.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>操作很频繁且误操作带来的影响小于操作成本，就可以考虑不使用二次确认。</p>
-      <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>对低成本的操作进行确认，会显得多此一举。</p>
+      <img src="../../../images/PopConfirm/2.png" alt="image alt" title="desc" />
    </div>
 </div>
 
 
 ### 优化微文案
 
-对于二次确认的功能无论是从信息获取角度还是提升用户体验，都要注意减少用户的挫败感。
-
-给大家总结好公式：打断原因+需要用户什么操作+操作带来的后果+按钮文案无歧义（注意不宜过长！！！）
-
-歧义案例：
-
-有些操作比如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。可将操作带来的后果直接写在按钮上，减少误会。
+对于二次确认的功能无论是从信息获取角度还是提升用户体验的角度，都要注意减少用户的挫败感。
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
-      <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
+      <p><i class="u-md-suggested"></i>可将操作直接写在按钮上，减少误会。</p>
+      <img src="../../../images/PopConfirm/8.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>操作很频繁且误操作带来的影响小于操作成本，就可以考虑不使用二次确认。</p>
-      <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
+      <img src="../../../images/PopConfirm/7.png" alt="image alt" title="desc" />
    </div>
 </div>
 
-### 须知内容换行对齐建议
+### 用户转化关键节点避免使用二次确认
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>在引导用户转化的时候，二次确认会中断整个用户购买流程。</p>
-      <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
+      <p><i class="u-md-suggested"></i>在引导用户转化的时候，不需要进行二次确认。</p>
+      <img src="../../../images/PopConfirm/33.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>操作很频繁且误操作带来的影响小于操作成本，就可以考虑不使用二次确认。</p>
-      <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
+      <p><i class="u-md-not-suggested"></i>二次确认会中断整个用户购买流程。</p>
+      <img src="../../../images/PopConfirm/9.png" alt="image alt" title="desc" />
    </div>
 </div>
 
@@ -124,6 +125,5 @@ description: "系统主动推送给用户的消息。"
 
 ## 相关文档
 
-1. [Badge 徽标数](/component/Badge/)
-2. [PopConfirm 气泡确认框](/component/PopConfirm/)
-3. [Modal 弹窗](/component/Modal/)
+1. [Popover 气泡卡片](https://udesign.ucloud.cn/component/Popover/)
+2. [Tooltip 文字提示](https://udesign.ucloud.cn/component/Tooltip/)
