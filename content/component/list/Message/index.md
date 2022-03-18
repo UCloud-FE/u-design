@@ -9,7 +9,7 @@ description: "对用户的操作作出轻量的全局反馈"
 - 页面右上角显示，可自定义消失时间，是一种不打断用户操作的提示方式
 
 ## 基本构成
-![](../../../images/Message/Basic.png)
+![](../../../images/Message/Basic_ui.png)
 
 | 图标（A） | 标题（B） | 正文（C） | 操作按钮（D） |关闭按钮（D） |
 | :-------: | :-----------: | :-----------: | :-------: |:-------: |
@@ -46,7 +46,7 @@ description: "对用户的操作作出轻量的全局反馈"
 
 ## 基本状态
 
-![](../../../images/Message/States.png)
+![](../../../images/Message/States_ui.png)
 
 ### 默认
 
@@ -92,11 +92,11 @@ description: "对用户的操作作出轻量的全局反馈"
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
 全局提示是轻量的、无中断的提醒方式。</p>
-      <img src="../../../images/Message/pro-1.png" alt="image alt" title="desc" />
+      <img src="../../../images/Message/pro-1_ui.png" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>希望中断用户的操作时，不适合使用。</p>
-      <img src="../../../images/Message/pro-2.png" alt="image alt" title="desc" />
+      <img src="../../../images/Message/pro-2_ui.png" alt="image alt" title="desc" />
    </div>
 </div>
 
@@ -106,11 +106,11 @@ description: "对用户的操作作出轻量的全局反馈"
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
 文案越精简越好，提高信息传递的效率。</p>
-      <img src="../../../images/Message/pro-3.png" alt="image alt" title="desc" />
+      <img src="../../../images/Message/pro-3_ui.png" alt="image alt" title="desc" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>太复杂或者太啰嗦的文案会让用户失去耐心。</p>
-      <img src="../../../images/Message/pro-4.png" alt="image alt" title="desc" />
+      <img src="../../../images/Message/pro-4_ui.png" alt="image alt" title="desc" />
    </div>
 </div>
 
