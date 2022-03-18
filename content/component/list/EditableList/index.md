@@ -14,11 +14,21 @@ description: "一种用户可自行增减表单数量的组件。"
 
 ## 基本构成
 
-![001](../../../images/EditableTable/001.png)
+![](../../../images/EditableList/forms_01.png)
 
-| 输入框(A) | 删除按钮(B) | 添加按钮(C) |
-| :-------: | :---------: | :---------: |
-|     √     |      ✓      |      ✓      |
+| 组件(A) | 增减按钮(B) |
+| :-----: | :---------: |
+|    √    |    可选     |
+
+**A.组件**
+
+**B.增减按钮**（可选）
+
+
+
+## 基本样式
+
+### 尺寸
 
 
 
@@ -58,18 +68,18 @@ description: "一种用户可自行增减表单数量的组件。"
 
 ## 常见问题
 
-### 自增表单与自增表格的区别
+### 自增表单与自增表格混淆
 
 -  自增表单通常是针对单个文本框的表单，通过增减按钮调整文本框的数量；
 -  自增表格通常是针对一组表单进行增减，例如select与文本框的组合等。
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>正确示范：</p>
+      <p><i class="u-md-suggested"></i>正确场景</p>
       <img src="../../../images/EditableList/002.png"/>
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>错误用法：</p>
+      <p><i class="u-md-not-suggested"></i>混淆场景</p>
       <img src="../../../images/EditableList/006.png"  />
    </div>
 </div>
