@@ -73,11 +73,11 @@ description: "让用户用直观的方式在两栏中移动元素，完成选择
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>表头列数不宜过多，不会出现横向滚动条。</p>
-      <img src="../../../images/Transfer/descriptions_01.png"/>
+      <img src="../../../images/Transfer/problems_01.png"/>
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>若表头数量过多出现横向滚动条不利于用户操作。</p>
-      <img src="../../../images/Transfer/descriptions_02.png"  />
+      <img src="../../../images/Transfer/problems_02.png"  />
    </div>
 </div>
 
