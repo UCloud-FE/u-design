@@ -39,7 +39,7 @@ Progress 是用于展示实时状态或进度等信息。一般用于：
 
 颜色也有表示状态的功能性。针对进度条`PROGRESS`，U-Design预设了四种语义类型：默认、成功、警告、报错。
 
-- 现有颜色无法满足需求时可使用其他自定义色值`T_COLOR_BRAND_xxxxx_6`，“xxxxx”代表颜色名。
+![](../../../images/Slider/styles_01-8184353.png)
 
 | 状态   | 色值                      |
 | :----- | :------------------------ |
@@ -49,7 +49,8 @@ Progress 是用于展示实时状态或进度等信息。一般用于：
 | 报错   | `T_COLOR_LEGEND_RED_6`    |
 | 自定义 | `T_COLOR_BRAND_xxxxx_6`   |
 
-![](../../../images/Progress/styles_01.png)
+- 现有颜色无法满足需求时可使用其他自定义色值`T_COLOR_BRAND_xxxxx_6`，“xxxxx”代表颜色名。
+
 
 ## 设计说明
 
