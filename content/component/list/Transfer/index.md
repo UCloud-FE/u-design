@@ -36,9 +36,21 @@ description: "让用户用直观的方式在两栏中移动元素，完成选择
 
 ## 基本状态
 
+默认状态
 
+![](../../../images/Transfer/states_01.png)
 
+选中状态
 
+![](../../../images/Transfer/states_02.png)
+
+报错状态
+
+![states_03](../../../images/Transfer/states_03.png)
+
+禁用状态
+
+![states_04](../../../images/Transfer/states_04.png)
 
 
 
@@ -80,6 +92,5 @@ description: "让用户用直观的方式在两栏中移动元素，完成选择
       <img src="../../../images/Transfer/problems_02.png"  />
    </div>
 </div>
-
 
 
