@@ -46,7 +46,7 @@ description: "对用户的操作作出轻量的全局反馈"
 
 ## 基本状态
 
-![](../../../images/Message/States_ui.png)
+![](../../../images/Message/States_ui01.png)
 
 ### 默认
 
