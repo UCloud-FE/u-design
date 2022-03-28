@@ -73,6 +73,7 @@ module.exports = {
                             maxWidth: 1440,
                             linkImagesToOriginal: false,
                             showCaptions: true,
+                            quality: 70,
                             // wrapperStyle: fluidResult => {
                             //     return '';
                             // },
