@@ -200,30 +200,11 @@
 <ul>
 <li>其会增加用户操作步骤，降低操作效率；</li>
 <li>打断用户流程，降低转化率；</li>
-<li>影响产品品质，损害用户体验印象。
-所以要不要选择使用 气泡确认框 <code class="language-text">PopConfirm</code> ，需要从多个因素去权衡利弊。</li>
+<li>影响产品品质，损害用户体验印象。</li>
 </ul>
-<p><strong>低成本的操作</strong></p>
-<blockquote>
-<p>对于低成本的操作可以不设置二次确认。</p>
-</blockquote>
-<blockquote>
-<p>举个例子：从操作频率上讲：录入表单，或者新建一个表单，查看详情都是最最最最基本操作，所以无需设置二次确认。</p>
-</blockquote>
-<p><strong>中成本的操作</strong></p>
-<blockquote>
-<p>操作之后，会使其产生较严重的后果，但并不至于造成不可挽回的后果。所以我们可以在产生严重后果之前设置 气泡确认框 <code class="language-text">PopConfirm</code> ，确认操作，并提醒即将产生的结果。</p>
-</blockquote>
-<p><strong>高成本操作</strong></p>
-<blockquote>
-<p>在操作后会产生很严重或者不可挽回的后果，需要让用户仔细想清楚的时候，提前预知操作风险，阻断流程并且再次确认。</p>
-</blockquote>
-<blockquote>
-<p>比如删除账号、修改数据、提交/发送重要内容时，可以使用弹窗 <code class="language-text">PopConfirm</code>直接打断用户。</p>
-</blockquote>
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>对于中成本的操作，提示用户可能会带来的后果，以及用户可以执行什么操作。</p>
+      <p><i class="u-md-suggested"></i>对于中成本的操作，给予提示</p>
       <figure class="gatsby-resp-image-figure" style="">
     <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1440px; ">
       <span class="gatsby-resp-image-background-image" style="padding-bottom: 25.83333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAiElEQVQY05WQSw7CMAxEe/9rcAYOwAE4AhskPqW0xInjpKuHorQIUIXoYjSybD+N3Xif+JZIcZt8RDUTdcRiRsSQhZ1ZzXKjwDIxBLI/cescl+udc6uEUKGrgDKlnBfNMm0n7PaG+0j/L1ASUY3DMbHZJoZHqcvZ7zBbA6zDTox+sPq3l34nfAKtFH+rSk+sxQAAAABJRU5ErkJggg=='); background-size: cover; display: block;"></span>
@@ -236,7 +217,7 @@
   </figure>
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>对低成本的操作进行确认，会显得多此一举。</p>
+      <p><i class="u-md-not-suggested"></i>低成本的操作，无需确认</p>
       <figure class="gatsby-resp-image-figure" style="">
     <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1440px; ">
       <span class="gatsby-resp-image-background-image" style="padding-bottom: 25.83333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAjElEQVQY05WQsQrCQBBE8//fZWEndlYWwoEYJXd7t5s9mydHogRNYYphitl9DNOJjHwrpeY2ea6U4pRSMatzbqz9NXXrQYM5mjOWAv1duPUPLiEiUpFkpC3AqeHURFVxfxKjsDsUwtUp2T43fwIN05HTWdkfheqOiKNlMYXYNmDzGI1hsBny1hL6C3wB129/+/4Wu9gAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
@@ -266,7 +247,7 @@
   </figure>
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
+      <p><i class="u-md-not-suggested"></i>为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
       <figure class="gatsby-resp-image-figure" style="">
     <span class="gatsby-resp-image-wrapper" style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 1440px; ">
       <span class="gatsby-resp-image-background-image" style="padding-bottom: 25.83333333333333%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAFCAYAAABFA8wzAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAhklEQVQY05WPTQqDQAyFvf9JXHiB0kN0K7jprouimGR80xHhlU7qD2LBLsILCfn4UqhG7ktkTlD0RbPEYJFmWHaq4NFtcTScYaqJY3iw757sNVFsyiDfxfNA+aS4Te4NbO6BtzpxCA5cTc8AFwOwvERWVxDD9mX897Ib+EHbIddq9TX/YfgGvsd/ja007NkAAAAASUVORK5CYII='); background-size: cover; display: block;"></span>
