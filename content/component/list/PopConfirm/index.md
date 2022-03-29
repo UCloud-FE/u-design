@@ -72,37 +72,19 @@ U-Design为气泡确认框`PopConfirm` 设定的文字最大宽度为240px, 超�
 ### 避免滥用
 
 气泡确认框 `PopConfirm` 是会打断用户操作流的设计，是迫不得已的折中方案：
-
 - 其会增加用户操作步骤，降低操作效率；
 - 打断用户流程，降低转化率；
 - 影响产品品质，损害用户体验印象。
-所以要不要选择使用 气泡确认框 `PopConfirm` ，需要从多个因素去权衡利弊。
 
 
-**低成本的操作**
-
-> 对于低成本的操作可以不设置二次确认。
-
-> 举个例子：从操作频率上讲：录入表单，或者新建一个表单，查看详情都是最最最最基本操作，所以无需设置二次确认。
-
-
-**中成本的操作**
-
-> 操作之后，会使其产生较严重的后果，但并不至于造成不可挽回的后果。所以我们可以在产生严重后果之前设置 气泡确认框 `PopConfirm` ，确认操作，并提醒即将产生的结果。
-
-**高成本操作**
-
-> 在操作后会产生很严重或者不可挽回的后果，需要让用户仔细想清楚的时候，提前预知操作风险，阻断流程并且再次确认。
-
-> 比如删除账号、修改数据、提交/发送重要内容时，可以使用弹窗 `PopConfirm`直接打断用户。
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>对于中成本的操作，提示用户可能会带来的后果，以及用户可以执行什么操作。</p>
+      <p><i class="u-md-suggested"></i>对于中成本的操作，给予提示</p>
       <img src="../../../images/PopConfirm/descriptions_01.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>对低成本的操作进行确认，会显得多此一举。</p>
+      <p><i class="u-md-not-suggested"></i>低成本的操作，无需确认</p>
       <img src="../../../images/PopConfirm/descriptions_02.png" alt="image alt" title="desc" />
    </div>
 </div>
@@ -119,7 +101,7 @@ U-Design为气泡确认框`PopConfirm` 设定的文字最大宽度为240px, 超�
       <img src="../../../images/PopConfirm/descriptions_03.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>如“取消订单”中包含了“取消”一类的字眼，为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
+      <p><i class="u-md-not-suggested"></i>为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
       <img src="../../../images/PopConfirm/descriptions_04.png" alt="image alt" title="desc" />
    </div>
 </div>
