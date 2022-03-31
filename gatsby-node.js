@@ -35,8 +35,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     // Create posts pages
     if (posts.length > 0) {
         posts.forEach((post, index) => {
-            const previousPostId = index === 0 ? null : posts[index - 1].id;
-            const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
+            // const previousPostId = index === 0 ? null : posts[index - 1].id;
+            // const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
             let template = specTemplate;
             let slug = post.fields.slug;
 
@@ -54,8 +54,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 component: template,
                 context: {
                     id: post.id,
-                    previousPostId,
-                    nextPostId,
+                    // previousPostId,
+                    // nextPostId,
                 },
             });
         });
