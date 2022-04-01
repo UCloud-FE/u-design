@@ -49,12 +49,12 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 ### 默认提示
 弹窗的默认提示与弹窗等宽，位于内容卡片与弹窗标题之间，具体提示条相关的，可以参考[Notice 提示](https://udesign.ucloud.cn/component/Notice/)。
 
-![](../../../images/Modal/default notice.png)
+![](../../../images/Modal/defaultnotice.png)
 
 ### 报错提示
 
 
-![](../../../images/Modal/error notice.png)
+![](../../../images/Modal/errornotice.png)
 
 ###
 
