@@ -52,21 +52,21 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 ![](../../../images/Modal/defaultnotice.png)
 
 ### 报错提示
-
+弹窗全局的报错，在内容区顶部进行报错。
+弹窗区内表单/表格的报错，遵循 [Form 表单](https://udesign.ucloud.cn/component/Form/) 和 [Table 表格](https://udesign.ucloud.cn/component/Table/) 的报错原则。
 
 ![](../../../images/Modal/errornotice.png)
 
-###
 
 ## 设计说明
 
 在界面中如何使用该组件？
 
-#### 1.使用场景    
+### 1.使用场景    
 
 当用户需要快速执行简单的操作、确认信息或反馈提示，但又不希望脱离原有页面时使用模态弹窗。
 
-#### 2.弹窗中的提示信息    
+### 2.弹窗中的提示信息    
 
 当弹窗中需要出现提示信息时，可在标题栏下方用Notice展示。
 
