@@ -28,16 +28,19 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 
 ### 尺寸
-弹窗 `Modal` 预设了 `sm`、`md`、`lg`三种尺寸，宽度分别为---px、---px、---px。
+弹窗 `Modal` 预设了 `sm`、`md`、`lg`三种尺寸，宽度分别为400px、700px、800px，高度随内容自适应。
 
-中号表单
+小号弹窗
 
-![](../../../images/form/styles_01.png)
+![](../../../images/Modal/sm.png)
 
-大号表单
+中号弹窗
 
-![](../../../images/form/styles_02.png)
+![](../../../images/Modal/md.png)
 
+大号弹窗
+
+![](../../../images/Modal/lg.png)
 
 ### 默认提示
 
