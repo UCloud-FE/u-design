@@ -54,6 +54,8 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 ### 报错提示
 
 
+![](../../../images/Modal/error notice.png)
+
 ###
 
 ## 设计说明
