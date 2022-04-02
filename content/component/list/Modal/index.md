@@ -21,19 +21,20 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 | 标题（A） | 关闭按钮（B） | 内容区域（C） | 底部操作区域（D） | 提示信息（E） |
 | :-------: | :-----------: | :-----------: | :---------------: | :-----------: |
-|     √     |       √       |       √       |         √         |     可选      |
+|     √     |       可选       |       √       |         √         |     可选      |
 
 ## 基本样式
 
 
 ### 尺寸
 
-弹窗 `Modal` 预设了 `sm`、`md`、`lg`三种尺寸，宽度分别为400px、700px、800px，高度随内容自适应。
+弹窗 `Modal` 预设了 `sm`、`md`、`lg`三种尺寸，宽度分别为400px、700px、800px。
 
 
 **小号弹窗**
 
 主要用于重要级比较高的信息提示，是一种强提醒。用于一些比较重要的反馈并且需要确保用户已经知道的场景下，常用于重要操作后结果的展示，或危险、警告等信息的展示。
+
 如果仅用于反馈操作结果的状态信息，不希望干扰用户的操作流时，建议使用 [Message 全局提示](https://udesign.ucloud.cn/component/Message/) 组件。
 
 ![](../../../images/Modal/sm.png)
@@ -47,19 +48,21 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 ![](../../../images/Modal/lg.png)
 
 ### 弹窗高度
-内容区域如未限定最大高度, 弹窗根据表单内容自适应高度。
-如内容区对最大高度进行了限制, 则表单内出现滚动条。 
+- 内容区域未限定最大高度：弹窗高度根据内容区域高度自适应；
+
+- 内容区域设置了最大高度：内容区域出现滚动条，其他构成不随内容区域滚动。 
 ![](../../../images/Modal/height.png)
 
 
 ### 默认提示
-弹窗的默认提示与弹窗等宽，位于内容卡片与弹窗标题之间，具体提示条相关设置，可以参考[Notice 提示](https://udesign.ucloud.cn/component/Notice/)。
+
+弹窗的默认提示与弹窗等宽，位于内容卡片与弹窗标题之间，具体设置，可以参考[Notice 提示](https://udesign.ucloud.cn/component/Notice/)。
 
 ![](../../../images/Modal/defaultnotice.png)
 
 ### 报错提示
-弹窗全局的报错，在内容区顶部进行报错。
-弹窗区内表单/表格的报错，遵循 [Form 表单](https://udesign.ucloud.cn/component/Form/) 和 [Table 表格](https://udesign.ucloud.cn/component/Table/) 的报错原则。
+
+弹窗全局的报错，在内容区顶部进行报错。内容区域内表单/表格的报错，遵循 [Form 表单](https://udesign.ucloud.cn/component/Form/) 和 [Table 表格](https://udesign.ucloud.cn/component/Table/) 的报错原则。
 
 ![](../../../images/Modal/errornotice.png)
 
