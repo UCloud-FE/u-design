@@ -66,6 +66,11 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 ![](../../../images/Modal/errornotice.png)
 
+### 异步加载
+适用于当前操作需要异步完成，等待后再自动关闭对话框。
+![](../../../images/Modal/loading.png)
+
+
 
 ## 设计说明
 
