@@ -13,7 +13,7 @@ U-Deisgn将 **Tabs标签页** 定义为对象内的导航或过滤器。
 
 ## 基本构成
 
-![](../../../images/TAB/1.png)
+![](../../../images/Tabs/forms_01.png)
 
 | 标签（A） | 内容区（B） |
 | :---------: | :-----------: |
@@ -39,54 +39,38 @@ U-Deisgn将 **Tabs标签页** 定义为对象内的导航或过滤器。
 ### 位置
 
 #### 标签在内容区上方
-![](../../../images/TAB/1.png)
+![](../../../images/Tabs/styles_01.png)
 
 #### 标签在内容区下方
 
-![](../../../images/TAB/2.png)
+![](../../../images/Tabs/styles_02.png)
 
 #### 标签在内容区左侧
-![](../../../images/TAB/5.png)
+![](../../../images/Tabs/styles_03.png)
 
 #### 标签在内容区右侧
-![](../../../images/TAB/4.png)
-
-
-### 风格
-
-#### 卡片型
-![](../../../images/TAB/3.png)
-
-#### 线条型
-![](../../../images/TAB/7.png)
-
-#### 文本型
-![](../../../images/TAB/8.png)
+![](../../../images/Tabs/styles_04.png)
 
 ### 尺寸
-U-Design 目前对 Tabs 区分了 3 种尺寸：大（lg）、中（md）、小（sm）。
-![](../../../images/TAB/3.png)
-![](../../../images/TAB/9.png)
-![](../../../images/TAB/10.png)
+U-Design 目前对 Tabs 区分了大（lg）、中（md）、小（sm） 3 种尺寸，高度分别为32px、28px、24px。
 
-
+![](../../../images/Tabs/styles_05.png)
 
 ## 设计说明
 
 
 ### 超出时滑动
-![](../../../images/TAB/88.png)
 当标签非常多时，组件会自动增加滑动支持(可以左右、上下滑动)，可以点击两侧箭头进行切换。
+
+![](../../../images/Tabs/descriptions_01.png)
 
 
 ### 将产品需要推广或优先展示的内容放在默认Tab
-![](../../../images/TAB/23.png)
 标签的先后应当按照其重要程度进行排序，可以将产品需要推广或需要优先展示的内容放在默认标签上，将用户感兴趣的、无法忽略的，或者更要级更低的标签靠后。
 
 
 ### 标签上使用简短和有逻辑的文字
 U-Design 参考Nielsen Norman Group（NN/g 尼尔森诺曼集团）的 [Tabs, Used Right](https://www.nngroup.com/articles/tabs-used-right/)，建议标签的内容控制在6个中文字符内，以便于用户操作理解。
-<!--UI补充示意图-->
 
 
 ## 常见问题
@@ -97,13 +81,14 @@ U-Design 参考Nielsen Norman Group（NN/g 尼尔森诺曼集团）的 [Tabs, Us
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>**Tabs** 中，标签之间具有某种关联特征，且是并列关系，内容不交叉，同时只展示一个。
 </p>
-      <img src="../../../images/TAB/90.png"/>
+      <img src="../../../images/Tabs/problems_01.png"/>
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>当用户需要同时查看多个标签时，就不应该使用 **Tabs** ，否则会导致用户为了对比所需的信息，而不停在标签之间进行切换。。</p>
-      <img src="../../../images/TAB/91.png"/>
+      <img src="../../../images/Tabs/problems_02.png"/>
    </div>
 </div>
+
 
 
 
