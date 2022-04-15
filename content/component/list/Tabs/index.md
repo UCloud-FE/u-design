@@ -79,12 +79,12 @@ U-Design 参考Nielsen Norman Group（NN/g 尼尔森诺曼集团）的 [Tabs, Us
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>**Tabs** 中，标签之间具有某种关联特征，且是并列关系，内容不交叉，同时只展示一个。
+      <p><i class="u-md-suggested"></i>Tabs中，标签之间具有某种关联特征，且是并列关系;内容不交叉，同时只展示一个。
 </p>
       <img src="../../../images/Tabs/problems_01.png"/>
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>当用户需要同时查看多个标签时，就不应该使用 **Tabs** ，否则会导致用户为了对比所需的信息，而不停在标签之间进行切换。。</p>
+      <p><i class="u-md-not-suggested"></i>当用户需要同时查看多个标签时，不应该使用Tabs，否则会导致用户为了对比所需的信息，而不停在标签之间进行切换。</p>
       <img src="../../../images/Tabs/problems_02.png"/>
    </div>
 </div>
