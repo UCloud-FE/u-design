@@ -39,12 +39,12 @@ const Index = ({ data, location }) => {
         return () => el.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const getToC = ()=>{
-        if(fields.slug === '/docs/changelog/'){
+    const getToC = () => {
+        if (fields.slug === '/docs/changelog/') {
             return null;
         }
         return <ToC currentHash={scrollCurrentHash} headings={markdownRemark.headings || []} location={location} />;
-    }
+    };
 
     return (
         <div className={styles.wrapper}>
@@ -53,7 +53,10 @@ const Index = ({ data, location }) => {
             <div className={styles.contentWrapper} id="docs_s_w">
                 {getToC()}
                 <div className={styles.content}>
-                    <section className="u-markdown-docs-styles" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} />
+                    <section
+                        className="u-markdown-docs-styles"
+                        dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
+                    />
                 </div>
                 <Footer />
             </div>

@@ -7,10 +7,9 @@ const Index = ({ location }) => {
     }, []);
 
     return (
-        <div style={{ overflow: "auto", width:"100%"  }}>
+        <div style={{ overflow: 'auto', width: '100%' }}>
             <Seo title="定制" />
-            <div id="custome-dt" style={{ maxWidth: 1100, margin: "0 auto", marginTop: 48, height: '100%' }}>
-            </div>
+            <div id="custome-dt" style={{ maxWidth: 1100, margin: '0 auto', marginTop: 48, height: '100%' }}></div>
         </div>
     );
 };

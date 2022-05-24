@@ -128,17 +128,15 @@ const Index = ({ data, location }) => {
 
     const renderCurrentTabContent = () => {
         if (tabIndex === tabs[0]) {
-            if(!markdownRemark?.frontmatter?.description){
-                return (
-                    <>
-                        敬请期待
-                    </>
-                );
+            if (!markdownRemark?.frontmatter?.description) {
+                return <>敬请期待</>;
             }
             return (
                 <>
-                    <div className="u-markdown-design-styles" dangerouslySetInnerHTML={{ __html: markdownRemark.html }} >
-                    </div>
+                    <div
+                        className="u-markdown-design-styles"
+                        dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
+                    ></div>
                 </>
             );
         } else if (tabIndex === tabs[2]) {
@@ -211,11 +209,11 @@ const Index = ({ data, location }) => {
                     </div>
 
                     {renderCurrentTabContent()}
-                    {tabIndex === tabs[1] &&
+                    {tabIndex === tabs[1] && (
                         <div id="u-component-doc" className="u-markdown-dev-styles">
-                            <div style={{textAlign: 'center'}}>loading</div>
+                            <div style={{ textAlign: 'center' }}>loading</div>
                         </div>
-                    }
+                    )}
 
                     {/* {previousComponentName && (
                         <Link to={`/component/${previousComponentName}/`} rel="prev">

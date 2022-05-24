@@ -2,7 +2,7 @@ import * as React from 'react';
 import { useStaticQuery, Link, graphql } from 'gatsby';
 import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
-import UDesign from "../images/u-design.png"
+import UDesign from '../images/u-design.png';
 import Sidebar from '/src/components/Sidebar';
 
 const Layout = ({ location, children }) => {
@@ -68,7 +68,7 @@ const Layout = ({ location, children }) => {
             }
             docs: allMarkdownRemark(
                 sort: { fields: [fields___slug], order: DESC }
-                filter: { fileAbsolutePath: { glob: "**/content/docs/*.md" }, fields: {slug: {ne: "/docs/"}} }
+                filter: { fileAbsolutePath: { glob: "**/content/docs/*.md" }, fields: { slug: { ne: "/docs/" } } }
             ) {
                 nodes {
                     headings {
@@ -89,14 +89,14 @@ const Layout = ({ location, children }) => {
     `);
 
     let { categoryOrder } = specsCategoryOrder.frontmatter;
-    categoryOrder = categoryOrder.split("|");
+    categoryOrder = categoryOrder.split('|');
     const _categories = categories.nodes.filter(item => item.excerpt);
     let items = [];
 
     if (location.pathname.includes('/spec/')) {
         const categories = {};
         specs.nodes.forEach(item => {
-            if(item.fields.slug.split('/spec/')[1][0] === '_'){
+            if (item.fields.slug.split('/spec/')[1][0] === '_') {
                 return;
             }
 
@@ -162,7 +162,7 @@ const Layout = ({ location, children }) => {
             const { fields, headings } = item;
 
             return {
-                title: fields.slug === '/docs/readme/' ? '组件介绍': headings[0]?.value,
+                title: fields.slug === '/docs/readme/' ? '组件介绍' : headings[0]?.value,
                 slug: fields.slug,
             };
         });

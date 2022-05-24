@@ -16,9 +16,7 @@ const Index = ({ data }) => {
             <div className={component.contentWrapper}>
                 <div className={component.content}>
                     <div className={category.top}>
-                        <h1>
-                            {markdownRemark.frontmatter.title}
-                        </h1>
+                        <h1>{markdownRemark.frontmatter.title}</h1>
                         {markdownRemark.frontmatter.description && <p>{markdownRemark.frontmatter.description}</p>}
                     </div>
 
