@@ -7,8 +7,8 @@
   "532a2f07.js": "532a2f07-f32379694bf71db4c549.js",
   "932-1796c91bfcf68141f4f9.js": "932-1796c91bfcf68141f4f9.js",
   "932-1796c91bfcf68141f4f9.js.map": "932-1796c91bfcf68141f4f9.js.map",
-  "app-8540685e71b4818abe32.js.map": "app-8540685e71b4818abe32.js.map",
-  "app.js": "app-8540685e71b4818abe32.js",
+  "app-d687b943a5fe3f652335.js.map": "app-d687b943a5fe3f652335.js.map",
+  "app.js": "app-d687b943a5fe3f652335.js",
   "cms.js": "cms.js",
   "cms.js.map": "cms.js.map",
   "commons-251e1cd48f429d9bd5d3.js.map": "commons-251e1cd48f429d9bd5d3.js.map",
@@ -23,6 +23,8 @@
   "component---src-templates-category-tsx.js": "component---src-templates-category-tsx-e8ca3209c5a47252d078.js",
   "component---src-templates-component-tsx-65141fab8f38fe925177.js.map": "component---src-templates-component-tsx-65141fab8f38fe925177.js.map",
   "component---src-templates-component-tsx.js": "component---src-templates-component-tsx-65141fab8f38fe925177.js",
+  "component---src-templates-docs-tsx-181659db31122ac8ccf2.js.map": "component---src-templates-docs-tsx-181659db31122ac8ccf2.js.map",
+  "component---src-templates-docs-tsx.js": "component---src-templates-docs-tsx-181659db31122ac8ccf2.js",
   "component---src-templates-spec-tsx-1c90eb80975ed8d1c214.js.map": "component---src-templates-spec-tsx-1c90eb80975ed8d1c214.js.map",
   "component---src-templates-spec-tsx.js": "component---src-templates-spec-tsx-1c90eb80975ed8d1c214.js",
   "framework-20e7d51534b19468503c.js.LICENSE.txt": "framework-20e7d51534b19468503c.js.LICENSE.txt",
@@ -92,7 +94,7 @@
   "static/montserrat-latin-900.woff2": "static/montserrat-latin-900-e66c7edc609e24bacbb705175669d814.woff2",
   "static/montserrat-latin-900italic.woff": "static/montserrat-latin-900italic-efcaa0f6a82ee0640b83a0916e6e8d68.woff",
   "static/montserrat-latin-900italic.woff2": "static/montserrat-latin-900italic-4454c775e48152c1a72510ceed3603e2.woff2",
-  "styles.css": "styles.7374b4550303b12512e0.css",
-  "webpack-runtime-a4fbc402e8e21041d343.js.map": "webpack-runtime-a4fbc402e8e21041d343.js.map",
-  "webpack-runtime.js": "webpack-runtime-a4fbc402e8e21041d343.js"
+  "styles.css": "styles.efe1ccb1ae7301d6d39c.css",
+  "webpack-runtime-92701ee79227a249f27d.js.map": "webpack-runtime-92701ee79227a249f27d.js.map",
+  "webpack-runtime.js": "webpack-runtime-92701ee79227a249f27d.js"
 }
