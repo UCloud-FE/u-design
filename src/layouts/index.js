@@ -9,7 +9,7 @@ const Layout = ({ location, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
     const isRootPath = location.pathname === rootPath;
 
-    const { navs, category, all, categories, specs, specsCategoryOrder } = useStaticQuery(graphql`
+    const { navs, category, all, docs, categories, specs, specsCategoryOrder } = useStaticQuery(graphql`
         query {
             navs: allMarkdownRemark(
                 sort: { fields: [frontmatter___order], order: ASC }
@@ -63,6 +63,20 @@ const Layout = ({ location, children }) => {
                         title
                         category
                         order
+                    }
+                }
+            }
+            docs: allMarkdownRemark(
+                sort: { fields: [fields___slug], order: DESC }
+                filter: { fileAbsolutePath: { glob: "**/content/docs/*.md" }, fields: {slug: {ne: "/docs/"}} }
+            ) {
+                nodes {
+                    headings {
+                        value
+                        depth
+                    }
+                    fields {
+                        slug
                     }
                 }
             }
@@ -143,6 +157,15 @@ const Layout = ({ location, children }) => {
                 }),
             },
         ];
+    } else if (location.pathname.includes('/docs/')) {
+        items = docs.nodes.map(item => {
+            const { fields, headings } = item;
+
+            return {
+                title: fields.slug === '/docs/readme/' ? '组件介绍': headings[0]?.value,
+                slug: fields.slug,
+            };
+        });
     }
 
     return (
