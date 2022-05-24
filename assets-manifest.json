@@ -1,0 +1,11 @@
+{
+  "cms.js": "cms.js",
+  "cms.js.map": "cms.js.map",
+  "index.html": "index.html",
+  "netlify-cms-app.js": "netlify-cms-app.js",
+  "netlify-cms-app.js.map": "netlify-cms-app.js.map",
+  "netlify-identity.js": "netlify-identity.js",
+  "netlify-identity.js.map": "netlify-identity.js.map",
+  "react-dom.production.min.js": "react-dom.production.min.js",
+  "react.production.min.js": "react.production.min.js"
+}

@@ -85,12 +85,12 @@ module.exports = {
                             wrapperStyle: `margin-bottom: 1.0725rem`,
                         },
                     },
-                    {
-                        resolve: 'gatsby-remark-attr',
-                        options: {
-                            allowDangerousDOMEventHandlers: true,
-                        },
-                    },
+                    // {
+                    //     resolve: 'gatsby-remark-attr',
+                    //     options: {
+                    //         allowDangerousDOMEventHandlers: true,
+                    //     },
+                    // },
                     {
                         resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
                     },
