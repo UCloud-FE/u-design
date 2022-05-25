@@ -72,6 +72,8 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 弹窗全局的报错，在内容区顶部进行报错。内容区域内表单/表格的报错，遵循 [Form 表单](https://udesign.ucloud.cn/component/Form/) 和 [Table 表格](https://udesign.ucloud.cn/component/Table/) 的报错原则。
 
+如果是前端报错，建议输入完成后，立刻给到反馈，帮助用户纠正错误；后端报错，点击「确认」传值校验后报错；如果报错提示需要给到必要的操作链接，可通过文字链的形式给到用户。
+
 ![](../../../images/Modal/errornotice.png)
 
 
@@ -130,7 +132,7 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
       <img src="../../../images/Modal/problems_01.png" alt="image alt" title="desc" />
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>当内容较多时，弹窗内会出现滚动条，不便于用户使用。</p>
+      <p><i class="u-md-not-suggested"></i>内容较多的弹窗不便于用户使用。而内容过少的抽屉会显得较为空洞。</p>
       <img src="../../../images/Modal/problems_02.png" alt="image alt" title="desc" />
    </div>
 </div>
