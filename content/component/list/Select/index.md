@@ -82,7 +82,7 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 #### 1.使用场景    
 
-- 当选项过多且选项没有层级关系时，使用 [级联选择器](http://10.179.234.214:8000/component/Cascader/) `Cascader`展示并选择内容。
+- 当选项过多且选项没有层级关系时，使用 [级联选择器](/component/Cascader/) `Cascader`展示并选择内容。
 
   ![](../../../images/Select/descriptions_01.png)
 
