@@ -1,5 +1,5 @@
 ---
-description: "气泡卡片"
+description: "气泡卡片。"
 ---
 
 ## 简介
