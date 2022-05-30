@@ -60,19 +60,19 @@ description: "输入或选择日期的输入控件。"
 
 #### 默认初始
 
-![4.0](../../../images/Datepicker/4.0.png)
+![4.0-1](../../../images/Datepicker/4.0-1.png)
 
 #### 悬停状态
 
-![4.1](../../../images/Datepicker/4.1.png)
+![4.1-1](../../../images/Datepicker/4.1-1.png)
 
 #### 选中/激活状态
 
-![4.2](../../../images/Datepicker/4.2.png)
+![4.2-1](../../../images/Datepicker/4.2-1.png)
 
 #### 禁用状态
 
-![4.3](../../../images/Datepicker/4.3.png)
+![4.3-1](../../../images/Datepicker/4.3-1.png)
 
 ## 设计说明
 
@@ -96,6 +96,8 @@ description: "输入或选择日期的输入控件。"
 #### 1.单日期选择
 
 用户使用【单日期选择器】可通过**点击或自定义输入**进行设定，自定义输入后键盘“Enter”或单击选中最后一位值后**自动生效**。
+![4.4-1](../../../images/Datepicker/4.4-1.png)
+
 
 
 
@@ -104,7 +106,10 @@ description: "输入或选择日期的输入控件。"
 用户使用【日期范围选择器】可通过**点击或自定义输入**进行【开始日期】和【结束日期】的选择，每次需要【依次】完成开始日期及结束日期的选择：
 
 - 仅日期：选中结束日期后**自动生效**
+![4.5-1](../../../images/Datepicker/4.5-1.png)
+
 - 日期+时间：选中开始时间和结束时间后，点击**确定**即刻生效
+![4.5-1](../../../images/Datepicker/4.5-1.png)
 
 
 
@@ -138,6 +143,9 @@ description: "输入或选择日期的输入控件。"
 
 ![5](../../../images/Datepicker/5.png)
 
+
+
+
 <!--
 
 ## 主题
@@ -151,6 +159,6 @@ description: "输入或选择日期的输入控件。"
 
 ## 相关文档
 
-1. [Datepicker 日期选择器](/component/Datepicker/)
+1. [Timepicker 时间选择器](/component/Timepicker/)
 2. [Calendar 日历](/component/Calendar/)
 
