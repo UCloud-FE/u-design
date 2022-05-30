@@ -159,6 +159,6 @@ description: "输入或选择日期的输入控件。"
 
 ## 相关文档
 
-1. [Datepicker 日期选择器](/component/Datepicker/)
+1. [Timepicker 时间选择器](/component/Timepicker/)
 2. [Calendar 日历](/component/Calendar/)
 
