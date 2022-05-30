@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Seo from '../components/seo';
 import ToC from '../components/ToC';
 import Footer from '../components/Footer';
@@ -63,7 +63,6 @@ const Index = ({ data, location }) => {
                         {markdownRemark.frontmatter.description && <p>{markdownRemark.frontmatter.description}</p>}
                     </div>
 
-                    
                     <section className="u-markdown-design-styles">
                         <MDXRenderer>{markdownRemark.body}</MDXRenderer>
                     </section>

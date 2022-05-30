@@ -28,7 +28,6 @@ module.exports = {
             },
         },
         `gatsby-plugin-image`,
-        `gatsby-plugin-mdx`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -55,6 +54,9 @@ module.exports = {
             options: {
                 extensions: [`.md`, `.mdx`],
                 gatsbyRemarkPlugins: [
+                    {
+                        resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
+                    },
                     `gatsby-remark-extract-image-attributes`,
                     {
                         resolve: `gatsby-remark-relative-images`,
@@ -93,9 +95,6 @@ module.exports = {
                     //         allowDangerousDOMEventHandlers: true,
                     //     },
                     // },
-                    {
-                        resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
-                    },
                     // {
                     //     resolve: `gatsby-remark-image-attributes`,
                     //     options: {

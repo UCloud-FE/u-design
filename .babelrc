@@ -1,0 +1,13 @@
+{
+    "plugins": [
+        [
+            "import",
+            {
+                "libraryName": "@ucloud-fe/react-components",
+                "camel2DashComponentName": false,
+                "libraryDirectory": "lib/components"
+            }
+        ]
+    ],
+    "presets": ["babel-preset-gatsby"]        
+}

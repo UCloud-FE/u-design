@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from 'gatsby-plugin-mdx';
+import { MDXProvider } from '@mdx-js/react';
 import Seo from '../components/seo';
 import Footer from '../components/Footer';
 import ToC from '../components/ToC';
@@ -133,7 +134,9 @@ const Index = ({ data, location }) => {
             }
             return (
                 <div className="u-markdown-design-styles">
-                    <MDXRenderer>{mdx.body}</MDXRenderer>
+                    <MDXProvider>
+                        <MDXRenderer>{mdx.body}</MDXRenderer>
+                    </MDXProvider>
                 </div>
             );
         } else if (tabIndex === tabs[2]) {

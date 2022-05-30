@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
-import { MDXRenderer } from "gatsby-plugin-mdx"
+import { MDXRenderer } from 'gatsby-plugin-mdx';
 import Seo from '../components/seo';
 import ToC from '../components/ToC';
 import Footer from '../components/Footer';
