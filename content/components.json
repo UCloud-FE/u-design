@@ -216,6 +216,11 @@
         "category": ["general"]
     },
     {
+        "name": "TimePicker",
+        "zh_cn": "时间选择器",
+        "category": ["data-input"]
+    },
+    {
         "name": "Tooltip",
         "zh_cn": "文字提示",
         "category": ["feedback"]
