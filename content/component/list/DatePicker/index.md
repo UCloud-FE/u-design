@@ -8,7 +8,7 @@ description: "输入或选择日期的输入控件。"
 
 ## 基本构成
 
-![](../../../images/Datepicker/1-9468098.png)
+![](../../../images/Datepicker/constitute_DatePicker.png)
 
 | 种类           | 输入框(A) | 日期选择面板(B) |
 | :------------- | :-------: | :-------------: |
