@@ -28,6 +28,7 @@ module.exports = {
             },
         },
         `gatsby-plugin-image`,
+        `gatsby-plugin-mdx`,
         {
             resolve: `gatsby-source-filesystem`,
             options: {
@@ -50,9 +51,10 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-transformer-remark`,
+            resolve: `gatsby-plugin-mdx`,
             options: {
-                plugins: [
+                extensions: [`.md`, `.mdx`],
+                gatsbyRemarkPlugins: [
                     `gatsby-remark-extract-image-attributes`,
                     {
                         resolve: `gatsby-remark-relative-images`,

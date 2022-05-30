@@ -11,7 +11,7 @@ const Layout = ({ location, children }) => {
 
     const { navs, category, all, docs, categories, specs, specsCategoryOrder } = useStaticQuery(graphql`
         query {
-            navs: allMarkdownRemark(
+            navs: allMdx(
                 sort: { fields: [frontmatter___order], order: ASC }
                 filter: { fileAbsolutePath: { glob: "**/content/*/index.md" } }
             ) {
@@ -23,17 +23,17 @@ const Layout = ({ location, children }) => {
                     }
                 }
             }
-            category: markdownRemark(fileAbsolutePath: { glob: "**/content/component/category/index.md" }) {
+            category: mdx(fileAbsolutePath: { glob: "**/content/component/category/index.md" }) {
                 frontmatter {
                     title
                 }
             }
-            all: markdownRemark(fileAbsolutePath: { glob: "**/content/component/list/index.md" }) {
+            all: mdx(fileAbsolutePath: { glob: "**/content/component/list/index.md" }) {
                 frontmatter {
                     title
                 }
             }
-            categories: allMarkdownRemark(
+            categories: allMdx(
                 sort: { fields: [frontmatter___order], order: ASC }
                 filter: { fileAbsolutePath: { glob: "**/content/component/category/**" } }
             ) {
@@ -44,12 +44,11 @@ const Layout = ({ location, children }) => {
                     }
                     frontmatter {
                         title
-                        components
                         order
                     }
                 }
             }
-            specs: allMarkdownRemark(
+            specs: allMdx(
                 sort: { fields: [frontmatter___order], order: ASC }
                 filter: { fileAbsolutePath: { glob: "**/content/spec/*/index.md" } }
             ) {
@@ -59,14 +58,13 @@ const Layout = ({ location, children }) => {
                         slug
                     }
                     frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
                         title
                         category
                         order
                     }
                 }
             }
-            docs: allMarkdownRemark(
+            docs: allMdx(
                 sort: { fields: [fields___slug], order: DESC }
                 filter: { fileAbsolutePath: { glob: "**/content/docs/*.md" }, fields: { slug: { ne: "/docs/" } } }
             ) {
@@ -80,7 +78,7 @@ const Layout = ({ location, children }) => {
                     }
                 }
             }
-            specsCategoryOrder: markdownRemark(fileAbsolutePath: { glob: "**/content/spec/index.md" }) {
+            specsCategoryOrder: mdx(fileAbsolutePath: { glob: "**/content/spec/index.md" }) {
                 frontmatter {
                     categoryOrder
                 }

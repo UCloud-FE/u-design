@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import Seo from '../components/seo';
 import ToC from '../components/ToC';
 import Footer from '../components/Footer';
@@ -9,7 +10,7 @@ import * as styles from './styles.module.scss';
 
 const Index = ({ data, location }) => {
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
-    const markdownRemark = data.markdownRemark;
+    const markdownRemark = data.mdx;
     const slug = markdownRemark.fields.slug;
     const specName = delLast(slug.split('/spec/')[1], '/');
 
@@ -62,10 +63,10 @@ const Index = ({ data, location }) => {
                         {markdownRemark.frontmatter.description && <p>{markdownRemark.frontmatter.description}</p>}
                     </div>
 
-                    <section
-                        className="u-markdown-design-styles"
-                        dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
-                    />
+                    
+                    <section className="u-markdown-design-styles">
+                        <MDXRenderer>{markdownRemark.body}</MDXRenderer>
+                    </section>
                 </div>
                 <Footer />
             </div>
@@ -77,10 +78,10 @@ export default Index;
 
 export const pageQuery = graphql`
     query SpecBySlug($id: String!) {
-        markdownRemark(id: { eq: $id }) {
+        mdx(id: { eq: $id }) {
             id
             excerpt(pruneLength: 160)
-            html
+            body
             headings {
                 value
                 depth

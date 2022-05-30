@@ -25,7 +25,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const result = await graphql(
         `
             {
-                allMarkdownRemark(sort: { fields: [frontmatter___order], order: DESC }, limit: 10000) {
+                allMdx(sort: { fields: [frontmatter___order], order: DESC }, limit: 10000) {
                     nodes {
                         id
                         fields {
@@ -42,7 +42,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         return;
     }
 
-    const posts = result.data.allMarkdownRemark.nodes;
+    const posts = result.data.allMdx.nodes;
 
     // Create posts pages
     if (posts.length > 0) {
@@ -79,7 +79,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions;
 
-    if (node.internal.type === `MarkdownRemark`) {
+    if (node.internal.type === `Mdx`) {
         const value = createFilePath({ node, getNode });
 
         createNodeField({

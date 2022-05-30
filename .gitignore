@@ -67,6 +67,6 @@ yarn-error.log
 .pnp.js
 # Yarn Integrity file
 .yarn-integrity
-docs/changelog.md
-docs/develop.md
-docs/readme.md
+content/docs/changelog.md
+content/docs/develop.md
+content/docs/readme.md

@@ -1,9 +1,9 @@
 import React, { useEffect } from 'react';
 import { graphql } from 'gatsby';
+import { MDXRenderer } from "gatsby-plugin-mdx"
 import Seo from '../components/seo';
 import Footer from '../components/Footer';
 import ToC from '../components/ToC';
-import ComponentList from '../components/ComponentList';
 import allComponents from '../../content/components.json';
 import { delLast } from '../utils';
 import * as styles from './styles.module.scss';
@@ -24,8 +24,8 @@ const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
 
 const Index = ({ data, location }) => {
-    const { markdownRemark } = data;
-    const slug = markdownRemark.fields.slug;
+    const { mdx } = data;
+    const slug = mdx.fields.slug;
     const componentName = getComponentName(slug);
     const [tabIndex, setTabIndex] = useState(tabs[0]);
     const [componentsDocsToc, setComponentsDocsToc] = useState([]);
@@ -128,16 +128,13 @@ const Index = ({ data, location }) => {
 
     const renderCurrentTabContent = () => {
         if (tabIndex === tabs[0]) {
-            if (!markdownRemark?.frontmatter?.description) {
+            if (!mdx?.frontmatter?.description) {
                 return <>敬请期待</>;
             }
             return (
-                <>
-                    <div
-                        className="u-markdown-design-styles"
-                        dangerouslySetInnerHTML={{ __html: markdownRemark.html }}
-                    ></div>
-                </>
+                <div className="u-markdown-design-styles">
+                    <MDXRenderer>{mdx.body}</MDXRenderer>
+                </div>
             );
         } else if (tabIndex === tabs[2]) {
             return <div>敬请期待</div>;
@@ -148,11 +145,11 @@ const Index = ({ data, location }) => {
 
     return (
         <div className={styles.wrapper}>
-            <Seo title={markdownRemark.frontmatter.title} />
+            <Seo title={mdx.frontmatter.title} />
 
             <div className={styles.contentWrapper} id="component_s_w">
                 {tabIndex === tabs[0] && (
-                    <ToC currentHash={scrollCurrentHash} headings={markdownRemark.headings || []} location={location} />
+                    <ToC currentHash={scrollCurrentHash} headings={mdx.headings || []} location={location} />
                 )}
                 {tabIndex === tabs[1] && (
                     <ToC
@@ -173,7 +170,7 @@ const Index = ({ data, location }) => {
                                 <Edit />
                             </a>
                         </h1>
-                        {markdownRemark.frontmatter.description && <p>{markdownRemark.frontmatter.description}</p>}
+                        {mdx.frontmatter.description && <p>{mdx.frontmatter.description}</p>}
                     </div>
 
                     <div className={styles.tabs}>
@@ -236,10 +233,10 @@ export default Index;
 
 export const pageQuery = graphql`
     query ComponentBySlug($id: String!) {
-        markdownRemark(id: { eq: $id }) {
+        mdx(id: { eq: $id }) {
             id
             excerpt(pruneLength: 160)
-            html
+            body
             headings {
                 value
                 depth
@@ -256,7 +253,7 @@ export const pageQuery = graphql`
     }
 `;
 
-// previous: markdownRemark(id: { eq: $previousPostId }) {
+// previous: mdx(id: { eq: $previousPostId }) {
 //     fields {
 //         slug
 //     }
@@ -264,7 +261,7 @@ export const pageQuery = graphql`
 //         title
 //     }
 // }
-// next: markdownRemark(id: { eq: $nextPostId }) {
+// next: mdx(id: { eq: $nextPostId }) {
 //     fields {
 //         slug
 //     }
