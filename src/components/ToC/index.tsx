@@ -28,7 +28,16 @@ const ToC = (props: {
                     const hash = originalHash ? heading.id : heading.value.replace(/\s+/g, '-').toLowerCase();
                     const isHighlight = `#${hash}` === currentHash;
 
-                    if (heading.depth === 2 || heading.depth === 3) {
+                    if (heading.depth >= 2 && heading.depth <= 4) {
+                        let paddingLeft = 0;
+                        if (heading.depth === 2) {
+                            paddingLeft = 8;
+                        } else if (heading.depth === 3) {
+                            paddingLeft = 24;
+                        } else if (heading.depth === 4) {
+                            paddingLeft = 40;
+                        }
+
                         return (
                             <div
                                 className={`${styles.to} ${isHighlight ? styles.current : ''}`}
@@ -36,7 +45,7 @@ const ToC = (props: {
                             >
                                 <a
                                     style={{
-                                        paddingLeft: heading.depth === 3 ? 16 : 0,
+                                        paddingLeft,
                                     }}
                                     href={`#${hash}`}
                                 >

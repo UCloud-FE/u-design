@@ -7,7 +7,8 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
     flex: 1;
     overflow: hidden;
     background-color: #f8f8fa;
-    font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+        apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
     -webkit-font-smoothing: antialiased;
 
     .content-wrapper {
@@ -37,14 +38,15 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
                 margin-top: 16px;
                 color: $T_COLOR_TEXT_DEFAULT_DARK;
                 font-size: 40px;
-                font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji;
+                font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans,
+                    sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
                 font-weight: 400;
                 line-height: 42px;
                 letter-spacing: 2px;
             }
 
             h1 a {
-                fill:#7a8baa;
+                fill: #7a8baa;
                 display: inline-block;
                 margin-left: 12px;
                 svg {
@@ -52,12 +54,12 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
                     height: 16px;
                 }
                 vertical-align: baseline;
-                &:hover{
+                &:hover {
                     svg {
                         fill: $T_COLOR_TEXT_PRIMARY_DEFAULT;
                     }
                     cursor: pointer;
-                    transition: all .3s;
+                    transition: all 0.3s;
                 }
             }
         }
@@ -65,40 +67,40 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         .tabs {
             margin-top: 48px;
             margin-bottom: 48px;
-            ul{
+            ul {
                 line-height: 52px;
                 height: 52px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
-                .current, li:hover {
+                .current,
+                li:hover {
                     background-color: $T_COLOR_BG_DEFAULT_HOVER;
                     border-bottom: 2px solid $T_COLOR_BG_PRIMARY_1;
                     color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
                     font-weight: 600;
                     // font-family: PingFangSC-Semibold, PingFang SC;
                 }
-                li{
+                li {
                     margin-right: 2px;
                     &:last-child {
-                        margin-right: 0px!important;
-
+                        margin-right: 0px !important;
                     }
-                    i{
+                    i {
                         background-size: contain;
                         margin-right: 8px;
                         width: 46px;
                         height: 32px;
                         display: inline-block;
                     }
-                    .design-icon{
+                    .design-icon {
                         background-image: url('./images/design-tab-icon.png');
                     }
-                    .devIcon{
+                    .devIcon {
                         background-image: url('./images/dev-tab-icon.png');
                     }
-                    .dtIcon{
+                    .dtIcon {
                         background-image: url('./images/dt-tab-icon.png');
                     }
                     cursor: pointer;
@@ -106,7 +108,7 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
                     justify-content: center;
                     align-items: center;
                     flex: 1;
-                    
+
                     font-size: 20px;
                     font-weight: 400;
                     color: $T_COLOR_TEXT_DEFAULT_DARK;
@@ -120,211 +122,321 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
 /* markdown style*/
 
 :global {
-    .design-token-color{
+    .design-token-color {
         width: 50%;
         height: 24px;
         margin-top: 12px;
         box-shadow: inset 0 0 0 1px #dddbda;
     }
-    .recodo-code-theme-switcher{
-        display: none!important;
-    }
-    .recodo-code {
-        background-color: $T_COLOR_BG_DEFAULT_BRIGHT!important;
-        padding: 24px 24px 24px 24px!important;
 
-        .recodo-code-preview{
-            background: none!important;
-            border: none!important;
-            padding: 0px!important;
-        }
-
-        .recodo-code-editor{
-            margin: 0px!important;
-        }
-
-        .recodo-code-collapse-button{
-            color: $T_COLOR_TEXT_PRIMARY_DEFAULT!important;
-        }
-
-        .recodo-code-toolbar{
-            display: flex!important;
-            justify-content: end!important;
-            align-items: center!important;
-        }
+    @mixin h1() {
+        font-size: 40px !important;
+        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+        font-weight: 600 !important;
+        line-height: 42px !important;
+        letter-spacing: 1px !important;
     }
 
-    .recodo-code-editor{
-        font-family: Consolas, "Liberation Mono", Menlo, monospace;
-        font-size: 13px;
-        line-height: 1.5;
-        color: rgb(51, 51, 51);
-        white-space: pre-wrap;
-        overflow-wrap: normal;
-        tab-size: 2;
-        hyphens: none;
-        background-color: rgb(245, 245, 245);
-        padding: 8px 16px;
-        border: 1px solid rgb(245, 245, 245);
-        border-radius: 3px;
-        margin-top: 0px;
-        margin-bottom: 16px;
-        overflow: auto;
-        > div {
-            background: none!important;
-        }
+    @mixin h2() {
+        font-size: 30px !important;
+        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+        font-weight: 500 !important;
+        line-height: 38px !important;
+        margin-top: 80px !important;
+        margin-bottom: 32px !important;
+        padding-bottom: 16px !important;
+        border-bottom: 1px solid #d2d6ea !important;
+        letter-spacing: 1px !important;
     }
 
-    @mixin h1(){
-        font-size: 40px!important;
-        font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji!important;
-        font-weight: 600!important;
-        line-height: 42px!important;
-        letter-spacing: 1px!important;
+    @mixin h3() {
+        font-size: 24px !important;
+        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+        font-weight: 400 !important;
+        margin-bottom: 24px !important;
+        margin-top: 32px !important;
+        letter-spacing: 1px !important;
     }
 
-    @mixin h2(){
-        font-size: 30px!important;
-        font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji!important;
-        font-weight: 500!important;
-        line-height: 38px!important;
-        margin-top: 80px!important;
-        margin-bottom: 32px!important;
-        padding-bottom: 16px!important;
-        border-bottom: 1px solid #d2d6ea!important;
-        letter-spacing: 1px!important;
-    }
-
-    @mixin h3(){
-        font-size: 24px!important;
-        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji!important;
-        font-weight: 400!important;
-        margin-bottom: 24px!important;
-        margin-top: 32px!important;
-        letter-spacing: 1px!important;
-    }
-
-    @mixin h4(){
-        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji!important;
-        font-size: 16px!important;
+    @mixin h4() {
+        font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
+            apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+        font-size: 16px !important;
         // font-weight: 400!important;
         // margin-bottom: 24px!important;
         // margin-top: 32px!important;
-        letter-spacing: 1px!important;
+        letter-spacing: 1px !important;
     }
 
-    @mixin h-common(){
-        margin: 0!important;
-        margin-bottom: 16px!important;
-        margin-top: 24px!important;
-        color: #0a1633!important;
-        font-size: 16px!important;
-        font-weight: 400!important;
+    @mixin h-common() {
+        margin: 0 !important;
+        margin-bottom: 16px !important;
+        margin-top: 24px !important;
+        color: #0a1633 !important;
+        font-size: 16px !important;
+        font-weight: 400 !important;
     }
 
-    @mixin ul(){
-        list-style: disc!important;
-        list-style-type: disc!important;
-        margin-left: 24px!important;
+    @mixin ul() {
+        list-style: disc !important;
+        list-style-type: disc !important;
+        margin-left: 24px !important;
         li {
-            margin-bottom: 8px!important;
+            margin-bottom: 8px !important;
         }
     }
-    @mixin ol(){
-        list-style: decimal!important;
-        list-style-type: decimal!important;
-        margin-left: 24px!important;
+    @mixin ol() {
+        list-style: decimal !important;
+        list-style-type: decimal !important;
+        margin-left: 24px !important;
         li {
-            margin-bottom: 8px!important;
+            margin-bottom: 8px !important;
             line-height: 24px;
         }
     }
 
-    @mixin a(){
-        text-decoration: none!important;
-        color: $T_COLOR_TEXT_PRIMARY_DEFAULT!important;
+    @mixin a() {
+        text-decoration: none !important;
+        color: $T_COLOR_TEXT_PRIMARY_DEFAULT !important;
     }
 
-    @mixin strong(){
-        font-weight: 400!important;
+    @mixin strong() {
+        font-weight: 400 !important;
     }
 
-    @mixin p(){
-        margin-bottom: 16px!important;
+    @mixin p() {
+        margin-bottom: 16px !important;
         line-height: 24px;
     }
 
-    .u-markdown-dev-styles{
-        .recodo-component-wrap > h2{
+    .u-markdown-dev-styles {
+        > h1,
+        > h2,
+        > h3,
+        > h4 {
             @include h-common();
+        }
+        > h1 {
+            @include h1();
+        }
+        > h2 {
             @include h2();
         }
+        > h3 {
+            @include h3();
+        }
+        > h4 {
+            @include h4();
+        }
+        > ul {
+            @include ul();
+        }
+        > ol {
+            @include ol();
+        }
 
-        .recodo-props{
-            > h3{
-                @include h-common();
-                @include h3();
+        .u-props {
+            .u-props-table-wrap {
+                background: #ffffff;
+                border: 1px solid #efeff8;
+                padding: 24px;
+        
+                .u-props-table {
+                    width: 100%;
+                    border-spacing: 0;
+                    border-collapse: collapse;
+                    font-size: 12px;
+                    font-family: monospace;
+                    font-weight: 400;
+                    &,
+                    * {
+                        margin: 0;
+                        padding: 0;
+                    }
+                    th {
+                        text-align: left;
+                        line-height: 20px;
+                        color: #526075;
+                    }
+                    td {
+                        color: #0a1633;
+                    }
+                    th,
+                    td {
+                        padding: 12px;
+                    }
+                    tr {
+                        border-bottom: 1px solid #c3cad9;
+                    }
+                    tbody > tr:nth-child(2n + 1) {
+                        background: #f6f6fb;
+                    }
+                    tbody > tr:hover {
+                        background: #f4f6ff;
+                    }
+        
+                    .u-props-table-desc-tag-title {
+                        font-weight: 500;
+                    }
+                    tr.u-props-table-deprecated {
+                        text-decoration: line-through;
+                        opacity: 0.5;
+                        background: #ebebf1 !important;
+                    }
+                }
+            }
+        }
+        
+
+        .demo-show {
+            background-color: $T_COLOR_BG_DEFAULT_BRIGHT !important;
+            padding: 24px 24px 6px 24px !important;
+
+            h1 {
+                line-height: 2em;
+                font-size: 18px;
+                font-weight: bold;
+            }
+            h2 {
+                line-height: 2em;
+                font-size: 16px;
+                font-weight: bold;
+            }
+            h3 {
+                line-height: 1.6em;
+                font-size: 13px;
             }
         }
 
-        .recodo-doc{
-            > h1, > h2, > h3, > h4{ @include h-common(); }
-            > h1 { @include h1(); }
-            > h2 { @include h2(); }
-            > h3 { @include h3(); }
-            > h4 { @include h4(); }
-            > ul { @include ul(); }
-            > ol { @include ol(); }
+        .demo-toolbar {
+            font-size: 13px !important;
+            padding: 0px 24px 12px 24px !important;
+            background-color: $T_COLOR_BG_DEFAULT_BRIGHT !important;
+            align-items: center !important;
+            display: flex !important;
+            justify-content: end !important;
+
+            
+            .demo-toolbar-view-code {
+                @mixin hover() {
+                    content: ' ';
+                    position: absolute;
+                    bottom: -2px;
+                    left: 0;
+                    width: 100%;
+                    height: 2px;
+                    background: $T_COLOR_BG_PRIMARY_1;
+                }
+                &[data-active='true']{
+                    &:after {
+                        @include hover();
+                    }
+                }
+
+                cursor: pointer;
+                font-weight: 500;
+                color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                position: relative;
+                &:hover {
+                    &:after {
+                       @include hover();
+                    }
+                }
+            }
+        }
+
+        .gatsby-highlight[data-language="jsx"]{
+            padding-top: 0px!important;
+        }
+
+        .gatsby-highlight {
+            background-color: $T_COLOR_BG_DEFAULT_BRIGHT !important;
+            padding: 24px !important;
+            font-size: 13px !important;
+
+            .language-jsx {
+                margin: 0px !important;
+            }
+            pre.language-jsx {
+                display: none;
+            }
+        }
+
+        .uc-fe-form-item {
+            overflow: hidden !important;
         }
     }
 
     .u-markdown-design-styles {
-        h1, h2, h3, h4{ @include h-common(); }
-        h1 { @include h1(); }
-        h2 { @include h2(); }
-        h3 {  @include h3(); }
-        ul { @include ul(); }
-        ol { @include ol(); }
-        a { @include a(); }
+        h1,
+        h2,
+        h3,
+        h4 {
+            @include h-common();
+        }
+        h1 {
+            @include h1();
+        }
+        h2 {
+            @include h2();
+        }
+        h3 {
+            @include h3();
+        }
+        ul {
+            @include ul();
+        }
+        ol {
+            @include ol();
+        }
+        a {
+            @include a();
+        }
 
         strong {
             @include strong();
         }
         table {
-            width: 100%!important;
-            white-space: pre-wrap!important;
-            word-break:break-all!important;
-            padding: 12px 0!important;
-            border-collapse: separate!important;
-            border-spacing: 0px!important;
-            font-family: -apple-system,BlinkMacSystemFont,segoe ui,Roboto,helvetica neue,Arial,noto sans,sans-serif,apple color emoji,segoe ui emoji,segoe ui symbol,noto color emoji!important;
-            tr, th, td {
-                margin: 0px!important;
-                padding: 0px!important;
-                border: 0px!important;
+            width: 100% !important;
+            white-space: pre-wrap !important;
+            word-break: break-all !important;
+            padding: 12px 0 !important;
+            border-collapse: separate !important;
+            border-spacing: 0px !important;
+            font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans,
+                sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji !important;
+            tr,
+            th,
+            td {
+                margin: 0px !important;
+                padding: 0px !important;
+                border: 0px !important;
             }
 
-            thead tr th{
-                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK!important;
-                line-height: 43px!important;
-                padding: 0px 12px!important;
-                color: $T_COLOR_TEXT_DEFAULT_DARK!important;
-                font-size: 14px!important;
-                font-weight: 400!important;
-                background: #eaebf1!important;
+            thead tr th {
+                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK !important;
+                line-height: 43px !important;
+                padding: 0px 12px !important;
+                color: $T_COLOR_TEXT_DEFAULT_DARK !important;
+                font-size: 14px !important;
+                font-weight: 400 !important;
+                background: #eaebf1 !important;
             }
 
-            tbody tr td{
-                box-sizing: content-box!important;
-                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK!important;
-                line-height: 47px!important;
-                padding: 0px 12px!important;
+            tbody tr td {
+                box-sizing: content-box !important;
+                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_DARK !important;
+                line-height: 47px !important;
+                padding: 0px 12px !important;
                 color: #526075;
-                font-size: 14px!important;
-                font-weight: 400!important;
+                font-size: 14px !important;
+                font-weight: 400 !important;
             }
-            tbody tr:nth-child(2n){
-                background: $T_COLOR_TEXT_WHITE!important;
+            tbody tr:nth-child(2n) {
+                background: $T_COLOR_TEXT_WHITE !important;
             }
         }
 
@@ -334,13 +446,30 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
     }
 
     .u-markdown-docs-styles {
-        h1, h2, h3, h4{ @include h-common(); }
-        h1 { @include h1(); }
-        h2 { @include h2(); }
-        h3 {  @include h3(); }
-        ul { @include ul(); }
-        ol { @include ol(); }
-        a { @include a(); }
+        h1,
+        h2,
+        h3,
+        h4 {
+            @include h-common();
+        }
+        h1 {
+            @include h1();
+        }
+        h2 {
+            @include h2();
+        }
+        h3 {
+            @include h3();
+        }
+        ul {
+            @include ul();
+        }
+        ol {
+            @include ol();
+        }
+        a {
+            @include a();
+        }
 
         strong {
             @include strong();
@@ -387,12 +516,12 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         background-image: url('./images/not-suggested.png');
     }
 
-    .u-md-flex-without-bg{
+    .u-md-flex-without-bg {
         display: flex;
-        > div{
+        > div {
             margin-right: 24px;
             flex: 1;
-            &:last-child{
+            &:last-child {
                 margin-right: 0px;
             }
         }
@@ -412,9 +541,10 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         }
     }
 
-    .u-md-img-center, .u-md-img-left{
+    .u-md-img-center,
+    .u-md-img-left {
         background-color: $mk-image-bg;
-        border: 1px solid #EFEFF8;
+        border: 1px solid #efeff8;
         margin-bottom: 38px;
         .gatsby-resp-image-figure {
             border: none !important;
@@ -422,7 +552,7 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         }
     }
 
-    .u-md-img-center{
+    .u-md-img-center {
         > div {
             margin: 0 auto;
         }
@@ -442,7 +572,6 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         padding-left: 24px;
     }
 
-
     .u-md-flex-align-left {
         .gatsby-resp-image-wrapper {
             margin: 0 !important;
@@ -450,7 +579,7 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
     }
 
     .gatsby-resp-image-figure {
-        border: 1px solid #EFEFF8;
+        border: 1px solid #efeff8;
         flex: 1;
         margin: 0;
         // margin-bottom: 38px;
@@ -472,14 +601,14 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         background-color: $mk-image-bg;
         position: relative;
         // figcaption{
-            // display: none;
+        // display: none;
         // }
     }
 
-    .gatsby-highlight{
-        code.language-md{
-            white-space: pre-wrap!important;
-            word-break:break-all!important;
+    .gatsby-highlight {
+        code.language-md {
+            white-space: pre-wrap !important;
+            word-break: break-all !important;
         }
     }
 }

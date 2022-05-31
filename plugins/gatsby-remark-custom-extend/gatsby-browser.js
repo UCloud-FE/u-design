@@ -1,6 +1,15 @@
-/**
- * Implement Gatsby's Browser APIs in this file.
- *
- * See: https://www.gatsbyjs.com/docs/browser-apis/
- */
-// You can delete this file if you're not using it
+export const onClientEntry = () => {
+    window.gatsbyRemarkViewCode = event => {
+        const viewCodeBtnDom = event.target;
+        const codeBlockDom = viewCodeBtnDom.parentNode.nextElementSibling;
+
+        const targetDom = codeBlockDom.querySelector('pre');
+        if (viewCodeBtnDom.dataset.active === 'false') {
+            viewCodeBtnDom.dataset.active = true;
+            targetDom.style.display = 'block';
+        } else {
+            viewCodeBtnDom.dataset.active = false;
+            targetDom.style.display = 'none';
+        }
+    };
+};

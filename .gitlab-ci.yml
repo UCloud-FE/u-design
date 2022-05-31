@@ -6,8 +6,10 @@ stages:
 pages:
     stage: build
     before_script:
-        - apt-get install autoconf automake libtool
+        - apt-get install autoconf automake libtool git
     script:
+        - git clone https://github.com/UCloud-FE/react-components.git react-components
+        - cd react-components && npm install && npm run build:recodo && cp ./.recodo/data/* ../content/ && cd ..
         - npm install
         - npm run build -- --prefix-paths
     # cache:

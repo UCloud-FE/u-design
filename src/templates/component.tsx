@@ -11,6 +11,17 @@ import * as styles from './styles.module.scss';
 import Edit from '../images/edit.svg';
 import { useState } from 'react';
 
+const getDemos = componentDemos => {
+    const demos = {};
+    componentDemos.edges.forEach(item => {
+        let demoComponentName = item.node.name.replace(/^\S/, s => s.toUpperCase()).replace(/-/g, '');
+        demos[demoComponentName] = require(`../../content/${item.node.relativePath}`).default;
+    });
+
+    demos['Props'] = require(`../components/Props`).default;
+    return demos;
+};
+
 const getComponentName = (slug: string): string => {
     return delLast(slug.split('/component/list/')[1], '/');
 };
@@ -20,32 +31,54 @@ const getTitle = componentName => {
     return `${component?.name || ''} ${component?.zh_cn || ''}`;
 };
 
-let componentDocsDestroy = () => {};
 const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
+const currentTab = localStorage?.getItem(TAB_KEY) || tabs[1];
 
 const Index = ({ data, location }) => {
-    const { mdx } = data;
-    const slug = mdx.fields.slug;
-    const componentName = getComponentName(slug);
-    const [tabIndex, setTabIndex] = useState(tabs[0]);
-    const [componentsDocsToc, setComponentsDocsToc] = useState([]);
+    const [tabIndex, setTabIndex] = useState(currentTab);
+    const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
+    const { markdown, componentDocs, componentDemos } = data;
 
+    useEffect(() => {
+        const toc = [];
+        const links = document.querySelectorAll('#u-component-doc [aria-label]');
+        if (tabIndex !== tabs[1]) {
+            return;
+        }
+
+        const headings = [];
+        componentDocs.nodes.forEach(node => {
+            headings.push(...node.headings);
+        });
+
+        headings.forEach((item, index) => {
+            toc.push({
+                ...item,
+                depth: item.depth,
+                id: decodeURIComponent(links[index].hash.split('#')[1]),
+                value: decodeURIComponent(links[index].ariaLabel),
+            });
+        });
+
+        setComponentDocsToc(toc);
+    }, [tabIndex]);
+
+    const componentName = getComponentName(markdown.fields.slug);
     const handleScroll = () => {
         const el = document.querySelector('#component_s_w');
         const top = el.scrollTop;
-        let sections =
-            tabIndex === tabs[0] ? el.querySelectorAll('[aria-label]') : el.getElementsByClassName('recodo-anchor');
+        let sections = el.querySelectorAll('[aria-label]');
         let currentHash;
 
         for (let i = 0; i < sections.length; i++) {
-            if (sections[i].parentElement.tagName === 'H4' && tabIndex === tabs[0]) {
-                continue;
-            }
+            // if (sections[i].parentElement.tagName === 'H4') {
+            //     continue;
+            // }
 
-            var itemTop = tabIndex === tabs[0] ? sections[i].parentElement.offsetTop : sections[i].offsetTop;
-            if (top > itemTop - 120) {
+            var itemTop = sections[i].parentElement.offsetTop;
+            if (top > itemTop - 30) {
                 currentHash = decodeURIComponent(sections[i].hash);
             } else {
                 break;
@@ -59,67 +92,7 @@ const Index = ({ data, location }) => {
         const el = document.querySelector('#component_s_w');
         el.addEventListener('scroll', handleScroll);
 
-        if (localStorage?.getItem(TAB_KEY)) {
-            setTabIndex(localStorage?.getItem(TAB_KEY));
-        }
-
         return () => el.removeEventListener('scroll', handleScroll);
-    }, [tabIndex]);
-
-    useEffect(() => {
-        componentDocsDestroy();
-        if (!window['react-components-docs']) {
-            return;
-        }
-
-        if (tabIndex !== tabs[1]) {
-            return;
-        }
-
-        componentDocsDestroy = window['react-components-docs'].renderDoc(
-            componentName,
-            document.querySelector('#u-component-doc'),
-            {
-                reportAnchorList: data => {
-                    const tocData = [];
-                    data.children?.forEach(itemA => {
-                        tocData.push({
-                            value: itemA.text,
-                            id: itemA.id,
-                            depth: 2,
-                        });
-
-                        if (itemA?.children?.length) {
-                            itemA.children.forEach(itemB => {
-                                if (itemB.text === '说明') {
-                                    return;
-                                }
-
-                                if (itemB.text === '演示' && itemB?.children?.length) {
-                                    itemB.children.forEach(itemC => {
-                                        tocData.push({
-                                            value: itemC.text,
-                                            id: itemC.id,
-                                            depth: 3,
-                                        });
-                                    });
-
-                                    return;
-                                }
-
-                                tocData.push({
-                                    value: itemB.text,
-                                    id: itemB.id,
-                                    depth: 3,
-                                });
-                            });
-                        }
-                    });
-
-                    setComponentsDocsToc(tocData);
-                },
-            },
-        );
     }, [tabIndex]);
 
     const handleClickTab = index => {
@@ -129,13 +102,13 @@ const Index = ({ data, location }) => {
 
     const renderCurrentTabContent = () => {
         if (tabIndex === tabs[0]) {
-            if (!mdx?.frontmatter?.description) {
+            if (!markdown?.frontmatter?.description) {
                 return <>敬请期待</>;
             }
             return (
                 <div className="u-markdown-design-styles">
                     <MDXProvider>
-                        <MDXRenderer>{mdx.body}</MDXRenderer>
+                        <MDXRenderer>{markdown.body}</MDXRenderer>
                     </MDXProvider>
                 </div>
             );
@@ -148,19 +121,14 @@ const Index = ({ data, location }) => {
 
     return (
         <div className={styles.wrapper}>
-            <Seo title={mdx.frontmatter.title} />
+            <Seo title={markdown.frontmatter.title} />
 
             <div className={styles.contentWrapper} id="component_s_w">
                 {tabIndex === tabs[0] && (
-                    <ToC currentHash={scrollCurrentHash} headings={mdx.headings || []} location={location} />
+                    <ToC currentHash={scrollCurrentHash} headings={markdown.headings || []} location={location} />
                 )}
                 {tabIndex === tabs[1] && (
-                    <ToC
-                        currentHash={scrollCurrentHash}
-                        originalHash
-                        headings={componentsDocsToc}
-                        location={location}
-                    />
+                    <ToC currentHash={scrollCurrentHash} originalHash headings={componentDocsToc} location={location} />
                 )}
                 <div className={styles.content}>
                     <div className={styles.top}>
@@ -173,7 +141,7 @@ const Index = ({ data, location }) => {
                                 <Edit />
                             </a>
                         </h1>
-                        {mdx.frontmatter.description && <p>{mdx.frontmatter.description}</p>}
+                        {markdown.frontmatter.description && <p>{markdown.frontmatter.description}</p>}
                     </div>
 
                     <div className={styles.tabs}>
@@ -211,7 +179,11 @@ const Index = ({ data, location }) => {
                     {renderCurrentTabContent()}
                     {tabIndex === tabs[1] && (
                         <div id="u-component-doc" className="u-markdown-dev-styles">
-                            <div style={{ textAlign: 'center' }}>loading</div>
+                            <MDXProvider components={getDemos(componentDemos)}>
+                                {componentDocs.nodes.map(node => {
+                                    return <MDXRenderer key={node.id}>{node.body}</MDXRenderer>;
+                                })}
+                            </MDXProvider>
                         </div>
                     )}
 
@@ -235,8 +207,8 @@ const Index = ({ data, location }) => {
 export default Index;
 
 export const pageQuery = graphql`
-    query ComponentBySlug($id: String!) {
-        mdx(id: { eq: $id }) {
+    query ComponentBySlug($id: String, $componentApiDocsGlob: String, $componentDemosGlob: String) {
+        markdown: mdx(id: { eq: $id }) {
             id
             excerpt(pruneLength: 160)
             body
@@ -251,6 +223,28 @@ export const pageQuery = graphql`
                 title
                 description
                 order
+            }
+        }
+        componentDocs: allMdx(filter: { fileAbsolutePath: { glob: $componentApiDocsGlob } }) {
+            nodes {
+                id
+                excerpt
+                body
+                slug
+                tableOfContents
+                headings {
+                    value
+                    depth
+                }
+            }
+        }
+        componentDemos: allFile(filter: { relativeDirectory: { glob: $componentDemosGlob } }) {
+            edges {
+                node {
+                    id
+                    name
+                    relativePath
+                }
             }
         }
     }
