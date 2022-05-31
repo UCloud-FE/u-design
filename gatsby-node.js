@@ -1,6 +1,4 @@
 const path = require(`path`);
-const fs = require('fs');
-const axios = require('axios');
 const { createFilePath } = require(`gatsby-source-filesystem`);
 
 exports.createPages = async ({ graphql, actions, reporter }) => {
@@ -11,15 +9,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const docsTemplate = path.resolve(`./src/templates/docs.tsx`);
     const componentTemplate = path.resolve(`./src/templates/component.tsx`);
     const categoryTemplate = path.resolve(`./src/templates/category.tsx`);
-
-    const [{ data: readmePage }, { data: developPage }, { data: changeLogPage }] = await Promise.all([
-        axios('https://raw.githubusercontent.com/UCloud-FE/react-components/master/README.md'),
-        axios('https://raw.githubusercontent.com/UCloud-FE/react-components/master/DEVELOP.md'),
-        axios('https://raw.githubusercontent.com/UCloud-FE/react-components/master/CHANGELOG.md'),
-    ]);
-    fs.writeFileSync('content/docs/readme.md', readmePage);
-    fs.writeFileSync('content/docs/develop.md', developPage);
-    fs.writeFileSync('content/docs/changelog.md', changeLogPage);
 
     // Get all markdown sorted by date
     const result = await graphql(

@@ -54,6 +54,7 @@
     "netlify-cms-proxy-server": "^1.3.16",
     "prismjs": "^1.23.0",
     "react": "^17.0.1",
+    "react-docgen": "^5.4.1",
     "react-docgen-typescript": "^2.2.2",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
@@ -72,8 +73,9 @@
     "yorkie": "^2.0.0"
   },
   "scripts": {
-    "build": "gatsby build",
-    "develop": "gatsby develop",
+    "download": "node download.js",
+    "build": "npm run download & gatsby build",
+    "develop": "npm run download & gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
