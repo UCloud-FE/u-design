@@ -8,12 +8,12 @@ description: "输入或选择时间的输入控件。"
 
 ## 基本构成
 
-![Screen Shot 2021-12-05 at 5.46.25 PM](../../../images/Timepicker/constitute_TimePicker.jpg)
+![](../../../images/Timepicker/forms-01.png)
 
-| 种类           | 输入框(A) | 时间滚轮(C) | 操作底栏(C) |
-| :------------- | :-------- | ----------- | ----------- |
-| 时间点选择器   | ✓         | ✓           | ✓           |
-| 时间范围选择器 | ✓         | ✓           | ✓           |
+| 类型           | 输入框(A) | 时间滚轮(B) | 操作区域(C) |
+| :------------- | :-------: | :---------: | :---------: |
+| 时间点选择器   |     ✓     |      ✓      |      ✓      |
+| 时间范围选择器 |     ✓     |      ✓      |      ✓      |
 
 
 | 构成        | 定义                                                         | 说明                                                         |
@@ -29,9 +29,7 @@ description: "输入或选择时间的输入控件。"
 
 ### 类型与样式
 
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
-
-![Screen Shot 2021-12-05 at 5.48.56 PM](../../../images/Timepicker/Type.png)
+![](../../../images/Timepicker/styles-01.png)
 
 | 内容           | 说明                                              |
 | :------------- | :------------------------------------------------ |
@@ -42,15 +40,9 @@ description: "输入或选择时间的输入控件。"
 
 ### 尺寸
 
-![尺寸]()
+U-Design 目前对`Timepicker时间选择器区分了 3 种尺寸：**大（lg）、中（md）、小（sm**），高度分别为32px、28px、24px。
 
-<!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
-
-|        | 尺寸 |
-| :----- | :--- |
-| Large  |      |
-| Middle |      |
-| Small  |      |
+![](../../../images/Timepicker/styles-02.png)
 
 ## 基本状态
 
@@ -64,19 +56,19 @@ description: "输入或选择时间的输入控件。"
 
 #### 默认初始
 
-![5.1](../../../images/Timepicker/5.1.png)
+![](../../../images/Timepicker/states-01.png)
 
 #### 悬停状态
 
-![5.2](../../../images/Timepicker/5.2.png)
+![](../../../images/Timepicker/states-02.png)
 
 #### 选中/激活状态
 
-![5.3](../../../images/Timepicker/5.3.png)
+![](../../../images/Timepicker/states-03.png)
 
 #### 禁用状态
 
-![5.4](../../../images/Timepicker/5.4.png)
+![](../../../images/Timepicker/states-04.png)
 
 
 ## 设计说明
@@ -102,13 +94,13 @@ description: "输入或选择时间的输入控件。"
 #### 1.时间点选择
 
 用户使用【时间点选择器】可通过**点击、自定义输入或滚动数值进入选中框**进行设定，自定义输入后键盘“Enter”或点击“确定“进行确认。
-![6.1](../../../images/Timepicker/6.1.png)
+![](../../../images/Timepicker/descriptions-01.png)
 
 
 #### 2.时间范围选择
 
 用户使用【时间范围选择器】进行【开始时间】和【结束时间】的选择，每次需要【依次】完成开始时间及结束时间的选择。搭配日期选择器的使用场景，详见[《Datepicker 时间选择器》章节](https://udesign.ucloud.cn/component/DatePicker/)
-![6.2](../../../images/Timepicker/6.2.png)
+![](../../../images/Timepicker/descriptions-02.png)
 
 
 #### 3.输入结果自动校验、自动修正、错误说明
@@ -149,5 +141,4 @@ description: "输入或选择时间的输入控件。"
 
 1. [Datepicker 日期选择器](/component/Datepicker/)
 3. [Calendar 日历](/component/Calendar/)
-
 
