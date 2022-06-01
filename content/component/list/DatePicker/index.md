@@ -8,7 +8,7 @@ description: "输入或选择日期的输入控件。"
 
 ## 基本构成
 
-![](../../../images/Datepicker/constitute_DatePicker.png)
+![](../../../images/Datepicker/forms-01.png)
 
 | 种类           | 输入框(A) | 日期选择面板(B) |
 | :------------- | :-------: | :-------------: |
@@ -31,7 +31,7 @@ description: "输入或选择日期的输入控件。"
 
 ### 类型与样式
 
-![](../../../images/Datepicker/2.png)
+![](../../../images/Datepicker/styles-01.png)
 
 | 内容  | 说明                 |
 | :---- | :------------------- |
@@ -41,13 +41,9 @@ description: "输入或选择日期的输入控件。"
 
 ### 尺寸
 
-![3](../../../images/Datepicker/3.png)
+U-Design 目前对`Datepicker`日期选择器区分了 3 种尺寸：**大（lg）、中（md）、小（sm**），高度分别为32px、28px、24px。
 
-|        | 尺寸 |
-| :----- | :--- |
-| Small  | 24px |
-| Middle | 28px |
-| Large  | 32px |
+![](../../../images/Datepicker/styles-02.png)
 
 ## 基本状态
 
@@ -60,19 +56,19 @@ description: "输入或选择日期的输入控件。"
 
 #### 默认初始
 
-![4.0-1](../../../images/Datepicker/4.0-1.png)
+![](../../../images/Datepicker/states-01.png)
 
 #### 悬停状态
 
-![4.1-1](../../../images/Datepicker/4.1-1.png)
+![](../../../images/Datepicker/states-02.png)
 
 #### 选中/激活状态
 
-![4.2-1](../../../images/Datepicker/4.2-1.png)
+![](../../../images/Datepicker/states-03.png)
 
 #### 禁用状态
 
-![4.3-1](../../../images/Datepicker/4.3-1.png)
+![](../../../images/Datepicker/states-04.png)
 
 ## 设计说明
 
@@ -96,7 +92,7 @@ description: "输入或选择日期的输入控件。"
 #### 1.单日期选择
 
 用户使用【单日期选择器】可通过**点击或自定义输入**进行设定，自定义输入后键盘“Enter”或单击选中最后一位值后**自动生效**。
-![4.4-1](../../../images/Datepicker/4.4-1.png)
+![](../../../images/Datepicker/descriptions-01.png)
 
 
 
@@ -106,12 +102,11 @@ description: "输入或选择日期的输入控件。"
 用户使用【日期范围选择器】可通过**点击或自定义输入**进行【开始日期】和【结束日期】的选择，每次需要【依次】完成开始日期及结束日期的选择：
 
 - 仅日期：选中结束日期后**自动生效**
-![4.5-1](../../../images/Datepicker/4.5-1.png)
+![](../../../images/Datepicker/descriptions-02.png)
 
 - 日期+时间：选中开始时间和结束时间后，点击**确定**即刻生效
-![4.5-1](../../../images/Datepicker/4.5-1.png)
 
-
+![](../../../images/Datepicker/descriptions-03.png)
 
 #### 3.输入结果自动校验、自动修正、错误说明
 
@@ -141,7 +136,7 @@ description: "输入或选择日期的输入控件。"
 
 可基于用户常关注的时间区间提供快捷选项，并提供**自定义**以触发日历面板
 
-![5](../../../images/Datepicker/5.png)
+![](../../../images/Datepicker/descriptions-04.png)
 
 
 
