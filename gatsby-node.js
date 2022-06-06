@@ -6,6 +6,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 
     // Define a template
     const specTemplate = path.resolve(`./src/templates/spec.tsx`);
+    const docsTemplate = path.resolve(`./src/templates/docs.tsx`);
     const componentTemplate = path.resolve(`./src/templates/component.tsx`);
     const categoryTemplate = path.resolve(`./src/templates/category.tsx`);
 
@@ -13,7 +14,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     const result = await graphql(
         `
             {
-                allMarkdownRemark(sort: { fields: [frontmatter___order], order: DESC }, limit: 10000) {
+                allMdx(sort: { fields: [frontmatter___order], order: DESC }, limit: 10000) {
                     nodes {
                         id
                         fields {
@@ -30,13 +31,13 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
         return;
     }
 
-    const posts = result.data.allMarkdownRemark.nodes;
+    const posts = result.data.allMdx.nodes;
 
     // Create posts pages
     if (posts.length > 0) {
         posts.forEach((post, index) => {
-            const previousPostId = index === 0 ? null : posts[index - 1].id;
-            const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
+            // const previousPostId = index === 0 ? null : posts[index - 1].id;
+            // const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
             let template = specTemplate;
             let slug = post.fields.slug;
 
@@ -47,6 +48,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             } else if (post.fields.slug.indexOf('/component/') === 0) {
                 template = componentTemplate;
                 slug = slug.split('list/').join('');
+            } else if (post.fields.slug.indexOf('/docs/') === 0) {
+                template = docsTemplate;
             }
 
             createPage({
@@ -54,8 +57,8 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 component: template,
                 context: {
                     id: post.id,
-                    previousPostId,
-                    nextPostId,
+                    // previousPostId,
+                    // nextPostId,
                 },
             });
         });
@@ -65,7 +68,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 exports.onCreateNode = ({ node, actions, getNode }) => {
     const { createNodeField } = actions;
 
-    if (node.internal.type === `MarkdownRemark`) {
+    if (node.internal.type === `Mdx`) {
         const value = createFilePath({ node, getNode });
 
         createNodeField({

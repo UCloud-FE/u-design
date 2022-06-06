@@ -333,6 +333,24 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
         }
     }
 
+    .u-markdown-docs-styles {
+        h1, h2, h3, h4{ @include h-common(); }
+        h1 { @include h1(); }
+        h2 { @include h2(); }
+        h3 {  @include h3(); }
+        ul { @include ul(); }
+        ol { @include ol(); }
+        a { @include a(); }
+
+        strong {
+            @include strong();
+        }
+
+        p {
+            @include p();
+        }
+    }
+
     blockquote {
         color: #526075;
         font-size: 18px;

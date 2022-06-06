@@ -2,10 +2,6 @@
 description: "自增表格，用于列表项的编辑删除。"
 ---
 
-<!--副标题具体写法见源代码模式-->
-
-
-
 ## 简介
 
 自增表格，用于列表项的编辑删除。一般用于：
@@ -18,25 +14,25 @@ description: "自增表格，用于列表项的编辑删除。"
 
 ## 基本构成
 
-![image-20220217114314789](../../../images/EditableTable/image-20220217114314789.png)
+![](../../../images/EditableTable/forms_01.png)
 
-| 表头（A） | 内容区（B） | 操作栏(C) | 自增按钮(D) |
-| :-------: | :---------: | :-------: | :---------: |
-|     ✓     |      ✓      |     ✓     |      ✓      |
+| 表头（A） | 内容区域（B） | 操作栏(C) | 自增按钮(D) |
+| :-------: | :-----------: | :-------: | :---------: |
+|     ✓     |       ✓       |     ✓     |      ✓      |
 
-A.表头
+**A.表头**
 
 表头可用来解释当前数据内容，根据需求可包含解释说明的操作。
 
-B.内容区
+**B.内容区域**
 
 展示具体内容，可展示文本内容，或需设置的输入项等。
 
-C.操作栏
+**C.操作栏**
 
 主要作为删除操作的入口，根据不同业务需求放置其他操作。
 
-D.自增按钮
+**D.自增按钮**
 
 默认展示icon，若有需求可添加提示文字；有添加行数限制时，到达限制后按钮可禁用。
 
@@ -53,19 +49,19 @@ D.自增按钮
 
 默认状态
 
-![normal](../../../images/EditableTable/normal.png)
+![](../../../images/EditableTable/states_01.png)
 
 悬停状态
 
-![hover](../../../images/EditableTable/hover.png)
+![](../../../images/EditableTable/states_02.png)
 
 禁用状态
 
-![disable](../../../images/EditableTable/disable.png)
+![](../../../images/EditableTable/states_03.png)
 
 报错状态
 
-![false](../../../images/EditableTable/false.png)
+![](../../../images/EditableTable/states_04.png)
 
 ## 设计说明
 
@@ -87,13 +83,13 @@ D.自增按钮
 
 **最小行数限制**
 
-若表格有最小行数限制，则删除至最小行数时，删除操作隐藏
+若表格有最小行数限制，则删除至最小行数时，删除操作隐藏；
 
-![image-20220217172442011](../../../images/EditableTable/image-20220217172442011.png)
+![](../../../images/EditableTable/descriptions_01.png)
 
-若表格有最大行数限制，则添加至最大行数时，自增按钮禁用，不可点击
+若表格有最大行数限制，则添加至最大行数时，自增按钮禁用，不可点击。
 
-![image-20220217172540280](../../../images/EditableTable/image-20220217172540280.png)
+![](../../../images/EditableTable/descriptions_02.png)
 
 
 

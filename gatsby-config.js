@@ -50,9 +50,13 @@ module.exports = {
             },
         },
         {
-            resolve: `gatsby-transformer-remark`,
+            resolve: `gatsby-plugin-mdx`,
             options: {
-                plugins: [
+                extensions: [`.md`, `.mdx`],
+                gatsbyRemarkPlugins: [
+                    {
+                        resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
+                    },
                     `gatsby-remark-extract-image-attributes`,
                     {
                         resolve: `gatsby-remark-relative-images`,
@@ -73,6 +77,7 @@ module.exports = {
                             maxWidth: 1440,
                             linkImagesToOriginal: false,
                             showCaptions: true,
+                            quality: 70,
                             // wrapperStyle: fluidResult => {
                             //     return '';
                             // },
@@ -84,15 +89,12 @@ module.exports = {
                             wrapperStyle: `margin-bottom: 1.0725rem`,
                         },
                     },
-                    {
-                        resolve: 'gatsby-remark-attr',
-                        options: {
-                            allowDangerousDOMEventHandlers: true,
-                        },
-                    },
-                    {
-                        resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
-                    },
+                    // {
+                    //     resolve: 'gatsby-remark-attr',
+                    //     options: {
+                    //         allowDangerousDOMEventHandlers: true,
+                    //     },
+                    // },
                     // {
                     //     resolve: `gatsby-remark-image-attributes`,
                     //     options: {

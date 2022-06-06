@@ -2,16 +2,16 @@ import * as React from 'react';
 import { useStaticQuery, Link, graphql } from 'gatsby';
 import * as layoutStyles from './layout.module.scss';
 import allComponents from '../../content/components.json';
-import UDesign from "../images/u-design.png"
+import UDesign from '../images/u-design.png';
 import Sidebar from '/src/components/Sidebar';
 
 const Layout = ({ location, children }) => {
     const rootPath = `${__PATH_PREFIX__}/`;
     const isRootPath = location.pathname === rootPath;
 
-    const { navs, category, all, categories, specs, specsCategoryOrder } = useStaticQuery(graphql`
+    const { navs, category, all, docs, categories, specs, specsCategoryOrder } = useStaticQuery(graphql`
         query {
-            navs: allMarkdownRemark(
+            navs: allMdx(
                 sort: { fields: [frontmatter___order], order: ASC }
                 filter: { fileAbsolutePath: { glob: "**/content/*/index.md" } }
             ) {
@@ -23,17 +23,17 @@ const Layout = ({ location, children }) => {
                     }
                 }
             }
-            category: markdownRemark(fileAbsolutePath: { glob: "**/content/component/category/index.md" }) {
+            category: mdx(fileAbsolutePath: { glob: "**/content/component/category/index.md" }) {
                 frontmatter {
                     title
                 }
             }
-            all: markdownRemark(fileAbsolutePath: { glob: "**/content/component/list/index.md" }) {
+            all: mdx(fileAbsolutePath: { glob: "**/content/component/list/index.md" }) {
                 frontmatter {
                     title
                 }
             }
-            categories: allMarkdownRemark(
+            categories: allMdx(
                 sort: { fields: [frontmatter___order], order: ASC }
                 filter: { fileAbsolutePath: { glob: "**/content/component/category/**" } }
             ) {
@@ -44,12 +44,11 @@ const Layout = ({ location, children }) => {
                     }
                     frontmatter {
                         title
-                        components
                         order
                     }
                 }
             }
-            specs: allMarkdownRemark(
+            specs: allMdx(
                 sort: { fields: [frontmatter___order], order: ASC }
                 filter: { fileAbsolutePath: { glob: "**/content/spec/*/index.md" } }
             ) {
@@ -59,14 +58,27 @@ const Layout = ({ location, children }) => {
                         slug
                     }
                     frontmatter {
-                        date(formatString: "MMMM DD, YYYY")
                         title
                         category
                         order
                     }
                 }
             }
-            specsCategoryOrder: markdownRemark(fileAbsolutePath: { glob: "**/content/spec/index.md" }) {
+            docs: allMdx(
+                sort: { fields: [fields___slug], order: DESC }
+                filter: { fileAbsolutePath: { glob: "**/content/docs/*.md" }, fields: { slug: { ne: "/docs/" } } }
+            ) {
+                nodes {
+                    headings {
+                        value
+                        depth
+                    }
+                    fields {
+                        slug
+                    }
+                }
+            }
+            specsCategoryOrder: mdx(fileAbsolutePath: { glob: "**/content/spec/index.md" }) {
                 frontmatter {
                     categoryOrder
                 }
@@ -75,14 +87,14 @@ const Layout = ({ location, children }) => {
     `);
 
     let { categoryOrder } = specsCategoryOrder.frontmatter;
-    categoryOrder = categoryOrder.split("|");
+    categoryOrder = categoryOrder.split('|');
     const _categories = categories.nodes.filter(item => item.excerpt);
     let items = [];
 
     if (location.pathname.includes('/spec/')) {
         const categories = {};
         specs.nodes.forEach(item => {
-            if(item.fields.slug.split('/spec/')[1][0] === '_'){
+            if (item.fields.slug.split('/spec/')[1][0] === '_') {
                 return;
             }
 
@@ -143,6 +155,15 @@ const Layout = ({ location, children }) => {
                 }),
             },
         ];
+    } else if (location.pathname.includes('/docs/')) {
+        items = docs.nodes.map(item => {
+            const { fields, headings } = item;
+
+            return {
+                title: fields.slug === '/docs/readme/' ? '组件介绍' : headings[0]?.value,
+                slug: fields.slug,
+            };
+        });
     }
 
     return (

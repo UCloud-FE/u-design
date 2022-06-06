@@ -1,5 +1,5 @@
 import * as React from 'react';
-import UDesign from "../../images/u-design.png";
+import UDesign from '../../images/u-design.png';
 import * as styles from './styles.module.scss';
 
 const Index = () => {
@@ -18,9 +18,10 @@ const Index = () => {
                         </li>
                     </ul>
                 </div>
-                <div className={styles.bottom}>Copyright © 2021-{new Date().getFullYear()} UCloud 优刻得科技股份有限公司</div>
+                <div className={styles.bottom}>
+                    Copyright © 2021-{new Date().getFullYear()} UCloud 优刻得科技股份有限公司
+                </div>
             </div>
-
         </footer>
     );
 };

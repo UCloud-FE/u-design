@@ -1,7 +1,6 @@
 ---
-description: "在多个备选项中完成单选任务的组件"
+description: "在多个备选项中完成单选任务的组件。"
 ---
-<!--副标题具体写法见源代码模式-->
 
 ## 简介
 
@@ -46,6 +45,9 @@ Radio单选 用于完成在多个备选项中完成单选任务的组件，但�
 卡片
 
 ![5](../../../images/radio/5.png)
+> 若使用卡片样式展示规格数据，规格命名规则详见[PaaS产品主机机型命名规范](https://ushare.ucloudadmin.com/pages/viewpage.action?pageId=110828322)
+
+
 
 列
 

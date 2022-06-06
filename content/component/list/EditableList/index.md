@@ -2,10 +2,6 @@
 description: "一种用户可自行增减表单数量的组件。"
 ---
 
-<!--副标题具体写法见源代码模式-->
-
-
-
 ## 简介
 
 一种用户可自行增减表单数量的组件。
@@ -14,13 +10,25 @@ description: "一种用户可自行增减表单数量的组件。"
 
 ## 基本构成
 
-![001](../../../images/EditableTable/001.png)
+![](../../../images/EditableList/forms_01.png)
 
-| 输入框(A) | 删除按钮(B) | 添加按钮(C) |
-| :-------: | :---------: | :---------: |
-|     √     |      ✓      |      ✓      |
+| 组件(A) | 增减按钮(B) |
+| :-----: | :---------: |
+|    √    |    可选     |
+
+**A.组件**
+
+**B.增减按钮**（可选）
 
 
+
+## 基本样式
+
+### 尺寸
+
+U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）、小（sm）**
+
+![](../../../images/EditableList/styles_01.png)
 
 
 ## 设计说明
@@ -42,35 +50,34 @@ description: "一种用户可自行增减表单数量的组件。"
 
 - 自增表单建议使用逐条报错，便于用户即时发现并纠正问题。
 
-  ![003](../../../images/EditableList/003.png)
+  ![](../../../images/EditableList/descriptions_01.png)
 
 ### 3.其它一些用法   
 
-- 若存在默认不支持删除与编辑的表单，则后方不放置删除按钮：
+- 若存在默认不支持删除与编辑的表单，则后方不放置删除按钮；
 
-  ![004](../../../images/EditableList/004.png)
+  ![](../../../images/EditableList/descriptions_02.png)
 
-- 若表单有最大或最少条数限制，则增减到对应数量时隐藏增减按钮：
+- 若表单有最大或最少条数限制，则增减到对应数量时隐藏增减按钮。
 
-![005](../../../images/EditableList/005.png)
+![](../../../images/EditableList/descriptions_03.png)
 
 
 
 ## 常见问题
 
-### 自增表单与自增表格的区别
+### 自增表单与自增表格混淆
 
--  自增表单通常是针对单个文本框的表单，通过增减按钮调整文本框的数量；
--  自增表格通常是针对一组表单进行增减，例如select与文本框的组合等。
+-  自增表单通常是针对单个组件的表单，通过增减按钮调整组件的数量；自增表格通常是针对一组表单进行增减，例如select与文本框的组合等。
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>正确示范：</p>
-      <img src="../../../images/EditableList/002.png"/>
+      <p><i class="u-md-suggested"></i>正确场景</p>
+      <img src="../../../images/EditableList/descriptions_04.png"/>
    </div>
    <div>
-      <p><i class="u-md-not-suggested"></i>错误用法：</p>
-      <img src="../../../images/EditableList/006.png"  />
+      <p><i class="u-md-not-suggested"></i>混淆场景</p>
+      <img src="../../../images/EditableList/descriptions_05.png"  />
    </div>
 </div>
 

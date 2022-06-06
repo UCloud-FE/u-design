@@ -2,7 +2,7 @@ const visit = require('unist-util-visit');
 const toString = require('mdast-util-to-string');
 const cheerio = require(`cheerio`);
 
-module.exports = ({ markdownAST }, pluginOptions) => {
+module.exports = ({ markdownAST, markdownNode }, pluginOptions) => {
     // Manipulate AST
     visit(markdownAST, 'html', node => {
         if (!node.value) {

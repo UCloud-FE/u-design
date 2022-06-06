@@ -1,9 +1,6 @@
 ---
 description: "一种常见选择控件，支持单选或多选。同时可用于区分某项设置的开关状态。"
-
 ---
-
-<!--副标题具体写法见源代码模式-->
 
 ## 简介
 
@@ -259,7 +256,8 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
    <div>
       <p><i class="u-md-not-suggested"></i>注意力被重要按钮吸引，距离较远的内容容易被忽略</p>
       <img src="../../../images/checkbox/布局建议-放置在操作左侧-2.png" alt="image alt" title="desc" />
-
+   </div>
+</div>
 
 
 
