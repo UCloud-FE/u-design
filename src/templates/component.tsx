@@ -35,13 +35,9 @@ const getTitle = componentName => {
 
 const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
-let currentTab = null;
-if(isBrowser){
-    currentTab = window.localStorage?.getItem(TAB_KEY) || tabs[1];
-}
 
 const Index = ({ data, location }) => {
-    const [tabIndex, setTabIndex] = useState(currentTab);
+    const [tabIndex, setTabIndex] = useState(`${isBrowser ? window?.localStorage?.getItem(TAB_KEY) || tabs[1] : ""}`);
     const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
     const { markdown, componentDocs, componentDemos } = data;
