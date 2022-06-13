@@ -54,6 +54,7 @@ module.exports = {
             options: {
                 extensions: [`.md`, `.mdx`],
                 gatsbyRemarkPlugins: [
+                    `gatsby-remark-autolink-headers`,
                     {
                         resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
                     },
@@ -89,44 +90,6 @@ module.exports = {
                             wrapperStyle: `margin-bottom: 1.0725rem`,
                         },
                     },
-                    // {
-                    //     resolve: 'gatsby-remark-attr',
-                    //     options: {
-                    //         allowDangerousDOMEventHandlers: true,
-                    //     },
-                    // },
-                    // {
-                    //     resolve: `gatsby-remark-image-attributes`,
-                    //     options: {
-                    //         // ?Boolean=true
-                    //         //   If true (the default), all CSS
-                    //         //   property names will be recognized
-                    //         //   as styleAttribute.
-                    //         styleAttributes: true,
-
-                    //         // ?Boolean=false
-                    //         //   If true, all attributes that
-                    //         //   aren't styleAttributes, will be
-                    //         //   added as data-* attributes to the
-                    //         //   image.
-                    //         dataAttributes: false,
-                    //     },
-                    // },
-                    // {
-                    //     resolve: 'gatsby-remark-custom-blocks',
-                    //     options: {
-                    //         blocks: {
-                    //             'image-center': {
-                    //                 classes: 'u-md-image-center',
-                    //                 title: 'optional',
-                    //             },
-                    //             danger: {
-                    //                 classes: "danger",
-                    //             },
-                    //         },
-                    //     },
-                    // },
-                    `gatsby-remark-autolink-headers`,
                     `gatsby-remark-prismjs`,
                     `gatsby-remark-copy-linked-files`,
                     `gatsby-remark-smartypants`,
@@ -163,7 +126,7 @@ module.exports = {
         },
         `gatsby-plugin-react-helmet`,
         `gatsby-plugin-gatsby-cloud`,
-        `gatsby-plugin-netlify-cms`,
+        // `gatsby-plugin-netlify-cms`,
         // this (optional) plugin enables Progressive Web App + Offline functionality
         // To learn more, visit: https://gatsby.dev/offline
         // `gatsby-plugin-offline`,

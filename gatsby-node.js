@@ -40,13 +40,22 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
             // const nextPostId = index === posts.length - 1 ? null : posts[index + 1].id;
             let template = specTemplate;
             let slug = post.fields.slug;
+            let componentApiDocsGlob;
+            let componentName;
+            let componentDemosGlob;
 
             if (post.fields.slug.indexOf('/spec/') === 0) {
                 template = specTemplate;
             } else if (post.fields.slug.indexOf('/component/category/') === 0) {
                 template = categoryTemplate;
-            } else if (post.fields.slug.indexOf('/component/') === 0) {
+            } else if (
+                post.fields.slug.indexOf('/component/') === 0 &&
+                post.fields.slug.indexOf('/component/api-docs/') < 0
+            ) {
                 template = componentTemplate;
+                componentName = slug.split('/')[3];
+                componentApiDocsGlob = `**\/content\/component\/api-docs\/${componentName}\/*.md`;
+                componentDemosGlob = `**\/component\/api-docs\/${componentName}\/__demo__\/**`;
                 slug = slug.split('list/').join('');
             } else if (post.fields.slug.indexOf('/docs/') === 0) {
                 template = docsTemplate;
@@ -57,6 +66,9 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
                 component: template,
                 context: {
                     id: post.id,
+                    componentApiDocsGlob,
+                    componentName,
+                    componentDemosGlob,
                     // previousPostId,
                     // nextPostId,
                 },
