@@ -30,7 +30,7 @@ const Index = ({ markdownRemark, thumbs }) => {
 
                     return (
                         <li key={component.name}>
-                            <Link to={`/component/${component.name}`}>
+                            <Link to={`/component/${component.name}/`}>
                                 <span>
                                     {component.name} {component.zh_cn}
                                 </span>
