@@ -37,7 +37,7 @@ const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
 
 const Index = ({ data, location }) => {
-    const [tabIndex, setTabIndex] = useState(`${isBrowser ? window?.localStorage?.getItem(TAB_KEY) || tabs[1] : ""}`);
+    const [tabIndex, setTabIndex] = useState(`${isBrowser ? (window?.localStorage?.getItem(TAB_KEY) || tabs[1]) : ""}`);
     const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
     const { markdown, componentDocs, componentDemos } = data;
