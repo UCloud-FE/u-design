@@ -21,7 +21,7 @@ const ToC = (props: {
     }
 
     return (
-        <div {...rest} className={`${styles.wrapper} ${className || ''}`}>
+        <div {...rest} className={`${styles.toc} ${className || ''}`}>
             <h2>目录</h2>
             <div className={styles.innerScroll}>
                 {headings.map((heading, index) => {

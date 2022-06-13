@@ -11,7 +11,7 @@ import * as styles from './styles.module.scss';
 import Edit from '../images/edit.svg';
 import { useState } from 'react';
 
-const isBrowser = typeof window !== "undefined"
+const isBrowser = typeof window !== 'undefined';
 
 const getDemos = componentDemos => {
     const demos = {};
@@ -37,7 +37,7 @@ const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
 
 const Index = ({ data, location }) => {
-    const [tabIndex, setTabIndex] = useState(`${isBrowser ? (window?.localStorage?.getItem(TAB_KEY) || tabs[1]) : ""}`);
+    const [tabIndex, setTabIndex] = useState(`${isBrowser ? (window?.localStorage?.getItem(TAB_KEY) || tabs[1]) : ''}`);
     const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
     const { markdown, componentDocs, componentDemos } = data;
@@ -120,17 +120,22 @@ const Index = ({ data, location }) => {
         return null;
     };
 
+    const buildToc = tabIndex => {
+        if (tabIndex === tabs[0]) {
+            return <ToC currentHash={scrollCurrentHash} headings={markdown.headings || []} location={location} />;
+        }
+
+        if (tabIndex === tabs[1]) {
+            return <ToC currentHash={scrollCurrentHash} originalHash headings={componentDocsToc} location={location} />;
+        }
+    };
+
     return (
         <div className={styles.wrapper}>
             <Seo title={markdown.frontmatter.title} />
 
             <div className={styles.contentWrapper} id="component_s_w">
-                {tabIndex === tabs[0] && (
-                    <ToC currentHash={scrollCurrentHash} headings={markdown.headings || []} location={location} />
-                )}
-                {tabIndex === tabs[1] && (
-                    <ToC currentHash={scrollCurrentHash} originalHash headings={componentDocsToc} location={location} />
-                )}
+                {buildToc(tabIndex)}
                 <div className={styles.content}>
                     <div className={styles.top}>
                         <h1>
