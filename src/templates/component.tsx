@@ -11,6 +11,8 @@ import * as styles from './styles.module.scss';
 import Edit from '../images/edit.svg';
 import { useState } from 'react';
 
+const isBrowser = typeof window !== "undefined"
+
 const getDemos = componentDemos => {
     const demos = {};
     componentDemos.edges.forEach(item => {
@@ -33,7 +35,10 @@ const getTitle = componentName => {
 
 const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
-const currentTab = localStorage?.getItem(TAB_KEY) || tabs[1];
+let currentTab = null;
+if(isBrowser){
+    currentTab = window.localStorage?.getItem(TAB_KEY) || tabs[1];
+}
 
 const Index = ({ data, location }) => {
     const [tabIndex, setTabIndex] = useState(currentTab);
@@ -96,7 +101,7 @@ const Index = ({ data, location }) => {
     }, [tabIndex]);
 
     const handleClickTab = index => {
-        localStorage?.setItem(TAB_KEY, index);
+        window?.localStorage?.setItem(TAB_KEY, index);
         setTabIndex(index);
     };
 

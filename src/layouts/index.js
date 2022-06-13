@@ -189,14 +189,14 @@ const Layout = ({ location, children }) => {
                             </Link>
                         );
                     })}
-                    {/* <Link
+                    <Link
                         key="custom-components"
                         to="/custom"
                         itemProp="url"
                         className={`${location.pathname.includes('/custom') ? layoutStyles.current : ''}`}
                     >
                         定制
-                    </Link> */}
+                    </Link>
                 </nav>
             </header>
             <main className={layoutStyles.main}>
