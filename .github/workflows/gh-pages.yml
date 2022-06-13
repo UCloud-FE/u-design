@@ -21,6 +21,8 @@ jobs:
       uses: actions/setup-node@v2
       with:
         node-version: ${{ matrix.node-version }}
+    - run: git clone https://github.com/UCloud-FE/react-components.git react-components
+    - run: cd react-components && npm install && npm run build:recodo && cp ./.recodo/data/* ../content/ && cd ..
     - run: npm install --legacy-peer-deps
     - run: git config --global user.email "lin.wang@ucloud.cn"
     - run: git config --global user.name "Wang Lin"
