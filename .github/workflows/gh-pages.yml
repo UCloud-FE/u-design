@@ -30,4 +30,4 @@ jobs:
       env:
         GH_TOKEN: ${{ secrets.GH_TOKEN }}
       run: |
-        npm run deploy
+         export NODE_OPTIONS="--max-old-space-size=4096"  && npm run deploy
