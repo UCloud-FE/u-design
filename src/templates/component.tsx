@@ -37,7 +37,7 @@ const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
 
 const Index = ({ data, location }) => {
-    const [tabIndex, setTabIndex] = useState(`${isBrowser ? (window?.localStorage?.getItem(TAB_KEY) || tabs[1]) : ''}`);
+    const [tabIndex, setTabIndex] = useState(`${isBrowser ? (window?.localStorage?.getItem(TAB_KEY) || tabs[1]) : tabs[1]}`);
     const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
     const { markdown, componentDocs, componentDemos } = data;
@@ -101,41 +101,23 @@ const Index = ({ data, location }) => {
         setTabIndex(index);
     };
 
-    const renderCurrentTabContent = () => {
-        if (tabIndex === tabs[0]) {
-            if (!markdown?.frontmatter?.description) {
-                return <>敬请期待</>;
-            }
-            return (
-                <div className="u-markdown-design-styles">
-                    <MDXProvider>
-                        <MDXRenderer>{markdown.body}</MDXRenderer>
-                    </MDXProvider>
-                </div>
-            );
-        } else if (tabIndex === tabs[2]) {
-            return <div>敬请期待</div>;
-        }
-
-        return null;
-    };
-
-    const buildToc = tabIndex => {
-        if (tabIndex === tabs[0]) {
-            return <ToC currentHash={scrollCurrentHash} headings={markdown.headings || []} location={location} />;
-        }
-
-        if (tabIndex === tabs[1]) {
-            return <ToC currentHash={scrollCurrentHash} originalHash headings={componentDocsToc} location={location} />;
-        }
-    };
-
     return (
         <div className={styles.wrapper}>
             <Seo title={markdown.frontmatter.title} />
-
             <div className={styles.contentWrapper} id="component_s_w">
-                {buildToc(tabIndex)}
+                <ToC
+                    style={{ display: tabIndex === tabs[0] ? 'block' : 'none' }}
+                    currentHash={scrollCurrentHash}
+                    headings={markdown.headings || []}
+                    location={location}
+                />
+                <ToC
+                    style={{ display: tabIndex === tabs[1] ? 'block' : 'none' }}
+                    currentHash={scrollCurrentHash}
+                    originalHash
+                    headings={componentDocsToc}
+                    location={location}
+                />
                 <div className={styles.content}>
                     <div className={styles.top}>
                         <h1>
@@ -182,16 +164,31 @@ const Index = ({ data, location }) => {
                         </ul>
                     </div>
 
-                    {renderCurrentTabContent()}
-                    {tabIndex === tabs[1] && (
-                        <div id="u-component-doc" className="u-markdown-dev-styles">
-                            <MDXProvider components={getDemos(componentDemos)}>
-                                {componentDocs.nodes.map(node => {
-                                    return <MDXRenderer key={node.id}>{node.body}</MDXRenderer>;
-                                })}
+                    <div
+                        style={{ display: tabIndex === tabs[0] ? 'block' : 'none' }}
+                        className="u-markdown-design-styles"
+                    >
+                        {markdown?.frontmatter?.description ? (
+                            <MDXProvider>
+                                <MDXRenderer>{markdown.body}</MDXRenderer>
                             </MDXProvider>
-                        </div>
-                    )}
+                        ) : (
+                            <>敬请期待</>
+                        )}
+                    </div>
+
+                    <div style={{ display: tabIndex === tabs[2] ? 'block' : 'none' }}>敬请期待</div>
+                    <div
+                        id="u-component-doc"
+                        style={{ display: tabIndex === tabs[1] ? 'block' : 'none' }}
+                        className="u-markdown-dev-styles"
+                    >
+                        <MDXProvider components={getDemos(componentDemos)}>
+                            {componentDocs.nodes.map(node => {
+                                return <MDXRenderer key={node.id}>{node.body}</MDXRenderer>;
+                            })}
+                        </MDXProvider>
+                    </div>
 
                     {/* {previousComponentName && (
                         <Link to={`/component/${previousComponentName}/`} rel="prev">

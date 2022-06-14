@@ -13,6 +13,7 @@ const ToC = (props: {
     headings: Heading[];
     className?: string;
     location: any;
+    style?: object;
 }) => {
     const { headings, currentHash, originalHash, className, location, ...rest } = props;
 
