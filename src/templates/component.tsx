@@ -35,9 +35,10 @@ const getTitle = componentName => {
 
 const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs', 'dt'];
+let currentTabIndex = tabs[1];
 
 const Index = ({ data, location }) => {
-    const [tabIndex, setTabIndex] = useState(`${isBrowser ? (window?.localStorage?.getItem(TAB_KEY) || tabs[1]) : tabs[1]}`);
+    const [tabIndex, setTabIndex] = useState(currentTabIndex);
     const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
     const { markdown, componentDocs, componentDemos } = data;
@@ -97,7 +98,7 @@ const Index = ({ data, location }) => {
     }, [tabIndex]);
 
     const handleClickTab = index => {
-        window?.localStorage?.setItem(TAB_KEY, index);
+        currentTabIndex = index;
         setTabIndex(index);
     };
 
@@ -135,7 +136,7 @@ const Index = ({ data, location }) => {
                     <div className={styles.tabs}>
                         <ul>
                             <li
-                                className={`${tabIndex === tabs[0] && styles.current}`}
+                                className={`${tabIndex === tabs[0] ? styles.current : ''}`}
                                 onClick={() => {
                                     handleClickTab(tabs[0]);
                                 }}
@@ -144,7 +145,7 @@ const Index = ({ data, location }) => {
                                 <span>设计</span>
                             </li>
                             <li
-                                className={`${tabIndex === tabs[1] && styles.current}`}
+                                className={`${tabIndex === tabs[1] ? styles.current : ''}`}
                                 onClick={() => {
                                     handleClickTab(tabs[1]);
                                 }}
@@ -153,7 +154,7 @@ const Index = ({ data, location }) => {
                                 文档
                             </li>
                             <li
-                                className={`${tabIndex === tabs[2] && styles.current}`}
+                                className={`${tabIndex === tabs[2] ? styles.current : ''}`}
                                 onClick={() => {
                                     handleClickTab(tabs[2]);
                                 }}

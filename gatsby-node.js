@@ -145,3 +145,22 @@ const { registerLocalFs } = require('netlify-cms-proxy-server/dist/middlewares')
 exports.onCreateDevServer = async ({ app }) => {
     await registerLocalFs(app);
 };
+
+exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
+    if (stage === 'build-html' || stage === 'develop-html') {
+        actions.setWebpackConfig({
+            module: {
+                rules: [
+                    {
+                        test: /react-components/,
+                        use: loaders.null(),
+                    },
+                    {
+                        test: /__demo__/,
+                        use: loaders.null(),
+                    },
+                ],
+            },
+        });
+    }
+};

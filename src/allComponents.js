@@ -12,4 +12,4 @@ const components = require('@ucloud-fe/react-components');
 
 // importAll(require.context('./src/components/', true, /^\.\/[A-Za-z]+\/index\.(j|t)sx$/));
 
-module.exports = components;
+module.exports = { components };

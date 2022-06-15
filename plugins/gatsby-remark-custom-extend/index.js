@@ -30,6 +30,10 @@ module.exports = ({ markdownAST, markdownNode }, pluginOptions) => {
         const componentName = fields?.slug.split('/')[3];
         visit(markdownAST, 'code', (node, index, parent) => {
             try {
+                if(node.meta === 'static'){
+                    return;
+                }
+
                 const meta = JSON.parse(node.meta);
                 if (meta?.codepath) {
                     let rawCode = fs.readFileSync(
@@ -79,9 +83,9 @@ module.exports = ({ markdownAST, markdownNode }, pluginOptions) => {
                     node.value = `<Props name="${componentName}" subName="${subComponentName}" />`;
                 }
             } catch (e) {
-                console.log('node.meta: ', node.meta);
-                console.log('node.props: ', node.props);
-                console.warn(e);
+                console.warn('node.meta: ', node.meta);
+                console.warn('node.value: ', node.value);
+                console.warn('node.props: ', node.props);
             }
         });
 

@@ -75,7 +75,7 @@
   },
   "scripts": {
     "download": "node download.js",
-    "build": "npm run download && gatsby build --verbose",
+    "build": "rm -rf ./public && npm run download && gatsby build --verbose",
     "develop": "npm run clean && npm run download && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "start": "npm run develop",
