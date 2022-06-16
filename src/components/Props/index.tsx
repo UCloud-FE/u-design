@@ -90,7 +90,7 @@ const getTags = (description): { deprecated?: true; ignore?: true } => {
 
 const Props = ({ name, subName }: { name: string; subName?: string }) => {
     const info = examples?.[name]?.[subName || name]?.info;
-    const description = info.description;
+    const description = info?.description;
     const props = info?.props || {};
     const propKeys = Object.keys(props);
 
