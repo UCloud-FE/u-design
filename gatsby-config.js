@@ -1,7 +1,7 @@
 module.exports = {
     pathPrefix: `/u-design`,
     flags: {
-        PARALLEL_QUERY_RUNNING: true
+        PARALLEL_QUERY_RUNNING: true,
     },
     siteMetadata: {
         title: `UCloud Design`,

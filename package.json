@@ -75,12 +75,12 @@
   },
   "scripts": {
     "download": "node download.js",
-    "build": "rm -rf ./public && npm run download && gatsby build --verbose",
+    "build": "npm run clean && npm run download && gatsby build --verbose",
     "develop": "npm run clean && npm run download && gatsby develop",
     "format": "prettier --write \"**/*.{js,jsx,ts,tsx,json}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "clean": "gatsby clean",
+    "clean": "gatsby clean && rm -rf ./public",
     "deploy": "gatsby build --prefix-paths && gh-pages -d public -b gh-pages -r https://$GH_TOKEN@github.com/UCloud-FE/u-design.git"
   }
 }

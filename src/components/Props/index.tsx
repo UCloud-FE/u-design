@@ -57,6 +57,29 @@ const Description = prop => {
     );
 };
 
+const RootDescription = prop => {
+    const { description } = prop;
+    const deprecatedStyle = {
+        color: '#f44336',
+        fontWeight: 'bold',
+    };
+
+    return (
+        <div style={{ paddingBottom: 16 }}>
+            <div>{description?.description}</div>
+            {description?.tags?.map((tag, i) => {
+                const style = tag.title === 'deprecated' ? deprecatedStyle : {};
+
+                return (
+                    <div key={i} style={style}>
+                        {tag.title} : {tag.description}
+                    </div>
+                );
+            })}
+        </div>
+    );
+};
+
 const getTags = (description): { deprecated?: true; ignore?: true } => {
     const tags = {};
     description?.tags?.forEach(tag => {
@@ -67,6 +90,7 @@ const getTags = (description): { deprecated?: true; ignore?: true } => {
 
 const Props = ({ name, subName }: { name: string; subName?: string }) => {
     const info = examples?.[name]?.[subName || name]?.info;
+    const description = info.description;
     const props = info?.props || {};
     const propKeys = Object.keys(props);
 
@@ -74,6 +98,7 @@ const Props = ({ name, subName }: { name: string; subName?: string }) => {
 
     return (
         <ErrorBoundary>
+            {description && <RootDescription description={description} />}
             <div className={propsCls}>
                 <div className={propsTableWrapCls}>
                     <table className={propsTableCls}>

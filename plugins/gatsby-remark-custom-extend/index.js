@@ -30,7 +30,7 @@ module.exports = ({ markdownAST, markdownNode }, pluginOptions) => {
         const componentName = fields?.slug.split('/')[3];
         visit(markdownAST, 'code', (node, index, parent) => {
             try {
-                if(node.meta === 'static'){
+                if (node.meta === 'static') {
                     return;
                 }
 
