@@ -3,6 +3,8 @@ const fse = require('fs-extra');
 const axios = require('axios');
 
 const docsDir = 'content/component/api-docs';
+const components = require('./content/components.json');
+
 if (!fs.existsSync(docsDir)) {
     fs.mkdirSync(docsDir);
 }
@@ -22,19 +24,18 @@ async function getMarkdownFromGithub() {
 }
 
 function parseComponents() {
-    const docs = require('./content/docs.json');
+    components.forEach((component)=>{
+        const componentDoc = require(`./recode/${component.name}.doc.json`);
 
-    for (const componentName in docs) {
-        const component = docs[componentName];
+        for (const subComponentName in componentDoc) {
+            const subComponent = componentDoc[subComponentName];
 
-        for (const subComponentName in component) {
-            const subComponent = component[subComponentName];
-            const dir = `${docsDir}/${componentName}`;
+            const dir = `${docsDir}/${component.name}`;
             if (!fs.existsSync(dir)) {
                 fs.mkdirSync(dir);
             }
 
-            if (subComponentName !== 'README') {
+            if(subComponentName !== 'README'){
                 fs.writeFileSync(
                     `${dir}/${subComponentName}.md`,
                     `## ${subComponentName}\n\n### Props\n\n\`\`\`js {"props": "${subComponentName}"}\n\`\`\`\n\n` +
@@ -42,7 +43,7 @@ function parseComponents() {
                 );
             }
 
-            fse.copySync(`react-components/src/components/${componentName}/__demo__`, `${dir}/__demo__`);
+            fse.copySync(`react-components/src/components/${component.name}/__demo__`, `${dir}/__demo__`);
 
             fs.readdirSync(__dirname + `/${dir}/__demo__`).forEach(file => {
                 let rawCode = fs.readFileSync(`${dir}/__demo__/${file}`, { encoding: 'utf8' });
@@ -52,7 +53,8 @@ function parseComponents() {
                 fs.writeFileSync(`${dir}/__demo__/${file}`, demoCode);
             });
         }
-    }
+
+    })
 }
 
 try {

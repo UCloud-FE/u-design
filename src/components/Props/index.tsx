@@ -1,7 +1,6 @@
 import React from 'react';
 import Highlight, { Prism, PrismTheme } from 'prism-react-renderer';
 import nightOwlLight from 'prism-react-renderer/themes/nightOwlLight';
-import examples from '../../../content/examples.json';
 import { propsCls, propsTableCls, propsTableDeprecatedCls, propsTableDescTagTitleCls, propsTableWrapCls } from './cls';
 import ErrorBoundary from '../ErrorBoundary';
 
@@ -89,7 +88,8 @@ const getTags = (description): { deprecated?: true; ignore?: true } => {
 };
 
 const Props = ({ name, subName }: { name: string; subName?: string }) => {
-    const info = examples?.[name]?.[subName || name]?.info;
+    const componentInfo = require(`../../../recode/${name}.info.json`);
+    const info = componentInfo?.[subName || name]?.info;
     const description = info?.description;
     const props = info?.props || {};
     const propKeys = Object.keys(props);
