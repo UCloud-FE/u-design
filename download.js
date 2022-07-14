@@ -25,7 +25,7 @@ async function getMarkdownFromGithub() {
 
 function parseComponents() {
     components.forEach((component)=>{
-        const componentDoc = require(`./recode/${component.name}.doc.json`);
+        const componentDoc = require(`./recodo/${component.name}.doc.json`);
 
         for (const subComponentName in componentDoc) {
             const subComponent = componentDoc[subComponentName];

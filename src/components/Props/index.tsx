@@ -88,7 +88,7 @@ const getTags = (description): { deprecated?: true; ignore?: true } => {
 };
 
 const Props = ({ name, subName }: { name: string; subName?: string }) => {
-    const componentInfo = require(`../../../recode/${name}.info.json`);
+    const componentInfo = require(`../../../recodo/${name}.info.json`);
     const info = componentInfo?.[subName || name]?.info;
     const description = info?.description;
     const props = info?.props || {};
