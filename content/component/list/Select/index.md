@@ -10,7 +10,7 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 ## 基本构成
 
-![001](C:\Users\ColinCho\Desktop\u-design-dev\u-design-dev\content\images\Select\001.png)
+![](../../../images/Select/forms_01.png)
 
 | 选择器（A） | 下拉容器（B） | 搜索输入框（C） | 复选标记（D） | 清除按钮（E） |
 | :---------: | :-----------: | :-------------: | :-----------: | :-----------: |
