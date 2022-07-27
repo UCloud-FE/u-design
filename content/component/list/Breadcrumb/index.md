@@ -67,7 +67,8 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
 
 
 ## 常见问题
- 当前页面在面包屑中不可点击    
+
+### 当前页面在面包屑中不可点击    
 
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
@@ -77,6 +78,18 @@ description: "告诉用户当前所在位置及页面层级关系，并能够快
    <div>
       <p><i class="u-md-not-suggested"></i>面包屑中当前页面只起到定位作用，点击没有任何意义。</p>
       <img src="../../../images/Breadcrumb/problems_02.png" alt="image alt"  />
+   </div>
+</div>
+
+### 抽屉面包屑路由显示规范
+<div class="u-md-flex-without-bg">
+   <div class="u-md-mr24">
+      <p><i class="u-md-suggested"></i>抽屉内面包屑不包含上一级页面，路径默认从抽屉内第一级标题开始</p>
+      <img src="../../../images/Breadcrumb/draw_breadcrumb-right.jpg" alt="image alt" />
+   </div>
+   <div>
+      <p><i class="u-md-not-suggested"></i>若抽屉面包屑路径包含上一级页面，则点击路由返回效果等同于关闭抽屉。与常规独占页返回上一级效果不一致。</p>
+      <img src="../../../images/Breadcrumb/draw_breadcrumb-wrong.jpg" alt="image alt"  />
    </div>
 </div>
 
