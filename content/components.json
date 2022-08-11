@@ -188,6 +188,11 @@
         "category": ["data-input"]
     },
     {
+        "name": "Skeleton",
+        "zh_cn": "骨架屏",
+        "category": ["feedback"]
+    },
+    {
         "name": "Table",
         "zh_cn": "表格",
         "components": ["Table", "ColumnConfigButton", "SearchInput", "ActionList", "ResizableTH", "HoverDisplayArea"],
