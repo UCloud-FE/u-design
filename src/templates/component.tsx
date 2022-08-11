@@ -34,7 +34,7 @@ const getTitle = componentName => {
 };
 
 const TAB_KEY = 'component_tab_i';
-const tabs = ['design', 'docs', 'dt'];
+const tabs = ['design', 'docs'];
 let currentTabIndex = tabs[1];
 
 const Index = ({ data, location }) => {
@@ -153,15 +153,6 @@ const Index = ({ data, location }) => {
                                 <i className={styles.devIcon}></i>
                                 文档
                             </li>
-                            <li
-                                className={`${tabIndex === tabs[2] ? styles.current : ''}`}
-                                onClick={() => {
-                                    handleClickTab(tabs[2]);
-                                }}
-                            >
-                                <i className={styles.dtIcon}></i>
-                                <span>Design Token</span>
-                            </li>
                         </ul>
                     </div>
 
@@ -178,7 +169,6 @@ const Index = ({ data, location }) => {
                         )}
                     </div>
 
-                    <div style={{ display: tabIndex === tabs[2] ? 'block' : 'none' }}>敬请期待</div>
                     <div
                         id="u-component-doc"
                         style={{ display: tabIndex === tabs[1] ? 'block' : 'none' }}
