@@ -1,5 +1,10 @@
 [
     {
+        "name": "ActionList",
+        "zh_cn": "操作列表",
+        "category": ["general"]
+    },
+    {
         "name": "AutoComplete",
         "zh_cn": "自动填充",
         "category": ["data-input"]
