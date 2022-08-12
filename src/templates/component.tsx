@@ -60,7 +60,7 @@ const Index = ({ data, location }) => {
                 ...item,
                 depth: item.depth,
                 id: decodeURIComponent(links[index].hash.split('#')[1]),
-                value: decodeURIComponent(links[index].ariaLabel),
+                value: decodeURIComponent(links[index].getAttribute("aria-label")),
             });
         });
 
