@@ -5,7 +5,7 @@ import Seo from '../components/seo';
 import ToC from '../components/ToC';
 import Footer from '../components/Footer';
 import { delLast } from '../utils';
-import Edit from '../images/edit.svg';
+import Edit from '../images/edit.inline.svg';
 import * as styles from './styles.module.scss';
 
 const Index = ({ data, location }) => {

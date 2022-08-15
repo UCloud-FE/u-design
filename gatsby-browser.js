@@ -8,3 +8,4 @@ import './src/style.css';
 
 // Highlighting for code blocks
 import 'prismjs/themes/prism.css';
+import '@ucloud-fe/react-components/dist/icon.min.css';

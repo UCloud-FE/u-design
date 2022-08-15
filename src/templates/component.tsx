@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
@@ -8,10 +8,7 @@ import ToC from '../components/ToC';
 import allComponents from '../../content/components.json';
 import { delLast } from '../utils';
 import * as styles from './styles.module.scss';
-import Edit from '../images/edit.svg';
-import { useState } from 'react';
-
-const isBrowser = typeof window !== 'undefined';
+import Edit from '../images/edit.inline.svg';
 
 const getDemos = componentDemos => {
     const demos = {};
