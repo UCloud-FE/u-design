@@ -42,7 +42,6 @@ const Index = ({ data, location }) => {
     const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
     const { markdown, componentDocs, componentDemos } = data;
-    console.log('markdown', markdown);
     const [componentName] = useState(getComponentName(markdown.fields.slug));
     const [componentInfo] = useState(getComponentInfo(componentName));
 
@@ -136,7 +135,7 @@ const Index = ({ data, location }) => {
                     </div>
 
                     {
-                        !componentInfo.isHideDesignTab && 
+                        !componentInfo?.isHideDesignTab && 
                         <div className={styles.tabs}>
                             <ul>
                                 <li

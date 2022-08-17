@@ -9,7 +9,7 @@ description: "从父级窗口边缘滑出的浮层面板。"
 
 ## 基本构成
 
-![单类型构成 抽屉](../../../images/Drawer/consisiting.png)
+![单类型构成 抽屉](https://www-s.ucloud.cn/2022/08/c3438b9bdd54919278ca13f66f431c76_1660734716306.png)
 
 
 |  遮罩区（A）   | 关闭按钮（B）  | 内容区（C） | 抽屉模式切换按钮（D） |
@@ -29,11 +29,11 @@ description: "从父级窗口边缘滑出的浮层面板。"
 
 #### 样式一
 
-![图1](../../../images/Drawer/图1.png)
+![图1](https://www-s.ucloud.cn/2022/08/936048428acfca888792d17228bf88fe_1660734716311.png)
 
 #### 样式二
 
-![图2](../../../images/Drawer/图2.png)
+![图2](https://www-s.ucloud.cn/2022/08/e4f9ec9d79dce9b744874565c4d99938_1660734716317.png)
 
 
 
@@ -54,13 +54,13 @@ description: "从父级窗口边缘滑出的浮层面板。"
 
 - 原路返回，由哪个页面弹出弹窗，关闭弹窗后显示哪个页面。
 
-  ![图3](../../../images/Drawer/图3.png)
+  ![图3](https://www-s.ucloud.cn/2022/08/231fcede4072c37201a743f108c5ee34_1660734716324.png)
 
 - 弹出弹窗时锁定背景页面禁止跟随弹窗滚动。
 
 - 抽屉页面上可以更深一步操作弹出弹窗或再叠加一个抽屉。
 
-  ![图4](../../../images/Drawer/图4.png)
+  ![图4](https://www-s.ucloud.cn/2022/08/9b1915f08a3227b5b5dc380efc93bb78_1660734716326.png)
 
 
 <!--

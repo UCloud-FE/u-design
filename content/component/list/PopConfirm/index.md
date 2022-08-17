@@ -12,7 +12,7 @@ description: "用于中成本的操作的二次确认。"
 
 
 ## 基本构成
-![](../../../images/PopConfirm/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/f62b32c9cfc2c26b66c5d1965d2f8b44_1660737638339.png)
 
 | 图标（A） | 文本内容（B） | 操作按钮（C） | 容器（D） |
 | :-------: | :-----------: | :-----------: | :-------: |
@@ -39,19 +39,19 @@ U-Design建议 气泡确认框 `PopConfirm` 的文案公式如下：打断原因
 
 简洁模式下, U-Design预设了一个边框最小宽度186px。
 
-![](../../../images/PopConfirm/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/775564ab60e42f0f68c429c3b3e04eac_1660737638341.png)
 
 **常用尺寸**
 
 U-Design为气泡确认框`PopConfirm` 设定的文字最大宽度为240px, 超出自动换行显示。
 
-![](../../../images/PopConfirm/styles_02.png)
+![](https://www-s.ucloud.cn/2022/08/fe2a63348603ec810842950d57db9606_1660737638345.png)
 
 **超长的文本（不建议）**
 
 建议文本最多3行，超出显示滚动条，通过滚动展示全部文本。
 
-![](../../../images/PopConfirm/styles_03.png)
+![](https://www-s.ucloud.cn/2022/08/a7bca5ec3f32f966b31c67a337a02984_1660737638355.png)
 
 
 
@@ -80,11 +80,11 @@ U-Design为气泡确认框`PopConfirm` 设定的文字最大宽度为240px, 超�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>对于中成本的操作，给予提示</p>
-      <img src="../../../images/PopConfirm/descriptions_01.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/ab5cbed8f4bc9c56add4365ae95c8eb3_1660737705741.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>低成本的操作，无需确认</p>
-      <img src="../../../images/PopConfirm/descriptions_02.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/98e8e56de1b42b38c699db586fd70a26_1660737705744.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -97,20 +97,16 @@ U-Design为气泡确认框`PopConfirm` 设定的文字最大宽度为240px, 超�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>可将操作直接写在按钮上，减少误会。</p>
-      <img src="../../../images/PopConfirm/descriptions_03.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/da990b414ece28d93299fecf00851e6b_1660737705746.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>为避免歧义，按钮的文案应尽量不使用“确定/取消”。</p>
-      <img src="../../../images/PopConfirm/descriptions_04.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/ad6ade0de57b59976270bed736d90429_1660737705750.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
 
-### 
-
-
-
 ## 相关文档
 
-1. [Popover 气泡卡片](https://udesign.ucloud.cn/component/Popover/)
-2. [Tooltip 文字提示](https://udesign.ucloud.cn/component/Tooltip/)
+1. [Popover 气泡卡片](/component/Popover/)
+2. [Tooltip 文字提示](/component/Tooltip/)

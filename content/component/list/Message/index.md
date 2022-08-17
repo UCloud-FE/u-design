@@ -8,7 +8,7 @@ description: "对用户的操作作出轻量的全局反馈。"
 - 页面右上角显示，可自定义消失时间，是一种不打断用户操作的提示方式
 
 ## 基本构成
-![](../../../images/Message/Basic_ui02.png)
+![](https://www-s.ucloud.cn/2022/08/579fbcf77edac159b5883c36a848530c_1660736810336.png)
 
 | 图标（A） | 标题（B） | 正文（C） | 操作按钮（D） |关闭按钮（E） |
 | :-------: | :-----------: | :-----------: | :-------: |:-------: |
@@ -45,7 +45,7 @@ description: "对用户的操作作出轻量的全局反馈。"
 
 ## 基本状态
 
-![](../../../images/Message/States_ui02.png)
+![](https://www-s.ucloud.cn/2022/08/2dd6d0fd29334aba904abd61d45f9e3c_1660736810341.png)
 
 ### 默认
 
@@ -91,11 +91,11 @@ description: "对用户的操作作出轻量的全局反馈。"
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
 全局提示是轻量的、无中断的提醒方式。</p>
-      <img src="../../../images/Message/pro-1_ui.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/2713344719458d8ecf04b9145d6df271_1660736810342.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>希望中断用户的操作时，不适合使用。</p>
-      <img src="../../../images/Message/pro-2_ui.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/c2612c88f0c9f5bfbb7e0fdb001ada21_1660736810343.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -105,11 +105,11 @@ description: "对用户的操作作出轻量的全局反馈。"
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
 文案越精简越好，提高信息传递的效率。</p>
-      <img src="../../../images/Message/pro-3_ui.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/2713344719458d8ecf04b9145d6df271_1660736865172.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>太复杂或者太啰嗦的文案会让用户失去耐心。</p>
-      <img src="../../../images/Message/pro-4_ui.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/f399e82103bd620acaab5769d051195f_1660736865173.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -117,7 +117,7 @@ description: "对用户的操作作出轻量的全局反馈。"
 
 ## 相关文档
 
-1. [Popover 气泡卡片](https://udesign.ucloud.cn/component/Popover/)
-2. [Tooltip 文字提示](https://udesign.ucloud.cn/component/Tooltip/)
+1. [Popover 气泡卡片](/component/Popover/)
+2. [Tooltip 文字提示](/component/Tooltip/)
 
 

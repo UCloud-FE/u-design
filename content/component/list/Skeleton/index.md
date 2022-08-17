@@ -15,19 +15,19 @@ description: "在需要等待数据加载的位置，通过占位图形给用户
 
 ### 基础样式
 
-![image-20220817143131410](../../../images/Skeleton/image-20220817143131410.png)
+![image-20220817143131410](https://www-s.ucloud.cn/2022/08/6689704308d06ecdb9176ed94e8df961_1660738937372.png)
 
 
 
 ### 带动画效果的样式
 
-![image-20220817143323862](../../../images/Skeleton/image-20220817143323862.png)
+![image-20220817143323862](https://www-s.ucloud.cn/2022/08/8e7445039532b9c97facac9832255fd6_1660738937379.png)
 
 
 
 ### 组合样式
 
-![image-20220817143639764](../../../images/Skeleton/image-20220817143639764.png)
+![image-20220817143639764](https://www-s.ucloud.cn/2022/08/a5fbb23413327139156e266e60b1670c_1660738937381.png)
 
 
 
@@ -37,7 +37,7 @@ description: "在需要等待数据加载的位置，通过占位图形给用户
 
 当网络较慢或内容较多时，需要长时间等待加载处理的情况下
 1.进入页面后的首次加载
-2.内容区域的布局排版相对固定的列表或卡片，若全局或元素加载，可使用[Loading加载中](https://udesign.ucloud.cn/component/Loading/)
+2.内容区域的布局排版相对固定的列表或卡片，若全局或元素加载，可使用[Loading 加载中](/component/Loading/)
 
 ### 使用建议
 
@@ -49,4 +49,4 @@ description: "在需要等待数据加载的位置，通过占位图形给用户
 
 ## 相关文档
 
-1. [Loading加载中](https://udesign.ucloud.cn/component/Loading/)
+1. [Loading 加载中](/component/Loading/)

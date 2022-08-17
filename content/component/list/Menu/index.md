@@ -10,7 +10,7 @@ U-Design 的 下拉菜单 `Menu` 通常和 选择器 `Select` 结合使用，帮
 
 
 ## 基本构成
-![1](../../../images/Menu/1-9540436.png)
+![1](https://www-s.ucloud.cn/2022/08/a9b88287618bc70f9bd72032f791c28b_1660736601579.png)
 
 
 | 类型 | 复选框（A） | 描述项（B） |展开箭头（C） |分割线（D） |背景卡片（E） |
@@ -25,18 +25,18 @@ U-Design 的 下拉菜单 `Menu` 通常和 选择器 `Select` 结合使用，帮
 
 用户只能从互斥选项列表中选择一项，选项的样式包括：默认、hover、选中、禁用。
 
-![2](../../../images/Menu/2-9548267.png)
+![2](https://www-s.ucloud.cn/2022/08/a1a2029cfa9b1fbd42754a0de1cf0c44_1660736601581.png)
 
 
 ### 多选菜单
 允许用户选择多个选项
 
-![3](../../../images/Menu/3-9549695.png)
+![3](https://www-s.ucloud.cn/2022/08/6b024ed28d7b1706d0dc6704e56602d4_1660736601584.png)
 
 
 ### 多层级菜单
 选项包含多个层级的数据
-![4](../../../images/Menu/4-9550109.png)
+![4](https://www-s.ucloud.cn/2022/08/9954220ca4ba3c5eee89543ad8302939_1660736601588.png)
 
 
 
@@ -45,19 +45,19 @@ U-Design 的 下拉菜单 `Menu` 通常和 选择器 `Select` 结合使用，帮
 ### 以可预测的方式对选项进行排序
 
 选项的排序应该具有一定的逻辑性，如常用项优先，或者按照字母、数值或者时间等进行排序。
-![5](../../../images/Menu/5-9551100.png)
+![5](https://www-s.ucloud.cn/2022/08/003e177acf5b2c551e5ed4942ae1595a_1660736601595.png)
 
 ### 描述尽可能简短
 
 描述文本值应尽可能短，因为列表仅限于使用单行，太长的值会被截断。
-![6](../../../images/Menu/6-9551221.png)
+![6](https://www-s.ucloud.cn/2022/08/c15408e77ccb8487a2333724f26bd8a9_1660736665647.png)
 
 
 ### 不可用的选项置灰
 
 不能选择的选项不要删除，应保留在视图中并用灰色表示。如果用户将鼠标悬停在变灰的选项上，可以考虑显示一条简短的气泡帮助说明为什么禁用该选项以及如何使其处于活动状态。
 
-![7](../../../images/Menu/7-9553252.png)
+![7](https://www-s.ucloud.cn/2022/08/51a3ff848796d83102021968bd7424ed_1660736665649.png)
 
 ### 通过点击触发下拉框，而不是悬停触发
 悬停菜单会迫使用户必须将光标放在菜单内，如果用户光标离开下拉菜单，菜单将被关闭，增加了用户的操作难度。
@@ -72,11 +72,11 @@ U-Design 的 下拉菜单 `Menu` 通常和 选择器 `Select` 结合使用，帮
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>当选项很少（5个或更少）时，单选优于下拉菜单</p>
-      <img src="../../../images/Menu/8.0.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/735a910b2fc2f43f5a6915cea64cc5bd_1660736665650.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>选项较少时，使用Menu交互形式过重</p>
-      <img src="../../../images/Menu/8.1.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/cb2299d16cdce46750e7c779e5426689_1660736665651.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 

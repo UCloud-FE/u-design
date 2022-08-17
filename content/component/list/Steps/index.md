@@ -14,7 +14,7 @@ description: "引导用户按照流程完成任务的导航条。"
 ## 基本构成
 
 
-![](../../../images/Steps/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/e896d7c49ceb3d7c0c1cf9cb8a7d32f3_1660739155584.png)
 
 | 序号（A） | 标题（B） |箭头（C） |备注（D） |
 | :-----: | :-----: |:-----: |:-----: |
@@ -43,15 +43,15 @@ description: "引导用户按照流程完成任务的导航条。"
 
 简洁版
 
-![](../../../images/Steps/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/711c81367ecd10f8e34f25fc4d2829ff_1660739155586.png)
 
 有标题的步骤条
 
-![](../../../images/Steps/styles_02.png)
+![](https://www-s.ucloud.cn/2022/08/e2d2ee668af4cb0f8803d5124d917e9e_1660739155587.png)
 
 有描述的步骤条
 
-![](../../../images/Steps/styles_03.png)
+![](https://www-s.ucloud.cn/2022/08/5491e0a6bc7f64da0ed09e4569793f0b_1660739155589.png)
 
 
 
@@ -59,7 +59,7 @@ description: "引导用户按照流程完成任务的导航条。"
 
 U-Design的步骤条有以下五种状态：
 
-![](../../../images/Steps/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/61bcaf858b6c0b8513c95dc8588a7832_1660739155591.png)
 
 | 状态   | 描述                       |
 | ------ | -------------------------- |

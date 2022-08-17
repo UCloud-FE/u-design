@@ -8,7 +8,7 @@ description: "让用户用直观的方式在两栏中移动元素，完成选择
 
 ## 基本构成
 
-![](../../../images/Transfer/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/0259f3fb5450619de58658aa02655e60_1660739905711.png)
 
 | 顶部标题(A) | 搜索框（B） | 内容区域(C) | 底部操作(D) | 穿梭按钮(E) |
 | :---------: | :---------: | :---------: | :---------: | :---------: |
@@ -32,19 +32,19 @@ description: "让用户用直观的方式在两栏中移动元素，完成选择
 
 默认状态
 
-![](../../../images/Transfer/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/06ffc993d942a4d1ca21ba6918b67110_1660739905719.png)
 
 选中状态
 
-![](../../../images/Transfer/states_02.png)
+![](https://www-s.ucloud.cn/2022/08/03b0be3a741bbdd81ba148d7a9317c92_1660739905722.png)
 
 报错状态
 
-![states_03](../../../images/Transfer/states_03.png)
+![states_03](https://www-s.ucloud.cn/2022/08/918c0447c26b5e9353e924909199bdd6_1660739905724.png)
 
 禁用状态
 
-![states_04](../../../images/Transfer/states_04.png)
+![states_04](https://www-s.ucloud.cn/2022/08/a375f9e626be1bc0b97aa5fd7c302ade_1660739905726.png)
 
 
 
@@ -79,11 +79,11 @@ description: "让用户用直观的方式在两栏中移动元素，完成选择
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>表头列数不宜过多，不会出现横向滚动条。</p>
-      <img src="../../../images/Transfer/problems_01.png"/>
+      <img src="https://www-s.ucloud.cn/2022/08/922e38544aa108b068933be7a34571bb_1660739947466.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>若表头数量过多出现横向滚动条不利于用户操作。</p>
-      <img src="../../../images/Transfer/problems_02.png"  />
+      <img src="https://www-s.ucloud.cn/2022/08/5700e0470f90925a4715d44e97a7f99b_1660739947478.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 

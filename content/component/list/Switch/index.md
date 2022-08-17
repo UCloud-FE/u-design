@@ -10,7 +10,7 @@ Switch 开关，常被翻译为开关、滑动开关、切换开关，作为界�
 
 ## 基本构成
 
-![](../../../images/Switch/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/c0c31e778c606c6110a21b923cf95550_1660739295219.png)
 
 | 容器（A） | 内容区域（B） |
 | :-------: | :-------: |
@@ -33,18 +33,18 @@ Switch 开关，常被翻译为开关、滑动开关、切换开关，作为界�
 ### 尺寸
 开关 `Switch` 预设了`lg`、`md`、 `sm`三种尺寸，高度分别为32px、 28px、24px。
 
-![](../../../images/Switch/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/ba5de4f2ea622b74e25edaa2773bad1a_1660739295221.png)
 
 
 ### 状态
 U-Design的 开关 `Switch` 有以下几种状态：
 开启状态下的默认、hover、禁用。
 
-![](../../../images/Switch/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/7fb891675d0aa40f4bd159469b239a21_1660739295222.png)
 
 关闭状态下的默认、hover、禁用。
 
-![](../../../images/Switch/states_02.png)
+![](https://www-s.ucloud.cn/2022/08/8e44c8e3cc38f9770dacf307c9bc9eda_1660739295224.png)
 
 
 
@@ -57,7 +57,7 @@ U-Design的 开关 `Switch` 有以下几种状态：
 
 与表单 `Form` 结合使用时，标签的表述尽量使用肯定句。例如“不为我推荐”，这个句子本身就是否定句，开关控件本身也有打开和关闭两个属性。这时为了理解此开关的含义需要绕弯理解，避免误导用户、增加理解成本。
 
-![](../../../images/Switch/descriptions_01.png)
+![](https://www-s.ucloud.cn/2022/08/d85034ab7c5237446d36b87b9b6ea70d_1660739295226.png)
 
 
 

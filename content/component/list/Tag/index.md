@@ -10,7 +10,7 @@ description: "进行标记和分类的小标签。"
 
 ## 基本构成
 
-![](../../../images/tag/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/3fc9aaa12370af68e1efe11715892ce9_1660739412873.png)
 
 | 容器（A） | 内容区域（B） | 关闭按钮（C） |
 | :-------: | :-----------: | :-----------: |
@@ -32,11 +32,11 @@ description: "进行标记和分类的小标签。"
 ## 基本样式
 #### 类型
 
-![](../../../images/tag/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/28be0c6ab7216950f799fdc7a8a5b84f_1660739412874.png)
 
 #### 颜色
 
-![](../../../images/tag/styles_02.png)
+![](https://www-s.ucloud.cn/2022/08/fe490644a0df6abaf860a72cea938bc6_1660739412877.png)
 
 | 描述                       | 背景色                     | 文本色                      |
 | :------------------------- | :------------------------- | :-------------------------- |
@@ -49,7 +49,7 @@ description: "进行标记和分类的小标签。"
 
 ## 基本状态
 
-![](../../../images/tag/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/099c988925745afd5f47975a85e57676_1660739412878.png)
 
 
 
@@ -61,7 +61,7 @@ description: "进行标记和分类的小标签。"
 
 如果不能满足场景需求，提供更多的预设颜色选择，并支持完全自定义。
 
-![](../../../images/tag/descriptions_01.png)
+![](https://www-s.ucloud.cn/2022/08/740c1bec09371af65cf938a1c54d458c_1660739412885.png)
 
 ### 紧凑型布局
 
@@ -69,11 +69,11 @@ description: "进行标记和分类的小标签。"
 
 默认布局
 
-![](../../../images/tag/descriptions_02.png)
+![](https://www-s.ucloud.cn/2022/08/7541a9fb8552d6527f0c1c59c26e8894_1660739458929.png)
 
 紧凑型布局
 
-![](../../../images/tag/descriptions_03.png)
+![](https://www-s.ucloud.cn/2022/08/f0a33d4f277b6d4979577c46adf6c571_1660739458932.png)
 
 
 

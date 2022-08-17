@@ -14,7 +14,7 @@ description: "自增表格，用于列表项的编辑删除。"
 
 ## 基本构成
 
-![](../../../images/EditableTable/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/f5b1b843c1b6f59e5d43a569c1c005b8_1660735358085.png)
 
 | 表头（A） | 内容区域（B） | 操作栏(C) | 自增按钮(D) |
 | :-------: | :-----------: | :-------: | :---------: |
@@ -49,19 +49,19 @@ description: "自增表格，用于列表项的编辑删除。"
 
 默认状态
 
-![](../../../images/EditableTable/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/88913205e278d351a6e49d5993050a0d_1660735358086.png)
 
 悬停状态
 
-![](../../../images/EditableTable/states_02.png)
+![](https://www-s.ucloud.cn/2022/08/3161409e67cb6f6f7b5b233b4ce8a70e_1660735358087.png)
 
 禁用状态
 
-![](../../../images/EditableTable/states_03.png)
+![](https://www-s.ucloud.cn/2022/08/7e6a2bd1a4517360553bcfd34e44dc1f_1660735358088.png)
 
 报错状态
 
-![](../../../images/EditableTable/states_04.png)
+![](https://www-s.ucloud.cn/2022/08/823f1d3b99b401e5da23f852395367de_1660735358089.png)
 
 ## 设计说明
 
@@ -85,11 +85,11 @@ description: "自增表格，用于列表项的编辑删除。"
 
 若表格有最小行数限制，则删除至最小行数时，删除操作隐藏；
 
-![](../../../images/EditableTable/descriptions_01.png)
+![](https://www-s.ucloud.cn/2022/08/ba13bcc8f4c778cacc27d550bc7d8051_1660735405949.png)
 
 若表格有最大行数限制，则添加至最大行数时，自增按钮禁用，不可点击。
 
-![](../../../images/EditableTable/descriptions_02.png)
+![](https://www-s.ucloud.cn/2022/08/94092173d77830d32107e177140d66f8_1660735405952.png)
 
 
 

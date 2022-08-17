@@ -10,7 +10,7 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 
 ## 基本构成
 
-![](../../../images/numberlnput/1.png)
+![](https://www-s.ucloud.cn/2022/08/60ad0768db5a555f508f442d412f34c1_1660737373060.png)
 
 |      | 类型     | 输入框（A） | 数值增减器（B） |
 | ---- | :------- | :---------: | :-------------: |
@@ -29,11 +29,11 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 
 #### 垂直按钮
 
-![2](../../../images/numberlnput/2.png)
+![2](https://www-s.ucloud.cn/2022/08/8cca9c3ba28c68617bc4321b1844c558_1660737373062.png)
 
 #### 左右按钮
 
-![3](../../../images/numberlnput/3.png)
+![3](https://www-s.ucloud.cn/2022/08/6cd785e9aa3cb078d49187b9cfaae849_1660737373064.png)
 
 
 
@@ -41,7 +41,7 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 
 ## 基本状态
 
-![](../../../images/numberlnput/4.png)
+![](https://www-s.ucloud.cn/2022/08/a774fb9bd590176a944ad4461f1cd946_1660737373067.png)
 
 
 
@@ -75,11 +75,11 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>输入框激活时，应冒泡给予数值限定条件提示。</p>
-      <img src="../../../images/numberlnput/5.1.png" alt="" title="" />
+      <img src="https://www-s.ucloud.cn/2022/08/918bf33ed955eb6741b790311e2887f7_1660737373069.png" alt="" title="" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>输入前不给予提示容易引起用户的无效操作。</p>
-      <img src="../../../images/numberlnput/5.2.png" alt="" title="" />
+      <img src="https://www-s.ucloud.cn/2022/08/d77b5e938a940dda4186f611a337a51f_1660737427224.png" alt="" title="" loading="lazy" />
    </div>
 </div>
 
@@ -99,6 +99,6 @@ description: "通过鼠标或键盘输入数字的输入组件。"
 ## 相关文档
 
 1. [Input 输入框](/component/Input/)
-2. [Autocomplete 自动填充](/component/Autocomplete/)
+2. [AutoComplete 自动填充](/component/AutoComplete/)
 
 

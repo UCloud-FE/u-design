@@ -14,7 +14,7 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 ## 基本构成
 
-![](../../../images/Modal/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/42cb2c51d1b3f91487fbaaa82e3924b1_1660736966986.png)
 
 
 | 标题（A）| 关闭按钮（B）| 内容区域（C）| 底部操作区域（D）| 提示信息（E） |蒙层（F）|
@@ -36,25 +36,25 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 ***如果仅用于反馈操作结果的状态信息，不希望干扰用户的操作流时，建议使用 [Message 全局提示](https://udesign.ucloud.cn/component/Message/) 组件。***
 
-![](../../../images/Modal/sm.png)
+![](https://www-s.ucloud.cn/2022/08/58c263008c69aa8558c89eca0fd84d9d_1660736966989.png)
 
 
 **中号弹窗**
 
 中号弹窗是最常使用的尺寸。
-![](../../../images/Modal/md.png)
+![](https://www-s.ucloud.cn/2022/08/b5cdee27a02c0276f042ce9cea3e3ee1_1660736966992.png)
 
 **大号弹窗**
 
 大号弹窗，主要用于计费相关的，右侧有相对应的内容需要设置，如「续费管理」的批量续费；以及容纳表格等宽度较宽的内容时。
 
-![](../../../images/Modal/lg.png)
+![](https://www-s.ucloud.cn/2022/08/2c2837eedad283cd37aaab436ffd2e75_1660736966995.png)
 
 ### 弹窗高度
 
 内容区域设置最大高度：实际内容区域未达到限制时，弹窗高度根据内容区域高度自适应；内容区域超过最大高度后，内容区域出现滚动条，其他构成元素不随内容区域滚动。 
 
-![](../../../images/Modal/height.png)
+![](https://www-s.ucloud.cn/2022/08/735ff5d1d35065a89eec9d7de5d68679_1660736967003.png)
 
 
 ### 默认提示
@@ -63,7 +63,7 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 ***这为保持整体页面整洁度，该提示样式请慎用！建议不要有，如必须有最多只能一条。***
 
-![](../../../images/Modal/defaultnotice.png)
+![](https://www-s.ucloud.cn/2022/08/ab67ac35a0d7c2b145f988f03902e8f5_1660737042587.png)
 
 ### 报错提示
 
@@ -71,7 +71,7 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 如果是前端报错，建议输入完成后，立刻给到反馈，帮助用户纠正错误；后端报错，点击「确认」传值校验后报错；如果报错提示需要给到必要的操作链接，可通过文字链的形式给到用户。
 
-![](../../../images/Modal/errornotice.png)
+![](https://www-s.ucloud.cn/2022/08/3e0503c241b0c517086e25abcc5d74b9_1660737042590.png)
 
 
 
@@ -82,14 +82,14 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 ### 弹窗标题
 
 若弹窗是由用户主动触发的，那么弹窗标题应该与用户触发弹窗的操作按钮同名，或者至少有相同的关键字。此时弹窗是用户操作后的反馈，用户需要通过弹窗的标题来确认自己是否进入了正确的模块、进行了正确的操作。
-![](../../../images/Modal/title.png)
+![](https://www-s.ucloud.cn/2022/08/896d9619d33576ab09a88bba64fb85b1_1660737042604.png)
 
 
 ### 按钮数量
 
 如果有放置多个按钮的需求，从右到左依次为： 主按钮、次按钮、取消。3个操作按钮作为弹窗操作区的上限。
 
-![](../../../images/Modal/ButtonsNumber.png)
+![](https://www-s.ucloud.cn/2022/08/9857a77ba6d81f44f8397e66b5eb86e9_1660737042606.png)
 
 
 
@@ -99,12 +99,12 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 当然，更便捷的关闭方式代表着更多的误触，如何平衡可用性和误触，就要根据具体场景具体分析。
 
-![](../../../images/Modal/close.png)
+![](https://www-s.ucloud.cn/2022/08/5cf8c56f003c07c6d5e2e1dbca751010_1660737042614.png)
 
 
 ### 操作栏附件
 操作栏可以放置checkbox作为条件附件，支持开发者自定义与按钮是否逻辑关联。如果checkbox与按钮逻辑强相关，则需要勾选之后，「确认」按钮才可用。
-![](../../../images/Modal/appendix.png)
+![](https://www-s.ucloud.cn/2022/08/50dcb2fcf8e88450f00f74e8c278c365_1660737099127.png)
 
 ### 模态与非模态
 ***控制台目前弹窗均为模态弹窗。***其能够较好的获取用户的视觉焦点，并通过承载的内容、按钮主次层级来引导用户完成他们的需求。模态弹窗可以通过蒙层关闭。
@@ -112,7 +112,7 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 
 ### 异步加载
 适用于当前操作需要异步完成时，加载完成后会自动关闭对话框，加载形式为内容区蒙层加载。
-![](../../../images/Modal/loading.png)
+![](https://www-s.ucloud.cn/2022/08/958fb71468d565d92265589af767c9e3_1660737099130.png)
 
 
 
@@ -123,11 +123,11 @@ description: "打断用户的当前操作流程，获取用户视觉焦点的对
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>当内容较少时使用弹窗展示，当内容较多时使用抽屉展示。</p>
-      <img src="../../../images/Modal/problems_01.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/92defde41643c4e2152985f5120b4941_1660737099134.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>内容较多的弹窗不便于用户使用。而内容过少的抽屉会显得较为空洞。</p>
-      <img src="../../../images/Modal/problems_02.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/724739c5dc082b260010eecd3dc71185_1660737099138.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 

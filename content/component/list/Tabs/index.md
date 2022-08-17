@@ -92,5 +92,5 @@ U-Design 参考Nielsen Norman Group（NN/g 尼尔森诺曼集团）的 [Tabs, Us
 
 ## 相关文档
 
-1. [Breadcrumb 面包屑](https://udesign.ucloud.cn/component/Breadcrumb)
-2. [Steps 步骤条](https://udesign.ucloud.cn/component/Steps)
+1. [Breadcrumb 面包屑](/component/Breadcrumb)
+2. [Steps 步骤条](/component/Steps)

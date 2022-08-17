@@ -17,7 +17,7 @@ description: "信息添加、录入的通用形式。"
 
 ## 基本构成
 
-![](../../../images/form/forms01.png)
+![](https://www-s.ucloud.cn/2022/08/a6c0bef591f57638dc5050d54bc84bc4_1660735549922.png)
 
 | 标题（A） | 配置项标题（B） | 输入域（C） |提示信息（D） |说明信息（E） |必选项标识（F） |
 | :-------: | :-------: | :-------: | :-------: | :-------: | :-------: |
@@ -59,11 +59,11 @@ description: "信息添加、录入的通用形式。"
 
 中号表单
 
-![](../../../images/form/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/13e9af101d53e21284200f0cf8d1287f_1660735549926.png)
 
 大号表单
 
-![](../../../images/form/styles_02.png)
+![](https://www-s.ucloud.cn/2022/08/90b3dc748e2be389765d2a2453b40d8b_1660735549930.png)
 
 
 
@@ -76,12 +76,12 @@ description: "信息添加、录入的通用形式。"
 
 缺点：填写速度慢，标签长度和输入框弹性小。
 
-![](../../../images/form/styles_03.png)
+![](https://www-s.ucloud.cn/2022/08/8b795dbaafed957127688f6d3b4abd6b_1660735549936.png)
 
 #### 纵向对齐
 优点：采用顶部对齐的标签样式，浏览表单所需的时间最短；同时标签长度弹性大。
 
-缺点：非常占纵向空间。![](../../../images/form/styles_04.png)
+缺点：非常占纵向空间。![](https://www-s.ucloud.cn/2022/08/063054780bb383c05919c5eb18829cb6_1660735549939.png)
 
 
 
@@ -89,9 +89,9 @@ description: "信息添加、录入的通用形式。"
 
 <!--对于配置项标题的说明信息在纵向布局时直接暴露出来-->
 
-![](../../../images/form/styles_05.png)
+![](https://www-s.ucloud.cn/2022/08/e2ab59fe021f4ae72029d4bc3d89b726_1660735606729.png)
 
-![](../../../images/form/styles_06.png)
+![](https://www-s.ucloud.cn/2022/08/6be94ca43204671ffcaff5350407832c_1660735606732.png)
 
 
 
@@ -99,7 +99,7 @@ description: "信息添加、录入的通用形式。"
 
 提示信息搭配有预设颜色的icon时，规则如下：
 
-![](../../../images/form/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/65849e322bd1e92c2944d9efff6a451b_1660735606733.png)
 
 
 
@@ -110,11 +110,11 @@ description: "信息添加、录入的通用形式。"
 
 如果是针对全局的帮助性信息，可以放在表单的顶部；
 
-![](../../../images/form/descriptions_01.png)
+![](https://www-s.ucloud.cn/2022/08/5e64cb43369a1992f9b2e1d11d882648_1660735606737.png)
 
 如果只是针对某个元素提醒，则应将两者放在一起，让用户知道当前处于什么地方，在针对什么进行引导、辅助。
 
-![](../../../images/form/descriptions_02.png)
+![](https://www-s.ucloud.cn/2022/08/5eaa125895e3334a485137a6e6aed5f2_1660735606740.png)
 
 
 
@@ -126,25 +126,25 @@ description: "信息添加、录入的通用形式。"
 
 ### 分模块
 化繁为简是人处理复杂事物常用的方法，如果需要一次性输入、提交大量数据，我们为了提高用户填写效率，减少用户心理负担，可将填写内容进行分模块，用户可以在填写好一段内容后进行心理上停顿休息，减少视觉疲劳和心理压力。
-![](../../../images/form/descriptions_03.png)
+![](https://www-s.ucloud.cn/2022/08/77f660d1bb9727e2adf61c38d73f12ff_1660735794457.png)
 
 
 ### 高级选项默认收起，点击展开
 
 对于表单内容很多，且存在一些没那么重要的非必填项时，可以选择默认隐藏；
 
-![](../../../images/form/descriptions_04.png)
+![](https://www-s.ucloud.cn/2022/08/d81461c2ac6eb0e9002ea8d6c20c66e3_1660735794460.png)
 
 用户有欲望填写时点击展开，才会暴露给用户进行输入填写。
 
-![](../../../images/form/descriptions_04_1.png)
+![](https://www-s.ucloud.cn/2022/08/1c5b1d3fbdee428c03b40490db70d963_1660735794465.png)
 
 
 
 
 ### 表单宽度应该暗示填写内容的长度
 表单宽度应该暗示填写内容的长度，与输入预期成正比。
-![](../../../images/form/descriptions_05.png)
+![](https://www-s.ucloud.cn/2022/08/6fb95b2c8748dc2f9c960033c24a61a7_1660735794473.png)
 
 
 

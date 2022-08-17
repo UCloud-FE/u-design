@@ -11,7 +11,7 @@ Radio单选 用于完成在多个备选项中完成单选任务的组件，但�
 ## 基本构成
 
 
-![1](../../../images/radio/1.png)
+![1](https://www-s.ucloud.cn/2022/08/4246402d7982b39a7dcc9ba4626788ef_1660737876746.png)
 
 |      | 类型              | 单选按钮 (A) | 单选内容 (B) |
 | :--: | :---------------- | :----------: | :----------: |
@@ -32,34 +32,34 @@ Radio单选 用于完成在多个备选项中完成单选任务的组件，但�
 
 默认
 
-![2](../../../images/radio/2.png)
+![2](https://www-s.ucloud.cn/2022/08/f8688676acc4d856cbd81e5b9af979e9_1660737876754.png)
 
 文本按钮
 
-![3](../../../images/radio/3.png)
+![3](https://www-s.ucloud.cn/2022/08/e5faaeae33d7d5ee0d2d45c4970496a9_1660737876756.png)
 
 图标按钮
 
-![4](../../../images/radio/4.png)
+![4](https://www-s.ucloud.cn/2022/08/7b9e0ff0af31cd9d348ab9bd594f5952_1660737876757.png)
 
 卡片
 
-![5](../../../images/radio/5.png)
+![5](https://www-s.ucloud.cn/2022/08/2322aad17a11abbbb60e658870231f26_1660737876758.png)
 > 若使用卡片样式展示规格数据，规格命名规则详见[PaaS产品主机机型命名规范](https://ushare.ucloudadmin.com/pages/viewpage.action?pageId=110828322)
 
 
 
 列
 
-![6](../../../images/radio/6.png)
+![6](https://www-s.ucloud.cn/2022/08/d1bda4d2e2ddc6514ca8a9975dfa3648_1660738698519.png)
 
 标签
 
-![8](../../../images/radio/8.png)
+![8](https://www-s.ucloud.cn/2022/08/c78d8b87e4e0f5e77916e8911dafe241_1660738698529.png)
 
 ### 状态
 
-![7](../../../images/radio/7.png)
+![7](https://www-s.ucloud.cn/2022/08/2195d31e3fe75b37e356140fdeff7b33_1660738698527.png)
 
 
 
@@ -67,7 +67,7 @@ Radio单选 用于完成在多个备选项中完成单选任务的组件，但�
 
 U-Design 目前对Radio 单选区分了 3 次种尺寸：大（lg）、中（md）、小（sm）。
 
-![9](../../../images/radio/9.png)
+![9](https://www-s.ucloud.cn/2022/08/ebaf0b77103b5f9ecb2a1ac2e9be1ab1_1660738698530.png)
 
 
 
@@ -81,13 +81,13 @@ U-Design 目前对Radio 单选区分了 3 次种尺寸：大（lg）、中（md�
 
 Radio单选 的选项应该按某种逻辑顺序排列，例如从最简单的操作到最复杂的操作、从可能性最大到可能性最小的，或者从最低风险到最高风险的，从而用户心理状态符合某种预期，帮助用户更好的理解表单。
 
-![10](../../../images/radio/10.png)
+![10](https://www-s.ucloud.cn/2022/08/e56982e2445ce06f2cac1efa7d51a92b_1660738698532.png)
 
 ### 为用户提供较大的点击区域
 
 根据费茨定律，目标越大，交互成本越低。单选按钮本质上很小，用户操作时很难点击到它们。U-Design 让用户不仅可以通过单击圆圈来选择选项，还可以通过单击文字来选择，以减小用户的操作成本。
 
-![11](../../../images/radio/11.png)
+![11](https://www-s.ucloud.cn/2022/08/4757d4c2557ec9f014f71c7ee0548ebb_1660738833364.png)
 
 ### 建议默认选中一个建议选项
 

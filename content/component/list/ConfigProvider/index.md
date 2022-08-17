@@ -1,1 +1,3 @@
-ConfigProvider
+---
+description: "ConfigProvider"
+---

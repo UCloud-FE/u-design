@@ -1,1 +1,3 @@
-LocaleProvider
+---
+description: "LocaleProvider"
+---

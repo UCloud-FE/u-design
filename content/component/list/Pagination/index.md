@@ -10,7 +10,7 @@ description: "将长列表进行分页，每次只加载一个页面的组件。
 
 ## 基本构成
 
-![](../../../images/Pagination/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/55d404115d1a8e191cbec4928d89a5c4_1660737523990.png)
 
 | 类型 | 数据统计(A) | 上下页按钮(B) | 页码按钮(C) | 自定义条数器（D） | 页码输入器（E） |
 | :--- | :---------: | :-----------: | :---------: | :---------------: | :-------------: |
@@ -32,27 +32,27 @@ description: "将长列表进行分页，每次只加载一个页面的组件。
 
 基础样式
 
-![](../../../images/Pagination/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/a10855fd70f2bda180fab9c60fea8fe0_1660737523991.png)
 
 高级样式
 
-![](../../../images/Pagination/styles_02.png)
+![](https://www-s.ucloud.cn/2022/08/093743d725e38a296cae111635def322_1660737523991.png)
 
 简洁样式
 
-![](../../../images/Pagination/styles_03.png)
+![](https://www-s.ucloud.cn/2022/08/811f1f8c5577d94d9af5aea7c07810bb_1660737523992.png)
 
 ### 尺寸
 
 U-Design 目前对分页器 `Pagination` 预设了大(`lg`)、中( `md`)、小( `sm`)三种尺寸，高度分别为32px、28px、24px。
 
-![](../../../images/Pagination/styles_04.png)
+![](https://www-s.ucloud.cn/2022/08/2f5959bac8b6dd0ba27ff42aaeff5b35_1660737523993.png)
 
 
 
 ## 基本状态
 
-![](../../../images/Pagination/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/3770379a45b2bfa19a1913c09cb9574b_1660737569900.png)
 
 |      | 状态     | 说明                                                         |
 | ---- | :------- | :----------------------------------------------------------- |
@@ -82,7 +82,7 @@ U-Design 目前对分页器 `Pagination` 预设了大(`lg`)、中( `md`)、小( 
 - 基础用法：列表数据量相对不大，同时页面空间有一定局限性。
 - 简易用法：通常可放在列表右上角搭配高级用法使用，或单独放在右上角，如下图：
 
-![](../../../images/Pagination/002.png)
+![](https://www-s.ucloud.cn/2022/08/a8eac7d3d8ebc0060e55b0b33e9fa6ee_1660737569902.png)
 
 #### 3.分页器与懒加载的使用区别   
 
