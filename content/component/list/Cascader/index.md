@@ -12,7 +12,7 @@ description: "当一个数据集合有清晰的层级结构时，可通过级联
 
 ## 基本构成
 
-![](../../../images/Cascader/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/319758dacc630d63ea339f06f0505e1e_1660730178451.png)
 
 |      |   类型   | 下拉选择器（A） | 菜单（B） | 输入框（C） | 清除按钮（D） |
 | :--: | :------: | :-------------: | :-------: | :---------: | :-----------: |
@@ -43,7 +43,7 @@ description: "当一个数据集合有清晰的层级结构时，可通过级联
 
 级联选择器 `Cascader` 预设了`lg`、`md`、 `sm`三种尺寸，高度分别为32px、 28px、24px。
 
-![styles_01](../../../images/Cascader/styles_01.png)
+![styles_01](https://www-s.ucloud.cn/2022/08/f16135807f1bf97d24540ada55b78898_1660730178453.png)
 
 
 
@@ -61,31 +61,31 @@ description: "当一个数据集合有清晰的层级结构时，可通过级联
 
 #### 默认状态
 
-![](../../../images/Cascader/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/9c4fc9f690da404cb84a76249e1f34b7_1660730178455.png)
 
 #### 激活状态
 
-![](../../../images/Cascader/states_02.png)
+![](https://www-s.ucloud.cn/2022/08/9d4293c6ecaf36d712c04a98df36d697_1660730178459.png)
 
 #### 悬停状态
 
-![](../../../images/Cascader/states_03.png)
+![](https://www-s.ucloud.cn/2022/08/9d57c8c2e7836549c5a6c007b30529c0_1660730178467.png)
 
 #### 加载状态
 
-![](../../../images/Cascader/states_04.png)
+![](https://www-s.ucloud.cn/2022/08/020d031a2b29808593986bb1c73006db_1660730235018.png)
 
 #### 报错
 
-![](../../../images/Cascader/states_05.png)
+![](https://www-s.ucloud.cn/2022/08/02b34c95c03bb9f171418666fbd8c38e_1660730235021.png)
 
 #### 禁用状态
 
-![](../../../images/Cascader/states_06.png)
+![](https://www-s.ucloud.cn/2022/08/5d300aa5a0cb36ae40aba411cbaf829a_1660730235030.png)
 
 #### 空数据状态
 
-![](../../../images/Cascader/states_07.png)
+![](https://www-s.ucloud.cn/2022/08/a65c3af8c8e5f6647b4e4a501528c405_1660730235032.png)
 
 
 
@@ -119,11 +119,11 @@ description: "当一个数据集合有清晰的层级结构时，可通过级联
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>有选中项时，鼠标hover选择器，出现清除icon。</p>
-      <img src="../../../images/Cascader/problems_01.png"/>
+      <img src="https://www-s.ucloud.cn/2022/08/f21043e29edfaa5e67610036d37ba0bb_1660730276777.png" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>无选中项时，鼠标hover选择器，出现清除icon。</p>
-      <img src="../../../images/Cascader/problems_02.png"  />
+      <img src="https://www-s.ucloud.cn/2022/08/8e03e8978ce277b0574ff95f44ef3d2a_1660730276779.png"  loading="lazy" />
    </div>
 </div>
 

@@ -8,7 +8,7 @@ description: "上传，通过点击或者拖拽上传文件。"
 
 ## 基本构成
 
-![](../../../images/Upload/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/3c1410ffc1538d5db42edaeb477392a0_1660731957840.png)
 
 |      | 类型     | 上传按钮(A) | 提示文本(B) | 已上传列表 | 拖拽上传区(D) |
 | :--: | :------- | :---------: | :---------: | :--------: | :-----------: |
@@ -34,19 +34,19 @@ description: "上传，通过点击或者拖拽上传文件。"
 
 无文件
 
-![](../../../images/Upload/styles_011.png)
+![](https://www-s.ucloud.cn/2022/08/b8c8a6d87559556928ba88348e15626d_1660731957841.png)
 
 文本列表
 
-![](../../../images/Upload/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/17909e017d2925ee38eede5aa4898d6f_1660731957843.png)
 
 缩略图列表
 
-![](../../../images/Upload/styles_012.png)
+![](https://www-s.ucloud.cn/2022/08/d06b8a7fea119a85d3a8ad6b0a6f78f0_1660731957848.png)
 
 卡片
 
-![](../../../images/Upload/styles_013.png)
+![](https://www-s.ucloud.cn/2022/08/48e4101ba05998fe47906df2af9777a3_1660731957849.png)
 
 #### 拖拽上传
 
@@ -54,25 +54,25 @@ description: "上传，通过点击或者拖拽上传文件。"
 
 无文件
 
-![](../../../images/Upload/styles_02.png)
+![](https://www-s.ucloud.cn/2022/08/5a5d57efceb0c26a439b09a50b93025b_1660732026943.png)
 
 文本列表
 
-![](../../../images/Upload/styles_022.png)
+![](https://www-s.ucloud.cn/2022/08/6d119ed00ee0913bd09c84265e74bc4f_1660732026956.png)
 
 缩略图列表
 
-![](../../../images/Upload/styles_023.png)
+![](https://www-s.ucloud.cn/2022/08/1f59452939fd36424ea99ea06b90c8fd_1660732026959.png)
 
 卡片
 
-![](../../../images/Upload/styles_024.png)
+![](https://www-s.ucloud.cn/2022/08/0149daececd7b8bbab8a088782d6f96a_1660732026964.png)
 
 ### 尺寸
 
 U-Design对上传的文件展示区域高度设定了最大值240px，和最小值208px。
 
-![](../../../images/Upload/styles_03.png)
+![](https://www-s.ucloud.cn/2022/08/c8f7bafa36ffff0065af79a9b764d057_1660732026969.png)
 
 
 
@@ -80,11 +80,11 @@ U-Design对上传的文件展示区域高度设定了最大值240px，和最小�
 
 #### 点击上传
 
-![](../../../images/Upload/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/29540926312054477a6bec2fffb04a48_1660732085512.png)
 
 #### 拖拽上传
 
-![states_02](../../../images/Upload/states_02.png)
+![states_02](https://www-s.ucloud.cn/2022/08/e3a0ab5dd619989f2319508e37e12356_1660732085525.png)
 
 - 文件展示列、卡的状态与点击上传的样式相同。
 

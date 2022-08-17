@@ -8,7 +8,7 @@ description: "输入框自动完成功能。"
 
 ## 基本构成
 
-![单类型构成](../../../images/Button/单类型构成.png)
+![单类型构成](https://www-s.ucloud.cn/2022/08/1f2dce988db6017a58f612db2b54affe_1660722838543.png)
 
 |      | 构成       | 备注                            |
 | :--: | :--------- | :------------------------------ |
@@ -25,18 +25,18 @@ description: "输入框自动完成功能。"
 
 联想选择框最小尺寸与联想输入框宽度一致
 
-![1](../../../images/Button/1-4810821.png)
+![1](https://www-s.ucloud.cn/2022/08/cf401f9fe82834da9bfe3d90f675c90d_1660722838545.png)
 
 #### 最大尺寸
 
 联想选择框最大尺寸为 800px ，超出部分文本内容自动隐藏。
 
-![2](../../../images/Button/2.png)
+![2](https://www-s.ucloud.cn/2022/08/d10f78e348a8f570b5cdfc597edfd835_1660722838547.png)
 
 
 ## 基本状态
 
-![状态](../../../images/Button/状态-4813234.png)
+![状态](https://www-s.ucloud.cn/2022/08/3f6bbd0e59b1735a6a01b4cb93cc9467_1660722838550.png)
 
 |   | &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;             | 说明                                                         |
 | ---- | :------- | :----------------------------------------------------------- |

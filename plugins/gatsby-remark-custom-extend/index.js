@@ -26,6 +26,14 @@ module.exports = ({ markdownAST, markdownNode }, pluginOptions) => {
         }
     });
 
+    // handle all image nodes
+    visit(markdownAST, "image", node => {
+        const html = `<img src='${node.url}' alt='${node.alt}' loading='lazy' />`;
+        node.type = "html" // this breaks the node type, so always use this plug in at last
+        // node.children = undefined
+        node.value = html
+    });
+
     if (fields?.slug.indexOf(apiDocsDir) === 0) {
         const componentName = fields?.slug.split('/')[3];
         visit(markdownAST, 'code', (node, index, parent) => {

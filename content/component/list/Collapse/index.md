@@ -12,7 +12,7 @@ description: "折叠面板，可以折叠/展开的内容区域。"
 
 ## 基本构成
 
-![折叠面板基本构成](../../../images/collapse/折叠面板基本构成.jpg)
+![折叠面板基本构成](https://www-s.ucloud.cn/2022/08/fd75418135d405fe4a129b1e68ee4e48_1660730956358.jpg)
 
 ##### A. 面板背景`可选`
 
@@ -57,17 +57,17 @@ description: "折叠面板，可以折叠/展开的内容区域。"
 
 #### 常规
 
-![常规](../../../images/collapse/常规.jpg)
+![常规](https://www-s.ucloud.cn/2022/08/c9cd282e6dd3aec2f7dba4c62b153459_1660730956364.jpg)
 
 #### 手风琴
 
-![手风琴](../../../images/collapse/手风琴.jpg)
+![手风琴](https://www-s.ucloud.cn/2022/08/2ad7e1701df88c78dac848d2dab3d1fc_1660730956365.jpg)
 
 
 
 ## 基本状态
 
-![基本状态](../../../images/collapse/基本状态.jpg)
+![基本状态](https://www-s.ucloud.cn/2022/08/0071e67685d754c15cb85977f1e43f60_1660730956367.jpg)
 
 | 状态   | 说明                                                         |
 | :----- | :----------------------------------------------------------- |
@@ -132,11 +132,11 @@ description: "折叠面板，可以折叠/展开的内容区域。"
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>层级样式明确</p>
-      <img src="../../../images/collapse/层级清晰.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/6e246629b8a708d53bd8295df21cd894_1660731055553.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>结构不清晰层级不明确</p>
-      <img src="../../../images/collapse/层级混乱.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/47e13e7cc700bc480c0b7c2d816cb718_1660731055554.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -151,11 +151,11 @@ description: "折叠面板，可以折叠/展开的内容区域。"
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>结构清晰</p>
-      <img src="../../../images/collapse/嵌套合理.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/0356dcbef7fdca06e5726052f4591600_1660731055556.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>嵌套层级过多————这里需要一个图，我没有做</p>
-      <img src="../../../images/collapse/嵌套合理.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/0356dcbef7fdca06e5726052f4591600_1660731055556.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 

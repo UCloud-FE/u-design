@@ -10,7 +10,7 @@ description: "从多个选项中选择一个或多个选项，并呈现选择结
 
 ## 基本构成
 
-![](../../../images/Select/forms_01.png)
+![](https://www-s.ucloud.cn/2022/08/036932a75df4e27784df280eb3b14299_1660731641572.png)
 
 | 选择器（A） | 下拉容器（B） | 搜索输入框（C） | 复选标记（D） | 清除按钮（E） |
 | :---------: | :-----------: | :-------------: | :-----------: | :-----------: |
@@ -45,19 +45,19 @@ E.清除按钮（可选）
 
 #### 基础用法
 
-![](../../../images/Select/styles_01.png)
+![](https://www-s.ucloud.cn/2022/08/ce99ad2c6f6fe10b23f9aa8b77c6260a_1660731641578.png)
 
 #### 带搜索功能
 
-![](../../../images/Select/styles_02.png)
+![](https://www-s.ucloud.cn/2022/08/a06ff23af41f815f6315ab7219e0db2a_1660731641580.png)
 
 #### 带分组标签
 
-![](../../../images/Select/styles_03.png)
+![](https://www-s.ucloud.cn/2022/08/9d1669fcca54c2ed4527edfe6faa5966_1660731641585.png)
 
 ## 基本状态
 
-![](../../../images/Select/states_01.png)
+![](https://www-s.ucloud.cn/2022/08/be880cb8b313bc45e6ce8fd8e816c339_1660731641588.png)
 
 | 状态           | 说明                               | 作用                   |
 | :------------- | :--------------------------------- | ---------------------- |
@@ -78,19 +78,19 @@ E.清除按钮（可选）
 
 - 当选项过多且选项没有层级关系时，使用 [级联选择器](/component/Cascader/) `Cascader`展示并选择内容。
 
-  ![](../../../images/Select/descriptions_01.png)
+  ![](https://www-s.ucloud.cn/2022/08/40094a65db713f6e1b41b81e6eaa419e_1660731712820.png)
 
 #### 2.特殊用法    
 
 - 当选择器支持空值时，选择器应给予清除按钮。
 
-![](../../../images/Select/descriptions_02.png)
+![](https://www-s.ucloud.cn/2022/08/f69f58916fe1a040717e1d862b16213f_1660731712827.png)
 
 
 
 - 当选择器为多选，且支持搜索时，搜索结果中可给出全选项。
 
-![](../../../images/Select/007.png)
+![](https://www-s.ucloud.cn/2022/08/8e6c4c0f7c82eb11d43582025d49bbc8_1660731712836.png)
 
 
 
@@ -106,7 +106,7 @@ E.清除按钮（可选）
 
   ​    当外侧显示的选项删除时，气泡内的第一个选项移到外侧。
 
-  ![](../../../images/Select/008.png)
+  ![](https://www-s.ucloud.cn/2022/08/6a6c5e66679db7a41b095869932af3a2_1660731712839.png)
 
   
 
@@ -118,7 +118,7 @@ E.清除按钮（可选）
 
   ​    选择结果若超出三行，可出现滚动条。
 
-![](../../../images/Select/009.png)  
+![](https://www-s.ucloud.cn/2022/08/cd2453ab196c1b5c5ab9b59dd4ff7b5a_1660731712840.png)
 
 
 
@@ -131,11 +131,11 @@ E.清除按钮（可选）
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>选项小于5项时建议使用单选Radio，选项大于等于5项时建议使用select。</p>
-      <img src="../../../images/Select/problems_01.png"/>
+      <img src="https://www-s.ucloud.cn/2022/08/bd3d17cafac71e2336b4a88b37d07fb6_1660731823257.png" alt="image alt" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>选项过多时使用radio容易使表单整体看起来臃肿，当选项太少时若使用select不利于用户快速选择。</p>
-      <img src="../../../images/Select/problems_02.png"/>
+      <img src="https://www-s.ucloud.cn/2022/08/d75a98693b234a92748bfad46974e9f5_1660731823260.png" alt="image alt" loading="lazy" />
    </div>
 </div>
 
@@ -150,11 +150,11 @@ E.清除按钮（可选）
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>若字段为必填项时，建议给出默认选项，且不支持清除按钮。</p>
-      <img src="../../../images/Select/problems_03.png"/>
+      <img src="https://www-s.ucloud.cn/2022/08/f959cc685833042bf314648ce284ceae_1660731823266.png" alt="image alt" loading="lazy"/>
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>必填字段若默认为空，容易导致用户忘记选择而校验报错。</p>
-      <img src="../../../images/Select/problems_04.png"/>
+      <img src="https://www-s.ucloud.cn/2022/08/ed5f3faf8c4aa2cf0ec232cfa7c47cb7_1660731823268.png" alt="image alt" loading="lazy"/>
    </div>
 </div>
 

@@ -13,7 +13,7 @@ description: "按钮，用于触发操作的行动点。"
 
 ## 基本构成
 
-![](../../../images/Button/1.png)
+![](https://www-s.ucloud.cn/2022/08/b813effa27192011a24d4c48499bd99f_1660728416601.png)
 
 |      | 类型                   | 内容(A) | 背景(B) | 边框(C) | 阴影(D) |
 | :--: | :--------------------- | :-----: | :-----: | :-----: | :-----: |
@@ -38,43 +38,43 @@ description: "按钮，用于触发操作的行动点。"
 
 纯文本
 
-![](../../../images/Button/纯文本-1267376.png)
+![](https://www-s.ucloud.cn/2022/08/ff6ccef024be9fccb0c45dd43c12d892_1660728416605.png)
 
 纯 Icon
 
-![](../../../images/Button/纯icon.png)
+![](https://www-s.ucloud.cn/2022/08/03559b34ba815c0cfee3e053bf869f7d_1660728416607.png)
 
 Icon + 文本组合
 
-![](../../../images/Button/icon文本.png)
+![](https://www-s.ucloud.cn/2022/08/efe619bc86ecb04514bb80acc5b32ac7_1660728416610.png)
 
 #### 次按钮
 
 纯文本
 
-![](../../../images/Button/纯文本-次按钮.png)
+![](https://www-s.ucloud.cn/2022/08/8f29f059df86dca56a941224af3d9bc5_1660728416611.png)
 
 纯 Icon
 
-![](../../../images/Button/纯icon-次按钮.png)
+![](https://www-s.ucloud.cn/2022/08/32f2718bae88b89c1bd5185e4a5e0b88_1660728517969.png)
 
 Icon + 文本
 
-![](../../../images/Button/icon文本次按钮.png)
+![](https://www-s.ucloud.cn/2022/08/33a27e7b9167afd7deb9bea023641eca_1660728517971.png)
 
 #### 线框按钮
 
 纯文本
 
-![](../../../images/Button/纯文本-线框按钮.png)
+![](https://www-s.ucloud.cn/2022/08/fb4633f215e3e550639782abfe70dedc_1660728517973.png)
 
 纯 Icon
 
-![](../../../images/Button/纯icon-线框按钮.png)
+![](https://www-s.ucloud.cn/2022/08/5ed7c250b6374fbdaf959b0d9dbb41d0_1660728517974.png)
 
 Icon + 文本组合
 
-![](../../../images/Button/icon文本线框按钮.png)
+![](https://www-s.ucloud.cn/2022/08/7f077eae8d03db507971bae5cc9291d4_1660728517976.png)
 
 ### 尺寸
 
@@ -84,23 +84,23 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 
 按钮高 32px，为目前的默认按钮尺寸，常用于[卡片]()头尾按钮、表单内按钮控件等情况。
 
-![](../../../images/Button/大号.png)
+![](https://www-s.ucloud.cn/2022/08/95b582aa725f8802b7da3789a003333c_1660728664033.png)
 
 #### 中号按钮（md）
 
 按钮高 28px，是过去所有按钮（除无边框）的默认尺寸。中号（md）按钮尺寸可能将会在后期的控制台迭代中逐步转化为大号（lg）尺寸。
 
-![](../../../images/Button/中号.png)
+![](https://www-s.ucloud.cn/2022/08/c0ce792002e62ed187432fcdca143d2b_1660728664035.png)
 
 #### 小号按钮（sm）
 
 按钮高 24px，需要注意的是，小号按钮无icon与文本组合的情况，它通常用于布局空间有限时，例如表格、穿梭框中。
 
-![](../../../images/Button/小号.png)
+![](https://www-s.ucloud.cn/2022/08/65dd74a16f62d0038c7cabdf76176635_1660728664036.png)
 
 ## 基本状态
 
-![状态](../../../images/Button/状态-1515567.png)
+![状态](https://www-s.ucloud.cn/2022/08/3db69e418783b5b6b87bc742f48b87ff_1660728664038.png)
 
 |      | 状态   | 说明                                                 | 作用                                                         |
 | ---- | :----- | :--------------------------------------------------- | ------------------------------------------------------------ |
@@ -119,7 +119,7 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 
 根据行动点重要级挑选合适的按钮来进行展示。合理的选择一方面可以适度强调行动点，另一方面，对于拥有多个行动点的页面，合理的层级表达也能很好的引导用户按照设计初衷进行逐步操作。
 
-![按钮_层级](../../../images/Button/按钮_层级.jpg)
+![按钮_层级](https://www-s.ucloud.cn/2022/08/5104f744feb791f7f543f12c9608ef56_1660728664047.jpg)
 
 **确保操作区域内仅一个一级行动点**
 
@@ -145,12 +145,12 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 - **行为一致性**：若平台中不同业务模块中有相同的功能模块.行为设计上的一致可以大大缩减用户学习成本，同时”表里如一“的平台能够给到用户更充分的可靠感和信任感。
 
   > UCloud Console 中多处信息修改需要进行手机验证，而用户点击“获取验证码“后，按钮都将切换成”60s后重新获取“。
-  ![行为一致性](../../../images/Button/行为一致性.png)
+  ![行为一致性](https://www-s.ucloud.cn/2022/08/7703febaae1fbdb15054cb8d6f948e39_1660728789156.png)
 
 - **描述一致性**：若平台中不同业务模块中有相同的功能模块，那建议按钮的文案保持一致。
 
   > UCloud Console 中多个产品都支持更改配置，提供这项功能的建议按钮显示统一为“配置升降级”。
-  ![描述一致性](../../../images/Button/描述一致性.png)
+  ![描述一致性](https://www-s.ucloud.cn/2022/08/8bcd7007873833b23f4b220a2606e31d_1660728789160.png)
 
 ### 布局
 
@@ -162,19 +162,19 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 
 一般为触发 操作/流程 的行动点，如页面头图或列表页操作栏中的行动点（优先级高的行动点偏左）
 
-![](../../../images/Button/对齐方式及建议-1.png)
+![](https://www-s.ucloud.cn/2022/08/6f0738593e5943d3174764fb1c796395_1660728789170.png)
 
 **底部 & 局右对齐**
 
 一般为一组信息或者一组操作的确认，如表单或弹窗操作栏中的行动点（优先级高的行动点偏左）
 
-![](../../../images/Button/对齐方式及建议-2.png)
+![](https://www-s.ucloud.cn/2022/08/02b1e2fcdb9d09fba1b3031bf6f9e13b_1660728789172.png)
 
 **底部 & 居中填满**
 
 当操作栏中仅有一个行动点时
 
-![](../../../images/Button/对齐方式及建议-3.png)
+![](https://www-s.ucloud.cn/2022/08/d89226139c04f6515aa5fbef4dfb0d72_1660728789176.png)
 
 #### 2. 调整与自适应
 
@@ -205,11 +205,11 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>默认收起低频使用的行动点</p>
-      <img src="../../../images/Button/常见问题1_正确.jpg" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/364158b6690eb7bf58ea5ffac4df2bdf_1660729012134.jpg" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>将所有行动点平铺展示</p>
-      <img src="../../../images/Button/常见问题1_错误.jpg" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/74e2ecdce32a9745e3023385d962bf53_1660729012136.jpg" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -220,11 +220,11 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>文案准确、简洁</p>
-      <img src="../../../images/Button/常见问题2_正确.jpg" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/e67fd9d8c4b0cc54c38b90960f3eb08e_1660729012138.jpg" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>文案冗长、啰嗦</p>
-      <img src="../../../images/Button/常见问题2_错误.jpg" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/0ddeb5fafce69555bd4a9946bfdccdf0_1660729012141.jpg" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -235,11 +235,11 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>仅目标文案为点击热区</p>
-      <img src="../../../images/Button/常见问题3_正确.jpg" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/c14531a5790a49c59cbd529204b8746b_1660729012143.jpg" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>无关内容均被指定为点击热区</p>
-      <img src="../../../images/Button/常见问题3_错误.jpg" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/c14531a5790a49c59cbd529204b8746b_1660729070999.jpg" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -247,11 +247,11 @@ U-Design 目前对按钮区分了 3 次种尺寸：**大（lg）、中（md）�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>同层级按钮仅从类型上区分</p>
-      <img src="../../../images/Button/尺寸一致性-1516479.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/482833cc289caee24ff2b4b021a90fef_1660729071002.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>建议不要多个维度来区分层级，避免用户认知上出现胡</p>
-      <img src="../../../images/Button/尺寸一致性-1516479.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/482833cc289caee24ff2b4b021a90fef_1660729071002.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 

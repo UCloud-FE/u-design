@@ -12,7 +12,7 @@ description: "用于展示日期数据的容器。"
 
 ## 基本构成
 
-![](../../../images/Calendar/构成.png)
+![](https://www-s.ucloud.cn/2022/08/9b38618601181739161d2b4398c093ff_1660729245594.png)
 
 <!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
@@ -50,19 +50,19 @@ description: "用于展示日期数据的容器。"
 
 #### 年月日
 
-![](../../../images/Calendar/常规样式-年月日.png)
+![](https://www-s.ucloud.cn/2022/08/408728f9953c913ba3c3104790df61e4_1660729245597.png)
 
 #### 年月
 
-![](../../../images/Calendar/常规样式-年月.png)
+![](https://www-s.ucloud.cn/2022/08/d81260123e70f88be8b84c70533e318b_1660729245601.png)
 
 #### 年
 
-![](../../../images/Calendar/常规样式-年.png)
+![](https://www-s.ucloud.cn/2022/08/b53ff24cacd143def23d29ca635357a8_1660729245606.png)
 
 ### 尺寸
 
-![](../../../images/Calendar/尺寸.png)
+![](https://www-s.ucloud.cn/2022/08/9ba3cdb74e97c11812a6847dec43470d_1660729245615.png)
 
 
 
@@ -77,7 +77,7 @@ description: "用于展示日期数据的容器。"
 | 禁用                 | 禁用选择               | 当前数据不可选择                                             |
 | 范围外日期           | 不在当前月份内         | 补全展示上个月/下个月的日期，可点击，点击后自动切换到下一个周期 |
 
-![](../../../images/Calendar/基本状态.png)
+![](https://www-s.ucloud.cn/2022/08/0b235e52efed7a15ce239836e685db82_1660729336128.png)
 
 
 
@@ -89,17 +89,17 @@ description: "用于展示日期数据的容器。"
 
 #### 时间选择器
 
-![](../../../images/Calendar/时间选择器.png)
+![](https://www-s.ucloud.cn/2022/08/67a30a689e39571a3ced8dbc1c75537a_1660729336140.png)
 
 #### 日期选择器
 
-![](../../../images/Calendar/日期选择器.png)
+![](https://www-s.ucloud.cn/2022/08/f156b021dc81a88f27919c73b2ec2c43_1660729336144.png)
 
 2.可选范围与业务要求一致。
 
 如业务限定出明确的可选范围，应配合业务要求适时禁用向前/向后切换操作或部分日期。
 
-![](../../../images/Calendar/向后切换操作或部分日期.png)
+![](https://www-s.ucloud.cn/2022/08/74259d8bcc490c0d9c946b0d75e291c5_1660729336147.png)
 
 <!--
 

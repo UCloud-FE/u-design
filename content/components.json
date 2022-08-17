@@ -18,7 +18,8 @@
     {
         "name": "Box",
         "zh_cn": "盒子",
-        "category": ["layout"]
+        "category": ["layout"],
+        "isHideDesignTab": true
     },
     {
         "name": "Breadcrumb",
@@ -67,7 +68,8 @@
     {
         "name": "ConfigProvider",
         "zh_cn": "全局配置",
-        "category": ["general"]
+        "category": ["general"],
+        "isHideDesignTab": true
     },
     {
         "name": "DatePicker",
@@ -100,7 +102,8 @@
         "name": "Grid",
         "zh_cn": "栅格",
         "components": ["Row", "Col"],
-        "category": ["layout"]
+        "category": ["layout"],
+        "isHideDesignTab": true
     },
     {
         "name": "Icon",
@@ -121,7 +124,8 @@
     {
         "name": "LocaleProvider",
         "zh_cn": "语言配置",
-        "category": ["general"]
+        "category": ["general"],
+        "isHideDesignTab": true
     },
     {
         "name": "Menu",
@@ -223,7 +227,8 @@
     {
         "name": "ThemeProvider",
         "zh_cn": "主题配置",
-        "category": ["general"]
+        "category": ["general"],
+        "isHideDesignTab": true
     },
     {
         "name": "TimePicker",
@@ -238,7 +243,8 @@
     {
         "name": "Popover",
         "zh_cn": "气泡卡片",
-        "category": ["feedback"]
+        "category": ["feedback"],
+        "isHideDesignTab": true
     },
     {
         "name": "Transfer",

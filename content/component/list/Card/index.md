@@ -15,7 +15,7 @@ description: "卡片，聚合同类信息的容器。"
 
 卡片布局可以因支持其包含的内容类型而异。以下元素在该品种中常见。
 
-![](../../../images/Card/构成.png)
+![](https://www-s.ucloud.cn/2022/08/29bcbe26fb83443d5e5c96b168716687_1660729557830.png)
 
 | 类型 | 容器（A） | 标题（B） | 操作按钮（C） | 副标题（D） | 操作区域（E） | 内容区域（F） | 分割线（G） | 底部按钮（H） |
 | :--: | :-------: | :-------: | :-----------: | :---------: | :-----------: | :-----------: | :---------: | :-----------: |
@@ -66,17 +66,17 @@ description: "卡片，聚合同类信息的容器。"
 
 ### 常规样式
 
-![](../../../images/Card/常规样式.png)
+![](https://www-s.ucloud.cn/2022/08/7c7b07c615d926a4d5b71de831ec88eb_1660729557841.png)
 
 ### 尺寸
 
-![](../../../images/Card/尺寸.png)
+![](https://www-s.ucloud.cn/2022/08/ea6054c4da30e00fe563622d1c3284cb_1660729557845.png)
 
 ### 自定义元素顺序
 
 卡片中元素的展示顺序可根据需求进行调整
 
-![](../../../images/Card/自定义元素顺序.png)
+![](https://www-s.ucloud.cn/2022/08/db2ae7eec535d1eb5e0048618b593ded_1660729557852.png)
 
 
 
@@ -84,7 +84,7 @@ description: "卡片，聚合同类信息的容器。"
 
 当卡片只作为纯展示容器时，整个卡片只有默认状态，不具备其他状态；当作为可选项时，可存在不同状态。
 
-![](../../../images/Card/基本状态.png)
+![](https://www-s.ucloud.cn/2022/08/eab0757aa4aa4b399102a6065fb2db21_1660729557859.png)
 
 | 状态 | 说明                                               |
 | :--- | :------------------------------------------------- |
@@ -134,11 +134,11 @@ description: "卡片，聚合同类信息的容器。"
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>卡片平铺展示，层级明确</p>
-      <img src="../../../images/Card/⭕️平铺布局.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/b3d87512dd77bd74be32a137ee1fb94d_1660729737082.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>多个卡片嵌套</p>
-      <img src="../../../images/Card/❌嵌套.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/2e1b5c50ce6167cdf94468fd1ecbbf25_1660729737086.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -150,11 +150,11 @@ description: "卡片，聚合同类信息的容器。"
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>同类型卡片样式一致</p>
-      <img src="../../../images/Card/⭕️样式一致.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/d09b7df33404e13a7af22b6ddfdfe4ed_1660729737089.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>同类型卡片样式不同</p>
-      <img src="../../../images/Card/❌样式不同.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/5360e3df94152bba7b57450f9e36fc5e_1660729737092.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 

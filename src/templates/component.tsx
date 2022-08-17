@@ -25,9 +25,12 @@ const getComponentName = (slug: string): string => {
     return delLast(slug.split('/component/list/')[1], '/');
 };
 
-const getTitle = componentName => {
-    const component = allComponents.find(item => item.name === componentName);
-    return `${component?.name || ''} ${component?.zh_cn || ''}`;
+const getComponentInfo = (componentName: string): any=> {
+    return allComponents.find(item => item.name === componentName);
+}
+
+const getTitle = (componentInfo) => {
+    return `${componentInfo?.name || ''} ${componentInfo?.zh_cn || ''}`;
 };
 
 const TAB_KEY = 'component_tab_i';
@@ -39,6 +42,9 @@ const Index = ({ data, location }) => {
     const [componentDocsToc, setComponentDocsToc] = useState([]);
     const [scrollCurrentHash, setScrollCurrentHash] = useState('');
     const { markdown, componentDocs, componentDemos } = data;
+    console.log('markdown', markdown);
+    const [componentName] = useState(getComponentName(markdown.fields.slug));
+    const [componentInfo] = useState(getComponentInfo(componentName));
 
     useEffect(() => {
         const toc = [];
@@ -64,7 +70,6 @@ const Index = ({ data, location }) => {
         setComponentDocsToc(toc);
     }, [tabIndex]);
 
-    const componentName = getComponentName(markdown.fields.slug);
     const handleScroll = () => {
         const el = document.querySelector('#component_s_w');
         const top = el.scrollTop;
@@ -119,7 +124,7 @@ const Index = ({ data, location }) => {
                 <div className={styles.content}>
                     <div className={styles.top}>
                         <h1>
-                            {getTitle(componentName)}
+                            {getTitle(componentInfo)}
                             <a
                                 href={`https://github.com/UCloud-FE/u-design/blob/main/content/component/list/${componentName}/index.md`}
                                 target="_blank"
@@ -130,28 +135,31 @@ const Index = ({ data, location }) => {
                         {markdown.frontmatter.description && <p>{markdown.frontmatter.description}</p>}
                     </div>
 
-                    <div className={styles.tabs}>
-                        <ul>
-                            <li
-                                className={`${tabIndex === tabs[0] ? styles.current : ''}`}
-                                onClick={() => {
-                                    handleClickTab(tabs[0]);
-                                }}
-                            >
-                                <i className={styles.designIcon}></i>
-                                <span>设计</span>
-                            </li>
-                            <li
-                                className={`${tabIndex === tabs[1] ? styles.current : ''}`}
-                                onClick={() => {
-                                    handleClickTab(tabs[1]);
-                                }}
-                            >
-                                <i className={styles.devIcon}></i>
-                                文档
-                            </li>
-                        </ul>
-                    </div>
+                    {
+                        !componentInfo.isHideDesignTab && 
+                        <div className={styles.tabs}>
+                            <ul>
+                                <li
+                                    className={`${tabIndex === tabs[0] ? styles.current : ''}`}
+                                    onClick={() => {
+                                        handleClickTab(tabs[0]);
+                                    }}
+                                >
+                                    <i className={styles.designIcon}></i>
+                                    <span>设计</span>
+                                </li>
+                                <li
+                                    className={`${tabIndex === tabs[1] ? styles.current : ''}`}
+                                    onClick={() => {
+                                        handleClickTab(tabs[1]);
+                                    }}
+                                >
+                                    <i className={styles.devIcon}></i>
+                                    文档
+                                </li>
+                            </ul>
+                        </div>
+                    }
 
                     <div
                         style={{ display: tabIndex === tabs[0] ? 'block' : 'none' }}

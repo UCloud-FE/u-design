@@ -12,7 +12,7 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 ## 基本构成
 
-![](../../../images/复选框_构成.png)
+![](https://www-s.ucloud.cn/2022/08/e02f12c6ed8a9360eea770e4d4e5a081_1660730574181.png)
 
 <!--图片存储路径为images下新建元素名文件夹，例/images/Name/pic.png-->
 
@@ -36,11 +36,11 @@ description: "一种常见选择控件，支持单选或多选。同时可用于
 
 #### 多选框
 
-![](../../../images/1675335.png)
+![](https://www-s.ucloud.cn/2022/08/a5961f8711a0c637dbc96e78c94a26e8_1660730574190.png)
 
 #### 多选卡片
 
-![](../../../images/卡片样式.png)
+![](https://www-s.ucloud.cn/2022/08/730a5648bb9a9a87a8d9b4fa0ccd87b4_1660730574194.png)
 
 
 ### 尺寸
@@ -53,19 +53,19 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 
 在使用过程中可以根据布局空间，灵活使用不同尺寸的多选按钮。[标注明细 >](https://lanhuapp.com/url/wNh7a-q05xe)
 
-![](../../../images/尺寸-1613834.png)
+![](https://www-s.ucloud.cn/2022/08/2a5b4c0dbcca478fa879bbac089d3912_1660730574197.png)
 
 #### 多选卡片
 
 依据内容大小自动撑满，与容器内间距保持16**px**即可。[标注明细 >](https://lanhuapp.com/url/wNh7a-q05xe)
 
-![](../../../images/卡片尺寸-1613738.png)
+![](https://www-s.ucloud.cn/2022/08/a16e9604bc4023e44949ba92c8c3e216_1660730574199.png)
 
 
 
 ## 基本状态
 
-![](../../../images/基本状态-1675404.png)
+![](https://www-s.ucloud.cn/2022/08/a5961f8711a0c637dbc96e78c94a26e8_1660730674105.png)
 
 | 状态             | 说明                                                   | 作用                                                         |
 | :--------------- | :----------------------------------------------------- | ------------------------------------------------------------ |
@@ -178,11 +178,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>仅文本居左对齐</p>
-      <img src="../../../images/checkbox/常见问题-1.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/5f4ecfd360bc42c9f0db2626a89d5bbd_1660730674107.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>复选控件包裹在文案中，不便于用户识别与状态确认</p>
-      <img src="../../../images/checkbox/常见问题-2.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/7409f2f5c8ec37a44400ce369eb7147a_1660730674109.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -192,11 +192,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>使用缩进来区分父子级选项关系</p>
-      <img src="../../../images/checkbox/父子级展示建议-1.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/48649bf9106e58362bf90ba065d9b270_1660730674111.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>无缩进展示不便于用户理解信息层级关系</p>
-      <img src="../../../images/checkbox/父子级展示建议-2.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/20b591152b5d22b4ea4e7613ea3a0d89_1660730674113.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -206,11 +206,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>数量合理的选项便于用户快速阅读</p>
-      <img src="../../../images/Card/选项数目建议-1-1789549.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/0ce98c33e38517fbe5578e3ae78f8d0b_1660729983911.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>过多的选项建议选择其他选择控件并配合搜索</p>
-      <img src="../../../images/Card/选项数目建议-2-1789549.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/78bc5dd3348953c047a0d9200ef6a592_1660730038391.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -220,11 +220,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>陈述简洁，必要时给予详情跳转</p>
-      <img src="../../../images/Card/文字长度建议-1.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/e842310666998f2f0a71aaa541e93a9f_1660729983917.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>过长本文会让用户放弃阅读甚至降低好感</p>
-      <img src="../../../images/Card/文字长度建议-2.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/5b727cf6e11b234d18049136dd0f399d_1660729983920.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -235,11 +235,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>简洁且突出差异的描述更利于用户快速阅读</p>
-      <img src="../../../images/Card/字符长度建议-1.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/662bd1247e32ef7b6797c58fa89930bb_1660729983922.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>描述切忌啰嗦、反复过分冗长</p>
-      <img src="../../../images/Card/字符长度建议-2.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/80823fe4b69b4e72ae84934539f5cee5_1660729983923.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -251,11 +251,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>距离越近越能引起用户关注也更便于用户操作前确认</p>
-      <img src="../../../images/checkbox/布局建议-放置在操作左侧.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/14c36fb8dfbb421c2ec049baa5aa0af5_1660730735311.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>注意力被重要按钮吸引，距离较远的内容容易被忽略</p>
-      <img src="../../../images/checkbox/布局建议-放置在操作左侧-2.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/020d8aaebae83cfc1680c193de5122ec_1660730735314.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
@@ -268,11 +268,11 @@ U-Design 目前对多选按钮区分了 3 种尺寸：**大（lg）、中（md�
 <div class="u-md-flex-without-bg">
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>文本换行时，仅与文本左对齐。</p>
-      <img src="../../../images/Card/布局建议-换行左对齐.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/5f4ecfd360bc42c9f0db2626a89d5bbd_1660730084758.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>勾选框与文案混排，难于被察觉</p>
-      <img src="../../../images/Card/布局建议-换行左对齐2.png" alt="image alt" title="desc" />
+      <img src="https://www-s.ucloud.cn/2022/08/7409f2f5c8ec37a44400ce369eb7147a_1660730084759.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
