@@ -98,6 +98,12 @@ const Index = ({ data, location }) => {
         return () => el.removeEventListener('scroll', handleScroll);
     }, [tabIndex]);
 
+    useEffect(() => {
+        if(componentInfo?.isHideDesignTab){
+            setTabIndex(tabs[1]);
+        }
+    }, [])
+
     const handleClickTab = index => {
         currentTabIndex = index;
         setTabIndex(index);

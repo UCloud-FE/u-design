@@ -1,3 +1,3 @@
 ---
-description: "LocaleProvider"
+description: "为组件提供统一的国际化语言配置。"
 ---
