@@ -62,37 +62,37 @@ module.exports = {
                         resolve: require.resolve(`./plugins/gatsby-remark-custom-extend`),
                     },
                     `gatsby-remark-extract-image-attributes`,
-                    {
-                        resolve: `gatsby-remark-relative-images`,
-                        options: {
-                            // [Optional] The root of "media_folder" in your config.yml
-                            // Defaults to "static"
-                            staticFolderName: 'content',
-                            // [Optional] Include the following fields, use dot notation for nested fields
-                            // All fields are included by default
-                            // include: ['featured'],
-                            // [Optional] Exclude the following fields, use dot notation for nested fields
-                            // No fields are excluded by default
-                        },
-                    },
-                    {
-                        resolve: `gatsby-remark-images`,
-                        options: {
-                            maxWidth: 1440,
-                            linkImagesToOriginal: false,
-                            showCaptions: true,
-                            quality: 70,
-                            // wrapperStyle: fluidResult => {
-                            //     return '';
-                            // },
-                        },
-                    },
-                    {
-                        resolve: `gatsby-remark-responsive-iframe`,
-                        options: {
-                            wrapperStyle: `margin-bottom: 1.0725rem`,
-                        },
-                    },
+                    // {
+                    //     resolve: `gatsby-remark-relative-images`,
+                    //     options: {
+                    //         // [Optional] The root of "media_folder" in your config.yml
+                    //         // Defaults to "static"
+                    //         staticFolderName: 'content',
+                    //         // [Optional] Include the following fields, use dot notation for nested fields
+                    //         // All fields are included by default
+                    //         // include: ['featured'],
+                    //         // [Optional] Exclude the following fields, use dot notation for nested fields
+                    //         // No fields are excluded by default
+                    //     },
+                    // },
+                    // {
+                    //     resolve: `gatsby-remark-images`,
+                    //     options: {
+                    //         maxWidth: 1440,
+                    //         linkImagesToOriginal: false,
+                    //         showCaptions: true,
+                    //         quality: 70,
+                    //         // wrapperStyle: fluidResult => {
+                    //         //     return '';
+                    //         // },
+                    //     },
+                    // },
+                    // {
+                    //     resolve: `gatsby-remark-responsive-iframe`,
+                    //     options: {
+                    //         wrapperStyle: `margin-bottom: 1.0725rem`,
+                    //     },
+                    // },
                     `gatsby-remark-prismjs`,
                     `gatsby-remark-copy-linked-files`,
                     `gatsby-remark-smartypants`,
@@ -101,12 +101,21 @@ module.exports = {
         },
         `gatsby-plugin-smoothscroll`,
         `gatsby-transformer-sharp`,
-        `gatsby-plugin-sharp`,
+        // 'gatsby-plugin-sharp',
+        {
+            resolve: `gatsby-plugin-sharp`,
+            options: {
+                // Defaults used for gatsbyImageData and StaticImage
+                defaults: {
+                    formats: [`auto`],
+                },
+            },
+        },
         {
             resolve: 'gatsby-plugin-react-svg',
             options: {
                 rule: {
-                    include: /\.inline\.svg$/
+                    include: /\.inline\.svg$/,
                 },
             },
         },

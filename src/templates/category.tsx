@@ -51,7 +51,10 @@ export const pageQuery = graphql`
             nodes {
                 relativePath
                 childImageSharp {
-                    gatsbyImageData
+                    gatsbyImageData(
+                        width: 264
+                        outputPixelDensities: [1]
+                    )
                 }
             }
         }
