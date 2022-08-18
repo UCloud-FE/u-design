@@ -140,12 +140,6 @@ exports.createSchemaCustomization = ({ actions }) => {
   `);
 };
 
-const { registerLocalFs } = require('netlify-cms-proxy-server/dist/middlewares');
-
-exports.onCreateDevServer = async ({ app }) => {
-    await registerLocalFs(app);
-};
-
 exports.onCreateWebpackConfig = ({ stage, loaders, actions }) => {
     if (stage === 'build-html' || stage === 'develop-html') {
         actions.setWebpackConfig({
