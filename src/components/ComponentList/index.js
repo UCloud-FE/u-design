@@ -35,13 +35,7 @@ const Index = ({ markdownRemark, thumbs }) => {
                                     {component.name} {component.zh_cn}
                                 </span>
                                 <div className={styles.thumb}>
-                                    {thumbImage ? (
-                                        <GatsbyImage alt={component.name} image={thumbImage} />
-                                    ) : (
-                                        <div style={{ background: '#f2f2f7' }}>
-                                            <img width="264" height="172" style={{ opacity: 0, display: 'block' }} />
-                                        </div>
-                                    )}
+                                    <GatsbyImage alt={component.name} image={thumbImage} />
                                 </div>
                             </Link>
                         </li>

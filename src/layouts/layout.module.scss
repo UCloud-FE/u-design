@@ -22,6 +22,7 @@
     position: relative;
     z-index: 1;
     .logo {
+        flex-shrink: 0;
         width: $header-logo;
         padding-left: 35px;
         box-sizing: border-box;
@@ -33,9 +34,19 @@
         }
     }
     nav {
-        margin-left: 90px;
         display: flex;
         height: 100%;
+        justify-content: center;
+        flex: 1;
+        > div {
+            // width: $NAV_WIDRH;
+            display: flex;
+            height: 100%;
+            padding: 0px $CONTENT_MARGIN;
+            min-width: $MIN_CONTENT_WIDTH + $TOC_WIDTH + $CONTENT_MARGIN;
+            max-width: $MAX_CONTENT_WIDTH + $TOC_WIDTH + $CONTENT_MARGIN;
+            flex: 1;
+        }
         a {
             width: 66px;
             height: 100%;

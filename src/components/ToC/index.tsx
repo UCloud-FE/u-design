@@ -23,7 +23,6 @@ const ToC = (props: {
 
     return (
         <div {...rest} className={`${styles.toc} ${className || ''}`}>
-            <h2>目录</h2>
             <div className={styles.innerScroll}>
                 {headings.map((heading, index) => {
                     const hash = originalHash ? heading.id : heading.value.replace(/\s+/g, '-').toLowerCase();
@@ -49,6 +48,7 @@ const ToC = (props: {
                                         paddingLeft,
                                     }}
                                     href={`#${hash}`}
+                                    data-depth={heading.depth}
                                 >
                                     {heading.value}
                                 </a>

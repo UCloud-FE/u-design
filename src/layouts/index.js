@@ -174,29 +174,31 @@ const Layout = ({ location, children }) => {
                         <img src={UDesign} alt="logo" />
                     </Link>
                 </div>
-                <nav>
-                    {navs.nodes.map(item => {
-                        const { url, title, match } = item.frontmatter;
-                        const isCurrent = location.pathname.includes(match);
-                        return (
-                            <Link
-                                key={url}
-                                to={url}
-                                itemProp="url"
-                                className={`${isCurrent ? layoutStyles.current : ''}`}
-                            >
-                                {title}
-                            </Link>
-                        );
-                    })}
-                    <Link
-                        key="custom-components"
-                        to="/custom"
-                        itemProp="url"
-                        className={`${location.pathname.includes('/custom') ? layoutStyles.current : ''}`}
-                    >
-                        定制
-                    </Link>
+                <nav id="topNav">
+                    <div>
+                        {navs.nodes.map(item => {
+                            const { url, title, match } = item.frontmatter;
+                            const isCurrent = location.pathname.includes(match);
+                            return (
+                                <Link
+                                    key={url}
+                                    to={url}
+                                    itemProp="url"
+                                    className={`${isCurrent ? layoutStyles.current : ''}`}
+                                >
+                                    {title}
+                                </Link>
+                            );
+                        })}
+                        <Link
+                            key="custom-components"
+                            to="/custom"
+                            itemProp="url"
+                            className={`${location.pathname.includes('/custom') ? layoutStyles.current : ''}`}
+                        >
+                            定制
+                        </Link>
+                    </div>
                 </nav>
             </header>
             <main className={layoutStyles.main}>

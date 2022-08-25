@@ -7,8 +7,7 @@
     flex-shrink: 0;
     background: #F8F8FA;
     box-shadow: inset -1px 0px 0px rgba(0, 0, 0, 0.08);
-    // border-right: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
-    overflow: auto;
+    overflow-x: auto;
     .inner {
         padding-top: 16px;
         height: 100%;

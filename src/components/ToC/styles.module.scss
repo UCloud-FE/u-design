@@ -1,24 +1,6 @@
 @import '/src/vars.scss';
 
 .toc {
-    position: sticky;
-    top: 48px;
-    right: 16px;
-    width: 206px;
-    float: right;
-    margin-top: 240px;
-    max-height: calc(100vh - 160px);
-    overflow: auto;
-
-    h2 {
-        margin: 0;
-        margin-bottom: 16px;
-        font-size: 20px;
-        line-height: 32px;
-        font-weight: 400;
-        color: $T_COLOR_TEXT_DEFAULT_DARK;
-    }
-
     .innerScroll {
         margin: 0;
         border-left: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
@@ -29,16 +11,27 @@
             padding-left: 1px;
             a {
                 display: block;
-                font-size: 12px;
+                font-size: 14px;
                 line-height: 22px;
                 height: 22px;
-                font-weight: 300;
+                font-weight: 400;
                 text-decoration: none;
-                color: $T_COLOR_TEXT_DEFAULT_DARK;
+                color: #526075;
                 white-space: nowrap;
                 overflow: hidden;
                 text-overflow: ellipsis;
-                font-family: PingFangSC-Light, PingFang SC;
+                font-family: "PingFangSC-Regular";
+                font-style: normal;
+                letter-spacing: 0px;
+                &:hover {
+                    color: $T_COLOR_TEXT_PRIMARY_DEFAULT !important;
+                    transition: all 0.1s;
+                }
+            }
+
+            a[data-depth="2"]{
+                color: $T_COLOR_TEXT_DEFAULT_DARK;
+                font-weight: 500;
             }
 
             margin: 0;
@@ -48,14 +41,14 @@
         .current {
             border-left: 2px solid $T_COLOR_BG_PRIMARY_1;
             padding-left: 10px;
-            margin-left: -11px;
+            margin-left: -9px;
             height: 22px;
 
             a {
-                font-family: PingFangSC-Medium, PingFang SC;
-                color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                transition: color 0.1s;
+                font-family: "PingFangSC-Medium";
+                color: $T_COLOR_TEXT_PRIMARY_DEFAULT !important;
                 font-weight: 500;
-                line-height: 22px;
             }
         }
     }

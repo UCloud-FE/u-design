@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useRef, useCallback } from 'react';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
@@ -7,7 +7,7 @@ import Footer from '../components/Footer';
 import ToC from '../components/ToC';
 import allComponents from '../../content/components.json';
 import { delLast } from '../utils';
-import * as styles from './styles.module.scss';
+import * as styles from './template.module.scss';
 import Edit from '../images/edit.inline.svg';
 
 const getDemos = componentDemos => {
@@ -33,7 +33,6 @@ const getTitle = (componentInfo) => {
     return `${componentInfo?.name || ''} ${componentInfo?.zh_cn || ''}`;
 };
 
-const TAB_KEY = 'component_tab_i';
 const tabs = ['design', 'docs'];
 let currentTabIndex = tabs[1];
 
@@ -44,10 +43,15 @@ const Index = ({ data, location }) => {
     const { markdown, componentDocs, componentDemos } = data;
     const [componentName] = useState(getComponentName(markdown.fields.slug));
     const [componentInfo] = useState(getComponentInfo(componentName));
+    const wrapperEl = useRef<HTMLDivElement>(null);
+    const headerEl = useRef<HTMLDivElement>(null);
+    const upEl = useRef<HTMLDivElement>(null);
 
     useEffect(() => {
         const toc = [];
-        const links = document.querySelectorAll('#u-component-doc [aria-label]');
+        const links = wrapperEl.current.querySelectorAll('#u-component-doc [aria-label]');
+        wrapperEl.current.scrollTop = 0;
+
         if (tabIndex !== tabs[1]) {
             return;
         }
@@ -69,10 +73,13 @@ const Index = ({ data, location }) => {
         setComponentDocsToc(toc);
     }, [tabIndex]);
 
-    const handleScroll = () => {
-        const el = document.querySelector('#component_s_w');
-        const top = el.scrollTop;
-        let sections = el.querySelectorAll('[aria-label]');
+    const handleScrollToTop = useCallback(()=>{
+        wrapperEl.current.scrollTop = 0;
+    }, []);
+
+    const handleScroll = useCallback(() => {
+        const top = wrapperEl.current.scrollTop;
+        let sections = wrapperEl.current.querySelectorAll('[aria-label]');
         let currentHash;
 
         for (let i = 0; i < sections.length; i++) {
@@ -81,7 +88,7 @@ const Index = ({ data, location }) => {
             // }
 
             var itemTop = sections[i].parentElement.offsetTop;
-            if (top > itemTop - 30) {
+            if (top > itemTop + 155) {
                 currentHash = decodeURIComponent(sections[i].hash);
             } else {
                 break;
@@ -89,14 +96,31 @@ const Index = ({ data, location }) => {
         }
 
         setScrollCurrentHash(currentHash);
-    };
+    }, []);
+
+    const handleFixToc = useCallback(()=>{
+        const scrollTop = wrapperEl.current.scrollTop;
+
+        if(scrollTop >= 127){
+            upEl.current.style.opacity = '1';
+        } else {
+            upEl.current.style.opacity = '';
+        }
+
+        if(scrollTop >= 52){
+            headerEl.current.style.borderBottomWidth = '0px';
+        } else {
+            headerEl.current.style.borderBottomWidth = '';
+        }
+    }, []);
+
+    useEffect(()=>{
+        wrapperEl.current.addEventListener('scroll', handleFixToc);
+    }, [])
 
     useEffect(() => {
-        const el = document.querySelector('#component_s_w');
-        el.addEventListener('scroll', handleScroll);
-
-        return () => el.removeEventListener('scroll', handleScroll);
-    }, [tabIndex]);
+        wrapperEl.current.addEventListener('scroll', handleScroll);
+    }, []);
 
     useEffect(() => {
         if(componentInfo?.isHideDesignTab){
@@ -110,62 +134,23 @@ const Index = ({ data, location }) => {
     };
 
     return (
-        <div className={styles.wrapper}>
+        <div className={styles.wrapper} ref={wrapperEl}>
             <Seo title={markdown.frontmatter.title} />
-            <div className={styles.contentWrapper} id="component_s_w">
-                <ToC
-                    style={{ display: tabIndex === tabs[0] ? 'block' : 'none' }}
-                    currentHash={scrollCurrentHash}
-                    headings={markdown.headings || []}
-                    location={location}
-                />
-                <ToC
-                    style={{ display: tabIndex === tabs[1] ? 'block' : 'none' }}
-                    currentHash={scrollCurrentHash}
-                    originalHash
-                    headings={componentDocsToc}
-                    location={location}
-                />
-                <div className={styles.content}>
-                    <div className={styles.top}>
-                        <h1>
-                            {getTitle(componentInfo)}
-                            <a
-                                href={`https://github.com/UCloud-FE/u-design/blob/main/content/component/list/${componentName}/index.md`}
-                                target="_blank"
-                            >
-                                <Edit />
-                            </a>
-                        </h1>
-                        {markdown.frontmatter.description && <p>{markdown.frontmatter.description}</p>}
-                    </div>
+            <div className={styles.componentHeader} ref={headerEl}>
+                <h1 className={styles.headerH1}>
+                    {getTitle(componentInfo)}
+                    <a
+                        href={`https://github.com/UCloud-FE/u-design/blob/main/content/component/list/${componentName}/index.md`}
+                        target="_blank"
+                    >
+                        <Edit />
+                    </a>
+                    {markdown.frontmatter.description && <p>{markdown.frontmatter.description}</p>}
+                </h1>
+            </div>
 
-                    {
-                        !componentInfo?.isHideDesignTab && 
-                        <div className={styles.tabs}>
-                            <ul>
-                                <li
-                                    className={`${tabIndex === tabs[0] ? styles.current : ''}`}
-                                    onClick={() => {
-                                        handleClickTab(tabs[0]);
-                                    }}
-                                >
-                                    <i className={styles.designIcon}></i>
-                                    <span>设计</span>
-                                </li>
-                                <li
-                                    className={`${tabIndex === tabs[1] ? styles.current : ''}`}
-                                    onClick={() => {
-                                        handleClickTab(tabs[1]);
-                                    }}
-                                >
-                                    <i className={styles.devIcon}></i>
-                                    文档
-                                </li>
-                            </ul>
-                        </div>
-                    }
-
+            <div className={styles.content}>
+                <div className={styles.markdown}>
                     <div
                         style={{ display: tabIndex === tabs[0] ? 'block' : 'none' }}
                         className="u-markdown-design-styles"
@@ -190,20 +175,52 @@ const Index = ({ data, location }) => {
                             })}
                         </MDXProvider>
                     </div>
-
-                    {/* {previousComponentName && (
-                        <Link to={`/component/${previousComponentName}/`} rel="prev">
-                            ← {getTitle(previousComponentName)}
-                        </Link>
-                    )}
-                    {nextComponentName && (
-                        <Link to={`/component/${nextComponentName}/`} rel="prev">
-                            ← {getTitle(nextComponentName)}
-                        </Link>
-                    )} */}
                 </div>
-                <Footer />
+
+                <div className={styles.sidebar}>
+                    {   
+                        !componentInfo?.isHideDesignTab && 
+                        <div className={styles.tabs}>
+                            <ul>
+                                <li
+                                    className={`${tabIndex === tabs[0] ? styles.current : ''}`}
+                                    onClick={() => {
+                                        handleClickTab(tabs[0]);
+                                    }}
+                                >
+                                    设计
+                                </li>
+                                <li
+                                    className={`${tabIndex === tabs[1] ? styles.current : ''}`}
+                                    onClick={() => {
+                                        handleClickTab(tabs[1]);
+                                    }}
+                                >
+                                    文档
+                                </li>
+                            </ul>
+                        </div>
+                    }
+
+                    <div className={styles.toc}>
+                        <ToC
+                            style={{ display: tabIndex === tabs[0] ? 'block' : 'none' }}
+                            currentHash={scrollCurrentHash}
+                            headings={markdown.headings || []}
+                            location={location}
+                        />
+                        <ToC
+                            style={{ display: tabIndex === tabs[1] ? 'block' : 'none' }}
+                            currentHash={scrollCurrentHash}
+                            originalHash
+                            headings={componentDocsToc}
+                            location={location}
+                        />
+                    </div>
+                    <i ref={upEl} onClick={handleScrollToTop} className="uc-fe-icon icon__up" />
+                </div>
             </div>
+            <Footer />
         </div>
     );
 };

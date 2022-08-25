@@ -1,121 +1,193 @@
 @import '/src/vars.scss';
-$MARKDOWN_CONTENT_WIDTH: 880px;
 
-.wrapper {
-    height: 100%;
+@mixin mainWrapper() {
     position: relative;
     flex: 1;
-    overflow: hidden;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
     background-color: #f8f8fa;
-    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans, sans-serif,
-        apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
     -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+}
 
-    .content-wrapper {
-        height: 100%;
-        overflow: auto;
-        footer {
-            > div {
-                max-width: $MARKDOWN_CONTENT_WIDTH;
-                padding-left: 72px;
-                padding-right: 264px;
+
+.midWrapper{
+    padding-left: $CONTENT_MARGIN;
+    padding-right: $CONTENT_MARGIN;
+    @include mainWrapper();
+    .midContent, .midHeader{
+        min-width: $MIN_CONTENT_WIDTH + $TOC_WIDTH + $CONTENT_MARGIN;
+        max-width: $MAX_CONTENT_WIDTH + $TOC_WIDTH + $CONTENT_MARGIN;
+        margin: 0 auto;
+
+    }
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 72px;
+
+    > div {
+        min-width: $MIN_CONTENT_WIDTH + $TOC_WIDTH + $CONTENT_MARGIN;
+        max-width: $MAX_CONTENT_WIDTH + $TOC_WIDTH + $CONTENT_MARGIN;
+    }
+}
+
+.componentHeader, .specHeader, .midHeader {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    padding-top: 64px;
+
+    h1 {
+        margin: 0;
+        width: 100%;
+        color: $T_COLOR_TEXT_DEFAULT_DARK;
+        font-size: 40px;
+        line-height: 1.5;
+        font-family: "PingFangSC-Semibold";
+        font-weight: 600;
+        letter-spacing: 0px;
+    }
+    p {
+        opacity: 1;
+        color: $T_COLOR_TEXT_DEFAULT_DARK;
+        font-family: "PingFangSC-Regular";
+        font-size: 16px;
+        font-weight: 400;
+        letter-spacing: 0px;
+        line-height: 1.5;
+        margin: 0;
+        margin-top: 10px;
+    }
+
+    h1 a {
+        fill: #7a8baa;
+        display: inline-block;
+        margin-left: 12px;
+        svg {
+            width: 16px;
+            height: 16px;
+        }
+        vertical-align: baseline;
+        &:hover {
+            svg {
+                fill: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+            }
+            cursor: pointer;
+            transition: all 0.3s;
+        }
+    }
+}
+
+.wrapper {
+    @include mainWrapper();
+
+    .componentHeader, .specHeader, .content, footer {
+        .headerH1, .markdown{
+            min-width: $MIN_CONTENT_WIDTH;
+            max-width: $MAX_CONTENT_WIDTH;
+            margin: 0 $CONTENT_MARGIN;
+            flex: 1;
+        }
+    }
+
+    .componentHeader::after, .specHeader::after, .sidebar{
+        content: '';
+        margin-right: $CONTENT_MARGIN;
+        flex-basis: $TOC_WIDTH;
+        flex-shrink: 0;
+        flex-grow: 0;
+        min-width: 0;
+    }
+
+    .content {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        align-items: stretch !important;
+    }
+
+    .sidebar{
+        position: relative;
+        top: -90px;
+        > i{
+            border-radius: 2px;
+            cursor: pointer;
+            border: 1px solid #EBEFFF;
+            height: 40px;
+            width: 40px;
+            line-height: 40px;
+            color: #7A8BAA;
+            background-color: #ffffff;
+            box-shadow: 0px 4px 12px rgba(0,0,0, 0.12);
+            margin-top: 26px;
+            margin-left: 50px;
+            opacity: 0;
+            transition:  opacity 0.1s;
+            position: fixed;
+            bottom: 96px;
+            z-index: 9999;
+        }
+        .toc{
+            position: sticky;
+            top: 127px;
+            margin-top: 105px;
+            max-height: calc(100vh - 365px);
+            overflow: auto;
+        }
+    }
+
+    .componentHeader{
+        padding-bottom: 48px;
+        border-bottom: 1px solid rgba(225,230,239, 1);
+    }
+
+    .tabs {
+        position: sticky;
+        top: 48px;
+        border-radius: 2px;
+        background-color: rgba(236,237,241, 1);
+        padding: 4px;
+        display: inline-block;
+        ul {
+            display: flex;
+            .current,
+            li:hover {
+                background-color: rgba(255,255,255, 1);
+                color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
+                transition: all 0.15s;
+            }
+            li {
+                transition: all 0.15s;
+                border-radius: 2px;
+                cursor: pointer;
+                opacity: 1;
+
+                width: 93px;
+                height: 34px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                &:first-child {
+                    margin-right: 4px !important;
+                }
+
+                color: $T_COLOR_TEXT_DEFAULT_DARK;
+                font-family: "PingFangSC-Regular";
+                font-size: 16px;
+                font-weight: 400;
+                line-height: 1.5;
             }
         }
     }
 
-    .content {
-        padding-left: 72px;
-        padding-right: 264px;
-        padding-bottom: 48px;
-        margin: 0 auto;
-        max-width: $MARKDOWN_CONTENT_WIDTH;
-
-        .top {
-            padding-top: 48px;
-            h1 {
-                margin: 0;
-                margin-bottom: 16px;
-                margin-top: 16px;
-                color: $T_COLOR_TEXT_DEFAULT_DARK;
-                font-size: 40px;
-                font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, helvetica neue, Arial, noto sans,
-                    sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol, noto color emoji;
-                font-weight: 400;
-                line-height: 42px;
-                letter-spacing: 2px;
-            }
-
-            h1 a {
-                fill: #7a8baa;
-                display: inline-block;
-                margin-left: 12px;
-                svg {
-                    width: 16px;
-                    height: 16px;
-                }
-                vertical-align: baseline;
-                &:hover {
-                    svg {
-                        fill: $T_COLOR_TEXT_PRIMARY_DEFAULT;
-                    }
-                    cursor: pointer;
-                    transition: all 0.3s;
-                }
-            }
-        }
-
-        .tabs {
-            margin-top: 48px;
-            margin-bottom: 48px;
-            ul {
-                line-height: 52px;
-                height: 52px;
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                border-bottom: 1px solid $T_COLOR_LINE_DEFAULT_LIGHT;
-                .current,
-                li:hover {
-                    background-color: $T_COLOR_BG_DEFAULT_HOVER;
-                    border-bottom: 2px solid $T_COLOR_BG_PRIMARY_1;
-                    color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
-                    font-weight: 600;
-                    // font-family: PingFangSC-Semibold, PingFang SC;
-                }
-                li {
-                    margin-right: 2px;
-                    &:last-child {
-                        margin-right: 0px !important;
-                    }
-                    i {
-                        background-size: contain;
-                        margin-right: 8px;
-                        width: 46px;
-                        height: 32px;
-                        display: inline-block;
-                    }
-                    .design-icon {
-                        background-image: url('./images/design-tab-icon.png');
-                    }
-                    .devIcon {
-                        background-image: url('./images/dev-tab-icon.png');
-                    }
-                    .dtIcon {
-                        background-image: url('./images/dt-tab-icon.png');
-                    }
-                    cursor: pointer;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex: 1;
-
-                    font-size: 20px;
-                    font-weight: 400;
-                    color: $T_COLOR_TEXT_DEFAULT_DARK;
-                    // font-family: PingFangSC-Regular, PingFang SC;
-                }
-            }
-        }
+    .markdown {
+        margin-bottom: $CONTENT_MARGIN;
+        position: relative;
     }
 }
 
@@ -399,7 +471,6 @@ $MARKDOWN_CONTENT_WIDTH: 880px;
 
         img {
             width: 100%;
-            max-width: 1440px;
         }
 
         strong {
