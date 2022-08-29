@@ -107,7 +107,7 @@ const Index = ({ data, location }) => {
             upEl.current.style.opacity = '';
         }
 
-        if (scrollTop >= 52) {
+        if (scrollTop >= 117) {
             headerEl.current.style.borderBottomWidth = '0px';
         } else {
             headerEl.current.style.borderBottomWidth = '';

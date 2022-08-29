@@ -112,8 +112,9 @@ footer{
     }
 
     .sidebar{
-        position: relative;
-        top: -90px;
+        position: sticky;
+        top: 138px;
+        height: 100%;
         > i{
             border-radius: 2px;
             cursor: pointer;
@@ -130,12 +131,12 @@ footer{
             transition:  opacity 0.1s;
             position: fixed;
             bottom: 96px;
+            right: 96px;
             z-index: 9999;
         }
         .toc{
-            position: sticky;
-            top: 127px;
-            margin-top: 105px;
+            position: relative;
+            top: 16px;
             max-height: calc(100vh - 365px);
             overflow: auto;
         }
@@ -147,8 +148,8 @@ footer{
     }
 
     .tabs {
-        position: sticky;
-        top: 48px;
+        position: relative;
+        top: -90px;
         border-radius: 2px;
         background-color: rgba(236,237,241, 1);
         padding: 4px;
