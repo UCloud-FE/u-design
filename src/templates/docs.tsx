@@ -55,9 +55,7 @@ const Index = ({ data, location }) => {
                     </section>
                 </div>
                 <div className={styles.sidebar}>
-                    <div className={styles.toc}>
-                        {getToC()}
-                    </div>
+                    <div className={styles.toc}>{getToC()}</div>
                 </div>
             </div>
             <Footer />

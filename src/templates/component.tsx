@@ -25,11 +25,11 @@ const getComponentName = (slug: string): string => {
     return delLast(slug.split('/component/list/')[1], '/');
 };
 
-const getComponentInfo = (componentName: string): any=> {
+const getComponentInfo = (componentName: string): any => {
     return allComponents.find(item => item.name === componentName);
-}
+};
 
-const getTitle = (componentInfo) => {
+const getTitle = componentInfo => {
     return `${componentInfo?.name || ''} ${componentInfo?.zh_cn || ''}`;
 };
 
@@ -66,14 +66,14 @@ const Index = ({ data, location }) => {
                 ...item,
                 depth: item.depth,
                 id: decodeURIComponent(links[index].hash.split('#')[1]),
-                value: decodeURIComponent(links[index].getAttribute("aria-label")),
+                value: decodeURIComponent(links[index].getAttribute('aria-label')),
             });
         });
 
         setComponentDocsToc(toc);
     }, [tabIndex]);
 
-    const handleScrollToTop = useCallback(()=>{
+    const handleScrollToTop = useCallback(() => {
         wrapperEl.current.scrollTop = 0;
     }, []);
 
@@ -98,35 +98,35 @@ const Index = ({ data, location }) => {
         setScrollCurrentHash(currentHash);
     }, []);
 
-    const handleFixToc = useCallback(()=>{
+    const handleFixToc = useCallback(() => {
         const scrollTop = wrapperEl.current.scrollTop;
 
-        if(scrollTop >= 127){
+        if (scrollTop >= 127) {
             upEl.current.style.opacity = '1';
         } else {
             upEl.current.style.opacity = '';
         }
 
-        if(scrollTop >= 52){
+        if (scrollTop >= 52) {
             headerEl.current.style.borderBottomWidth = '0px';
         } else {
             headerEl.current.style.borderBottomWidth = '';
         }
     }, []);
 
-    useEffect(()=>{
+    useEffect(() => {
         wrapperEl.current.addEventListener('scroll', handleFixToc);
-    }, [])
+    }, []);
 
     useEffect(() => {
         wrapperEl.current.addEventListener('scroll', handleScroll);
     }, []);
 
     useEffect(() => {
-        if(componentInfo?.isHideDesignTab){
+        if (componentInfo?.isHideDesignTab) {
             setTabIndex(tabs[1]);
         }
-    }, [])
+    }, []);
 
     const handleClickTab = index => {
         currentTabIndex = index;
@@ -178,8 +178,7 @@ const Index = ({ data, location }) => {
                 </div>
 
                 <div className={styles.sidebar}>
-                    {   
-                        !componentInfo?.isHideDesignTab && 
+                    {!componentInfo?.isHideDesignTab && (
                         <div className={styles.tabs}>
                             <ul>
                                 <li
@@ -200,7 +199,7 @@ const Index = ({ data, location }) => {
                                 </li>
                             </ul>
                         </div>
-                    }
+                    )}
 
                     <div className={styles.toc}>
                         <ToC

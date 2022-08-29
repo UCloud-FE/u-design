@@ -24,7 +24,7 @@ async function getMarkdownFromGithub() {
 }
 
 function parseComponents() {
-    components.forEach((component)=>{
+    components.forEach(component => {
         const componentDoc = require(`./recodo/${component.name}.doc.json`);
 
         for (const subComponentName in componentDoc) {
@@ -35,7 +35,7 @@ function parseComponents() {
                 fs.mkdirSync(dir);
             }
 
-            if(subComponentName !== 'README'){
+            if (subComponentName !== 'README') {
                 fs.writeFileSync(
                     `${dir}/${subComponentName}.md`,
                     `## ${subComponentName}\n\n### Props\n\n\`\`\`js {"props": "${subComponentName}"}\n\`\`\`\n\n` +
@@ -53,8 +53,7 @@ function parseComponents() {
                 fs.writeFileSync(`${dir}/__demo__/${file}`, demoCode);
             });
         }
-
-    })
+    });
 }
 
 try {

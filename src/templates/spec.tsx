@@ -17,7 +17,7 @@ const Index = ({ data, location }) => {
     const tocEl = useRef<HTMLDivElement>(null);
     const upEl = useRef<HTMLDivElement>(null);
 
-    const handleScrollToTop = useCallback(()=>{
+    const handleScrollToTop = useCallback(() => {
         wrapperEl.current.scrollTop = 0;
     }, []);
 
@@ -42,27 +42,26 @@ const Index = ({ data, location }) => {
         setScrollCurrentHash(currentHash);
         handleShowUp();
     };
-   
-    const handleShowUp = useCallback(()=>{
+
+    const handleShowUp = useCallback(() => {
         const scrollTop = wrapperEl.current.scrollTop;
 
-        if(scrollTop >= 127){
+        if (scrollTop >= 127) {
             upEl.current.style.opacity = '1';
         } else {
             upEl.current.style.opacity = '';
         }
     }, []);
 
-    useEffect(()=>{
+    useEffect(() => {
         wrapperEl.current.addEventListener('scroll', handleShowUp);
-    }, [])
+    }, []);
 
     useEffect(() => {
         tocEl.current.style.position = 'sticky';
         tocEl.current.style.top = '57px';
         wrapperEl.current.addEventListener('scroll', handleScroll);
     }, []);
-    
 
     return (
         <div className={styles.wrapper} ref={wrapperEl}>
@@ -90,7 +89,11 @@ const Index = ({ data, location }) => {
 
                 <div className={styles.sidebar}>
                     <div className={styles.toc} ref={tocEl}>
-                        <ToC currentHash={scrollCurrentHash} headings={markdownRemark.headings || []} location={location} />
+                        <ToC
+                            currentHash={scrollCurrentHash}
+                            headings={markdownRemark.headings || []}
+                            location={location}
+                        />
                     </div>
                     <i ref={upEl} onClick={handleScrollToTop} className="uc-fe-icon icon__up" />
                 </div>
