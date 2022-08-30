@@ -99,6 +99,12 @@
         "category": ["container", "data-input"]
     },
     {
+        "name": "ZForm",
+        "zh_cn": "表单",
+        "category": ["container", "data-input"],
+        "isHideDesignTab": true
+    },
+    {
         "name": "Grid",
         "zh_cn": "栅格",
         "components": ["Row", "Col"],
