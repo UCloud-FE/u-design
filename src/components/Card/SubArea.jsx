@@ -12,7 +12,9 @@ const SubArea = ({ title, children, ...rest }) => {
     );
 };
 SubArea.propTypes = {
+    /** 标题 */
     title: PropTypes.node,
+    /** @ignore */
     children: PropTypes.node
 };
 

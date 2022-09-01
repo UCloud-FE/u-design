@@ -177,7 +177,8 @@ module.exports = [
                 components: ['Form', 'Item', 'Group', 'SubArea']
             },
             {
-                name: 'Card'
+                name: 'Card',
+                components: ['Card', 'Header', 'SubArea']
             },
             {
                 name: 'Steps'
