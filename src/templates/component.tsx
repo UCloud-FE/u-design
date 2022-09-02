@@ -17,14 +17,14 @@ import * as styles from './template.module.scss';
 import Edit from '../images/edit.inline.svg';
 import { Resizable } from 'react-resizable';
 import moment from 'moment';
-import demoUtil from '../../../react-components/shared/demoUtil';
-import darkTheme from '../../../react-components/src/components/ThemeProvider/dark';
-import SizeInterface from '../../../react-components/src/interfaces/Size';
-// import ENLocale from '../../../react-components/src/components/LocaleProvider/locale/en_US';
+import demoUtil from '../../react-components/shared/demoUtil';
+import darkTheme from '../../react-components/src/components/ThemeProvider/dark';
+import SizeInterface from '../../react-components/src/interfaces/Size';
+// import ENLocale from '../../react-components/src/components/LocaleProvider/locale/en_US';
 
 const lodash = require('lodash');
 
-components.Table.ResizableTH = {};
+// components.Table.ResizableTH = {};
 const getDemos = (componentDemos, demos) => {
     const liveComponents = {};
     const scope = {
