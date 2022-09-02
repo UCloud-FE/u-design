@@ -1,6 +1,6 @@
 const visit = require('unist-util-visit');
 const fs = require('fs');
-const path = require('path');
+const getDemoCode = require('./getDemoCode.js');
 const cheerio = require(`cheerio`);
 const apiDocsDir = '/component/api-docs/';
 
@@ -44,47 +44,13 @@ module.exports = ({ markdownAST, markdownNode }, pluginOptions) => {
 
                 const meta = JSON.parse(node.meta);
                 if (meta?.codepath) {
-                    let rawCode = fs.readFileSync(
-                        `react-components/src/components/${componentName}/__demo__/${meta.codepath}`,
-                        { encoding: 'utf8' },
-                    );
-                    let demoStartIndex = rawCode.match(/\/\/\s*demo\s*start\s*/);
-                    demoStartIndex = demoStartIndex ? demoStartIndex.index + demoStartIndex[0].length : undefined;
-                    let demoEndIndex = rawCode.match(/\/\/\s*demo\s*end\s*/);
-                    demoEndIndex = demoEndIndex ? demoEndIndex.index : undefined;
-                    let code =
-                        rawCode
-                            .slice(demoStartIndex, demoEndIndex)
-                            .replace(/require\((?:'|")(\..*)(?:'|")\)/g, (match, filePath, offset, string) => {
-                                // replace all required relative file path
-                                filePath = './' + path.join(`./${demoPath}/`, filePath);
-                                return `require('${filePath}')`;
-                            }) + '\nexport default Demo;'; // add demo
-
-                    node.value = code;
-                    node.lang = 'jsx';
                     let demoComponentName = meta.codepath
                         .split('.')[0]
                         .replace(/^\S/, s => s.toUpperCase())
                         .replace(/-/g, '');
 
-                    const codeNode = {
-                        type: 'jsx',
-                        value: `
-                            <div className="demo-show"><${demoComponentName} /></div>
-                        `,
-                    };
-
-                    const viewCodeBtnNode = {
-                        type: 'jsx',
-                        value: `<div className="demo-toolbar">
-                        <div className="demo-toolbar-view-code" role="button" data-active="false" onClick={(event)=> gatsbyRemarkViewCode(event)}>VIEW CODE</div>
-                        </div>`,
-                    };
-
-                    parent.children.splice(index, 0, codeNode, viewCodeBtnNode);
-
-                    return index + 3;
+                    node.value = `<div className="demo-show"><${demoComponentName} /></div>`;
+                    node.type = 'jsx';
                 } else if (meta?.props) {
                     const subComponentName = meta?.props;
                     node.type = 'jsx';

@@ -44,12 +44,11 @@ function parseComponents() {
             }
 
             fse.copySync(`react-components/src/components/${component.name}/__demo__`, `${dir}/__demo__`);
-
             fs.readdirSync(__dirname + `/${dir}/__demo__`).forEach(file => {
                 let rawCode = fs.readFileSync(`${dir}/__demo__/${file}`, { encoding: 'utf8' });
-                let demoCode = rawCode.replace(/src\//g, '@ucloud-fe/react-components/lib/');
-                demoCode = demoCode.replace(/shared\//g, '../../../../../react-components/shared/');
-                demoCode = demoCode.replace(/..\/..\/..\/..\/index/g, '../../../../../src/allComponents.js');
+                let demoCode = rawCode.replace(/const /g, 'var ');
+                demoCode = demoCode.replace(/var render =/g, 'var renderC =');
+                demoCode = demoCode.replace(/{render\(/g, '{renderC(');
                 fs.writeFileSync(`${dir}/__demo__/${file}`, demoCode);
             });
         }

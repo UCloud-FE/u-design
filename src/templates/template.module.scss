@@ -369,6 +369,12 @@ footer{
             background-color: $T_COLOR_BG_DEFAULT_BRIGHT !important;
             padding: 24px 24px 6px 24px !important;
 
+           .demo-code{
+               margin-top: 12px;
+                max-height: 500px;
+                overflow-y: auto!important;
+            }
+
             h1 {
                 line-height: 2em;
                 font-size: 18px;
@@ -387,7 +393,7 @@ footer{
 
         .demo-toolbar {
             font-size: 13px !important;
-            padding: 0px 24px 12px 24px !important;
+            padding: 12px 0px!important;
             background-color: $T_COLOR_BG_DEFAULT_BRIGHT !important;
             align-items: center !important;
             display: flex !important;

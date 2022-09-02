@@ -1,24 +1,99 @@
-import React, { useEffect, useState, useRef, useCallback } from 'react';
+import React, { useEffect, useState, useRef, useCallback, useMemo } from 'react';
+import ReactDOM from 'react-dom';
+import PropTypes from 'prop-types';
 import { graphql } from 'gatsby';
 import { MDXRenderer } from 'gatsby-plugin-mdx';
 import { MDXProvider } from '@mdx-js/react';
 import Seo from '../components/seo';
 import Footer from '../components/Footer';
 import ToC from '../components/ToC';
+import useDemos from '../components/useDemos';
+import { LiveProvider, LiveEditor, LiveError, LivePreview } from 'react-live';
 import allComponents from '../../content/components.json';
 import { delLast } from '../utils';
+import getDemoCode from '../utils/getDemoCode';
+import { components } from '../allComponents';
 import * as styles from './template.module.scss';
 import Edit from '../images/edit.inline.svg';
+import { Resizable } from 'react-resizable';
+import moment from 'moment';
+import demoUtil from '../../../react-components/shared/demoUtil';
+import darkTheme from '../../../react-components/src/components/ThemeProvider/dark';
+import SizeInterface from '../../../react-components/src/interfaces/Size';
+// import ENLocale from '../../../react-components/src/components/LocaleProvider/locale/en_US';
 
-const getDemos = componentDemos => {
-    const demos = {};
+const lodash = require('lodash');
+
+components.Table.ResizableTH = {};
+const getDemos = (componentDemos, demos) => {
+    const liveComponents = {};
+    const scope = {
+        React,
+        ReactDOM,
+        components,
+        ...components,
+        PropTypes,
+        Props: require(`../components/Props`).default,
+        Resizable,
+        demoUtil,
+        _: lodash,
+        moment,
+        darkTheme,
+        SizeInterface,
+        ENLocale: {},
+    };
+
     componentDemos.edges.forEach(item => {
         let demoComponentName = item.node.name.replace(/^\S/, s => s.toUpperCase()).replace(/-/g, '');
-        demos[demoComponentName] = require(`../../content/${item.node.relativePath}`).default;
+        let componentName = item.node.relativePath.split('/')[2];
+        let demoCode = getDemoCode(demos[componentName][item.node.name]) + '\nrender(<Demo />)';
+
+        liveComponents[demoComponentName] = () => {
+            const [active, setActive] = useState(false);
+            const haneleViewCode = useCallback(() => {
+                setActive(!active);
+            }, [active]);
+
+            if(componentName === 'ZForm'){
+                if(['Base', 'Name'].includes(demoComponentName)){
+                    delete scope.Input;
+                    delete scope.Checkbox;
+                } else {
+                    scope.Input = components.Input;
+                    scope.Checkbox = components.Checkbox;
+                }
+            }
+
+            return (
+                <LiveProvider
+                    theme={{ plain: { backgroundColor: '#f5f2f0' }, styles: [] }}
+                    code={demoCode}
+                    noInline={true}
+                    scope={{...scope}}
+                >
+                    <LivePreview />
+                    <LiveError />
+                    {active && (
+                        <div className="demo-code">
+                            <LiveEditor tabSize={2} />
+                        </div>
+                    )}
+                    <div className="demo-toolbar">
+                        <div
+                            className="demo-toolbar-view-code"
+                            data-active={active ? 'true' : 'false'}
+                            role="button"
+                            onClick={haneleViewCode}
+                        >
+                            VIEW CODE ( LIVE )
+                        </div>
+                    </div>
+                </LiveProvider>
+            );
+        };
     });
 
-    demos['Props'] = require(`../components/Props`).default;
-    return demos;
+    return liveComponents;
 };
 
 const getComponentName = (slug: string): string => {
@@ -46,6 +121,7 @@ const Index = ({ data, location }) => {
     const wrapperEl = useRef<HTMLDivElement>(null);
     const headerEl = useRef<HTMLDivElement>(null);
     const upEl = useRef<HTMLDivElement>(null);
+    const demos = useDemos();
 
     useEffect(() => {
         const toc = [];
@@ -133,6 +209,16 @@ const Index = ({ data, location }) => {
         setTabIndex(index);
     };
 
+    const MemoMDXProvider = useMemo(() => {
+        return (
+            <MDXProvider components={getDemos(componentDemos, demos)}>
+                {componentDocs.nodes.map(node => {
+                    return <MDXRenderer key={node.id}>{node.body}</MDXRenderer>;
+                })}
+            </MDXProvider>
+        );
+    }, []);
+
     return (
         <div className={styles.wrapper} ref={wrapperEl}>
             <Seo title={markdown.frontmatter.title} />
@@ -169,11 +255,7 @@ const Index = ({ data, location }) => {
                         style={{ display: tabIndex === tabs[1] ? 'block' : 'none' }}
                         className="u-markdown-dev-styles"
                     >
-                        <MDXProvider components={getDemos(componentDemos)}>
-                            {componentDocs.nodes.map(node => {
-                                return <MDXRenderer key={node.id}>{node.body}</MDXRenderer>;
-                            })}
-                        </MDXProvider>
+                        {MemoMDXProvider}
                     </div>
                 </div>
 

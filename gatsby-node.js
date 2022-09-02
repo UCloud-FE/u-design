@@ -77,7 +77,7 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     }
 };
 
-exports.onCreateNode = ({ node, actions, getNode }) => {
+exports.onCreateNode = async ({ node, actions, getNode, loadNodeContent }) => {
     const { createNodeField } = actions;
 
     if (node.internal.type === `Mdx`) {
@@ -89,6 +89,15 @@ exports.onCreateNode = ({ node, actions, getNode }) => {
             value,
         });
     }
+
+    if (node.internal.type === `File` && node?.relativePath?.indexOf('__demo__') >= 0) {
+        try{
+            const content = await loadNodeContent(node);
+            actions.createNodeField({ node, name: `content`, value: content });
+        } catch(e){
+            console.error(e);
+        }
+    };
 };
 
 exports.createSchemaCustomization = ({ actions }) => {
