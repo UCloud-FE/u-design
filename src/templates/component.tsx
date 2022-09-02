@@ -73,11 +73,6 @@ const getDemos = (componentDemos, demos) => {
                 >
                     <LivePreview />
                     <LiveError />
-                    {active && (
-                        <div className="demo-code">
-                            <LiveEditor tabSize={2} />
-                        </div>
-                    )}
                     <div className="demo-toolbar">
                         <div
                             className="demo-toolbar-view-code"
@@ -88,6 +83,11 @@ const getDemos = (componentDemos, demos) => {
                             VIEW CODE ( LIVE )
                         </div>
                     </div>
+                    {active && (
+                        <div className="demo-code">
+                            <LiveEditor tabSize={2} />
+                        </div>
+                    )}
                 </LiveProvider>
             );
         };

@@ -370,7 +370,7 @@ footer{
             padding: 24px 24px 6px 24px !important;
 
            .demo-code{
-               margin-top: 12px;
+                margin-bottom: 12px;
                 max-height: 500px;
                 overflow-y: auto!important;
             }
@@ -399,7 +399,6 @@ footer{
             display: flex !important;
             justify-content: end !important;
 
-            
             .demo-toolbar-view-code {
                 @mixin hover() {
                     content: ' ';
@@ -417,6 +416,7 @@ footer{
                 }
 
                 cursor: pointer;
+                user-select: none;
                 font-weight: 500;
                 color: $T_COLOR_TEXT_PRIMARY_DEFAULT;
                 position: relative;
