@@ -33,7 +33,6 @@ const getDemos = (componentDemos, demos) => {
         components,
         ...components,
         PropTypes,
-        Props: require(`../components/Props`).default,
         Resizable,
         demoUtil,
         _: lodash,
@@ -93,6 +92,7 @@ const getDemos = (componentDemos, demos) => {
         };
     });
 
+    liveComponents['Props'] =  require(`../components/Props`).default;
     return liveComponents;
 };
 

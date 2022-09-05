@@ -128,6 +128,11 @@
         "category": ["feedback"]
     },
     {
+        "name": "Link",
+        "zh_cn": "链接",
+        "category": ["general"]
+    },
+    {
         "name": "LocaleProvider",
         "zh_cn": "语言配置",
         "category": ["general"],
