@@ -260,7 +260,16 @@
     {
         "name": "Transfer",
         "zh_cn": "穿梭机",
-        "components": ["TransferMenu", "TransferTable"],
+        "category": ["data-input"]
+    },
+    {
+        "name": "TransferMenu",
+        "zh_cn": "下拉菜单穿梭机",
+        "category": ["data-input"]
+    },
+    {
+        "name": "TransferTable",
+        "zh_cn": "表格穿梭机",
         "category": ["data-input"]
     },
     {
