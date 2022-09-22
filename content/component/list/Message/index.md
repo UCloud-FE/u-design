@@ -8,7 +8,7 @@ description: "对用户的操作作出轻量的全局反馈。"
 - 页面右上角显示，可自定义消失时间，是一种不打断用户操作的提示方式
 
 ## 基本构成
-*pic
+![](https://www-s.ucloud.cn/2022/09/1ac0ce26eb7e387d7ffb1ff600e69389_1663845718146.png)
 
 | 图标（A） | 标题（B） | 正文（C） | 操作按钮（D） |关闭按钮（E） |
 | :-------: | :-----------: | :-----------: | :-------: |:-------: |
@@ -44,14 +44,14 @@ description: "对用户的操作作出轻量的全局反馈。"
 
 
 ## 基本样式
+![](https://www-s.ucloud.cn/2022/09/8b194bbe3bd9310943bf806bbd200a1f_1663845718143.png)
 
-*pic
 
 
 
 ## 基本状态
 
-![](https://www-s.ucloud.cn/2022/08/2dd6d0fd29334aba904abd61d45f9e3c_1660736810341.png)
+![](https://www-s.ucloud.cn/2022/09/3806e9c8a01eba38f77d4a11e8d1337f_1663845718131.png)
 
 | 状态 | 说明                                             |
 | :--- | ------------------------------------------------ |
@@ -92,11 +92,11 @@ description: "对用户的操作作出轻量的全局反馈。"
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
 文案越精简越好，提高信息传递的效率。</p>
-      <img src="https://www-s.ucloud.cn/2022/08/2713344719458d8ecf04b9145d6df271_1660736865172.png" alt="image alt" title="desc" loading="lazy" />
+      <img src="https://www-s.ucloud.cn/2022/09/1fb4207d0e457be1cf87747e182b6807_1663846876095.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>太复杂或者太啰嗦的文案会让用户失去耐心。</p>
-      <img src="https://www-s.ucloud.cn/2022/08/f399e82103bd620acaab5769d051195f_1660736865173.png" alt="image alt" title="desc" loading="lazy" />
+      <img src="https://www-s.ucloud.cn/2022/09/fccc23a9727aac290122814c0959aeee_1663846876090.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
