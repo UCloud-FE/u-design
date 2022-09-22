@@ -92,11 +92,11 @@ description: "对用户的操作作出轻量的全局反馈。"
    <div class="u-md-mr24">
       <p><i class="u-md-suggested"></i>
 文案越精简越好，提高信息传递的效率。</p>
-      <img src="https://www-s.ucloud.cn/2022/09/1fb4207d0e457be1cf87747e182b6807_1663846876095.png" alt="image alt" title="desc" loading="lazy" />
+      <img src="https://www-s.ucloud.cn/2022/09/1fb4207d0e457be1cf87747e182b6807_1663846876090.png" alt="image alt" title="desc" loading="lazy" />
    </div>
    <div>
       <p><i class="u-md-not-suggested"></i>太复杂或者太啰嗦的文案会让用户失去耐心。</p>
-      <img src="https://www-s.ucloud.cn/2022/09/fccc23a9727aac290122814c0959aeee_1663846876090.png" alt="image alt" title="desc" loading="lazy" />
+      <img src="https://www-s.ucloud.cn/2022/09/fccc23a9727aac290122814c0959aeee_1663846876095.png" alt="image alt" title="desc" loading="lazy" />
    </div>
 </div>
 
