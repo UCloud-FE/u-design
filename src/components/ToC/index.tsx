@@ -49,8 +49,9 @@ const ToC = (props: {
                                     }}
                                     href={`#${hash}`}
                                     data-depth={heading.depth}
+                                    title={heading.value}
                                 >
-                                    {heading.value}
+                                    <div dangerouslySetInnerHTML={{__html: heading.value}} />
                                 </a>
                             </div>
                         );
