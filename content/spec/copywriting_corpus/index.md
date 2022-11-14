@@ -1,7 +1,7 @@
 ---
 category: 反馈与文案
 title: 语料库
-order: 7
+order: 5
 ---
 
 基于业务和语境，汇集成的语言材料库。
