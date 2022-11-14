@@ -10,7 +10,7 @@ order: 0
 
 - 语气亲和有礼，避免距离感和侵犯性的；
 - 语言组织精准、严谨、一致、易懂；
-- 注意遵循「不同信息」的[书写规范]()
+- 注意遵循「不同信息」的[书写规范](/spec/copywriting_writing/)
 
 如果你想要进一步了解「如何设计文案」，可以查阅以下篇章继续学习：
 
@@ -18,7 +18,7 @@ order: 0
 
 在表述中使用合适的语气，更容易让读者接受和信服。而合理的语言组织能够在准确表达意思的同时，不占用读者过多时间。
 
-[学习一下]()
+[学习一下](/spec/copywriting_manner/)
 
 ### 2.书写建议
 
@@ -31,7 +31,7 @@ order: 0
 - **数据及脱敏**
 - **中西文混排**
 
-[学习一下]()
+[学习一下](/spec/copywriting_writing/)
 
 ### 3.应用场景
 
@@ -45,14 +45,12 @@ order: 0
 | 消息通知 | 与操作行为无紧密关联，多用于平台侧单方面向用户传达消息通知的场景 | 全局公告、产品公告                          |
 | 引导文案 | 与操作行为无紧密关联，一般用于宣传新功能或者为新功能向用户提供操作引导 | 新功能提示/操作引导等                       |
 
-[学习一下]()
+[学习一下](/spec/feedback_application/)
 
 
 
-## 相关
-
-- Card
-- Message
-- Notice
-- Tooltip
-- Popconfirm
+## 相关文档
+- [语气及语言](/spec/copywriting_manner/)
+- [书写建议](/spec/copywriting_writing/)
+- [应用场景](/spec/feedback_application/)
+- [语料库](/spec/copywriting_corpus/)
