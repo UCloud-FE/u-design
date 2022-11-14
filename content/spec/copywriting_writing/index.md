@@ -147,3 +147,9 @@ order: 6
 | 推荐             | 不推荐           |
 | ---------------- | ---------------- |
 | Type and Feature | Type And Feature |
+
+## 相关文档
+- [通用原则](/spec/copywriting_default/)
+- [语气及语言](/spec/copywriting_manner/)
+- [应用场景](/spec/feedback_application/)
+- [语料库](/spec/copywriting_corpus/)
