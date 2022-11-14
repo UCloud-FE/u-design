@@ -106,4 +106,5 @@ order: 1
 - [通用原则](/spec/copywriting_default/)
 - [书写建议](/spec/copywriting_writing/)
 - [应用场景](/spec/feedback_application/)
+- [语料库](/spec/copywriting_corpus/)
 
