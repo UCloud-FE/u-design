@@ -79,56 +79,19 @@ order: 1
 
 - **「案例」操作按钮文案**
 
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>精简文案，仅展示必要说明。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/37c19b3c993649b0e128f5c00e1d1093_1668154085132.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>赘述用户可以直观从页面中理解的信息，只会干扰他们捕捉其他关键信息。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/c7695f39bf39a65183dd45eaf52f8863_1668154085126.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-</div>
+  同类操作的文案需要统一，以便用户快速识别和理解。
 
-
-
-> 配图要求：配图：主机、数据库、网络等产品列表页一级按钮都是“创建XX”｜详情页监控卡片上的操作也是一致的
+| 操作     | 文案规范   | 推荐       | 不推荐                     |
+| -------- | ---------- | ---------- | -------------------------- |
+| 创建资源 | 创建**     | 创建数据库 | 新增数据库                 |
+| 删除实例 | 删除**     | 删除主机   | 销毁主机                   |
+| 更改配置 | 配置升降级 | 配置升降级 | 修改配置/更换配置/更改设置 |
 
 - **「案例」通用流程提示说明**
 
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>精简文案，仅展示必要说明。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/37c19b3c993649b0e128f5c00e1d1093_1668154085132.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>赘述用户可以直观从页面中理解的信息，只会干扰他们捕捉其他关键信息。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/c7695f39bf39a65183dd45eaf52f8863_1668154085126.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-</div>
+  同类操作流程的交互流程需要统一，流程中的提示文案在语言组织和语序结构上也需进行统一。一定程度的一致性能够提升平台的严谨性和专业感。
 
-
-
-> 配图：主机、数据库、网络批量删除弹窗统一
-
-- **「案例」同类提示语序结构**
-
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>精简文案，仅展示必要说明。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/37c19b3c993649b0e128f5c00e1d1093_1668154085132.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>赘述用户可以直观从页面中理解的信息，只会干扰他们捕捉其他关键信息。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/c7695f39bf39a65183dd45eaf52f8863_1668154085126.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-</div>
-
-
-
-> 配图：主机删除、快照关闭全局提示语序结构一致
-
-
+  ![](https://www-s.ucloud.cn/2022/11/e52045ce2b233cb97bcfac9db41eb80d_1668414177232.png)
 
 ### 表达通俗易懂
 
@@ -137,4 +100,10 @@ order: 1
 | 推荐                    | 不推荐                                                       |
 | ----------------------- | ------------------------------------------------------------ |
 | 开启后，每 15s 自动刷新 | 自动刷新默认关闭，关闭时监控数据不会自动更新。若开启，监控数据将间隔 15s 自动更新一次 |
+
+
+## 相关文档
+- [通用原则](/spec/copywriting_default/)
+- [书写建议](/spec/copywriting_writing/)
+- [应用场景](/spec/feedback_application/)
 
