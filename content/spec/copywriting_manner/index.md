@@ -56,16 +56,9 @@ order: 1
 
 - ***拒绝无关解释***
 
-<div class="u-md-flex-without-bg">
-   <div class="u-md-mr24">
-      <p><i class="u-md-suggested"></i>精简文案，仅展示必要说明。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/37c19b3c993649b0e128f5c00e1d1093_1668154085132.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-   <div>
-      <p><i class="u-md-not-suggested"></i>赘述用户可以直观从页面中理解的信息，只会干扰他们捕捉其他关键信息。</p>
-      <img src="https://www-s.ucloud.cn/2022/11/c7695f39bf39a65183dd45eaf52f8863_1668154085126.png" alt="image alt" title="desc" loading="lazy" />
-   </div>
-</div>
+| 推荐                               | 不推荐                                                       |
+| ---------------------------------- | ------------------------------------------------------------ |
+| 创建快照前，需先开启[快照服务]()。 | 磁盘快照服务（USnap）基于数据方舟CDP技术为全系列云硬盘数据盘（普通/SSD/RSSD）提供了创建快照的能力。若需要创建，建议先去开启服务。 |
 
 
 
