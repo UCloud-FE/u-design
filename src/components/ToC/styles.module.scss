@@ -23,6 +23,11 @@
                 font-family: "PingFangSC-Regular";
                 font-style: normal;
                 letter-spacing: 0px;
+                div {
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                }
+
                 &:hover {
                     color: $T_COLOR_TEXT_PRIMARY_DEFAULT !important;
                     transition: all 0.1s;

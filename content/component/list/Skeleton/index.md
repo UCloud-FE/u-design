@@ -15,19 +15,13 @@ description: "在需要等待数据加载的位置，通过占位图形给用户
 
 ### 基础样式
 
-![image-20220817143131410](https://www-s.ucloud.cn/2022/08/6689704308d06ecdb9176ed94e8df961_1660738937372.png)
+![](https://www-s.ucloud.cn/2022/10/ace4334427a84d7a77db267c1bc63165_1665312113509.png)
 
 
 
 ### 带动画效果的样式
 
-![image-20220817143323862](https://www-s.ucloud.cn/2022/08/8e7445039532b9c97facac9832255fd6_1660738937379.png)
-
-
-
-### 组合样式
-
-![image-20220817143639764](https://www-s.ucloud.cn/2022/08/a5fbb23413327139156e266e60b1670c_1660738937381.png)
+![](https://www-s.ucloud.cn/2022/10/be3bc3f0793eb56c44d73cbc96c799cd_1665311873114.gif)
 
 
 

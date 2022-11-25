@@ -337,6 +337,9 @@ footer{
                     td {
                         color: #0a1633;
                         word-break: break-word;
+                        &:first-child{
+                            white-space: nowrap!important;
+                        }
                     }
                     th,
                     td {

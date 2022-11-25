@@ -123,6 +123,12 @@ const Index = ({ data, location }) => {
     const upEl = useRef<HTMLDivElement>(null);
     const demos = useDemos();
 
+    let rootComponentNode = componentDocs.nodes.find(item => item.headings[0].value === componentName);
+    if(rootComponentNode){
+        componentDocs.nodes = componentDocs.nodes.filter(item => item !== rootComponentNode);
+        componentDocs.nodes.unshift(rootComponentNode);
+    }
+
     useEffect(() => {
         const toc = [];
         const links = wrapperEl.current.querySelectorAll('#u-component-doc [aria-label]');
@@ -142,7 +148,7 @@ const Index = ({ data, location }) => {
                 ...item,
                 depth: item.depth,
                 id: decodeURIComponent(links[index].hash.split('#')[1]),
-                value: decodeURIComponent(links[index].getAttribute('aria-label')),
+                // value: decodeURIComponent(links[index].getAttribute('aria-label')),
             });
         });
 
