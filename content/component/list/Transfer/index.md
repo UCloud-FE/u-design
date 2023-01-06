@@ -128,7 +128,8 @@ description: "让用户用直观的方式在两栏中移动元素，完成选择
    <div>
       <p><i class="u-md-not-suggested"></i>当选择数据量较大时，select明显在有限高度内无法很好的展示出已选项。</p>
       <img src="https://www-s.ucloud.cn/2023/01/f4409db62127a511278435ff171f378f_1672891740502.png" alt="image alt" title="desc" />
-
+   </div>
+</div>
 
 
 
