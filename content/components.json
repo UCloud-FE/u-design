@@ -123,6 +123,11 @@
         "category": ["data-input"]
     },
     {
+        "name": "Layout",
+        "zh_cn": "布局",
+        "category": ["layout"]
+    },
+    {
         "name": "Loading",
         "zh_cn": "加载中",
         "category": ["feedback"]
