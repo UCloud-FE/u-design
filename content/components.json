@@ -171,6 +171,11 @@
         "category": ["data-input"]
     },
     {
+        "name": "Nav",
+        "zh_cn": "导航",
+        "category": ["navigation"]
+    },
+    {
         "name": "Pagination",
         "zh_cn": "分页器",
         "category": ["navigation"]
